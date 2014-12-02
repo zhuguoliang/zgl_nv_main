@@ -38,6 +38,7 @@
 #include <list>
 #include "include/NVMTypes.h"
 #include "include/NVMainRequest.h"
+#include "src/Rank.h"/*zhuguoliang*/
 
 namespace NVM {
 
@@ -140,6 +141,7 @@ class GlobalEventQueue
     ~GlobalEventQueue();
 
     void AddSystem( NVMain *subSystem, Config *config );
+    void AddSystem( Rank *hrank, Config *config );
     void Cycle( ncycle_t steps );
 
     void SetFrequency( double freq );

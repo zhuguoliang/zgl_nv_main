@@ -1,1 +1,1 @@
-/home/zhuguoliang/nvmain/Banks/DDR3Bank/DDR3Bank.cpp
+/home/zhuguoliang/project/git_proj/zgl_nv_main/nvmain/Banks/DDR3Bank/DDR3Bank.cpp

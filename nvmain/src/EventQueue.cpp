@@ -496,6 +496,58 @@ void GlobalEventQueue::AddSystem( NVMain *subSystem, Config *config )
               << (frequency / 1000000.0) << "MHz." << std::endl;
 }
 
+
+/*
+* zhuguoliang
+* Since in decoupled_dimm each rank has different frequecy
+* the CLK in the origin config file is the frequency the CPU and the bus run at.
+* The CLK in this config file is the frequency of different heterogenous ranks.
+* 
+*/
+void GlobalEventQueue::AddSystem( Rank *hrank, Config *config )
+{
+    double subSystemFrequency = config->GetEnergy( "CLK" ) * 1000000.0;
+    EventQueue *queue = hrank->GetEventQueue( );
+    bool eventDrivenSub = config->GetBool( "EventDriven" );
+
+    /* First subsystem decides if the entire system is event driven or not. */
+    if( eventQueues.empty( ) )
+        eventDriven = eventDrivenSub;
+
+    if( eventDrivenSub != eventDriven )
+    {
+        std::cout << "NVMain: Warning: Subsystem setting of event driven does not match parent!"
+                  << std::endl;
+
+        if( eventDriven )
+        {
+            std::cout << "                 Forcing subsystem to be event driven." << std::endl;
+            config->SetBool( "EventDriven", true );
+        }
+        else
+        {
+            std::cout << "                 Forcing subsystem to be execution driven." << std::endl;
+            config->SetBool( "EventDriven", false );
+        }
+    }
+
+    assert( subSystemFrequency <= frequency );
+
+    /* 
+     *  The CLK value in the config file is the frequency this subsystem should run at.
+     *  We aren't doing and checks here to make sure the input side (i.e. CPUFreq) is
+     *  corrent since we don't know what it should be.
+     */
+    eventQueues.insert( std::pair<EventQueue*, double>(queue, subSystemFrequency) );
+    queue->SetFrequency( subSystemFrequency );
+
+    std::cout << "NVMain: GlobalEventQueue: Added a memory hrank running at "
+              << config->GetEnergy( "CLK" ) << "MHz. My frequency is "
+              << (frequency / 1000000.0) << "MHz." << std::endl;
+}
+
+
+
 void GlobalEventQueue::Cycle( ncycle_t steps )
 {
     EventQueue *nextEventQueue;

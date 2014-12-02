@@ -1,1 +1,1 @@
-/home/zhuguoliang/nvmain/src/EnduranceModel.cpp
+/home/zhuguoliang/project/git_proj/zgl_nv_main/nvmain/src/EnduranceModel.cpp

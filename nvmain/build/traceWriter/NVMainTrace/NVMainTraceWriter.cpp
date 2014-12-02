@@ -1,1 +1,1 @@
-/home/zhuguoliang/nvmain/traceWriter/NVMainTrace/NVMainTraceWriter.cpp
+/home/zhuguoliang/project/git_proj/zgl_nv_main/nvmain/traceWriter/NVMainTrace/NVMainTraceWriter.cpp

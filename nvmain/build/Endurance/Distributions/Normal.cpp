@@ -1,1 +1,1 @@
-/home/zhuguoliang/nvmain/Endurance/Distributions/Normal.cpp
+/home/zhuguoliang/project/git_proj/zgl_nv_main/nvmain/Endurance/Distributions/Normal.cpp

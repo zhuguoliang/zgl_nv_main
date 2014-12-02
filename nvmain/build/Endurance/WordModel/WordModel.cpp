@@ -1,1 +1,1 @@
-/home/zhuguoliang/nvmain/Endurance/WordModel/WordModel.cpp
+/home/zhuguoliang/project/git_proj/zgl_nv_main/nvmain/Endurance/WordModel/WordModel.cpp

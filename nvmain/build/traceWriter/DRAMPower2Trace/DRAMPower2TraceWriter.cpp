@@ -1,1 +1,1 @@
-/home/zhuguoliang/nvmain/traceWriter/DRAMPower2Trace/DRAMPower2TraceWriter.cpp
+/home/zhuguoliang/project/git_proj/zgl_nv_main/nvmain/traceWriter/DRAMPower2Trace/DRAMPower2TraceWriter.cpp

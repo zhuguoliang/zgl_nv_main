@@ -1,1 +1,1 @@
-/home/zhuguoliang/nvmain/traceWriter/VerilogTrace/VerilogTraceWriter.cpp
+/home/zhuguoliang/project/git_proj/zgl_nv_main/nvmain/traceWriter/VerilogTrace/VerilogTraceWriter.cpp

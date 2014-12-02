@@ -1,1 +1,1 @@
-/home/zhuguoliang/nvmain/Interconnect/OffChipBus/OffChipBus.cpp
+/home/zhuguoliang/project/git_proj/zgl_nv_main/nvmain/Interconnect/OffChipBus/OffChipBus.cpp
