@@ -533,7 +533,8 @@ void NVMain::Cycle( ncycle_t steps )
     {
         return;
     }
-
+/*zhuguoliang*/
+    std::cout<< "----NVMain::Cycle currentCycle is "<< GetEventQueue()->GetCurrentCycle() << std::endl;
     for( unsigned int i = 0; i < numChannels; i++ )
     {
         memoryControllers[i]->Cycle( 1 );

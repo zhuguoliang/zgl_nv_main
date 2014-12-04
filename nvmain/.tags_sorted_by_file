@@ -718,30 +718,22 @@ RankFactory	Ranks/RankFactory.h	/^    RankFactory( ) { }$/;"	f	class:NVM::RankFa
 RankFactory	Ranks/RankFactory.h	/^class RankFactory$/;"	c	namespace:NVM
 __RANKFACTORY_H__	Ranks/RankFactory.h	35;"	d
 ~RankFactory	Ranks/RankFactory.h	/^    ~RankFactory( ) { }$/;"	f	class:NVM::RankFactory
-Activate	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^bool SB_ON_RANK::Activate( NVMainRequest *request )$/;"	f	class:SB_ON_RANK
 CalculateStats	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::CalculateStats( )$/;"	f	class:SB_ON_RANK
-CanPowerDown	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^bool SB_ON_RANK::CanPowerDown( NVMainRequest *request )$/;"	f	class:SB_ON_RANK
-CanPowerUp	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^bool SB_ON_RANK::CanPowerUp( NVMainRequest *request )$/;"	f	class:SB_ON_RANK
 Cycle	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::Cycle( ncycle_t steps )$/;"	f	class:SB_ON_RANK
+CycleRequestBuffer	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::CycleRequestBuffer( )$/;"	f	class:SB_ON_RANK
 Idle	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^bool SB_ON_RANK::Idle( )$/;"	f	class:SB_ON_RANK
-IsIssuable	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^bool SB_ON_RANK::IsIssuable( NVMainRequest *req, FailReason *reason )$/;"	f	class:SB_ON_RANK
+IsIssuable	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^bool SB_ON_RANK::IsIssuable( NVMainRequest *req, FailReason *)$/;"	f	class:SB_ON_RANK
 IssueCommand	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^bool SB_ON_RANK::IssueCommand( NVMainRequest *req )$/;"	f	class:SB_ON_RANK
-NextIssuable	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^ncycle_t SB_ON_RANK::NextIssuable( NVMainRequest *request )$/;"	f	class:SB_ON_RANK
+NextIssuable	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^ncycle_t SB_ON_RANK::NextIssuable( NVMainRequest *)$/;"	f	class:SB_ON_RANK
 Notify	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::Notify( NVMainRequest *request )$/;"	f	class:SB_ON_RANK
-PowerDown	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^bool SB_ON_RANK::PowerDown( NVMainRequest *request )$/;"	f	class:SB_ON_RANK
-PowerUp	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^bool SB_ON_RANK::PowerUp( NVMainRequest *request )$/;"	f	class:SB_ON_RANK
-Precharge	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^bool SB_ON_RANK::Precharge( NVMainRequest *request )$/;"	f	class:SB_ON_RANK
-Read	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^bool SB_ON_RANK::Read( NVMainRequest *request )$/;"	f	class:SB_ON_RANK
-Refresh	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^bool SB_ON_RANK::Refresh( NVMainRequest *request )$/;"	f	class:SB_ON_RANK
 RegisterStats	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::RegisterStats( )$/;"	f	class:SB_ON_RANK
 RequestComplete	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^bool SB_ON_RANK::RequestComplete( NVMainRequest* req )$/;"	f	class:SB_ON_RANK
 ResetStats	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::ResetStats( )$/;"	f	class:SB_ON_RANK
 SB_ON_RANK	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^SB_ON_RANK::SB_ON_RANK( )$/;"	f	class:SB_ON_RANK
 SetConfig	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::SetConfig( Config *c, bool createChildren )$/;"	f	class:SB_ON_RANK
-Write	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^bool SB_ON_RANK::Write( NVMainRequest *request )$/;"	f	class:SB_ON_RANK
+WasIssuedSB	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^bool WasIssuedSB( NVMainRequest *request ) { return (request->flags & NVMainRequest::FLAG_ISSUED_BY_SB); }$/;"	f
 ~SB_ON_RANK	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^SB_ON_RANK::~SB_ON_RANK( )$/;"	f	class:SB_ON_RANK
 NVM	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^namespace NVM {$/;"	n
-RAWindex	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    ncounter_t RAWindex;$/;"	m	class:NVM::SB_ON_RANK
 SB_ON_RANK	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^class SB_ON_RANK : public Rank$/;"	c	namespace:NVM
 SB_ON_RANK_CLOSED	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    SB_ON_RANK_CLOSED,    \/***< all banks in the rank are closed (standby) *\/$/;"	e	enum:NVM::SB_ON_RANK_State
 SB_ON_RANK_OPEN	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    SB_ON_RANK_OPEN,      \/***< Rank has at least one open bank  *\/$/;"	e	enum:NVM::SB_ON_RANK_State
@@ -752,48 +744,11 @@ SB_ON_RANK_REFRESHING	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    SB_ON_RANK_REFRESHING,
 SB_ON_RANK_State	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^enum SB_ON_RANK_State $/;"	g	namespace:NVM
 SB_ON_RANK_UNKNOWN	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    SB_ON_RANK_UNKNOWN,   \/***< Unknown state. Uh oh. *\/$/;"	e	enum:NVM::SB_ON_RANK_State
 __SB_ON_RANK_H__	Ranks/SB_ON_RANK/SB_ON_RANK.h	34;"	d
-actWaitAverage	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    double actWaitAverage;$/;"	m	class:NVM::SB_ON_RANK
-actWaitTotal	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    ncounter_t actWaitTotal;$/;"	m	class:NVM::SB_ON_RANK
-actWaits	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    ncounter_t actWaits;$/;"	m	class:NVM::SB_ON_RANK
-activateEnergy	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    double totalEnergy, backgroundEnergy, activateEnergy, burstEnergy, refreshEnergy;$/;"	m	class:NVM::SB_ON_RANK
-activatePower	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    double totalPower, backgroundPower, activatePower, burstPower, refreshPower;$/;"	m	class:NVM::SB_ON_RANK
-activeCycles	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    ncounter_t activeCycles;$/;"	m	class:NVM::SB_ON_RANK
-backgroundEnergy	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    double totalEnergy, backgroundEnergy, activateEnergy, burstEnergy, refreshEnergy;$/;"	m	class:NVM::SB_ON_RANK
-backgroundPower	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    double totalPower, backgroundPower, activatePower, burstPower, refreshPower;$/;"	m	class:NVM::SB_ON_RANK
-bankCount	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    ncounter_t bankCount;$/;"	m	class:NVM::SB_ON_RANK
-banksPerRefresh	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    ncounter_t banksPerRefresh;$/;"	m	class:NVM::SB_ON_RANK
-burstEnergy	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    double totalEnergy, backgroundEnergy, activateEnergy, burstEnergy, refreshEnergy;$/;"	m	class:NVM::SB_ON_RANK
-burstPower	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    double totalPower, backgroundPower, activatePower, burstPower, refreshPower;$/;"	m	class:NVM::SB_ON_RANK
-busWidth	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    ncounter_t busWidth;$/;"	m	class:NVM::SB_ON_RANK
+buffer_draining	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    bool buffer_draining;$/;"	m	class:NVM::SB_ON_RANK
 conf	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    Config *conf;$/;"	m	class:NVM::SB_ON_RANK
-deviceCount	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    ncounter_t deviceCount;$/;"	m	class:NVM::SB_ON_RANK
-deviceWidth	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    ncounter_t deviceWidth;$/;"	m	class:NVM::SB_ON_RANK
-fastExitActiveCycles	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    ncounter_t fastExitActiveCycles;$/;"	m	class:NVM::SB_ON_RANK
-fastExitPrechargeCycles	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    ncounter_t fastExitPrechargeCycles;$/;"	m	class:NVM::SB_ON_RANK
-fawWaitAverage	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    double fawWaitAverage;$/;"	m	class:NVM::SB_ON_RANK
-fawWaitTotal	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    ncounter_t fawWaitTotal;$/;"	m	class:NVM::SB_ON_RANK
-fawWaits	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    ncounter_t fawWaits;$/;"	m	class:NVM::SB_ON_RANK
-lastActivate	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    ncycle_t* lastActivate;$/;"	m	class:NVM::SB_ON_RANK
-lastReset	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    ncycle_t lastReset;$/;"	m	class:NVM::SB_ON_RANK
-nextActivate	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    ncycle_t nextActivate;$/;"	m	class:NVM::SB_ON_RANK
-nextPrecharge	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    ncycle_t nextPrecharge;$/;"	m	class:NVM::SB_ON_RANK
-nextRead	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    ncycle_t nextRead;$/;"	m	class:NVM::SB_ON_RANK
-nextWrite	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    ncycle_t nextWrite;$/;"	m	class:NVM::SB_ON_RANK
-psInterval	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    uint64_t psInterval;$/;"	m	class:NVM::SB_ON_RANK
-rawNum	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    ncounter_t rawNum;$/;"	m	class:NVM::SB_ON_RANK
-reads	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    ncounter_t reads, writes;$/;"	m	class:NVM::SB_ON_RANK
-refreshEnergy	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    double totalEnergy, backgroundEnergy, activateEnergy, burstEnergy, refreshEnergy;$/;"	m	class:NVM::SB_ON_RANK
-refreshPower	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    double totalPower, backgroundPower, activatePower, burstPower, refreshPower;$/;"	m	class:NVM::SB_ON_RANK
-rrdWaitAverage	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    double rrdWaitAverage;$/;"	m	class:NVM::SB_ON_RANK
-rrdWaitTotal	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    ncounter_t rrdWaitTotal;$/;"	m	class:NVM::SB_ON_RANK
-rrdWaits	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    ncounter_t rrdWaits;$/;"	m	class:NVM::SB_ON_RANK
-slowExitCycles	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    ncounter_t slowExitCycles;$/;"	m	class:NVM::SB_ON_RANK
-standbyCycles	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    ncounter_t standbyCycles;$/;"	m	class:NVM::SB_ON_RANK
-state	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    Rank_with_SB_State state;$/;"	m	class:NVM::SB_ON_RANK
-stateTimeout	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    ncounter_t stateTimeout;$/;"	m	class:NVM::SB_ON_RANK
-totalEnergy	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    double totalEnergy, backgroundEnergy, activateEnergy, burstEnergy, refreshEnergy;$/;"	m	class:NVM::SB_ON_RANK
-totalPower	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    double totalPower, backgroundPower, activatePower, burstPower, refreshPower;$/;"	m	class:NVM::SB_ON_RANK
-writes	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    ncounter_t reads, writes;$/;"	m	class:NVM::SB_ON_RANK
+hrank	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    Rank * hrank;$/;"	m	class:NVM::SB_ON_RANK
+max_buffer_size	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    ncounter_t max_buffer_size;$/;"	m	class:NVM::SB_ON_RANK
+memreq_buffer	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    std::deque<NVMainRequest *> *memreq_buffer;$/;"	m	class:NVM::SB_ON_RANK
 Activate	Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::Activate( NVMainRequest *request )$/;"	f	class:StandardRank
 CalculateStats	Ranks/StandardRank/StandardRank.cpp	/^void StandardRank::CalculateStats( )$/;"	f	class:StandardRank
 CanPowerDown	Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::CanPowerDown( NVMainRequest *request )$/;"	f	class:StandardRank
@@ -1376,6 +1331,779 @@ lineLength	Utils/Visualizer/Visualizer.h	/^    ncounter_t lineLength;$/;"	m	clas
 numBanks	Utils/Visualizer/Visualizer.h	/^    ncounter_t numRanks, numBanks;$/;"	m	class:NVM::Visualizer
 numRanks	Utils/Visualizer/Visualizer.h	/^    ncounter_t numRanks, numBanks;$/;"	m	class:NVM::Visualizer
 startCycle	Utils/Visualizer/Visualizer.h	/^    ncycle_t startCycle, endCycle, endCycle2;$/;"	m	class:NVM::Visualizer
+CreateBank	build/Banks/BankFactory.cpp	/^Bank *BankFactory::CreateBank( std::string bankName )$/;"	f	class:BankFactory
+CreateBankNoWarn	build/Banks/BankFactory.cpp	/^Bank *BankFactory::CreateBankNoWarn( std::string bankName )$/;"	f	class:BankFactory
+CreateNewBank	build/Banks/BankFactory.cpp	/^Bank *BankFactory::CreateNewBank( std::string bankName )$/;"	f	class:BankFactory
+Activate	build/Banks/CachedDDR3Bank/CachedDDR3Bank.cpp	/^bool CachedDDR3Bank::Activate( NVMainRequest *request )$/;"	f	class:CachedDDR3Bank
+CachedDDR3Bank	build/Banks/CachedDDR3Bank/CachedDDR3Bank.cpp	/^CachedDDR3Bank::CachedDDR3Bank( )$/;"	f	class:CachedDDR3Bank
+CalculateStats	build/Banks/CachedDDR3Bank/CachedDDR3Bank.cpp	/^void CachedDDR3Bank::CalculateStats( )$/;"	f	class:CachedDDR3Bank
+IsIssuable	build/Banks/CachedDDR3Bank/CachedDDR3Bank.cpp	/^bool CachedDDR3Bank::IsIssuable( NVMainRequest *request, FailReason *reason )$/;"	f	class:CachedDDR3Bank
+Read	build/Banks/CachedDDR3Bank/CachedDDR3Bank.cpp	/^bool CachedDDR3Bank::Read( NVMainRequest *request )$/;"	f	class:CachedDDR3Bank
+RegisterStats	build/Banks/CachedDDR3Bank/CachedDDR3Bank.cpp	/^void CachedDDR3Bank::RegisterStats( )$/;"	f	class:CachedDDR3Bank
+SetConfig	build/Banks/CachedDDR3Bank/CachedDDR3Bank.cpp	/^void CachedDDR3Bank::SetConfig( Config *config, bool createChildren )$/;"	f	class:CachedDDR3Bank
+Write	build/Banks/CachedDDR3Bank/CachedDDR3Bank.cpp	/^bool CachedDDR3Bank::Write( NVMainRequest *request )$/;"	f	class:CachedDDR3Bank
+~CachedDDR3Bank	build/Banks/CachedDDR3Bank/CachedDDR3Bank.cpp	/^CachedDDR3Bank::~CachedDDR3Bank( )$/;"	f	class:CachedDDR3Bank
+Activate	build/Banks/DDR3Bank/DDR3Bank.cpp	/^bool DDR3Bank::Activate( NVMainRequest *request )$/;"	f	class:DDR3Bank
+CalculatePower	build/Banks/DDR3Bank/DDR3Bank.cpp	/^void DDR3Bank::CalculatePower( )$/;"	f	class:DDR3Bank
+CalculateStats	build/Banks/DDR3Bank/DDR3Bank.cpp	/^void DDR3Bank::CalculateStats( )$/;"	f	class:DDR3Bank
+Cycle	build/Banks/DDR3Bank/DDR3Bank.cpp	/^void DDR3Bank::Cycle( ncycle_t steps )$/;"	f	class:DDR3Bank
+DDR3Bank	build/Banks/DDR3Bank/DDR3Bank.cpp	/^DDR3Bank::DDR3Bank( )$/;"	f	class:DDR3Bank
+GetId	build/Banks/DDR3Bank/DDR3Bank.cpp	/^ncounter_t DDR3Bank::GetId( )$/;"	f	class:DDR3Bank
+GetName	build/Banks/DDR3Bank/DDR3Bank.cpp	/^std::string DDR3Bank::GetName( )$/;"	f	class:DDR3Bank
+GetPower	build/Banks/DDR3Bank/DDR3Bank.cpp	/^double DDR3Bank::GetPower( )$/;"	f	class:DDR3Bank
+GetState	build/Banks/DDR3Bank/DDR3Bank.cpp	/^DDR3BankState DDR3Bank::GetState( ) $/;"	f	class:DDR3Bank
+Idle	build/Banks/DDR3Bank/DDR3Bank.cpp	/^bool DDR3Bank::Idle( )$/;"	f	class:DDR3Bank
+IsIssuable	build/Banks/DDR3Bank/DDR3Bank.cpp	/^bool DDR3Bank::IsIssuable( NVMainRequest *req, FailReason *reason )$/;"	f	class:DDR3Bank
+IssueCommand	build/Banks/DDR3Bank/DDR3Bank.cpp	/^bool DDR3Bank::IssueCommand( NVMainRequest *req )$/;"	f	class:DDR3Bank
+NextIssuable	build/Banks/DDR3Bank/DDR3Bank.cpp	/^ncycle_t DDR3Bank::NextIssuable( NVMainRequest *request )$/;"	f	class:DDR3Bank
+PowerDown	build/Banks/DDR3Bank/DDR3Bank.cpp	/^bool DDR3Bank::PowerDown( NVMainRequest *request )$/;"	f	class:DDR3Bank
+PowerUp	build/Banks/DDR3Bank/DDR3Bank.cpp	/^bool DDR3Bank::PowerUp( NVMainRequest * \/*request*\/ )$/;"	f	class:DDR3Bank
+Precharge	build/Banks/DDR3Bank/DDR3Bank.cpp	/^bool DDR3Bank::Precharge( NVMainRequest *request )$/;"	f	class:DDR3Bank
+Read	build/Banks/DDR3Bank/DDR3Bank.cpp	/^bool DDR3Bank::Read( NVMainRequest *request )$/;"	f	class:DDR3Bank
+Refresh	build/Banks/DDR3Bank/DDR3Bank.cpp	/^bool DDR3Bank::Refresh( NVMainRequest *request )$/;"	f	class:DDR3Bank
+RegisterStats	build/Banks/DDR3Bank/DDR3Bank.cpp	/^void DDR3Bank::RegisterStats( )$/;"	f	class:DDR3Bank
+SetConfig	build/Banks/DDR3Bank/DDR3Bank.cpp	/^void DDR3Bank::SetConfig( Config *config, bool createChildren )$/;"	f	class:DDR3Bank
+SetId	build/Banks/DDR3Bank/DDR3Bank.cpp	/^void DDR3Bank::SetId( ncounter_t id )$/;"	f	class:DDR3Bank
+SetName	build/Banks/DDR3Bank/DDR3Bank.cpp	/^void DDR3Bank::SetName( std::string )$/;"	f	class:DDR3Bank
+Write	build/Banks/DDR3Bank/DDR3Bank.cpp	/^bool DDR3Bank::Write( NVMainRequest *request )$/;"	f	class:DDR3Bank
+~DDR3Bank	build/Banks/DDR3Bank/DDR3Bank.cpp	/^DDR3Bank::~DDR3Bank( )$/;"	f	class:DDR3Bank
+CreateDataEncoder	build/DataEncoders/DataEncoderFactory.cpp	/^DataEncoder *DataEncoderFactory::CreateDataEncoder( std::string encoderName )$/;"	f	class:DataEncoderFactory
+CreateDataEncoderNoWarn	build/DataEncoders/DataEncoderFactory.cpp	/^DataEncoder *DataEncoderFactory::CreateDataEncoderNoWarn( std::string encoderName )$/;"	f	class:DataEncoderFactory
+CreateNewDataEncoder	build/DataEncoders/DataEncoderFactory.cpp	/^DataEncoder *DataEncoderFactory::CreateNewDataEncoder( std::string encoderName )$/;"	f	class:DataEncoderFactory
+CalculateStats	build/DataEncoders/FlipNWrite/FlipNWrite.cpp	/^void FlipNWrite::CalculateStats( )$/;"	f	class:FlipNWrite
+FlipNWrite	build/DataEncoders/FlipNWrite/FlipNWrite.cpp	/^FlipNWrite::FlipNWrite( )$/;"	f	class:FlipNWrite
+InvertData	build/DataEncoders/FlipNWrite/FlipNWrite.cpp	/^void FlipNWrite::InvertData( NVMDataBlock& data, uint64_t startBit, uint64_t endBit )$/;"	f	class:FlipNWrite
+Read	build/DataEncoders/FlipNWrite/FlipNWrite.cpp	/^ncycle_t FlipNWrite::Read( NVMainRequest* \/*request*\/ )$/;"	f	class:FlipNWrite
+RegisterStats	build/DataEncoders/FlipNWrite/FlipNWrite.cpp	/^void FlipNWrite::RegisterStats( )$/;"	f	class:FlipNWrite
+SetConfig	build/DataEncoders/FlipNWrite/FlipNWrite.cpp	/^void FlipNWrite::SetConfig( Config *config, bool \/*createChildren*\/ )$/;"	f	class:FlipNWrite
+Write	build/DataEncoders/FlipNWrite/FlipNWrite.cpp	/^ncycle_t FlipNWrite::Write( NVMainRequest *request ) $/;"	f	class:FlipNWrite
+~FlipNWrite	build/DataEncoders/FlipNWrite/FlipNWrite.cpp	/^FlipNWrite::~FlipNWrite( )$/;"	f	class:FlipNWrite
+DRCDecoder	build/Decoders/DRCDecoder/DRCDecoder.cpp	/^DRCDecoder::DRCDecoder( )$/;"	f	class:DRCDecoder
+ReverseTranslate	build/Decoders/DRCDecoder/DRCDecoder.cpp	/^uint64_t DRCDecoder::ReverseTranslate( const uint64_t& row, $/;"	f	class:DRCDecoder
+SetCachelineSize	build/Decoders/DRCDecoder/DRCDecoder.cpp	/^void DRCDecoder::SetCachelineSize( uint64_t lineSize )$/;"	f	class:DRCDecoder
+SetIgnoreBits	build/Decoders/DRCDecoder/DRCDecoder.cpp	/^void DRCDecoder::SetIgnoreBits( uint64_t numIgnore )$/;"	f	class:DRCDecoder
+Translate	build/Decoders/DRCDecoder/DRCDecoder.cpp	/^void DRCDecoder::Translate( uint64_t address, uint64_t *row, uint64_t *col, $/;"	f	class:DRCDecoder
+CreateDecoder	build/Decoders/DecoderFactory.cpp	/^AddressTranslator *DecoderFactory::CreateDecoder( std::string decoder )$/;"	f	class:DecoderFactory
+CreateDecoderNoWarn	build/Decoders/DecoderFactory.cpp	/^AddressTranslator *DecoderFactory::CreateDecoderNoWarn( std::string decoder )$/;"	f	class:DecoderFactory
+CreateNewDecoder	build/Decoders/DecoderFactory.cpp	/^AddressTranslator *DecoderFactory::CreateNewDecoder( std::string decoder )$/;"	f	class:DecoderFactory
+CreateCheckpoint	build/Decoders/Migrator/Migrator.cpp	/^void Migrator::CreateCheckpoint( std::string dir )$/;"	f	class:Migrator
+GetAddressKey	build/Decoders/Migrator/Migrator.cpp	/^uint64_t Migrator::GetAddressKey( NVMAddress& address )$/;"	f	class:Migrator
+IsBuffered	build/Decoders/Migrator/Migrator.cpp	/^bool Migrator::IsBuffered( NVMAddress& address )$/;"	f	class:Migrator
+IsMigrated	build/Decoders/Migrator/Migrator.cpp	/^bool Migrator::IsMigrated( NVMAddress& address )$/;"	f	class:Migrator
+Migrating	build/Decoders/Migrator/Migrator.cpp	/^bool Migrator::Migrating( )$/;"	f	class:Migrator
+Migrator	build/Decoders/Migrator/Migrator.cpp	/^Migrator::Migrator( )$/;"	f	class:Migrator
+RegisterStats	build/Decoders/Migrator/Migrator.cpp	/^void Migrator::RegisterStats( )$/;"	f	class:Migrator
+RestoreCheckpoint	build/Decoders/Migrator/Migrator.cpp	/^void Migrator::RestoreCheckpoint( std::string dir )$/;"	f	class:Migrator
+SetConfig	build/Decoders/Migrator/Migrator.cpp	/^void Migrator::SetConfig( Config *config, bool \/*createChildren*\/ )$/;"	f	class:Migrator
+SetMigrationState	build/Decoders/Migrator/Migrator.cpp	/^void Migrator::SetMigrationState( NVMAddress& address, MigratorState newState )$/;"	f	class:Migrator
+StartMigration	build/Decoders/Migrator/Migrator.cpp	/^void Migrator::StartMigration( NVMAddress& promotee, NVMAddress& demotee )$/;"	f	class:Migrator
+Translate	build/Decoders/Migrator/Migrator.cpp	/^void Migrator::Translate( uint64_t address, uint64_t *row, uint64_t *col, uint64_t *bank,$/;"	f	class:Migrator
+~Migrator	build/Decoders/Migrator/Migrator.cpp	/^Migrator::~Migrator( )$/;"	f	class:Migrator
+BitModel	build/Endurance/BitModel/BitModel.cpp	/^BitModel::BitModel( )$/;"	f	class:BitModel
+Read	build/Endurance/BitModel/BitModel.cpp	/^ncycles_t BitModel::Read( NVMainRequest *request )$/;"	f	class:BitModel
+SetConfig	build/Endurance/BitModel/BitModel.cpp	/^void BitModel::SetConfig( Config *config, bool createChildren )$/;"	f	class:BitModel
+Write	build/Endurance/BitModel/BitModel.cpp	/^ncycles_t BitModel::Write( NVMainRequest *request, NVMDataBlock& oldData ) $/;"	f	class:BitModel
+~BitModel	build/Endurance/BitModel/BitModel.cpp	/^BitModel::~BitModel( )$/;"	f	class:BitModel
+ByteModel	build/Endurance/ByteModel/ByteModel.cpp	/^ByteModel::ByteModel( )$/;"	f	class:ByteModel
+Read	build/Endurance/ByteModel/ByteModel.cpp	/^ncycles_t ByteModel::Read( NVMainRequest *request ) $/;"	f	class:ByteModel
+SetConfig	build/Endurance/ByteModel/ByteModel.cpp	/^void ByteModel::SetConfig( Config *config, bool createChildren )$/;"	f	class:ByteModel
+Write	build/Endurance/ByteModel/ByteModel.cpp	/^ncycles_t ByteModel::Write( NVMainRequest *request, NVMDataBlock& oldData ) $/;"	f	class:ByteModel
+~ByteModel	build/Endurance/ByteModel/ByteModel.cpp	/^ByteModel::~ByteModel( )$/;"	f	class:ByteModel
+GetEndurance	build/Endurance/Distributions/Normal.cpp	/^uint64_t NormalDistribution::GetEndurance( )$/;"	f	class:NormalDistribution
+NormalDistribution	build/Endurance/Distributions/Normal.cpp	/^NormalDistribution::NormalDistribution( )$/;"	f	class:NormalDistribution
+NormalDistribution	build/Endurance/Distributions/Normal.cpp	/^NormalDistribution::NormalDistribution( Config *conf )$/;"	f	class:NormalDistribution
+GetEndurance	build/Endurance/Distributions/Uniform.cpp	/^uint64_t UniformDistribution::GetEndurance( )$/;"	f	class:UniformDistribution
+UniformDistribution	build/Endurance/Distributions/Uniform.cpp	/^UniformDistribution::UniformDistribution( Config *conf )$/;"	f	class:UniformDistribution
+CreateEnduranceDistribution	build/Endurance/EnduranceDistributionFactory.cpp	/^EnduranceDistribution *EnduranceDistributionFactory::CreateEnduranceDistribution( $/;"	f	class:EnduranceDistributionFactory
+CreateEnduranceModel	build/Endurance/EnduranceModelFactory.cpp	/^EnduranceModel *EnduranceModelFactory::CreateEnduranceModel( $/;"	f	class:EnduranceModelFactory
+NullModel	build/Endurance/NullModel/NullModel.cpp	/^NullModel::NullModel( )$/;"	f	class:NullModel
+Read	build/Endurance/NullModel/NullModel.cpp	/^ncycles_t NullModel::Read( NVMainRequest* \/*request*\/ )$/;"	f	class:NullModel
+Write	build/Endurance/NullModel/NullModel.cpp	/^ncycles_t NullModel::Write( NVMainRequest* \/*request*\/, NVMDataBlock& \/*oldData*\/ ) $/;"	f	class:NullModel
+~NullModel	build/Endurance/NullModel/NullModel.cpp	/^NullModel::~NullModel( )$/;"	f	class:NullModel
+Read	build/Endurance/RowModel/RowModel.cpp	/^ncycles_t RowModel::Read( NVMainRequest *request )$/;"	f	class:RowModel
+RowModel	build/Endurance/RowModel/RowModel.cpp	/^RowModel::RowModel( )$/;"	f	class:RowModel
+SetConfig	build/Endurance/RowModel/RowModel.cpp	/^void RowModel::SetConfig( Config *conf, bool createChildren )$/;"	f	class:RowModel
+Write	build/Endurance/RowModel/RowModel.cpp	/^ncycles_t RowModel::Write( NVMainRequest *request, NVMDataBlock& \/*oldData*\/ ) $/;"	f	class:RowModel
+~RowModel	build/Endurance/RowModel/RowModel.cpp	/^RowModel::~RowModel( )$/;"	f	class:RowModel
+Read	build/Endurance/WordModel/WordModel.cpp	/^ncycles_t WordModel::Read( NVMainRequest *request )$/;"	f	class:WordModel
+SetConfig	build/Endurance/WordModel/WordModel.cpp	/^void WordModel::SetConfig( Config *config, bool createChildren )$/;"	f	class:WordModel
+WordModel	build/Endurance/WordModel/WordModel.cpp	/^WordModel::WordModel( )$/;"	f	class:WordModel
+Write	build/Endurance/WordModel/WordModel.cpp	/^ncycles_t WordModel::Write( NVMainRequest *request, NVMDataBlock& \/*oldData*\/ ) $/;"	f	class:WordModel
+~WordModel	build/Endurance/WordModel/WordModel.cpp	/^WordModel::~WordModel( )$/;"	f	class:WordModel
+CreateInterconnect	build/Interconnect/InterconnectFactory.cpp	/^Interconnect *InterconnectFactory::CreateInterconnect( std::string type )$/;"	f	class:InterconnectFactory
+CalculateIOPower	build/Interconnect/OffChipBus/OffChipBus.cpp	/^double OffChipBus::CalculateIOPower( bool isRead, unsigned int bitValue )$/;"	f	class:OffChipBus
+CalculateStats	build/Interconnect/OffChipBus/OffChipBus.cpp	/^void OffChipBus::CalculateStats( )$/;"	f	class:OffChipBus
+Cycle	build/Interconnect/OffChipBus/OffChipBus.cpp	/^void OffChipBus::Cycle( ncycle_t steps )$/;"	f	class:OffChipBus
+IsIssuable	build/Interconnect/OffChipBus/OffChipBus.cpp	/^bool OffChipBus::IsIssuable( NVMainRequest *req, FailReason *reason )$/;"	f	class:OffChipBus
+IssueCommand	build/Interconnect/OffChipBus/OffChipBus.cpp	/^bool OffChipBus::IssueCommand( NVMainRequest *req )$/;"	f	class:OffChipBus
+OffChipBus	build/Interconnect/OffChipBus/OffChipBus.cpp	/^OffChipBus::OffChipBus( )$/;"	f	class:OffChipBus
+RequestComplete	build/Interconnect/OffChipBus/OffChipBus.cpp	/^bool OffChipBus::RequestComplete( NVMainRequest *request )$/;"	f	class:OffChipBus
+SetConfig	build/Interconnect/OffChipBus/OffChipBus.cpp	/^void OffChipBus::SetConfig( Config *c, bool createChildren )$/;"	f	class:OffChipBus
+~OffChipBus	build/Interconnect/OffChipBus/OffChipBus.cpp	/^OffChipBus::~OffChipBus( )$/;"	f	class:OffChipBus
+CalculateStats	build/Interconnect/OnChipBus/OnChipBus.cpp	/^void OnChipBus::CalculateStats( )$/;"	f	class:OnChipBus
+Cycle	build/Interconnect/OnChipBus/OnChipBus.cpp	/^void OnChipBus::Cycle( ncycle_t steps )$/;"	f	class:OnChipBus
+IsIssuable	build/Interconnect/OnChipBus/OnChipBus.cpp	/^bool OnChipBus::IsIssuable( NVMainRequest *req, FailReason *reason )$/;"	f	class:OnChipBus
+IssueCommand	build/Interconnect/OnChipBus/OnChipBus.cpp	/^bool OnChipBus::IssueCommand( NVMainRequest *req )$/;"	f	class:OnChipBus
+OnChipBus	build/Interconnect/OnChipBus/OnChipBus.cpp	/^OnChipBus::OnChipBus( )$/;"	f	class:OnChipBus
+SetConfig	build/Interconnect/OnChipBus/OnChipBus.cpp	/^void OnChipBus::SetConfig( Config *c, bool createChildren )$/;"	f	class:OnChipBus
+~OnChipBus	build/Interconnect/OnChipBus/OnChipBus.cpp	/^OnChipBus::~OnChipBus( )$/;"	f	class:OnChipBus
+CalculateStats	build/MemControl/DRAMCache/DRAMCache.cpp	/^void DRAMCache::CalculateStats( )$/;"	f	class:DRAMCache
+Cycle	build/MemControl/DRAMCache/DRAMCache.cpp	/^void DRAMCache::Cycle( ncycle_t steps )$/;"	f	class:DRAMCache
+DRAMCache	build/MemControl/DRAMCache/DRAMCache.cpp	/^DRAMCache::DRAMCache( )$/;"	f	class:DRAMCache
+GetMainMemory	build/MemControl/DRAMCache/DRAMCache.cpp	/^NVMain *DRAMCache::GetMainMemory( )$/;"	f	class:DRAMCache
+IsIssuable	build/MemControl/DRAMCache/DRAMCache.cpp	/^bool DRAMCache::IsIssuable( NVMainRequest * req, FailReason * \/*fail*\/ )$/;"	f	class:DRAMCache
+IssueAtomic	build/MemControl/DRAMCache/DRAMCache.cpp	/^bool DRAMCache::IssueAtomic( NVMainRequest *req )$/;"	f	class:DRAMCache
+IssueCommand	build/MemControl/DRAMCache/DRAMCache.cpp	/^bool DRAMCache::IssueCommand( NVMainRequest *req )$/;"	f	class:DRAMCache
+IssueFunctional	build/MemControl/DRAMCache/DRAMCache.cpp	/^bool DRAMCache::IssueFunctional( NVMainRequest *req )$/;"	f	class:DRAMCache
+RegisterStats	build/MemControl/DRAMCache/DRAMCache.cpp	/^void DRAMCache::RegisterStats( )$/;"	f	class:DRAMCache
+RequestComplete	build/MemControl/DRAMCache/DRAMCache.cpp	/^bool DRAMCache::RequestComplete( NVMainRequest *req )$/;"	f	class:DRAMCache
+Retranslate	build/MemControl/DRAMCache/DRAMCache.cpp	/^void DRAMCache::Retranslate( NVMainRequest *req )$/;"	f	class:DRAMCache
+SetConfig	build/MemControl/DRAMCache/DRAMCache.cpp	/^void DRAMCache::SetConfig( Config *conf, bool createChildren )$/;"	f	class:DRAMCache
+~DRAMCache	build/MemControl/DRAMCache/DRAMCache.cpp	/^DRAMCache::~DRAMCache( )$/;"	f	class:DRAMCache
+CalculateStats	build/MemControl/FCFS/FCFS.cpp	/^void FCFS::CalculateStats( )$/;"	f	class:FCFS
+Cycle	build/MemControl/FCFS/FCFS.cpp	/^void FCFS::Cycle( ncycle_t steps )$/;"	f	class:FCFS
+FCFS	build/MemControl/FCFS/FCFS.cpp	/^FCFS::FCFS( )$/;"	f	class:FCFS
+IsIssuable	build/MemControl/FCFS/FCFS.cpp	/^bool FCFS::IsIssuable( NVMainRequest * \/*request*\/, FailReason * \/*fail*\/ )$/;"	f	class:FCFS
+IssueCommand	build/MemControl/FCFS/FCFS.cpp	/^bool FCFS::IssueCommand( NVMainRequest *request )$/;"	f	class:FCFS
+RegisterStats	build/MemControl/FCFS/FCFS.cpp	/^void FCFS::RegisterStats( )$/;"	f	class:FCFS
+RequestComplete	build/MemControl/FCFS/FCFS.cpp	/^bool FCFS::RequestComplete( NVMainRequest * request )$/;"	f	class:FCFS
+SetConfig	build/MemControl/FCFS/FCFS.cpp	/^void FCFS::SetConfig( Config *conf, bool createChildren )$/;"	f	class:FCFS
+CalculateStats	build/MemControl/FRFCFS-WQF/FRFCFS-WQF.cpp	/^void FRFCFS_WQF::CalculateStats( )$/;"	f	class:FRFCFS_WQF
+Cycle	build/MemControl/FRFCFS-WQF/FRFCFS-WQF.cpp	/^void FRFCFS_WQF::Cycle( ncycle_t steps )$/;"	f	class:FRFCFS_WQF
+Drain	build/MemControl/FRFCFS-WQF/FRFCFS-WQF.cpp	/^bool FRFCFS_WQF::Drain( )$/;"	f	class:FRFCFS_WQF
+FRFCFS_WQF	build/MemControl/FRFCFS-WQF/FRFCFS-WQF.cpp	/^FRFCFS_WQF::FRFCFS_WQF( ) : readQueueId(0), writeQueueId(1)$/;"	f	class:FRFCFS_WQF
+IsIssuable	build/MemControl/FRFCFS-WQF/FRFCFS-WQF.cpp	/^bool FRFCFS_WQF::IsIssuable( NVMainRequest *request, FailReason * \/*fail*\/ )$/;"	f	class:FRFCFS_WQF
+IssueCommand	build/MemControl/FRFCFS-WQF/FRFCFS-WQF.cpp	/^bool FRFCFS_WQF::IssueCommand( NVMainRequest *request )$/;"	f	class:FRFCFS_WQF
+RegisterStats	build/MemControl/FRFCFS-WQF/FRFCFS-WQF.cpp	/^void FRFCFS_WQF::RegisterStats( )$/;"	f	class:FRFCFS_WQF
+RequestComplete	build/MemControl/FRFCFS-WQF/FRFCFS-WQF.cpp	/^bool FRFCFS_WQF::RequestComplete( NVMainRequest * request )$/;"	f	class:FRFCFS_WQF
+SetConfig	build/MemControl/FRFCFS-WQF/FRFCFS-WQF.cpp	/^void FRFCFS_WQF::SetConfig( Config *conf, bool createChildren )$/;"	f	class:FRFCFS_WQF
+~FRFCFS_WQF	build/MemControl/FRFCFS-WQF/FRFCFS-WQF.cpp	/^FRFCFS_WQF::~FRFCFS_WQF( )$/;"	f	class:FRFCFS_WQF
+CalculateStats	build/MemControl/FRFCFS/FRFCFS.cpp	/^void FRFCFS::CalculateStats( )$/;"	f	class:FRFCFS
+Cycle	build/MemControl/FRFCFS/FRFCFS.cpp	/^void FRFCFS::Cycle( ncycle_t steps )$/;"	f	class:FRFCFS
+FRFCFS	build/MemControl/FRFCFS/FRFCFS.cpp	/^FRFCFS::FRFCFS( )$/;"	f	class:FRFCFS
+IsIssuable	build/MemControl/FRFCFS/FRFCFS.cpp	/^bool FRFCFS::IsIssuable( NVMainRequest * \/*request*\/, FailReason * \/*fail*\/ )$/;"	f	class:FRFCFS
+IssueCommand	build/MemControl/FRFCFS/FRFCFS.cpp	/^bool FRFCFS::IssueCommand( NVMainRequest *req )$/;"	f	class:FRFCFS
+RegisterStats	build/MemControl/FRFCFS/FRFCFS.cpp	/^void FRFCFS::RegisterStats( )$/;"	f	class:FRFCFS
+RequestComplete	build/MemControl/FRFCFS/FRFCFS.cpp	/^bool FRFCFS::RequestComplete( NVMainRequest * request )$/;"	f	class:FRFCFS
+SetConfig	build/MemControl/FRFCFS/FRFCFS.cpp	/^void FRFCFS::SetConfig( Config *conf, bool createChildren )$/;"	f	class:FRFCFS
+~FRFCFS	build/MemControl/FRFCFS/FRFCFS.cpp	/^FRFCFS::~FRFCFS( )$/;"	f	class:FRFCFS
+CalculateLatency	build/MemControl/LH-Cache/LH-Cache.cpp	/^void LH_Cache::CalculateLatency( NVMainRequest *req, double *average, $/;"	f	class:LH_Cache
+CalculateQueueLatency	build/MemControl/LH-Cache/LH-Cache.cpp	/^void LH_Cache::CalculateQueueLatency( NVMainRequest *req, double *average, $/;"	f	class:LH_Cache
+CalculateStats	build/MemControl/LH-Cache/LH-Cache.cpp	/^void LH_Cache::CalculateStats( )$/;"	f	class:LH_Cache
+Cycle	build/MemControl/LH-Cache/LH-Cache.cpp	/^void LH_Cache::Cycle( ncycle_t \/*steps*\/ )$/;"	f	class:LH_Cache
+IsIssuable	build/MemControl/LH-Cache/LH-Cache.cpp	/^bool LH_Cache::IsIssuable( NVMainRequest * \/*request*\/, FailReason * \/*fail*\/ )$/;"	f	class:LH_Cache
+IssueAtomic	build/MemControl/LH-Cache/LH-Cache.cpp	/^bool LH_Cache::IssueAtomic( NVMainRequest *req )$/;"	f	class:LH_Cache
+IssueCommand	build/MemControl/LH-Cache/LH-Cache.cpp	/^bool LH_Cache::IssueCommand( NVMainRequest *req )$/;"	f	class:LH_Cache
+IssueDRCCommands	build/MemControl/LH-Cache/LH-Cache.cpp	/^bool LH_Cache::IssueDRCCommands( NVMainRequest *req )$/;"	f	class:LH_Cache
+IssueFillCommands	build/MemControl/LH-Cache/LH-Cache.cpp	/^bool LH_Cache::IssueFillCommands( NVMainRequest *req )$/;"	f	class:LH_Cache
+IssueFunctional	build/MemControl/LH-Cache/LH-Cache.cpp	/^bool LH_Cache::IssueFunctional( NVMainRequest *req )$/;"	f	class:LH_Cache
+LH_Cache	build/MemControl/LH-Cache/LH-Cache.cpp	/^LH_Cache::LH_Cache( )$/;"	f	class:LH_Cache
+MakeDRCRequest	build/MemControl/LH-Cache/LH-Cache.cpp	/^NVMainRequest *LH_Cache::MakeDRCRequest( NVMainRequest *triggerRequest)$/;"	f	class:LH_Cache
+MakeTagRequest	build/MemControl/LH-Cache/LH-Cache.cpp	/^NVMainRequest *LH_Cache::MakeTagRequest( NVMainRequest *triggerRequest, int tag )$/;"	f	class:LH_Cache
+MakeTagWriteRequest	build/MemControl/LH-Cache/LH-Cache.cpp	/^NVMainRequest *LH_Cache::MakeTagWriteRequest( NVMainRequest *triggerRequest )$/;"	f	class:LH_Cache
+RegisterStats	build/MemControl/LH-Cache/LH-Cache.cpp	/^void LH_Cache::RegisterStats( )$/;"	f	class:LH_Cache
+RequestComplete	build/MemControl/LH-Cache/LH-Cache.cpp	/^bool LH_Cache::RequestComplete( NVMainRequest *req )$/;"	f	class:LH_Cache
+SetConfig	build/MemControl/LH-Cache/LH-Cache.cpp	/^void LH_Cache::SetConfig( Config *conf, bool createChildren )$/;"	f	class:LH_Cache
+SetMainMemory	build/MemControl/LH-Cache/LH-Cache.cpp	/^void LH_Cache::SetMainMemory( NVMain *mm )$/;"	f	class:LH_Cache
+operator ()	build/MemControl/LH-Cache/LH-Cache.cpp	/^bool LH_Cache::BankLocked::operator() ( NVMainRequest * request )$/;"	f	class:LH_Cache::BankLocked
+operator ()	build/MemControl/LH-Cache/LH-Cache.cpp	/^bool LH_Cache::FillQueueFull::operator() ( NVMainRequest * \/*request*\/ )$/;"	f	class:LH_Cache::FillQueueFull
+operator ()	build/MemControl/LH-Cache/LH-Cache.cpp	/^bool LH_Cache::NoWriteBuffering::operator() ( NVMainRequest * \/*request*\/ )$/;"	f	class:LH_Cache::NoWriteBuffering
+~LH_Cache	build/MemControl/LH-Cache/LH-Cache.cpp	/^LH_Cache::~LH_Cache( )$/;"	f	class:LH_Cache
+CalculateStats	build/MemControl/LO-Cache/LO-Cache.cpp	/^void LO_Cache::CalculateStats( )$/;"	f	class:LO_Cache
+CreateCheckpoint	build/MemControl/LO-Cache/LO-Cache.cpp	/^void LO_Cache::CreateCheckpoint( std::string dir )$/;"	f	class:LO_Cache
+Cycle	build/MemControl/LO-Cache/LO-Cache.cpp	/^void LO_Cache::Cycle( ncycle_t steps )$/;"	f	class:LO_Cache
+IsIssuable	build/MemControl/LO-Cache/LO-Cache.cpp	/^bool LO_Cache::IsIssuable( NVMainRequest * \/*request*\/, FailReason * \/*fail*\/ )$/;"	f	class:LO_Cache
+IssueAtomic	build/MemControl/LO-Cache/LO-Cache.cpp	/^bool LO_Cache::IssueAtomic( NVMainRequest *req )$/;"	f	class:LO_Cache
+IssueCommand	build/MemControl/LO-Cache/LO-Cache.cpp	/^bool LO_Cache::IssueCommand( NVMainRequest *req )$/;"	f	class:LO_Cache
+IssueFunctional	build/MemControl/LO-Cache/LO-Cache.cpp	/^bool LO_Cache::IssueFunctional( NVMainRequest *req )$/;"	f	class:LO_Cache
+LO_Cache	build/MemControl/LO-Cache/LO-Cache.cpp	/^LO_Cache::LO_Cache( )$/;"	f	class:LO_Cache
+RegisterStats	build/MemControl/LO-Cache/LO-Cache.cpp	/^void LO_Cache::RegisterStats( )$/;"	f	class:LO_Cache
+RequestComplete	build/MemControl/LO-Cache/LO-Cache.cpp	/^bool LO_Cache::RequestComplete( NVMainRequest *req )$/;"	f	class:LO_Cache
+RestoreCheckpoint	build/MemControl/LO-Cache/LO-Cache.cpp	/^void LO_Cache::RestoreCheckpoint( std::string dir )$/;"	f	class:LO_Cache
+SetConfig	build/MemControl/LO-Cache/LO-Cache.cpp	/^void LO_Cache::SetConfig( Config *conf, bool createChildren )$/;"	f	class:LO_Cache
+SetMainMemory	build/MemControl/LO-Cache/LO-Cache.cpp	/^void LO_Cache::SetMainMemory( NVMain *mm )$/;"	f	class:LO_Cache
+~LO_Cache	build/MemControl/LO-Cache/LO-Cache.cpp	/^LO_Cache::~LO_Cache( )$/;"	f	class:LO_Cache
+CreateNewController	build/MemControl/MemoryControllerFactory.cpp	/^MemoryController *MemoryControllerFactory::CreateNewController( std::string controller ) $/;"	f	class:MemoryControllerFactory
+CalculateStats	build/MemControl/MissMap/MissMap.cpp	/^void MissMap::CalculateStats( )$/;"	f	class:MissMap
+Cycle	build/MemControl/MissMap/MissMap.cpp	/^void MissMap::Cycle( ncycle_t )$/;"	f	class:MissMap
+IssueAtomic	build/MemControl/MissMap/MissMap.cpp	/^bool MissMap::IssueAtomic( NVMainRequest *req )$/;"	f	class:MissMap
+IssueCommand	build/MemControl/MissMap/MissMap.cpp	/^bool MissMap::IssueCommand( NVMainRequest *req )$/;"	f	class:MissMap
+MissMap	build/MemControl/MissMap/MissMap.cpp	/^MissMap::MissMap( )$/;"	f	class:MissMap
+QueueFull	build/MemControl/MissMap/MissMap.cpp	/^bool MissMap::QueueFull( NVMainRequest * )$/;"	f	class:MissMap
+RegisterStats	build/MemControl/MissMap/MissMap.cpp	/^void MissMap::RegisterStats( )$/;"	f	class:MissMap
+RequestComplete	build/MemControl/MissMap/MissMap.cpp	/^bool MissMap::RequestComplete( NVMainRequest *req )$/;"	f	class:MissMap
+SetConfig	build/MemControl/MissMap/MissMap.cpp	/^void MissMap::SetConfig( Config *conf, bool createChildren )$/;"	f	class:MissMap
+~MissMap	build/MemControl/MissMap/MissMap.cpp	/^MissMap::~MissMap( )$/;"	f	class:MissMap
+Cycle	build/MemControl/PerfectMemory/PerfectMemory.cpp	/^void PerfectMemory::Cycle( ncycle_t )$/;"	f	class:PerfectMemory
+IssueCommand	build/MemControl/PerfectMemory/PerfectMemory.cpp	/^bool PerfectMemory::IssueCommand( NVMainRequest *req )$/;"	f	class:PerfectMemory
+PerfectMemory	build/MemControl/PerfectMemory/PerfectMemory.cpp	/^PerfectMemory::PerfectMemory( )$/;"	f	class:PerfectMemory
+PrintStats	build/MemControl/PerfectMemory/PerfectMemory.cpp	/^void PerfectMemory::PrintStats( std::ostream& )$/;"	f	class:PerfectMemory
+CalculateStats	build/MemControl/PredictorDRC/PredictorDRC.cpp	/^void PredictorDRC::CalculateStats( )$/;"	f	class:PredictorDRC
+Cycle	build/MemControl/PredictorDRC/PredictorDRC.cpp	/^void PredictorDRC::Cycle( ncycle_t steps )$/;"	f	class:PredictorDRC
+IsIssuable	build/MemControl/PredictorDRC/PredictorDRC.cpp	/^bool PredictorDRC::IsIssuable( NVMainRequest * req, FailReason * \/*fail*\/ )$/;"	f	class:PredictorDRC
+IssueAtomic	build/MemControl/PredictorDRC/PredictorDRC.cpp	/^bool PredictorDRC::IssueAtomic( NVMainRequest *req )$/;"	f	class:PredictorDRC
+IssueCommand	build/MemControl/PredictorDRC/PredictorDRC.cpp	/^bool PredictorDRC::IssueCommand( NVMainRequest *req )$/;"	f	class:PredictorDRC
+PredictorDRC	build/MemControl/PredictorDRC/PredictorDRC.cpp	/^PredictorDRC::PredictorDRC( )$/;"	f	class:PredictorDRC
+RegisterStats	build/MemControl/PredictorDRC/PredictorDRC.cpp	/^void PredictorDRC::RegisterStats( )$/;"	f	class:PredictorDRC
+RequestComplete	build/MemControl/PredictorDRC/PredictorDRC.cpp	/^bool PredictorDRC::RequestComplete( NVMainRequest *req )$/;"	f	class:PredictorDRC
+SetConfig	build/MemControl/PredictorDRC/PredictorDRC.cpp	/^void PredictorDRC::SetConfig( Config *conf, bool createChildren )$/;"	f	class:PredictorDRC
+~PredictorDRC	build/MemControl/PredictorDRC/PredictorDRC.cpp	/^PredictorDRC::~PredictorDRC( )$/;"	f	class:PredictorDRC
+CalculateStats	build/NVM/nvmain.cpp	/^void NVMain::CalculateStats( )$/;"	f	class:NVMain
+CheckPrefetch	build/NVM/nvmain.cpp	/^bool NVMain::CheckPrefetch( NVMainRequest *request )$/;"	f	class:NVMain
+Cycle	build/NVM/nvmain.cpp	/^void NVMain::Cycle( ncycle_t steps )$/;"	f	class:NVMain
+EnqueuePendingMemoryRequests	build/NVM/nvmain.cpp	/^void NVMain::EnqueuePendingMemoryRequests( NVMainRequest *req )$/;"	f	class:NVMain
+GeneratePrefetches	build/NVM/nvmain.cpp	/^void NVMain::GeneratePrefetches( NVMainRequest *request, std::vector<NVMAddress>& prefetchList )$/;"	f	class:NVMain
+GetConfig	build/NVM/nvmain.cpp	/^Config *NVMain::GetConfig( )$/;"	f	class:NVMain
+IsIssuable	build/NVM/nvmain.cpp	/^bool NVMain::IsIssuable( NVMainRequest *request, FailReason *reason )$/;"	f	class:NVMain
+IssueAtomic	build/NVM/nvmain.cpp	/^bool NVMain::IssueAtomic( NVMainRequest *request )$/;"	f	class:NVMain
+IssueCommand	build/NVM/nvmain.cpp	/^bool NVMain::IssueCommand( NVMainRequest *request )$/;"	f	class:NVMain
+IssuePrefetch	build/NVM/nvmain.cpp	/^void NVMain::IssuePrefetch( NVMainRequest *request )$/;"	f	class:NVMain
+NVMain	build/NVM/nvmain.cpp	/^NVMain::NVMain( )$/;"	f	class:NVMain
+PrintPreTrace	build/NVM/nvmain.cpp	/^void NVMain::PrintPreTrace( NVMainRequest *request )$/;"	f	class:NVMain
+RegisterStats	build/NVM/nvmain.cpp	/^void NVMain::RegisterStats( )$/;"	f	class:NVMain
+RequestComplete	build/NVM/nvmain.cpp	/^bool NVMain::RequestComplete( NVMainRequest *request )$/;"	f	class:NVMain
+SetConfig	build/NVM/nvmain.cpp	/^void NVMain::SetConfig( Config *conf, std::string memoryName, bool createChildren )$/;"	f	class:NVMain
+~NVMain	build/NVM/nvmain.cpp	/^NVMain::~NVMain( )$/;"	f	class:NVMain
+NVM	build/NVM/nvmain.h	/^namespace NVM {$/;"	n
+NVMain	build/NVM/nvmain.h	/^class NVMain : public NVMObject$/;"	c	namespace:NVM
+__NVMAIN_H__	build/NVM/nvmain.h	35;"	d
+channelConfig	build/NVM/nvmain.h	/^    Config **channelConfig;$/;"	m	class:NVM::NVMain
+config	build/NVM/nvmain.h	/^    Config *config;$/;"	m	class:NVM::NVMain
+memoryControllers	build/NVM/nvmain.h	/^    MemoryController **memoryControllers;$/;"	m	class:NVM::NVMain
+numChannels	build/NVM/nvmain.h	/^    unsigned int numChannels;$/;"	m	class:NVM::NVMain
+pendingMemoryRequests	build/NVM/nvmain.h	/^    std::queue<NVMainRequest *> pendingMemoryRequests;$/;"	m	class:NVM::NVMain
+preTracer	build/NVM/nvmain.h	/^    GenericTraceWriter *preTracer;$/;"	m	class:NVM::NVMain
+prefetchBuffer	build/NVM/nvmain.h	/^    std::list<NVMainRequest *> prefetchBuffer;$/;"	m	class:NVM::NVMain
+prefetcher	build/NVM/nvmain.h	/^    Prefetcher *prefetcher;$/;"	m	class:NVM::NVMain
+pretraceOutput	build/NVM/nvmain.h	/^    std::ofstream pretraceOutput;$/;"	m	class:NVM::NVMain
+simInterface	build/NVM/nvmain.h	/^    SimInterface *simInterface;$/;"	m	class:NVM::NVMain
+successfulPrefetches	build/NVM/nvmain.h	/^    ncounter_t successfulPrefetches;$/;"	m	class:NVM::NVMain
+syncValue	build/NVM/nvmain.h	/^    double syncValue;$/;"	m	class:NVM::NVMain
+totalReadRequests	build/NVM/nvmain.h	/^    ncounter_t totalReadRequests;$/;"	m	class:NVM::NVMain
+totalWriteRequests	build/NVM/nvmain.h	/^    ncounter_t totalWriteRequests;$/;"	m	class:NVM::NVMain
+translator	build/NVM/nvmain.h	/^    AddressTranslator *translator;$/;"	m	class:NVM::NVMain
+unsuccessfulPrefetches	build/NVM/nvmain.h	/^    ncounter_t unsuccessfulPrefetches;$/;"	m	class:NVM::NVMain
+DoPrefetch	build/Prefetchers/NaivePrefetcher/NaivePrefetcher.cpp	/^bool NaivePrefetcher::DoPrefetch( NVMainRequest *triggerOp, $/;"	f	class:NaivePrefetcher
+CreateNewPrefetcher	build/Prefetchers/PrefetcherFactory.cpp	/^Prefetcher *PrefetcherFactory::CreateNewPrefetcher( std::string name )$/;"	f	class:PrefetcherFactory
+DoPrefetch	build/Prefetchers/STeMS/STeMS.cpp	/^bool STeMS::DoPrefetch( NVMainRequest *triggerOp, $/;"	f	class:STeMS
+FetchNextUnused	build/Prefetchers/STeMS/STeMS.cpp	/^void STeMS::FetchNextUnused( PatternSequence *rps, int count, $/;"	f	class:STeMS
+NotifyAccess	build/Prefetchers/STeMS/STeMS.cpp	/^bool STeMS::NotifyAccess( NVMainRequest *accessOp, $/;"	f	class:STeMS
+CreateNewRank	build/Ranks/RankFactory.cpp	/^Rank *RankFactory::CreateNewRank( std::string rankName )$/;"	f	class:RankFactory
+CreateRank	build/Ranks/RankFactory.cpp	/^Rank *RankFactory::CreateRank( std::string rankName )$/;"	f	class:RankFactory
+CreateRankNoWarn	build/Ranks/RankFactory.cpp	/^Rank *RankFactory::CreateRankNoWarn( std::string rankName )$/;"	f	class:RankFactory
+CalculateStats	build/Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::CalculateStats( )$/;"	f	class:SB_ON_RANK
+Cycle	build/Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::Cycle( ncycle_t steps )$/;"	f	class:SB_ON_RANK
+CycleRequestBuffer	build/Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::CycleRequestBuffer( )$/;"	f	class:SB_ON_RANK
+Idle	build/Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^bool SB_ON_RANK::Idle( )$/;"	f	class:SB_ON_RANK
+IsIssuable	build/Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^bool SB_ON_RANK::IsIssuable( NVMainRequest *req, FailReason *)$/;"	f	class:SB_ON_RANK
+IssueCommand	build/Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^bool SB_ON_RANK::IssueCommand( NVMainRequest *req )$/;"	f	class:SB_ON_RANK
+NextIssuable	build/Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^ncycle_t SB_ON_RANK::NextIssuable( NVMainRequest *)$/;"	f	class:SB_ON_RANK
+Notify	build/Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::Notify( NVMainRequest *request )$/;"	f	class:SB_ON_RANK
+RegisterStats	build/Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::RegisterStats( )$/;"	f	class:SB_ON_RANK
+RequestComplete	build/Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^bool SB_ON_RANK::RequestComplete( NVMainRequest* req )$/;"	f	class:SB_ON_RANK
+ResetStats	build/Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::ResetStats( )$/;"	f	class:SB_ON_RANK
+SB_ON_RANK	build/Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^SB_ON_RANK::SB_ON_RANK( )$/;"	f	class:SB_ON_RANK
+SetConfig	build/Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::SetConfig( Config *c, bool createChildren )$/;"	f	class:SB_ON_RANK
+WasIssuedSB	build/Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^bool WasIssuedSB( NVMainRequest *request ) { return (request->flags & NVMainRequest::FLAG_ISSUED_BY_SB); }$/;"	f
+~SB_ON_RANK	build/Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^SB_ON_RANK::~SB_ON_RANK( )$/;"	f	class:SB_ON_RANK
+Activate	build/Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::Activate( NVMainRequest *request )$/;"	f	class:StandardRank
+CalculateStats	build/Ranks/StandardRank/StandardRank.cpp	/^void StandardRank::CalculateStats( )$/;"	f	class:StandardRank
+CanPowerDown	build/Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::CanPowerDown( NVMainRequest *request )$/;"	f	class:StandardRank
+CanPowerUp	build/Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::CanPowerUp( NVMainRequest *request )$/;"	f	class:StandardRank
+Cycle	build/Ranks/StandardRank/StandardRank.cpp	/^void StandardRank::Cycle( ncycle_t steps )$/;"	f	class:StandardRank
+Idle	build/Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::Idle( )$/;"	f	class:StandardRank
+IsIssuable	build/Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::IsIssuable( NVMainRequest *req, FailReason *reason )$/;"	f	class:StandardRank
+IssueCommand	build/Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::IssueCommand( NVMainRequest *req )$/;"	f	class:StandardRank
+NextIssuable	build/Ranks/StandardRank/StandardRank.cpp	/^ncycle_t StandardRank::NextIssuable( NVMainRequest *request )$/;"	f	class:StandardRank
+Notify	build/Ranks/StandardRank/StandardRank.cpp	/^void StandardRank::Notify( NVMainRequest *request )$/;"	f	class:StandardRank
+PowerDown	build/Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::PowerDown( NVMainRequest *request )$/;"	f	class:StandardRank
+PowerUp	build/Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::PowerUp( NVMainRequest *request )$/;"	f	class:StandardRank
+Precharge	build/Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::Precharge( NVMainRequest *request )$/;"	f	class:StandardRank
+Read	build/Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::Read( NVMainRequest *request )$/;"	f	class:StandardRank
+Refresh	build/Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::Refresh( NVMainRequest *request )$/;"	f	class:StandardRank
+RegisterStats	build/Ranks/StandardRank/StandardRank.cpp	/^void StandardRank::RegisterStats( )$/;"	f	class:StandardRank
+RequestComplete	build/Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::RequestComplete( NVMainRequest* req )$/;"	f	class:StandardRank
+ResetStats	build/Ranks/StandardRank/StandardRank.cpp	/^void StandardRank::ResetStats( )$/;"	f	class:StandardRank
+SetConfig	build/Ranks/StandardRank/StandardRank.cpp	/^void StandardRank::SetConfig( Config *c, bool createChildren )$/;"	f	class:StandardRank
+StandardRank	build/Ranks/StandardRank/StandardRank.cpp	/^StandardRank::StandardRank( )$/;"	f	class:StandardRank
+Write	build/Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::Write( NVMainRequest *request )$/;"	f	class:StandardRank
+~StandardRank	build/Ranks/StandardRank/StandardRank.cpp	/^StandardRank::~StandardRank( )$/;"	f	class:StandardRank
+GetCacheHits	build/SimInterface/NullInterface/NullInterface.cpp	/^unsigned int NullInterface::GetCacheHits( int \/*core*\/, int \/*level*\/ )$/;"	f	class:NullInterface
+GetCacheMisses	build/SimInterface/NullInterface/NullInterface.cpp	/^unsigned int NullInterface::GetCacheMisses( int \/*core*\/, int \/*level*\/ )$/;"	f	class:NullInterface
+GetInstructionCount	build/SimInterface/NullInterface/NullInterface.cpp	/^unsigned int NullInterface::GetInstructionCount( int \/*core*\/ )$/;"	f	class:NullInterface
+HasCacheHits	build/SimInterface/NullInterface/NullInterface.cpp	/^bool NullInterface::HasCacheHits( )$/;"	f	class:NullInterface
+HasCacheMisses	build/SimInterface/NullInterface/NullInterface.cpp	/^bool NullInterface::HasCacheMisses( )$/;"	f	class:NullInterface
+HasInstructionCount	build/SimInterface/NullInterface/NullInterface.cpp	/^bool NullInterface::HasInstructionCount( )$/;"	f	class:NullInterface
+NullInterface	build/SimInterface/NullInterface/NullInterface.cpp	/^NullInterface::NullInterface( )$/;"	f	class:NullInterface
+~NullInterface	build/SimInterface/NullInterface/NullInterface.cpp	/^NullInterface::~NullInterface( )$/;"	f	class:NullInterface
+AccessPredictor	build/Utils/AccessPredictor/AccessPredictor.cpp	/^AccessPredictor::AccessPredictor( )$/;"	f	class:AccessPredictor
+Cycle	build/Utils/AccessPredictor/AccessPredictor.cpp	/^void AccessPredictor::Cycle( ncycle_t )$/;"	f	class:AccessPredictor
+GetHitDestination	build/Utils/AccessPredictor/AccessPredictor.cpp	/^ncounter_t AccessPredictor::GetHitDestination( )$/;"	f	class:AccessPredictor
+GetMissDestination	build/Utils/AccessPredictor/AccessPredictor.cpp	/^ncounter_t AccessPredictor::GetMissDestination( )$/;"	f	class:AccessPredictor
+SetHitDestination	build/Utils/AccessPredictor/AccessPredictor.cpp	/^void AccessPredictor::SetHitDestination( ncounter_t childId )$/;"	f	class:AccessPredictor
+SetMissDestination	build/Utils/AccessPredictor/AccessPredictor.cpp	/^void AccessPredictor::SetMissDestination( ncounter_t childId )$/;"	f	class:AccessPredictor
+~AccessPredictor	build/Utils/AccessPredictor/AccessPredictor.cpp	/^AccessPredictor::~AccessPredictor( )$/;"	f	class:AccessPredictor
+CreateAccessPredictor	build/Utils/AccessPredictor/AccessPredictorFactory.cpp	/^AccessPredictor *AccessPredictorFactory::CreateAccessPredictor( std::string name )$/;"	f	class:AccessPredictorFactory
+PerfectPredictor	build/Utils/AccessPredictor/PerfectPredictor/PerfectPredictor.cpp	/^PerfectPredictor::PerfectPredictor( )$/;"	f	class:PerfectPredictor
+Translate	build/Utils/AccessPredictor/PerfectPredictor/PerfectPredictor.cpp	/^uint64_t PerfectPredictor::Translate( NVMainRequest *request )$/;"	f	class:PerfectPredictor
+~PerfectPredictor	build/Utils/AccessPredictor/PerfectPredictor/PerfectPredictor.cpp	/^PerfectPredictor::~PerfectPredictor( )$/;"	f	class:PerfectPredictor
+SetConfig	build/Utils/AccessPredictor/VariablePredictor/VariablePredictor.cpp	/^void VariablePredictor::SetConfig( Config *config, bool \/*createChildren*\/ )$/;"	f	class:VariablePredictor
+Translate	build/Utils/AccessPredictor/VariablePredictor/VariablePredictor.cpp	/^uint64_t VariablePredictor::Translate( NVMainRequest *request )$/;"	f	class:VariablePredictor
+VariablePredictor	build/Utils/AccessPredictor/VariablePredictor/VariablePredictor.cpp	/^VariablePredictor::VariablePredictor( )$/;"	f	class:VariablePredictor
+~VariablePredictor	build/Utils/AccessPredictor/VariablePredictor/VariablePredictor.cpp	/^VariablePredictor::~VariablePredictor( )$/;"	f	class:VariablePredictor
+CacheBank	build/Utils/Caches/CacheBank.cpp	/^CacheBank::CacheBank( uint64_t sets, uint64_t assoc, uint64_t lineSize )$/;"	f	class:CacheBank
+ChooseVictim	build/Utils/Caches/CacheBank.cpp	/^bool CacheBank::ChooseVictim( NVMAddress& addr, NVMAddress *victim )$/;"	f	class:CacheBank
+Cycle	build/Utils/Caches/CacheBank.cpp	/^void CacheBank::Cycle( ncycle_t \/*steps*\/ )$/;"	f	class:CacheBank
+DefaultDecoder	build/Utils/Caches/CacheBank.cpp	/^uint64_t CacheBank::DefaultDecoder( NVMAddress &addr )$/;"	f	class:CacheBank
+Evict	build/Utils/Caches/CacheBank.cpp	/^bool CacheBank::Evict( NVMAddress& addr, NVMDataBlock *data )$/;"	f	class:CacheBank
+FindSet	build/Utils/Caches/CacheBank.cpp	/^CacheEntry *CacheBank::FindSet( NVMAddress& addr )$/;"	f	class:CacheBank
+GetAssociativity	build/Utils/Caches/CacheBank.cpp	/^uint64_t CacheBank::GetAssociativity( )$/;"	f	class:CacheBank
+GetCacheOccupancy	build/Utils/Caches/CacheBank.cpp	/^double CacheBank::GetCacheOccupancy( )$/;"	f	class:CacheBank
+GetCachelineSize	build/Utils/Caches/CacheBank.cpp	/^uint64_t CacheBank::GetCachelineSize( )$/;"	f	class:CacheBank
+GetReadTime	build/Utils/Caches/CacheBank.cpp	/^uint64_t CacheBank::GetReadTime( )$/;"	f	class:CacheBank
+GetSetCount	build/Utils/Caches/CacheBank.cpp	/^uint64_t CacheBank::GetSetCount( )$/;"	f	class:CacheBank
+GetWriteTime	build/Utils/Caches/CacheBank.cpp	/^uint64_t CacheBank::GetWriteTime( )$/;"	f	class:CacheBank
+Install	build/Utils/Caches/CacheBank.cpp	/^bool CacheBank::Install( NVMAddress& addr, NVMDataBlock& data )$/;"	f	class:CacheBank
+IsIssuable	build/Utils/Caches/CacheBank.cpp	/^bool CacheBank::IsIssuable( NVMainRequest * \/*req*\/, FailReason * \/*reason*\/ )$/;"	f	class:CacheBank
+IssueCommand	build/Utils/Caches/CacheBank.cpp	/^bool CacheBank::IssueCommand( NVMainRequest *nreq )$/;"	f	class:CacheBank
+Present	build/Utils/Caches/CacheBank.cpp	/^bool CacheBank::Present( NVMAddress& addr )$/;"	f	class:CacheBank
+Read	build/Utils/Caches/CacheBank.cpp	/^bool CacheBank::Read( NVMAddress& addr, NVMDataBlock *data )$/;"	f	class:CacheBank
+RequestComplete	build/Utils/Caches/CacheBank.cpp	/^bool CacheBank::RequestComplete( NVMainRequest *req )$/;"	f	class:CacheBank
+SetDecodeFunction	build/Utils/Caches/CacheBank.cpp	/^void CacheBank::SetDecodeFunction( NVMObject *dcClass, CacheSetDecoder dcFunc )$/;"	f	class:CacheBank
+SetFull	build/Utils/Caches/CacheBank.cpp	/^bool CacheBank::SetFull( NVMAddress& addr )$/;"	f	class:CacheBank
+SetID	build/Utils/Caches/CacheBank.cpp	/^uint64_t CacheBank::SetID( NVMAddress& addr )$/;"	f	class:CacheBank
+SetReadTime	build/Utils/Caches/CacheBank.cpp	/^void CacheBank::SetReadTime( uint64_t rtime )$/;"	f	class:CacheBank
+SetWriteTime	build/Utils/Caches/CacheBank.cpp	/^void CacheBank::SetWriteTime( uint64_t wtime )$/;"	f	class:CacheBank
+UpdateData	build/Utils/Caches/CacheBank.cpp	/^bool CacheBank::UpdateData( NVMAddress& addr, NVMDataBlock& data )$/;"	f	class:CacheBank
+Write	build/Utils/Caches/CacheBank.cpp	/^bool CacheBank::Write( NVMAddress& addr, NVMDataBlock& data )$/;"	f	class:CacheBank
+~CacheBank	build/Utils/Caches/CacheBank.cpp	/^CacheBank::~CacheBank( )$/;"	f	class:CacheBank
+CheckIssuable	build/Utils/CoinMigrator/CoinMigrator.cpp	/^bool CoinMigrator::CheckIssuable( NVMAddress address, OpType type )$/;"	f	class:CoinMigrator
+ChooseVictim	build/Utils/CoinMigrator/CoinMigrator.cpp	/^void CoinMigrator::ChooseVictim( Migrator *at, NVMAddress& \/*promotee*\/, NVMAddress& victim )$/;"	f	class:CoinMigrator
+CoinMigrator	build/Utils/CoinMigrator/CoinMigrator.cpp	/^CoinMigrator::CoinMigrator( )$/;"	f	class:CoinMigrator
+Cycle	build/Utils/CoinMigrator/CoinMigrator.cpp	/^void CoinMigrator::Cycle( ncycle_t \/*steps*\/ )$/;"	f	class:CoinMigrator
+Init	build/Utils/CoinMigrator/CoinMigrator.cpp	/^void CoinMigrator::Init( Config *config )$/;"	f	class:CoinMigrator
+IssueAtomic	build/Utils/CoinMigrator/CoinMigrator.cpp	/^bool CoinMigrator::IssueAtomic( NVMainRequest *request )$/;"	f	class:CoinMigrator
+IssueCommand	build/Utils/CoinMigrator/CoinMigrator.cpp	/^bool CoinMigrator::IssueCommand( NVMainRequest *request )$/;"	f	class:CoinMigrator
+RequestComplete	build/Utils/CoinMigrator/CoinMigrator.cpp	/^bool CoinMigrator::RequestComplete( NVMainRequest *request )$/;"	f	class:CoinMigrator
+TryMigration	build/Utils/CoinMigrator/CoinMigrator.cpp	/^bool CoinMigrator::TryMigration( NVMainRequest *request, bool atomic )$/;"	f	class:CoinMigrator
+~CoinMigrator	build/Utils/CoinMigrator/CoinMigrator.cpp	/^CoinMigrator::~CoinMigrator( )$/;"	f	class:CoinMigrator
+CreateHook	build/Utils/HookFactory.cpp	/^NVMObject *HookFactory::CreateHook( std::string hookName )$/;"	f	class:HookFactory
+Cycle	build/Utils/PostTrace/PostTrace.cpp	/^void PostTrace::Cycle( ncycle_t )$/;"	f	class:PostTrace
+Init	build/Utils/PostTrace/PostTrace.cpp	/^void PostTrace::Init( Config *conf )$/;"	f	class:PostTrace
+IssueAtomic	build/Utils/PostTrace/PostTrace.cpp	/^bool PostTrace::IssueAtomic( NVMainRequest *request )$/;"	f	class:PostTrace
+IssueCommand	build/Utils/PostTrace/PostTrace.cpp	/^bool PostTrace::IssueCommand( NVMainRequest *request )$/;"	f	class:PostTrace
+PostTrace	build/Utils/PostTrace/PostTrace.cpp	/^PostTrace::PostTrace( )$/;"	f	class:PostTrace
+RequestComplete	build/Utils/PostTrace/PostTrace.cpp	/^bool PostTrace::RequestComplete( NVMainRequest * \/*request*\/ )$/;"	f	class:PostTrace
+~PostTrace	build/Utils/PostTrace/PostTrace.cpp	/^PostTrace::~PostTrace( )$/;"	f	class:PostTrace
+Callback	build/Utils/RequestTracer/RequestTracer.cpp	/^void RequestTracer::Callback( void *data )$/;"	f	class:RequestTracer
+Cycle	build/Utils/RequestTracer/RequestTracer.cpp	/^void RequestTracer::Cycle( ncycle_t )$/;"	f	class:RequestTracer
+Demangle	build/Utils/RequestTracer/RequestTracer.cpp	/^std::string RequestTracer::Demangle( const char* cxxname )$/;"	f	class:RequestTracer
+Init	build/Utils/RequestTracer/RequestTracer.cpp	/^void RequestTracer::Init( Config *conf )$/;"	f	class:RequestTracer
+IssueAtomic	build/Utils/RequestTracer/RequestTracer.cpp	/^bool RequestTracer::IssueAtomic( NVMainRequest * \/*req*\/ )$/;"	f	class:RequestTracer
+IssueCommand	build/Utils/RequestTracer/RequestTracer.cpp	/^bool RequestTracer::IssueCommand( NVMainRequest *req )$/;"	f	class:RequestTracer
+RequestComplete	build/Utils/RequestTracer/RequestTracer.cpp	/^bool RequestTracer::RequestComplete( NVMainRequest *req )$/;"	f	class:RequestTracer
+RequestTracer	build/Utils/RequestTracer/RequestTracer.cpp	/^RequestTracer::RequestTracer( )$/;"	f	class:RequestTracer
+TraceAddress	build/Utils/RequestTracer/RequestTracer.cpp	/^void RequestTracer::TraceAddress( NVMainRequest *req, TracedType traceType )$/;"	f	class:RequestTracer
+TracedRequest	build/Utils/RequestTracer/RequestTracer.cpp	/^RequestTracer::TracedRequest::TracedRequest( )$/;"	f	class:RequestTracer::TracedRequest
+~RequestTracer	build/Utils/RequestTracer/RequestTracer.cpp	/^RequestTracer::~RequestTracer( )$/;"	f	class:RequestTracer
+~TracedRequest	build/Utils/RequestTracer/RequestTracer.cpp	/^RequestTracer::TracedRequest::~TracedRequest( )$/;"	f	class:RequestTracer::TracedRequest
+Cycle	build/Utils/Visualizer/Visualizer.cpp	/^void Visualizer::Cycle( ncycle_t )$/;"	f	class:Visualizer
+Init	build/Utils/Visualizer/Visualizer.cpp	/^void Visualizer::Init( Config *conf )$/;"	f	class:Visualizer
+IssueAtomic	build/Utils/Visualizer/Visualizer.cpp	/^bool Visualizer::IssueAtomic( NVMainRequest *req )$/;"	f	class:Visualizer
+IssueCommand	build/Utils/Visualizer/Visualizer.cpp	/^bool Visualizer::IssueCommand( NVMainRequest *req )$/;"	f	class:Visualizer
+RequestComplete	build/Utils/Visualizer/Visualizer.cpp	/^bool Visualizer::RequestComplete( NVMainRequest *req )$/;"	f	class:Visualizer
+Visualizer	build/Utils/Visualizer/Visualizer.cpp	/^Visualizer::Visualizer( )$/;"	f	class:Visualizer
+~Visualizer	build/Utils/Visualizer/Visualizer.cpp	/^Visualizer::~Visualizer( )$/;"	f	class:Visualizer
+GetBank	build/include/NVMAddress.cpp	/^uint64_t NVMAddress::GetBank( )$/;"	f	class:NVMAddress
+GetBitAddress	build/include/NVMAddress.cpp	/^uint64_t NVMAddress::GetBitAddress( )$/;"	f	class:NVMAddress
+GetChannel	build/include/NVMAddress.cpp	/^uint64_t NVMAddress::GetChannel( )$/;"	f	class:NVMAddress
+GetCol	build/include/NVMAddress.cpp	/^uint64_t NVMAddress::GetCol( )$/;"	f	class:NVMAddress
+GetPhysicalAddress	build/include/NVMAddress.cpp	/^uint64_t NVMAddress::GetPhysicalAddress( )$/;"	f	class:NVMAddress
+GetRank	build/include/NVMAddress.cpp	/^uint64_t NVMAddress::GetRank( )$/;"	f	class:NVMAddress
+GetRow	build/include/NVMAddress.cpp	/^uint64_t NVMAddress::GetRow( )$/;"	f	class:NVMAddress
+GetSubArray	build/include/NVMAddress.cpp	/^uint64_t NVMAddress::GetSubArray( )$/;"	f	class:NVMAddress
+GetTranslatedAddress	build/include/NVMAddress.cpp	/^void NVMAddress::GetTranslatedAddress( uint64_t *addrRow, uint64_t *addrCol, uint64_t *addrBank, $/;"	f	class:NVMAddress
+HasPhysicalAddress	build/include/NVMAddress.cpp	/^bool NVMAddress::HasPhysicalAddress( )$/;"	f	class:NVMAddress
+IsTranslated	build/include/NVMAddress.cpp	/^bool NVMAddress::IsTranslated( )$/;"	f	class:NVMAddress
+NVMAddress	build/include/NVMAddress.cpp	/^NVMAddress::NVMAddress( )$/;"	f	class:NVMAddress
+NVMAddress	build/include/NVMAddress.cpp	/^NVMAddress::NVMAddress( uint64_t addrRow, uint64_t addrCol, uint64_t addrBank,$/;"	f	class:NVMAddress
+SetBitAddress	build/include/NVMAddress.cpp	/^void NVMAddress::SetBitAddress( uint8_t bitAddr )$/;"	f	class:NVMAddress
+SetPhysicalAddress	build/include/NVMAddress.cpp	/^void NVMAddress::SetPhysicalAddress( uint64_t pAddress )$/;"	f	class:NVMAddress
+SetTranslatedAddress	build/include/NVMAddress.cpp	/^void NVMAddress::SetTranslatedAddress( uint64_t addrRow, uint64_t addrCol, uint64_t addrBank, $/;"	f	class:NVMAddress
+operator =	build/include/NVMAddress.cpp	/^NVMAddress& NVMAddress::operator=( const NVMAddress& m )$/;"	f	class:NVMAddress
+~NVMAddress	build/include/NVMAddress.cpp	/^NVMAddress::~NVMAddress( )$/;"	f	class:NVMAddress
+GetByte	build/include/NVMDataBlock.cpp	/^uint8_t NVMDataBlock::GetByte( uint64_t byte )$/;"	f	class:NVMDataBlock
+GetSize	build/include/NVMDataBlock.cpp	/^uint64_t NVMDataBlock::GetSize( )$/;"	f	class:NVMDataBlock
+IsValid	build/include/NVMDataBlock.cpp	/^bool NVMDataBlock::IsValid( )$/;"	f	class:NVMDataBlock
+NVMDataBlock	build/include/NVMDataBlock.cpp	/^NVMDataBlock::NVMDataBlock( )$/;"	f	class:NVMDataBlock
+Print	build/include/NVMDataBlock.cpp	/^void NVMDataBlock::Print( std::ostream& out ) const$/;"	f	class:NVMDataBlock
+SetByte	build/include/NVMDataBlock.cpp	/^void NVMDataBlock::SetByte( uint64_t byte, uint8_t value )$/;"	f	class:NVMDataBlock
+SetSize	build/include/NVMDataBlock.cpp	/^void NVMDataBlock::SetSize( uint64_t s )$/;"	f	class:NVMDataBlock
+SetValid	build/include/NVMDataBlock.cpp	/^void NVMDataBlock::SetValid( bool valid )$/;"	f	class:NVMDataBlock
+operator <<	build/include/NVMDataBlock.cpp	/^std::ostream& operator<<( std::ostream& out, const NVMDataBlock& obj )$/;"	f
+operator =	build/include/NVMDataBlock.cpp	/^NVMDataBlock& NVMDataBlock::operator=( const NVMDataBlock& m )$/;"	f	class:NVMDataBlock
+~NVMDataBlock	build/include/NVMDataBlock.cpp	/^NVMDataBlock::~NVMDataBlock( )$/;"	f	class:NVMDataBlock
+GetFilePath	build/include/NVMHelpers.cpp	/^std::string GetFilePath( std::string file )$/;"	f	namespace:NVM
+NVM	build/include/NVMHelpers.cpp	/^namespace NVM {$/;"	n	file:
+mlog2	build/include/NVMHelpers.cpp	/^int mlog2( int num )$/;"	f	namespace:NVM
+AddressTranslator	build/src/AddressTranslator.cpp	/^AddressTranslator::AddressTranslator( )$/;"	f	class:AddressTranslator
+Divide	build/src/AddressTranslator.cpp	/^uint64_t AddressTranslator::Divide( uint64_t partSize, MemoryPartition partition )$/;"	f	class:AddressTranslator
+FindOrder	build/src/AddressTranslator.cpp	/^void AddressTranslator::FindOrder( int order, MemoryPartition *p )$/;"	f	class:AddressTranslator
+GetStats	build/src/AddressTranslator.cpp	/^Stats *AddressTranslator::GetStats( )$/;"	f	class:AddressTranslator
+GetTranslationMethod	build/src/AddressTranslator.cpp	/^TranslationMethod *AddressTranslator::GetTranslationMethod( )$/;"	f	class:AddressTranslator
+Modulo	build/src/AddressTranslator.cpp	/^uint64_t AddressTranslator::Modulo( uint64_t partialAddr, MemoryPartition partition )$/;"	f	class:AddressTranslator
+ReverseTranslate	build/src/AddressTranslator.cpp	/^uint64_t AddressTranslator::ReverseTranslate( const uint64_t& row, $/;"	f	class:AddressTranslator
+SetBurstLength	build/src/AddressTranslator.cpp	/^void AddressTranslator::SetBurstLength( int beat )$/;"	f	class:AddressTranslator
+SetBusWidth	build/src/AddressTranslator.cpp	/^void AddressTranslator::SetBusWidth( int bits )$/;"	f	class:AddressTranslator
+SetDefaultField	build/src/AddressTranslator.cpp	/^void AddressTranslator::SetDefaultField( TranslationField f )$/;"	f	class:AddressTranslator
+SetStats	build/src/AddressTranslator.cpp	/^void AddressTranslator::SetStats( Stats *s )$/;"	f	class:AddressTranslator
+SetTranslationMethod	build/src/AddressTranslator.cpp	/^void AddressTranslator::SetTranslationMethod( TranslationMethod *m )$/;"	f	class:AddressTranslator
+StatName	build/src/AddressTranslator.cpp	/^std::string AddressTranslator::StatName( )$/;"	f	class:AddressTranslator
+StatName	build/src/AddressTranslator.cpp	/^void AddressTranslator::StatName( std::string name )$/;"	f	class:AddressTranslator
+Translate	build/src/AddressTranslator.cpp	/^uint64_t AddressTranslator::Translate( NVMainRequest *request )$/;"	f	class:AddressTranslator
+Translate	build/src/AddressTranslator.cpp	/^uint64_t AddressTranslator::Translate( uint64_t address )$/;"	f	class:AddressTranslator
+Translate	build/src/AddressTranslator.cpp	/^void AddressTranslator::Translate( NVMainRequest *request, uint64_t *row, uint64_t *col, uint64_t *bank,$/;"	f	class:AddressTranslator
+Translate	build/src/AddressTranslator.cpp	/^void AddressTranslator::Translate( uint64_t address, uint64_t *row, uint64_t *col, uint64_t *bank,$/;"	f	class:AddressTranslator
+~AddressTranslator	build/src/AddressTranslator.cpp	/^AddressTranslator::~AddressTranslator( )$/;"	f	class:AddressTranslator
+GetId	build/src/Bank.cpp	/^ncounter_t Bank::GetId( )$/;"	f	class:Bank
+Idle	build/src/Bank.cpp	/^bool Bank::Idle( )$/;"	f	class:Bank
+SetId	build/src/Bank.cpp	/^void Bank::SetId( ncounter_t id )$/;"	f	class:Bank
+Config	build/src/Config.cpp	/^Config::Config( )$/;"	f	class:Config
+Config	build/src/Config.cpp	/^Config::Config(const Config& conf)$/;"	f	class:Config
+GetBool	build/src/Config.cpp	/^bool Config::GetBool( std::string key )$/;"	f	class:Config
+GetBool	build/src/Config.cpp	/^void Config::GetBool( std::string key, bool& value )$/;"	f	class:Config
+GetDebugLog	build/src/Config.cpp	/^std::ostream *Config::GetDebugLog( )$/;"	f	class:Config
+GetEnergy	build/src/Config.cpp	/^double Config::GetEnergy( std::string key )$/;"	f	class:Config
+GetEnergy	build/src/Config.cpp	/^void Config::GetEnergy( std::string key, double& value )$/;"	f	class:Config
+GetFileName	build/src/Config.cpp	/^std::string Config::GetFileName( )$/;"	f	class:Config
+GetHooks	build/src/Config.cpp	/^std::vector<std::string>& Config::GetHooks( )$/;"	f	class:Config
+GetSimInterface	build/src/Config.cpp	/^SimInterface *Config::GetSimInterface( )$/;"	f	class:Config
+GetString	build/src/Config.cpp	/^std::string Config::GetString( std::string key )$/;"	f	class:Config
+GetString	build/src/Config.cpp	/^void Config::GetString( std::string key, std::string& value )$/;"	f	class:Config
+GetValue	build/src/Config.cpp	/^int Config::GetValue( std::string key )$/;"	f	class:Config
+GetValue	build/src/Config.cpp	/^void Config::GetValue( std::string key, int& value )$/;"	f	class:Config
+GetValueUL	build/src/Config.cpp	/^uint64_t Config::GetValueUL( std::string key )$/;"	f	class:Config
+GetValueUL	build/src/Config.cpp	/^void Config::GetValueUL( std::string key, uint64_t& value )$/;"	f	class:Config
+KeyExists	build/src/Config.cpp	/^bool Config::KeyExists( std::string key )$/;"	f	class:Config
+Print	build/src/Config.cpp	/^void Config::Print( )$/;"	f	class:Config
+Read	build/src/Config.cpp	/^void Config::Read( std::string filename )$/;"	f	class:Config
+SetBool	build/src/Config.cpp	/^void Config::SetBool( std::string key, bool value )$/;"	f	class:Config
+SetDebugLog	build/src/Config.cpp	/^void Config::SetDebugLog( )$/;"	f	class:Config
+SetEnergy	build/src/Config.cpp	/^void Config::SetEnergy( std::string key, std::string energy )$/;"	f	class:Config
+SetSimInterface	build/src/Config.cpp	/^void Config::SetSimInterface( SimInterface *ptr )$/;"	f	class:Config
+SetString	build/src/Config.cpp	/^void Config::SetString( std::string key, std::string value )$/;"	f	class:Config
+SetValue	build/src/Config.cpp	/^void Config::SetValue( std::string key, std::string value )$/;"	f	class:Config
+~Config	build/src/Config.cpp	/^Config::~Config( )$/;"	f	class:Config
+Cycle	build/src/DataEncoder.cpp	/^void DataEncoder::Cycle( ncycle_t \/*steps*\/ )$/;"	f	class:DataEncoder
+DataEncoder	build/src/DataEncoder.cpp	/^DataEncoder::DataEncoder( )$/;"	f	class:DataEncoder
+Read	build/src/DataEncoder.cpp	/^ncycle_t DataEncoder::Read( NVMainRequest* \/*request*\/ )$/;"	f	class:DataEncoder
+SetConfig	build/src/DataEncoder.cpp	/^void DataEncoder::SetConfig( Config* \/*conf*\/, bool \/*createChildren*\/ )$/;"	f	class:DataEncoder
+Write	build/src/DataEncoder.cpp	/^ncycle_t DataEncoder::Write( NVMainRequest* \/*request*\/ )$/;"	f	class:DataEncoder
+~DataEncoder	build/src/DataEncoder.cpp	/^DataEncoder::~DataEncoder( )$/;"	f	class:DataEncoder
+Cycle	build/src/EnduranceModel.cpp	/^void EnduranceModel::Cycle( ncycle_t )$/;"	f	class:EnduranceModel
+DecrementLife	build/src/EnduranceModel.cpp	/^bool EnduranceModel::DecrementLife( uint64_t addr )$/;"	f	class:EnduranceModel
+EnduranceModel	build/src/EnduranceModel.cpp	/^EnduranceModel::EnduranceModel( )$/;"	f	class:EnduranceModel
+GetAverageLife	build/src/EnduranceModel.cpp	/^uint64_t EnduranceModel::GetAverageLife( )$/;"	f	class:EnduranceModel
+GetGranularity	build/src/EnduranceModel.cpp	/^uint64_t EnduranceModel::GetGranularity( )$/;"	f	class:EnduranceModel
+GetWorstLife	build/src/EnduranceModel.cpp	/^uint64_t EnduranceModel::GetWorstLife( )$/;"	f	class:EnduranceModel
+IsDead	build/src/EnduranceModel.cpp	/^bool EnduranceModel::IsDead( uint64_t addr )$/;"	f	class:EnduranceModel
+SetConfig	build/src/EnduranceModel.cpp	/^void EnduranceModel::SetConfig( Config *config, bool \/*createChildren*\/ )$/;"	f	class:EnduranceModel
+SetGranularity	build/src/EnduranceModel.cpp	/^void EnduranceModel::SetGranularity( uint64_t bits )$/;"	f	class:EnduranceModel
+AddSystem	build/src/EventQueue.cpp	/^void GlobalEventQueue::AddSystem( NVMain *subSystem, Config *config )$/;"	f	class:GlobalEventQueue
+AddSystem	build/src/EventQueue.cpp	/^void GlobalEventQueue::AddSystem( Rank *hrank, Config *config )$/;"	f	class:GlobalEventQueue
+Cycle	build/src/EventQueue.cpp	/^void GlobalEventQueue::Cycle( ncycle_t steps )$/;"	f	class:GlobalEventQueue
+EventQueue	build/src/EventQueue.cpp	/^EventQueue::EventQueue( )$/;"	f	class:EventQueue
+FindCallback	build/src/EventQueue.cpp	/^Event *EventQueue::FindCallback( NVMObject *recipient, CallbackPtr method, ncycle_t when, void *data, int priority ) const$/;"	f	class:EventQueue
+FindEvent	build/src/EventQueue.cpp	/^Event *EventQueue::FindEvent( EventType type, NVMObject *recipient, NVMainRequest *req, ncycle_t when ) const$/;"	f	class:EventQueue
+FindEvent	build/src/EventQueue.cpp	/^Event *EventQueue::FindEvent( EventType type, NVMObject_hook *recipient, NVMainRequest *req, ncycle_t when ) const$/;"	f	class:EventQueue
+GetCurrentCycle	build/src/EventQueue.cpp	/^ncycle_t EventQueue::GetCurrentCycle( )$/;"	f	class:EventQueue
+GetCurrentCycle	build/src/EventQueue.cpp	/^ncycle_t GlobalEventQueue::GetCurrentCycle( )$/;"	f	class:GlobalEventQueue
+GetFrequency	build/src/EventQueue.cpp	/^double EventQueue::GetFrequency( )$/;"	f	class:EventQueue
+GetFrequency	build/src/EventQueue.cpp	/^double GlobalEventQueue::GetFrequency( )$/;"	f	class:GlobalEventQueue
+GetNextEvent	build/src/EventQueue.cpp	/^ncycle_t EventQueue::GetNextEvent( )$/;"	f	class:EventQueue
+GetNextEvent	build/src/EventQueue.cpp	/^ncycle_t GlobalEventQueue::GetNextEvent( EventQueue **eq )$/;"	f	class:GlobalEventQueue
+GlobalEventQueue	build/src/EventQueue.cpp	/^GlobalEventQueue::GlobalEventQueue( )$/;"	f	class:GlobalEventQueue
+InsertCallback	build/src/EventQueue.cpp	/^void EventQueue::InsertCallback( NVMObject *recipient, CallbackPtr method,$/;"	f	class:EventQueue
+InsertEvent	build/src/EventQueue.cpp	/^void EventQueue::InsertEvent( Event *event, ncycle_t when, int priority )$/;"	f	class:EventQueue
+InsertEvent	build/src/EventQueue.cpp	/^void EventQueue::InsertEvent( EventType type, NVMObject *recipient, NVMainRequest *req, ncycle_t when, void *data, int priority )$/;"	f	class:EventQueue
+InsertEvent	build/src/EventQueue.cpp	/^void EventQueue::InsertEvent( EventType type, NVMObject *recipient, ncycle_t when, void *data, int priority )$/;"	f	class:EventQueue
+InsertEvent	build/src/EventQueue.cpp	/^void EventQueue::InsertEvent( EventType type, NVMObject_hook *recipient, NVMainRequest *req, ncycle_t when, void *data, int priority )$/;"	f	class:EventQueue
+InsertEvent	build/src/EventQueue.cpp	/^void EventQueue::InsertEvent( EventType type, NVMObject_hook *recipient, ncycle_t when, void *data, int priority )$/;"	f	class:EventQueue
+Loop	build/src/EventQueue.cpp	/^void EventQueue::Loop( )$/;"	f	class:EventQueue
+Loop	build/src/EventQueue.cpp	/^void EventQueue::Loop( ncycle_t steps )$/;"	f	class:EventQueue
+Process	build/src/EventQueue.cpp	/^void EventQueue::Process( )$/;"	f	class:EventQueue
+RemoveEvent	build/src/EventQueue.cpp	/^bool EventQueue::RemoveEvent( Event *event, ncycle_t when )$/;"	f	class:EventQueue
+SetCurrentCycle	build/src/EventQueue.cpp	/^void EventQueue::SetCurrentCycle( ncycle_t curCycle )$/;"	f	class:EventQueue
+SetFrequency	build/src/EventQueue.cpp	/^void EventQueue::SetFrequency( double freq )$/;"	f	class:EventQueue
+SetFrequency	build/src/EventQueue.cpp	/^void GlobalEventQueue::SetFrequency( double freq )$/;"	f	class:GlobalEventQueue
+SetRecipient	build/src/EventQueue.cpp	/^void Event::SetRecipient( NVMObject *r )$/;"	f	class:Event
+Sync	build/src/EventQueue.cpp	/^void GlobalEventQueue::Sync( )$/;"	f	class:GlobalEventQueue
+~EventQueue	build/src/EventQueue.cpp	/^EventQueue::~EventQueue( )$/;"	f	class:EventQueue
+~GlobalEventQueue	build/src/EventQueue.cpp	/^GlobalEventQueue::~GlobalEventQueue( )$/;"	f	class:GlobalEventQueue
+CalculateStats	build/src/MemoryController.cpp	/^void MemoryController::CalculateStats( )$/;"	f	class:MemoryController
+CleanupCallback	build/src/MemoryController.cpp	/^void MemoryController::CleanupCallback( void * \/*data*\/ )$/;"	f	class:MemoryController
+CommandQueueCallback	build/src/MemoryController.cpp	/^void MemoryController::CommandQueueCallback( void * \/*data*\/ )$/;"	f	class:MemoryController
+Cycle	build/src/MemoryController.cpp	/^void MemoryController::Cycle( ncycle_t steps )$/;"	f	class:MemoryController
+CycleCommandQueues	build/src/MemoryController.cpp	/^void MemoryController::CycleCommandQueues( )$/;"	f	class:MemoryController
+DecrementRefreshCounter	build/src/MemoryController.cpp	/^void MemoryController::DecrementRefreshCounter( const ncounter_t bank, const uint64_t rank )$/;"	f	class:MemoryController
+EffectivelyEmpty	build/src/MemoryController.cpp	/^bool MemoryController::EffectivelyEmpty( const ncounter_t& queueId )$/;"	f	class:MemoryController
+Enqueue	build/src/MemoryController.cpp	/^void MemoryController::Enqueue( ncounter_t queueNum, NVMainRequest *request )$/;"	f	class:MemoryController
+FindCachedAddress	build/src/MemoryController.cpp	/^bool MemoryController::FindCachedAddress( std::list<NVMainRequest *>& transactionQueue,$/;"	f	class:MemoryController
+FindClosedBankRequest	build/src/MemoryController.cpp	/^bool MemoryController::FindClosedBankRequest( std::list<NVMainRequest *>& transactionQueue, $/;"	f	class:MemoryController
+FindOldestReadyRequest	build/src/MemoryController.cpp	/^bool MemoryController::FindOldestReadyRequest( std::list<NVMainRequest *>& transactionQueue, $/;"	f	class:MemoryController
+FindRowBufferHit	build/src/MemoryController.cpp	/^bool MemoryController::FindRowBufferHit( std::list<NVMainRequest *>& transactionQueue, $/;"	f	class:MemoryController
+FindStarvedRequest	build/src/MemoryController.cpp	/^bool MemoryController::FindStarvedRequest( std::list<NVMainRequest *>& transactionQueue, $/;"	f	class:MemoryController
+FindWriteStalledRead	build/src/MemoryController.cpp	/^bool MemoryController::FindWriteStalledRead( std::list<NVMainRequest *>& transactionQueue, $/;"	f	class:MemoryController
+FindWriteStalledRead	build/src/MemoryController.cpp	/^bool MemoryController::FindWriteStalledRead( std::list<NVMainRequest *>& transactionQueue,$/;"	f	class:MemoryController
+GetCommandQueueId	build/src/MemoryController.cpp	/^ncounter_t MemoryController::GetCommandQueueId( NVMAddress addr )$/;"	f	class:MemoryController
+GetConfig	build/src/MemoryController.cpp	/^Config *MemoryController::GetConfig( )$/;"	f	class:MemoryController
+GetID	build/src/MemoryController.cpp	/^unsigned int MemoryController::GetID( )$/;"	f	class:MemoryController
+HandleLowPower	build/src/MemoryController.cpp	/^void MemoryController::HandleLowPower( )$/;"	f	class:MemoryController
+HandleRefresh	build/src/MemoryController.cpp	/^bool MemoryController::HandleRefresh( )$/;"	f	class:MemoryController
+IncrementRefreshCounter	build/src/MemoryController.cpp	/^void MemoryController::IncrementRefreshCounter( const ncounter_t bank, const uint64_t rank )$/;"	f	class:MemoryController
+InitQueues	build/src/MemoryController.cpp	/^void MemoryController::InitQueues( unsigned int numQueues )$/;"	f	class:MemoryController
+IsIssuable	build/src/MemoryController.cpp	/^bool MemoryController::IsIssuable( NVMainRequest * \/*request*\/, FailReason * \/*fail*\/ )$/;"	f	class:MemoryController
+IsLastRequest	build/src/MemoryController.cpp	/^bool MemoryController::IsLastRequest( std::list<NVMainRequest *>& transactionQueue,$/;"	f	class:MemoryController
+IsRefreshBankQueueEmpty	build/src/MemoryController.cpp	/^bool MemoryController::IsRefreshBankQueueEmpty( const ncounter_t bank, const uint64_t rank )$/;"	f	class:MemoryController
+IssueMemoryCommands	build/src/MemoryController.cpp	/^bool MemoryController::IssueMemoryCommands( NVMainRequest *req )$/;"	f	class:MemoryController
+MakeActivateRequest	build/src/MemoryController.cpp	/^NVMainRequest *MemoryController::MakeActivateRequest( NVMainRequest *triggerRequest )$/;"	f	class:MemoryController
+MakeActivateRequest	build/src/MemoryController.cpp	/^NVMainRequest *MemoryController::MakeActivateRequest( const ncounter_t row,$/;"	f	class:MemoryController
+MakeCachedRequest	build/src/MemoryController.cpp	/^NVMainRequest *MemoryController::MakeCachedRequest( NVMainRequest *triggerRequest )$/;"	f	class:MemoryController
+MakeImplicitPrechargeRequest	build/src/MemoryController.cpp	/^NVMainRequest *MemoryController::MakeImplicitPrechargeRequest( NVMainRequest *triggerRequest )$/;"	f	class:MemoryController
+MakePowerdownRequest	build/src/MemoryController.cpp	/^NVMainRequest *MemoryController::MakePowerdownRequest( OpType pdOp,$/;"	f	class:MemoryController
+MakePowerupRequest	build/src/MemoryController.cpp	/^NVMainRequest *MemoryController::MakePowerupRequest( const ncounter_t rank )$/;"	f	class:MemoryController
+MakePrechargeAllRequest	build/src/MemoryController.cpp	/^NVMainRequest *MemoryController::MakePrechargeAllRequest( NVMainRequest *triggerRequest )$/;"	f	class:MemoryController
+MakePrechargeAllRequest	build/src/MemoryController.cpp	/^NVMainRequest *MemoryController::MakePrechargeAllRequest( const ncounter_t row,$/;"	f	class:MemoryController
+MakePrechargeRequest	build/src/MemoryController.cpp	/^NVMainRequest *MemoryController::MakePrechargeRequest( NVMainRequest *triggerRequest )$/;"	f	class:MemoryController
+MakePrechargeRequest	build/src/MemoryController.cpp	/^NVMainRequest *MemoryController::MakePrechargeRequest( const ncounter_t row,$/;"	f	class:MemoryController
+MakeRefreshRequest	build/src/MemoryController.cpp	/^NVMainRequest *MemoryController::MakeRefreshRequest( const ncounter_t row,$/;"	f	class:MemoryController
+MemoryController	build/src/MemoryController.cpp	/^MemoryController::MemoryController( )$/;"	f	class:MemoryController
+MoveCurrentQueue	build/src/MemoryController.cpp	/^void MemoryController::MoveCurrentQueue( )$/;"	f	class:MemoryController
+NeedRefresh	build/src/MemoryController.cpp	/^bool MemoryController::NeedRefresh( const ncounter_t bank, const uint64_t rank )$/;"	f	class:MemoryController
+NextIssuable	build/src/MemoryController.cpp	/^ncycle_t MemoryController::NextIssuable( NVMainRequest * \/*request*\/ )$/;"	f	class:MemoryController
+PowerDown	build/src/MemoryController.cpp	/^void MemoryController::PowerDown( const ncounter_t& rankId )$/;"	f	class:MemoryController
+PowerUp	build/src/MemoryController.cpp	/^void MemoryController::PowerUp( const ncounter_t& rankId )$/;"	f	class:MemoryController
+Prequeue	build/src/MemoryController.cpp	/^void MemoryController::Prequeue( ncounter_t queueNum, NVMainRequest *request )$/;"	f	class:MemoryController
+ProcessRefreshPulse	build/src/MemoryController.cpp	/^void MemoryController::ProcessRefreshPulse( NVMainRequest* refresh )$/;"	f	class:MemoryController
+RankQueueEmpty	build/src/MemoryController.cpp	/^bool MemoryController::RankQueueEmpty( const ncounter_t& rankId )$/;"	f	class:MemoryController
+RefreshCallback	build/src/MemoryController.cpp	/^void MemoryController::RefreshCallback( void *data )$/;"	f	class:MemoryController
+RegisterStats	build/src/MemoryController.cpp	/^void MemoryController::RegisterStats( )$/;"	f	class:MemoryController
+RequestComplete	build/src/MemoryController.cpp	/^bool MemoryController::RequestComplete( NVMainRequest *request )$/;"	f	class:MemoryController
+ResetRefresh	build/src/MemoryController.cpp	/^void MemoryController::ResetRefresh( const ncounter_t bank, const uint64_t rank )$/;"	f	class:MemoryController
+ResetRefreshQueued	build/src/MemoryController.cpp	/^void MemoryController::ResetRefreshQueued( const ncounter_t bank, const ncounter_t rank )$/;"	f	class:MemoryController
+ScheduleCommandWake	build/src/MemoryController.cpp	/^void MemoryController::ScheduleCommandWake( )$/;"	f	class:MemoryController
+SetConfig	build/src/MemoryController.cpp	/^void MemoryController::SetConfig( Config *conf, bool createChildren )$/;"	f	class:MemoryController
+SetID	build/src/MemoryController.cpp	/^void MemoryController::SetID( unsigned int id )$/;"	f	class:MemoryController
+SetMappingScheme	build/src/MemoryController.cpp	/^void MemoryController::SetMappingScheme( )$/;"	f	class:MemoryController
+SetRefresh	build/src/MemoryController.cpp	/^void MemoryController::SetRefresh( const ncounter_t bank, const uint64_t rank )$/;"	f	class:MemoryController
+TransactionAvailable	build/src/MemoryController.cpp	/^bool MemoryController::TransactionAvailable( ncounter_t queueId )$/;"	f	class:MemoryController
+WasIssued	build/src/MemoryController.cpp	/^bool WasIssued( NVMainRequest *request ) { return (request->flags & NVMainRequest::FLAG_ISSUED); }$/;"	f
+operator ()	build/src/MemoryController.cpp	/^bool MemoryController::DummyPredicate::operator() ( NVMainRequest* \/*request*\/ )$/;"	f	class:MemoryController::DummyPredicate
+~MemoryController	build/src/MemoryController.cpp	/^MemoryController::~MemoryController( )$/;"	f	class:MemoryController
+AddChild	build/src/NVMObject.cpp	/^void NVMObject::AddChild( NVMObject *c )$/;"	f	class:NVMObject
+AddHook	build/src/NVMObject.cpp	/^void NVMObject::AddHook( NVMObject *hook )$/;"	f	class:NVMObject
+AddHookUnique	build/src/NVMObject.cpp	/^void NVMObject::AddHookUnique( std::vector<NVMObject *>& list, NVMObject *hook )$/;"	f	class:NVMObject
+CalculateStats	build/src/NVMObject.cpp	/^void NVMObject::CalculateStats( )$/;"	f	class:NVMObject
+CalculateStats	build/src/NVMObject.cpp	/^void NVMObject_hook::CalculateStats( )$/;"	f	class:NVMObject_hook
+Callback	build/src/NVMObject.cpp	/^void NVMObject::Callback( void * \/*data*\/ )$/;"	f	class:NVMObject
+Callback	build/src/NVMObject.cpp	/^void NVMObject_hook::Callback( void *data )$/;"	f	class:NVMObject_hook
+CreateCheckpoint	build/src/NVMObject.cpp	/^void NVMObject::CreateCheckpoint( std::string dir )$/;"	f	class:NVMObject
+Cycle	build/src/NVMObject.cpp	/^void NVMObject_hook::Cycle( ncycle_t steps )$/;"	f	class:NVMObject_hook
+Drain	build/src/NVMObject.cpp	/^bool NVMObject::Drain( )$/;"	f	class:NVMObject
+Drain	build/src/NVMObject.cpp	/^bool NVMObject_hook::Drain( )$/;"	f	class:NVMObject_hook
+GetChild	build/src/NVMObject.cpp	/^NVMObject_hook *NVMObject::GetChild( NVMainRequest *req )$/;"	f	class:NVMObject
+GetChild	build/src/NVMObject.cpp	/^NVMObject_hook *NVMObject::GetChild( ncounter_t child )$/;"	f	class:NVMObject
+GetChild	build/src/NVMObject.cpp	/^NVMObject_hook *NVMObject::GetChild( void )$/;"	f	class:NVMObject
+GetChildCount	build/src/NVMObject.cpp	/^ncounter_t NVMObject::GetChildCount( )$/;"	f	class:NVMObject
+GetChildId	build/src/NVMObject.cpp	/^ncounter_t NVMObject::GetChildId( NVMObject *c )$/;"	f	class:NVMObject
+GetChildren	build/src/NVMObject.cpp	/^std::vector<NVMObject_hook *>& NVMObject::GetChildren( )$/;"	f	class:NVMObject
+GetCurrentHookType	build/src/NVMObject.cpp	/^HookType NVMObject::GetCurrentHookType( )$/;"	f	class:NVMObject
+GetDecoder	build/src/NVMObject.cpp	/^AddressTranslator *NVMObject::GetDecoder( )$/;"	f	class:NVMObject
+GetEventQueue	build/src/NVMObject.cpp	/^EventQueue *NVMObject::GetEventQueue( )$/;"	f	class:NVMObject
+GetGlobalEventQueue	build/src/NVMObject.cpp	/^GlobalEventQueue *NVMObject::GetGlobalEventQueue( )$/;"	f	class:NVMObject
+GetHookType	build/src/NVMObject.cpp	/^HookType NVMObject::GetHookType( )$/;"	f	class:NVMObject
+GetHooks	build/src/NVMObject.cpp	/^std::vector<NVMObject *>& NVMObject::GetHooks( HookType h )$/;"	f	class:NVMObject
+GetParams	build/src/NVMObject.cpp	/^Params *NVMObject::GetParams( )$/;"	f	class:NVMObject
+GetParent	build/src/NVMObject.cpp	/^NVMObject_hook* NVMObject::GetParent( )$/;"	f	class:NVMObject
+GetStats	build/src/NVMObject.cpp	/^Stats *NVMObject::GetStats( )$/;"	f	class:NVMObject
+GetStats	build/src/NVMObject.cpp	/^Stats *NVMObject_hook::GetStats( )$/;"	f	class:NVMObject_hook
+GetTagGenerator	build/src/NVMObject.cpp	/^TagGenerator *NVMObject::GetTagGenerator( )$/;"	f	class:NVMObject
+GetTrampoline	build/src/NVMObject.cpp	/^NVMObject *NVMObject_hook::GetTrampoline( )$/;"	f	class:NVMObject_hook
+Idle	build/src/NVMObject.cpp	/^bool NVMObject::Idle( )$/;"	f	class:NVMObject
+Idle	build/src/NVMObject.cpp	/^bool NVMObject_hook::Idle( )$/;"	f	class:NVMObject_hook
+Init	build/src/NVMObject.cpp	/^void NVMObject::Init( Config * )$/;"	f	class:NVMObject
+IsIssuable	build/src/NVMObject.cpp	/^bool NVMObject::IsIssuable( NVMainRequest *, FailReason * )$/;"	f	class:NVMObject
+IsIssuable	build/src/NVMObject.cpp	/^bool NVMObject_hook::IsIssuable( NVMainRequest *req, FailReason *reason )$/;"	f	class:NVMObject_hook
+IssueAtomic	build/src/NVMObject.cpp	/^bool NVMObject::IssueAtomic( NVMainRequest * )$/;"	f	class:NVMObject
+IssueAtomic	build/src/NVMObject.cpp	/^bool NVMObject_hook::IssueAtomic( NVMainRequest *req )$/;"	f	class:NVMObject_hook
+IssueCommand	build/src/NVMObject.cpp	/^bool NVMObject::IssueCommand( NVMainRequest * )$/;"	f	class:NVMObject
+IssueCommand	build/src/NVMObject.cpp	/^bool NVMObject_hook::IssueCommand( NVMainRequest *req )$/;"	f	class:NVMObject_hook
+IssueFunctional	build/src/NVMObject.cpp	/^bool NVMObject::IssueFunctional( NVMainRequest * )$/;"	f	class:NVMObject
+IssueFunctional	build/src/NVMObject.cpp	/^bool NVMObject_hook::IssueFunctional( NVMainRequest *req )$/;"	f	class:NVMObject_hook
+MAX	build/src/NVMObject.cpp	/^ncycle_t NVMObject::MAX( const ncycle_t a, const ncycle_t b )$/;"	f	class:NVMObject
+MIN	build/src/NVMObject.cpp	/^ncycle_t NVMObject::MIN( const ncycle_t a, const ncycle_t b )$/;"	f	class:NVMObject
+NVMObject	build/src/NVMObject.cpp	/^NVMObject::NVMObject( )$/;"	f	class:NVMObject
+NVMObject_hook	build/src/NVMObject.cpp	/^NVMObject_hook::NVMObject_hook( NVMObject *t )$/;"	f	class:NVMObject_hook
+NextIssuable	build/src/NVMObject.cpp	/^ncycle_t NVMObject::NextIssuable( NVMainRequest *req )$/;"	f	class:NVMObject
+NextIssuable	build/src/NVMObject.cpp	/^ncycle_t NVMObject_hook::NextIssuable( NVMainRequest *req )$/;"	f	class:NVMObject_hook
+Notify	build/src/NVMObject.cpp	/^void NVMObject::Notify( NVMainRequest * )$/;"	f	class:NVMObject
+Notify	build/src/NVMObject.cpp	/^void NVMObject_hook::Notify( NVMainRequest *req )$/;"	f	class:NVMObject_hook
+PrintHierarchy	build/src/NVMObject.cpp	/^void NVMObject::PrintHierarchy( int depth )$/;"	f	class:NVMObject
+PrintHierarchy	build/src/NVMObject.cpp	/^void NVMObject_hook::PrintHierarchy( int depth )$/;"	f	class:NVMObject_hook
+RegisterStats	build/src/NVMObject.cpp	/^void NVMObject::RegisterStats( )$/;"	f	class:NVMObject
+RegisterStats	build/src/NVMObject.cpp	/^void NVMObject_hook::RegisterStats( )$/;"	f	class:NVMObject_hook
+RequestComplete	build/src/NVMObject.cpp	/^bool NVMObject::RequestComplete( NVMainRequest *request )$/;"	f	class:NVMObject
+RequestComplete	build/src/NVMObject.cpp	/^bool NVMObject_hook::RequestComplete( NVMainRequest *req )$/;"	f	class:NVMObject_hook
+ResetStats	build/src/NVMObject.cpp	/^void NVMObject::ResetStats( )$/;"	f	class:NVMObject
+ResetStats	build/src/NVMObject.cpp	/^void NVMObject_hook::ResetStats( )$/;"	f	class:NVMObject_hook
+RestoreCheckpoint	build/src/NVMObject.cpp	/^void NVMObject::RestoreCheckpoint( std::string dir )$/;"	f	class:NVMObject
+SetCurrentHookType	build/src/NVMObject.cpp	/^void NVMObject::SetCurrentHookType( HookType h )$/;"	f	class:NVMObject
+SetDebugName	build/src/NVMObject.cpp	/^void NVMObject::SetDebugName( std::string dn, Config *config )$/;"	f	class:NVMObject
+SetDecoder	build/src/NVMObject.cpp	/^void NVMObject::SetDecoder( AddressTranslator *at )$/;"	f	class:NVMObject
+SetEventQueue	build/src/NVMObject.cpp	/^void NVMObject::SetEventQueue( EventQueue *eq )$/;"	f	class:NVMObject
+SetGlobalEventQueue	build/src/NVMObject.cpp	/^void NVMObject::SetGlobalEventQueue( GlobalEventQueue *geq )$/;"	f	class:NVMObject
+SetHookType	build/src/NVMObject.cpp	/^void NVMObject::SetHookType( HookType h )$/;"	f	class:NVMObject
+SetParams	build/src/NVMObject.cpp	/^void NVMObject::SetParams( Params *params )$/;"	f	class:NVMObject
+SetParent	build/src/NVMObject.cpp	/^void NVMObject::SetParent( NVMObject *p )$/;"	f	class:NVMObject
+SetStats	build/src/NVMObject.cpp	/^void NVMObject::SetStats( Stats *s )$/;"	f	class:NVMObject
+SetStats	build/src/NVMObject.cpp	/^void NVMObject_hook::SetStats( Stats *s )$/;"	f	class:NVMObject_hook
+SetTagGenerator	build/src/NVMObject.cpp	/^void NVMObject::SetTagGenerator( TagGenerator *tg )$/;"	f	class:NVMObject
+StatName	build/src/NVMObject.cpp	/^std::string NVMObject::StatName( )$/;"	f	class:NVMObject
+StatName	build/src/NVMObject.cpp	/^std::string NVMObject_hook::StatName( )$/;"	f	class:NVMObject_hook
+StatName	build/src/NVMObject.cpp	/^void NVMObject::StatName( std::string name )$/;"	f	class:NVMObject
+StatName	build/src/NVMObject.cpp	/^void NVMObject_hook::StatName( std::string name )$/;"	f	class:NVMObject_hook
+UnsetParent	build/src/NVMObject.cpp	/^void NVMObject::UnsetParent( )$/;"	f	class:NVMObject
+_FindChild	build/src/NVMObject.cpp	/^NVMObject *NVMObject::_FindChild( NVMainRequest *req, const char *childClass )$/;"	f	class:NVMObject
+~NVMObject	build/src/NVMObject.cpp	/^NVMObject::~NVMObject( )$/;"	f	class:NVMObject
+~NVMObject_hook	build/src/NVMObject.cpp	/^NVMObject_hook::~NVMObject_hook( )$/;"	f	class:NVMObject_hook
+ConvertTiming	build/src/Params.cpp	/^ncycle_t Params::ConvertTiming( Config *conf, std::string param )$/;"	f	class:Params
+ConvertTiming	build/src/Params.cpp	/^void Params::ConvertTiming( Config *conf, std::string param, ncycle_t& value )$/;"	f	class:Params
+Params	build/src/Params.cpp	/^Params::Params( )$/;"	f	class:Params
+SetParams	build/src/Params.cpp	/^void Params::SetParams( Config *c )$/;"	f	class:Params
+~Params	build/src/Params.cpp	/^Params::~Params( )$/;"	f	class:Params
+DoPrefetch	build/src/Prefetcher.cpp	/^bool Prefetcher::DoPrefetch( NVMainRequest * \/*triggerOp*\/, $/;"	f	class:Prefetcher
+NotifyAccess	build/src/Prefetcher.cpp	/^bool Prefetcher::NotifyAccess( NVMainRequest * \/*accessOp*\/, $/;"	f	class:Prefetcher
+Idle	build/src/Rank.cpp	/^bool Rank::Idle( )$/;"	f	class:Rank
+GetConfig	build/src/SimInterface.cpp	/^Config *SimInterface::GetConfig( )$/;"	f	class:SimInterface
+GetDataAtAddress	build/src/SimInterface.cpp	/^int SimInterface::GetDataAtAddress( uint64_t address, NVMDataBlock *data )$/;"	f	class:SimInterface
+SetConfig	build/src/SimInterface.cpp	/^void SimInterface::SetConfig( Config *config, bool \/*createChildren*\/ )$/;"	f	class:SimInterface
+SetDataAtAddress	build/src/SimInterface.cpp	/^void SimInterface::SetDataAtAddress( uint64_t address, NVMDataBlock& data )$/;"	f	class:SimInterface
+Print	build/src/Stats.cpp	/^void StatBase::Print( std::ostream& stream, ncounter_t psInterval )$/;"	f	class:StatBase
+PrintAll	build/src/Stats.cpp	/^void Stats::PrintAll( std::ostream& stream )$/;"	f	class:Stats
+Reset	build/src/Stats.cpp	/^void StatBase::Reset( )$/;"	f	class:StatBase
+ResetAll	build/src/Stats.cpp	/^void Stats::ResetAll( )$/;"	f	class:Stats
+Stats	build/src/Stats.cpp	/^Stats::Stats( )$/;"	f	class:Stats
+addStat	build/src/Stats.cpp	/^void Stats::addStat( StatType stat, StatType resetValue, std::string statType, size_t typeSize, std::string name, std::string units )$/;"	f	class:Stats
+getStat	build/src/Stats.cpp	/^StatType Stats::getStat( std::string name )$/;"	f	class:Stats
+removeStat	build/src/Stats.cpp	/^void Stats::removeStat( StatType stat )$/;"	f	class:Stats
+~Stats	build/src/Stats.cpp	/^Stats::~Stats( )$/;"	f	class:Stats
+Activate	build/src/SubArray.cpp	/^bool SubArray::Activate( NVMainRequest *request )$/;"	f	class:SubArray
+BetweenWriteIterations	build/src/SubArray.cpp	/^bool SubArray::BetweenWriteIterations( )$/;"	f	class:SubArray
+CalculateStats	build/src/SubArray.cpp	/^void SubArray::CalculateStats( )$/;"	f	class:SubArray
+CheckWritePausing	build/src/SubArray.cpp	/^void SubArray::CheckWritePausing( )$/;"	f	class:SubArray
+Count32MLC1	build/src/SubArray.cpp	/^ncounter_t __attribute__((optimize("0"))) SubArray::Count32MLC1( uint32_t data )$/;"	f	class:SubArray
+Count32MLC2	build/src/SubArray.cpp	/^ncounter_t __attribute__((optimize("0"))) SubArray::Count32MLC2( uint8_t value, uint32_t data )$/;"	f	class:SubArray
+CountBitsMLC1	build/src/SubArray.cpp	/^ncounter_t __attribute__((optimize("0"))) SubArray::CountBitsMLC1( uint8_t value, uint32_t *data, ncounter_t words )$/;"	f	class:SubArray
+CountBitsMLC2	build/src/SubArray.cpp	/^ncounter_t __attribute__((optimize("0"))) SubArray::CountBitsMLC2( uint8_t value, uint32_t *data, ncounter_t words )$/;"	f	class:SubArray
+Cycle	build/src/SubArray.cpp	/^void SubArray::Cycle( ncycle_t )$/;"	f	class:SubArray
+GetId	build/src/SubArray.cpp	/^ncounter_t SubArray::GetId( )$/;"	f	class:SubArray
+GetName	build/src/SubArray.cpp	/^std::string SubArray::GetName( )$/;"	f	class:SubArray
+GetState	build/src/SubArray.cpp	/^SubArrayState SubArray::GetState( ) $/;"	f	class:SubArray
+Idle	build/src/SubArray.cpp	/^bool SubArray::Idle( )$/;"	f	class:SubArray
+IsIssuable	build/src/SubArray.cpp	/^bool SubArray::IsIssuable( NVMainRequest *req, FailReason *reason )$/;"	f	class:SubArray
+IssueCommand	build/src/SubArray.cpp	/^bool SubArray::IssueCommand( NVMainRequest *req )$/;"	f	class:SubArray
+NextIssuable	build/src/SubArray.cpp	/^ncycle_t SubArray::NextIssuable( NVMainRequest *request )$/;"	f	class:SubArray
+Precharge	build/src/SubArray.cpp	/^bool SubArray::Precharge( NVMainRequest *request )$/;"	f	class:SubArray
+Read	build/src/SubArray.cpp	/^bool SubArray::Read( NVMainRequest *request )$/;"	f	class:SubArray
+Refresh	build/src/SubArray.cpp	/^bool SubArray::Refresh( NVMainRequest* request )$/;"	f	class:SubArray
+RegisterStats	build/src/SubArray.cpp	/^void SubArray::RegisterStats( )$/;"	f	class:SubArray
+RequestComplete	build/src/SubArray.cpp	/^bool SubArray::RequestComplete( NVMainRequest *req )$/;"	f	class:SubArray
+SetConfig	build/src/SubArray.cpp	/^void SubArray::SetConfig( Config *c, bool createChildren )$/;"	f	class:SubArray
+SetId	build/src/SubArray.cpp	/^void SubArray::SetId( ncounter_t id )$/;"	f	class:SubArray
+SetName	build/src/SubArray.cpp	/^void SubArray::SetName( std::string )$/;"	f	class:SubArray
+SubArray	build/src/SubArray.cpp	/^SubArray::SubArray( )$/;"	f	class:SubArray
+UpdateEndurance	build/src/SubArray.cpp	/^ncycle_t SubArray::UpdateEndurance( NVMainRequest *request )$/;"	f	class:SubArray
+Write	build/src/SubArray.cpp	/^bool SubArray::Write( NVMainRequest *request )$/;"	f	class:SubArray
+WriteCellData	build/src/SubArray.cpp	49;"	d	file:
+WriteCellData2	build/src/SubArray.cpp	/^ncycle_t SubArray::WriteCellData2( NVMainRequest *request )$/;"	f	class:SubArray
+~SubArray	build/src/SubArray.cpp	/^SubArray::~SubArray( )$/;"	f	class:SubArray
+CreateTag	build/src/TagGenerator.cpp	/^int TagGenerator::CreateTag( std::string name )$/;"	f	class:TagGenerator
+GetTagId	build/src/TagGenerator.cpp	/^int TagGenerator::GetTagId( std::string name )$/;"	f	class:TagGenerator
+GetTagName	build/src/TagGenerator.cpp	/^std::string TagGenerator::GetTagName( int tag )$/;"	f	class:TagGenerator
+TagGenerator	build/src/TagGenerator.cpp	/^TagGenerator::TagGenerator( int startId )$/;"	f	class:TagGenerator
+~TagGenerator	build/src/TagGenerator.cpp	/^TagGenerator::~TagGenerator( )$/;"	f	class:TagGenerator
+GetBitWidths	build/src/TranslationMethod.cpp	/^void TranslationMethod::GetBitWidths( unsigned int *rowBits, unsigned int *colBits, unsigned int *bankBits,$/;"	f	class:TranslationMethod
+GetCount	build/src/TranslationMethod.cpp	/^void TranslationMethod::GetCount( uint64_t *rows, uint64_t *cols, uint64_t *banks, $/;"	f	class:TranslationMethod
+GetOrder	build/src/TranslationMethod.cpp	/^void TranslationMethod::GetOrder( int *row, int *col, int *bank, int *rank, int *channel, int *subarray )$/;"	f	class:TranslationMethod
+SetAddressMappingScheme	build/src/TranslationMethod.cpp	/^void TranslationMethod::SetAddressMappingScheme( std::string scheme )$/;"	f	class:TranslationMethod
+SetBitWidths	build/src/TranslationMethod.cpp	/^void TranslationMethod::SetBitWidths( unsigned int rowBits, unsigned int colBits, unsigned int bankBits,$/;"	f	class:TranslationMethod
+SetCount	build/src/TranslationMethod.cpp	/^void TranslationMethod::SetCount( uint64_t rows, uint64_t cols, uint64_t banks, $/;"	f	class:TranslationMethod
+SetOrder	build/src/TranslationMethod.cpp	/^void TranslationMethod::SetOrder( int row, int col, int bank, int rank, int channel, int subarray )$/;"	f	class:TranslationMethod
+TranslationMethod	build/src/TranslationMethod.cpp	/^TranslationMethod::TranslationMethod( )$/;"	f	class:TranslationMethod
+~TranslationMethod	build/src/TranslationMethod.cpp	/^TranslationMethod::~TranslationMethod( )$/;"	f	class:TranslationMethod
+GetNextAccess	build/traceReader/NVMainTrace/NVMainTraceReader.cpp	/^bool NVMainTraceReader::GetNextAccess( TraceLine *nextAccess )$/;"	f	class:NVMainTraceReader
+GetNextNAccesses	build/traceReader/NVMainTrace/NVMainTraceReader.cpp	/^int NVMainTraceReader::GetNextNAccesses( unsigned int N, $/;"	f	class:NVMainTraceReader
+GetTraceFile	build/traceReader/NVMainTrace/NVMainTraceReader.cpp	/^std::string NVMainTraceReader::GetTraceFile( )$/;"	f	class:NVMainTraceReader
+NVMainTraceReader	build/traceReader/NVMainTrace/NVMainTraceReader.cpp	/^NVMainTraceReader::NVMainTraceReader( )$/;"	f	class:NVMainTraceReader
+SetTraceFile	build/traceReader/NVMainTrace/NVMainTraceReader.cpp	/^void NVMainTraceReader::SetTraceFile( std::string file )$/;"	f	class:NVMainTraceReader
+~NVMainTraceReader	build/traceReader/NVMainTrace/NVMainTraceReader.cpp	/^NVMainTraceReader::~NVMainTraceReader( )$/;"	f	class:NVMainTraceReader
+GetNextAccess	build/traceReader/RubyTrace/RubyTraceReader.cpp	/^bool RubyTraceReader::GetNextAccess( TraceLine *nextAccess )$/;"	f	class:RubyTraceReader
+GetNextNAccesses	build/traceReader/RubyTrace/RubyTraceReader.cpp	/^int RubyTraceReader::GetNextNAccesses( unsigned int N, $/;"	f	class:RubyTraceReader
+GetTraceFile	build/traceReader/RubyTrace/RubyTraceReader.cpp	/^std::string RubyTraceReader::GetTraceFile( )$/;"	f	class:RubyTraceReader
+RubyTraceReader	build/traceReader/RubyTrace/RubyTraceReader.cpp	/^RubyTraceReader::RubyTraceReader( )$/;"	f	class:RubyTraceReader
+SetTraceFile	build/traceReader/RubyTrace/RubyTraceReader.cpp	/^void RubyTraceReader::SetTraceFile( std::string file )$/;"	f	class:RubyTraceReader
+~RubyTraceReader	build/traceReader/RubyTrace/RubyTraceReader.cpp	/^RubyTraceReader::~RubyTraceReader( )$/;"	f	class:RubyTraceReader
+GetAddress	build/traceReader/TraceLine.cpp	/^NVMAddress& TraceLine::GetAddress( )$/;"	f	class:TraceLine
+GetCycle	build/traceReader/TraceLine.cpp	/^ncycle_t TraceLine::GetCycle( ) $/;"	f	class:TraceLine
+GetData	build/traceReader/TraceLine.cpp	/^NVMDataBlock& TraceLine::GetData( )$/;"	f	class:TraceLine
+GetOldData	build/traceReader/TraceLine.cpp	/^NVMDataBlock& TraceLine::GetOldData( )$/;"	f	class:TraceLine
+GetOperation	build/traceReader/TraceLine.cpp	/^OpType TraceLine::GetOperation( )$/;"	f	class:TraceLine
+GetThreadId	build/traceReader/TraceLine.cpp	/^ncounters_t TraceLine::GetThreadId( )$/;"	f	class:TraceLine
+SetLine	build/traceReader/TraceLine.cpp	/^void TraceLine::SetLine( NVMAddress& addr, OpType op, ncycle_t cy, NVMDataBlock& data, NVMDataBlock& oldData, ncounters_t threadId )$/;"	f	class:TraceLine
+TraceLine	build/traceReader/TraceLine.cpp	/^TraceLine::TraceLine( )$/;"	f	class:TraceLine
+~TraceLine	build/traceReader/TraceLine.cpp	/^TraceLine::~TraceLine( )$/;"	f	class:TraceLine
+CreateNewTraceReader	build/traceReader/TraceReaderFactory.cpp	/^GenericTraceReader *TraceReaderFactory::CreateNewTraceReader( std::string reader )$/;"	f	class:TraceReaderFactory
+Cycle	build/traceSim/traceMain.cpp	/^void TraceMain::Cycle( ncycle_t \/*steps*\/ )$/;"	f	class:TraceMain
+RequestComplete	build/traceSim/traceMain.cpp	/^bool TraceMain::RequestComplete( NVMainRequest* request )$/;"	f	class:TraceMain
+RunTrace	build/traceSim/traceMain.cpp	/^int TraceMain::RunTrace( int argc, char *argv[] )$/;"	f	class:TraceMain
+TraceMain	build/traceSim/traceMain.cpp	/^TraceMain::TraceMain( )$/;"	f	class:TraceMain
+main	build/traceSim/traceMain.cpp	/^int main( int argc, char *argv[] )$/;"	f
+~TraceMain	build/traceSim/traceMain.cpp	/^TraceMain::~TraceMain( )$/;"	f	class:TraceMain
+DRAMPower2TraceWriter	build/traceWriter/DRAMPower2Trace/DRAMPower2TraceWriter.cpp	/^DRAMPower2TraceWriter::DRAMPower2TraceWriter( ) : lastCommand(0)$/;"	f	class:DRAMPower2TraceWriter
+GetPerChannelTraces	build/traceWriter/DRAMPower2Trace/DRAMPower2TraceWriter.cpp	/^bool DRAMPower2TraceWriter::GetPerChannelTraces( )$/;"	f	class:DRAMPower2TraceWriter
+GetPerRankTraces	build/traceWriter/DRAMPower2Trace/DRAMPower2TraceWriter.cpp	/^bool DRAMPower2TraceWriter::GetPerRankTraces( )$/;"	f	class:DRAMPower2TraceWriter
+GetTraceFile	build/traceWriter/DRAMPower2Trace/DRAMPower2TraceWriter.cpp	/^std::string DRAMPower2TraceWriter::GetTraceFile( )$/;"	f	class:DRAMPower2TraceWriter
+Init	build/traceWriter/DRAMPower2Trace/DRAMPower2TraceWriter.cpp	/^void DRAMPower2TraceWriter::Init( Config *conf )$/;"	f	class:DRAMPower2TraceWriter
+SetNextAccess	build/traceWriter/DRAMPower2Trace/DRAMPower2TraceWriter.cpp	/^bool DRAMPower2TraceWriter::SetNextAccess( TraceLine *nextAccess )$/;"	f	class:DRAMPower2TraceWriter
+SetTraceFile	build/traceWriter/DRAMPower2Trace/DRAMPower2TraceWriter.cpp	/^void DRAMPower2TraceWriter::SetTraceFile( std::string file )$/;"	f	class:DRAMPower2TraceWriter
+WriteTraceLine	build/traceWriter/DRAMPower2Trace/DRAMPower2TraceWriter.cpp	/^void DRAMPower2TraceWriter::WriteTraceLine( std::ostream& stream, TraceLine *line )$/;"	f	class:DRAMPower2TraceWriter
+~DRAMPower2TraceWriter	build/traceWriter/DRAMPower2Trace/DRAMPower2TraceWriter.cpp	/^DRAMPower2TraceWriter::~DRAMPower2TraceWriter( )$/;"	f	class:DRAMPower2TraceWriter
+GenericTraceWriter	build/traceWriter/GenericTraceWriter.cpp	/^GenericTraceWriter::GenericTraceWriter( ) : echo_on(false), perChannel(false), perRank(false)$/;"	f	class:GenericTraceWriter
+GetEcho	build/traceWriter/GenericTraceWriter.cpp	/^bool GenericTraceWriter::GetEcho( )$/;"	f	class:GenericTraceWriter
+GetPerChannelTraces	build/traceWriter/GenericTraceWriter.cpp	/^bool GenericTraceWriter::GetPerChannelTraces( )$/;"	f	class:GenericTraceWriter
+GetPerRankTraces	build/traceWriter/GenericTraceWriter.cpp	/^bool GenericTraceWriter::GetPerRankTraces( )$/;"	f	class:GenericTraceWriter
+Init	build/traceWriter/GenericTraceWriter.cpp	/^void GenericTraceWriter::Init( Config * \/*conf*\/ )$/;"	f	class:GenericTraceWriter
+SetEcho	build/traceWriter/GenericTraceWriter.cpp	/^void GenericTraceWriter::SetEcho( bool echo )$/;"	f	class:GenericTraceWriter
+SetNextNAccesses	build/traceWriter/GenericTraceWriter.cpp	/^int GenericTraceWriter::SetNextNAccesses( unsigned int N, std::vector<TraceLine *> *nextAccesses )$/;"	f	class:GenericTraceWriter
+SetPerChannelTraces	build/traceWriter/GenericTraceWriter.cpp	/^void GenericTraceWriter::SetPerChannelTraces( bool perChannel )$/;"	f	class:GenericTraceWriter
+SetPerRankTraces	build/traceWriter/GenericTraceWriter.cpp	/^void GenericTraceWriter::SetPerRankTraces( bool perRank )$/;"	f	class:GenericTraceWriter
+~GenericTraceWriter	build/traceWriter/GenericTraceWriter.cpp	/^GenericTraceWriter::~GenericTraceWriter( )$/;"	f	class:GenericTraceWriter
+GetTraceFile	build/traceWriter/NVMainTrace/NVMainTraceWriter.cpp	/^std::string NVMainTraceWriter::GetTraceFile( )$/;"	f	class:NVMainTraceWriter
+NVMainTraceWriter	build/traceWriter/NVMainTrace/NVMainTraceWriter.cpp	/^NVMainTraceWriter::NVMainTraceWriter( )$/;"	f	class:NVMainTraceWriter
+SetNextAccess	build/traceWriter/NVMainTrace/NVMainTraceWriter.cpp	/^bool NVMainTraceWriter::SetNextAccess( TraceLine *nextAccess )$/;"	f	class:NVMainTraceWriter
+SetTraceFile	build/traceWriter/NVMainTrace/NVMainTraceWriter.cpp	/^void NVMainTraceWriter::SetTraceFile( std::string file )$/;"	f	class:NVMainTraceWriter
+WriteTraceLine	build/traceWriter/NVMainTrace/NVMainTraceWriter.cpp	/^void NVMainTraceWriter::WriteTraceLine( std::ostream& stream, TraceLine *line )$/;"	f	class:NVMainTraceWriter
+~NVMainTraceWriter	build/traceWriter/NVMainTrace/NVMainTraceWriter.cpp	/^NVMainTraceWriter::~NVMainTraceWriter( )$/;"	f	class:NVMainTraceWriter
+CreateNewTraceWriter	build/traceWriter/TraceWriterFactory.cpp	/^GenericTraceWriter *TraceWriterFactory::CreateNewTraceWriter( std::string writer )$/;"	f	class:TraceWriterFactory
+GetPerChannelTraces	build/traceWriter/VerilogTrace/VerilogTraceWriter.cpp	/^bool VerilogTraceWriter::GetPerChannelTraces( )$/;"	f	class:VerilogTraceWriter
+GetPerRankTraces	build/traceWriter/VerilogTrace/VerilogTraceWriter.cpp	/^bool VerilogTraceWriter::GetPerRankTraces( )$/;"	f	class:VerilogTraceWriter
+GetTraceFile	build/traceWriter/VerilogTrace/VerilogTraceWriter.cpp	/^std::string VerilogTraceWriter::GetTraceFile( )$/;"	f	class:VerilogTraceWriter
+Init	build/traceWriter/VerilogTrace/VerilogTraceWriter.cpp	/^void VerilogTraceWriter::Init( Config *conf )$/;"	f	class:VerilogTraceWriter
+SetNextAccess	build/traceWriter/VerilogTrace/VerilogTraceWriter.cpp	/^bool VerilogTraceWriter::SetNextAccess( TraceLine *nextAccess )$/;"	f	class:VerilogTraceWriter
+SetTraceFile	build/traceWriter/VerilogTrace/VerilogTraceWriter.cpp	/^void VerilogTraceWriter::SetTraceFile( std::string file )$/;"	f	class:VerilogTraceWriter
+VerilogTraceWriter	build/traceWriter/VerilogTrace/VerilogTraceWriter.cpp	/^VerilogTraceWriter::VerilogTraceWriter( ) : lastCommand(0)$/;"	f	class:VerilogTraceWriter
+WriteTraceLine	build/traceWriter/VerilogTrace/VerilogTraceWriter.cpp	/^void VerilogTraceWriter::WriteTraceLine( std::ostream& stream, TraceLine *line )$/;"	f	class:VerilogTraceWriter
+~VerilogTraceWriter	build/traceWriter/VerilogTrace/VerilogTraceWriter.cpp	/^VerilogTraceWriter::~VerilogTraceWriter( )$/;"	f	class:VerilogTraceWriter
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 BANK_TIMING	include/FailReasons.h	/^                   BANK_TIMING,$/;"	e	enum:NVM::FailReasons
 CLOSED_REFRESH_WAITING	include/FailReasons.h	/^                   CLOSED_REFRESH_WAITING,$/;"	e	enum:NVM::FailReasons
@@ -1493,6 +2221,7 @@ FLAG_CANCELLED	include/NVMainRequest.h	/^        FLAG_CANCELLED = 8,            
 FLAG_COUNT	include/NVMainRequest.h	/^        FLAG_COUNT$/;"	e	enum:NVM::NVMainRequest::NVMainRequestFlags
 FLAG_FORCED	include/NVMainRequest.h	/^        FLAG_FORCED = 32,               \/\/ This write can not be paused or cancelled$/;"	e	enum:NVM::NVMainRequest::NVMainRequestFlags
 FLAG_ISSUED	include/NVMainRequest.h	/^        FLAG_ISSUED = 128,              \/\/ Request has left the command queue$/;"	e	enum:NVM::NVMainRequest::NVMainRequestFlags
+FLAG_ISSUED_BY_SB	include/NVMainRequest.h	/^        FLAG_ISSUED_BY_SB = 130,        \/\/ Request has left the Sync Buffer --zhuguoliang$/;"	e	enum:NVM::NVMainRequest::NVMainRequestFlags
 FLAG_IS_READ	include/NVMainRequest.h	/^        FLAG_IS_READ = 2,               \/\/ Is a read (i.e., READ or READ_PRE, etc.)$/;"	e	enum:NVM::NVMainRequest::NVMainRequestFlags
 FLAG_IS_WRITE	include/NVMainRequest.h	/^        FLAG_IS_WRITE = 4,              \/\/ Is a write (i.e., WRITE or WRITE_PRE, etc.)$/;"	e	enum:NVM::NVMainRequest::NVMainRequestFlags
 FLAG_LAST_REQUEST	include/NVMainRequest.h	/^        FLAG_LAST_REQUEST = 1,          \/\/ Last request for a row in the transaction queue$/;"	e	enum:NVM::NVMainRequest::NVMainRequestFlags
@@ -1686,6 +2415,7 @@ granularity	src/EnduranceModel.h	/^    uint64_t granularity;$/;"	m	class:NVM::En
 life	src/EnduranceModel.h	/^    std::map<uint64_t, uint64_t> life;$/;"	m	class:NVM::EnduranceModel
 ~EnduranceModel	src/EnduranceModel.h	/^    ~EnduranceModel( ) {}$/;"	f	class:NVM::EnduranceModel
 AddSystem	src/EventQueue.cpp	/^void GlobalEventQueue::AddSystem( NVMain *subSystem, Config *config )$/;"	f	class:GlobalEventQueue
+AddSystem	src/EventQueue.cpp	/^void GlobalEventQueue::AddSystem( Rank *hrank, Config *config )$/;"	f	class:GlobalEventQueue
 Cycle	src/EventQueue.cpp	/^void GlobalEventQueue::Cycle( ncycle_t steps )$/;"	f	class:GlobalEventQueue
 EventQueue	src/EventQueue.cpp	/^EventQueue::EventQueue( )$/;"	f	class:EventQueue
 FindCallback	src/EventQueue.cpp	/^Event *EventQueue::FindCallback( NVMObject *recipient, CallbackPtr method, ncycle_t when, void *data, int priority ) const$/;"	f	class:EventQueue

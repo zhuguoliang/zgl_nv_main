@@ -302,6 +302,9 @@ int TraceMain::RunTrace( int argc, char *argv[] )
 
                         GetChild( )->Cycle( 1 );
 
+                        /*zhuguoliang*/
+                        std::cout<< "----traceMain currentCycle is "<< currentCycle << std::endl;
+
                         currentCycle++;
                     }
                 }
@@ -328,6 +331,9 @@ int TraceMain::RunTrace( int argc, char *argv[] )
                 {
                     GetChild( )->Cycle( 1 );
                     currentCycle++;
+                    /*zhuguoliang*/
+                        std::cout<< "Waiting for MC----traceMain currentCycle is "<< currentCycle << std::endl;
+
                 }
             }
 

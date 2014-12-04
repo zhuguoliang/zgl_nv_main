@@ -99,6 +99,30 @@ StandardRank::~StandardRank( )
 
 void StandardRank::SetConfig( Config *c, bool createChildren )
 {
+     //std::cout<< "HRANK named " << StatName()<< std::endl;
+    /*
+    std::stringstream formatter1;
+    formatter1.str( "" );
+    formatter1 << GetParent( )->StatName( ) << ".babyhrank";
+    StatName(formatter1.str( ));
+
+  std::cout<<"StandardRank::SetConfig"<<std::endl;
+*/
+        //std::vector<NVMObject_hook *>::iterator it;
+        //std::vector<NVMObject_hook *>& childNodes = GetParent( )->GetTrampoline( )-> GetChildren( );
+         //std::cout<<"parent name is "<< GetParent( )->StatName( )<<std::endl;
+         //it = childNodes.begin();
+         //std::cout << "Mother's children hook name is " << (*it)->StatName( ) << std::endl;
+        
+/*
+        for( it = childNodes.begin(); it != childNodes.end(); it++ )
+        {
+            std::cout << "Mother's children hook name is " << (*it)->StatName( ) << std::endl;
+        }
+*/
+
+
+
     conf = c;
 
     Params *params = new Params( );
@@ -135,8 +159,9 @@ void StandardRank::SetConfig( Config *c, bool createChildren )
     {
         /* When selecting a child, use the bank field from the decoder. */
         AddressTranslator *rankAT = DecoderFactory::CreateDecoderNoWarn( conf->GetString( "Decoder" ) );
-        rankAT->SetTranslationMethod( GetParent( )->GetTrampoline( )->GetDecoder( )->GetTranslationMethod( ) );
-        rankAT->SetDefaultField( BANK_FIELD );
+        std::cout << "The parent hook name is "<< GetParent( )->StatName( ) <<std::endl;/*zhuguoliang*/
+        rankAT->SetTranslationMethod( GetParent( )->GetTrampoline( )->GetParent( )->GetTrampoline( )->GetDecoder( )->GetTranslationMethod( ) );
+        rankAT->SetDefaultField( BANK_FIELD );  
         rankAT->SetConfig( c, createChildren );
         SetDecoder( rankAT );
 
@@ -156,6 +181,7 @@ void StandardRank::SetConfig( Config *c, bool createChildren )
             formatter << StatName( ) << ".bank" << i;
             nextBank->StatName( formatter.str( ) );
 
+            //std::cout<< "HRANK named " << StatName()<< std::endl;
             nextBank->SetParent( this );
             AddChild( nextBank );
 
@@ -187,6 +213,8 @@ void StandardRank::SetConfig( Config *c, bool createChildren )
     rrdWaitTotal = 0;
     actWaitTotal = 0;
 }
+
+
 
 void StandardRank::RegisterStats( )
 {
@@ -759,6 +787,12 @@ bool StandardRank::IsIssuable( NVMainRequest *req, FailReason *reason )
         rv = GetChild( req )->IsIssuable( req, reason );
     }
 
+
+
+     if(rv==false){
+        std::cout<<" NOT ISSUABLE from StandardRank \n";
+    }
+
     return rv;
 }
 
@@ -884,7 +918,8 @@ void StandardRank::Cycle( ncycle_t steps )
 {
     for( ncounter_t childIdx = 0; childIdx < GetChildCount( ); childIdx++ )
         GetChild( childIdx )->Cycle( steps );
-
+    /*zhuguoliang*/
+    std::cout<< "----StandardRank::Cycle currentCycle is "<< GetEventQueue()->GetCurrentCycle() << std::endl;
     /* Count cycle numbers and calculate background energy for each state */
     switch( state )
     {

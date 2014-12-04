@@ -1,0 +1,1149 @@
+NVMain command line is:
+./nvmain.debug Config/PCM_ISSCC_2012_4GB.config Tests/Traces/hello_world.nvt 100 
+
+Config: Warning: Key EventDriven is not set. Using 'false' as the default. Please configure this value if this is wrong.
+NVMain: GlobalEventQueue: Added a memory subsystem running at 400MHz. My frequency is 2000MHz.
+Config: Warning: Key MEM_Freq is not set. Using '0' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD0 is not set. Using '85' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD1 is not set. Using '54' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD2P0 is not set. Using '30' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD2P1 is not set. Using '30' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD2N is not set. Using '37' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD3P is not set. Using '35' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD3N is not set. Using '40' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD4R is not set. Using '160' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD4W is not set. Using '165' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD5B is not set. Using '200' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD6 is not set. Using '12' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Eactstdby is not set. Using '0.09009' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Eprestdby is not set. Using '0.083333' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Rtt_nom is not set. Using '30' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Rtt_wr is not set. Using '60' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Rtt_cont is not set. Using '75' as the default. Please configure this value if this is wrong.
+Config: Warning: Key VDDQ is not set. Using '1.5' as the default. Please configure this value if this is wrong.
+Config: Warning: Key VSSQ is not set. Using '0' as the default. Please configure this value if this is wrong.
+Config: Warning: Key RanksPerDIMM is not set. Using '1' as the default. Please configure this value if this is wrong.
+Config: Warning: Key DataEncoder is not set. Using 'default' as the default. Please configure this value if this is wrong.
+Config: Warning: Key UseLowPower is not set. Using 'true' as the default. Please configure this value if this is wrong.
+Config: Warning: Key PowerDownMode is not set. Using 'FASTEXIT' as the default. Please configure this value if this is wrong.
+Config: Warning: Key PrintAllDevices is not set. Using 'false' as the default. Please configure this value if this is wrong.
+Config: Warning: Key PrintConfig is not set. Using 'false' as the default. Please configure this value if this is wrong.
+Config: Warning: Key StaggerRefresh is not set. Using 'false' as the default. Please configure this value if this is wrong.
+Config: Warning: Key UsePrecharge is not set. Using 'true' as the default. Please configure this value if this is wrong.
+Config: Warning: Key OffChipLatency is not set. Using '10' as the default. Please configure this value if this is wrong.
+Config: Warning: Key RBSize is not set. Using '32' as the default. Please configure this value if this is wrong.
+Config: Warning: Key MemoryPrefetcher is not set. Using 'none' as the default. Please configure this value if this is wrong.
+Config: Warning: Key PrefetchBufferSize is not set. Using '32' as the default. Please configure this value if this is wrong.
+Config: Warning: Key MLCLevels is not set. Using '1' as the default. Please configure this value if this is wrong.
+Config: Warning: Key WPVariance is not set. Using '1' as the default. Please configure this value if this is wrong.
+Config: Warning: Key UniformWrites is not set. Using 'true' as the default. Please configure this value if this is wrong.
+Config: Warning: Key WriteAllBits is not set. Using 'true' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Ereset is not set. Using '0.054331' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Eset is not set. Using '0.101581' as the default. Please configure this value if this is wrong.
+Config: Warning: Key nWP00 is not set. Using '0' as the default. Please configure this value if this is wrong.
+Config: Warning: Key nWP01 is not set. Using '7' as the default. Please configure this value if this is wrong.
+Config: Warning: Key nWP10 is not set. Using '5' as the default. Please configure this value if this is wrong.
+Config: Warning: Key nWP11 is not set. Using '1' as the default. Please configure this value if this is wrong.
+Config: Warning: Key WPMaxVariance is not set. Using '2' as the default. Please configure this value if this is wrong.
+Config: Warning: Key DeadlockTimer is not set. Using '10000000' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EnableDebug is not set. Using 'false' as the default. Please configure this value if this is wrong.
+Config: Warning: Key WritePausing is not set. Using 'false' as the default. Please configure this value if this is wrong.
+Config: Warning: Key PauseThreshold is not set. Using '0.4' as the default. Please configure this value if this is wrong.
+Config: Warning: Key MaxCancellations is not set. Using '4' as the default. Please configure this value if this is wrong.
+NVMain: the address mapping order is 
+	Sub-Array 1
+	Row 6
+	Column 2
+	Bank 4
+	Rank 5
+	Channel 3
+Config: Warning: Key CONFIG_CHANNEL0 is not set. Using '' as the default. Please configure this value if this is wrong.
+Created a First Ready First Come First Serve memory         controller with write queue!
+Config: Warning: Key EventDriven is not set. Using 'false' as the default. Please configure this value if this is wrong.
+Config: Warning: Key MEM_Freq is not set. Using '0' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD0 is not set. Using '85' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD1 is not set. Using '54' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD2P0 is not set. Using '30' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD2P1 is not set. Using '30' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD2N is not set. Using '37' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD3P is not set. Using '35' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD3N is not set. Using '40' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD4R is not set. Using '160' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD4W is not set. Using '165' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD5B is not set. Using '200' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD6 is not set. Using '12' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Eactstdby is not set. Using '0.09009' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Eprestdby is not set. Using '0.083333' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Rtt_nom is not set. Using '30' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Rtt_wr is not set. Using '60' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Rtt_cont is not set. Using '75' as the default. Please configure this value if this is wrong.
+Config: Warning: Key VDDQ is not set. Using '1.5' as the default. Please configure this value if this is wrong.
+Config: Warning: Key VSSQ is not set. Using '0' as the default. Please configure this value if this is wrong.
+Config: Warning: Key RanksPerDIMM is not set. Using '1' as the default. Please configure this value if this is wrong.
+Config: Warning: Key DataEncoder is not set. Using 'default' as the default. Please configure this value if this is wrong.
+Config: Warning: Key UseLowPower is not set. Using 'true' as the default. Please configure this value if this is wrong.
+Config: Warning: Key PowerDownMode is not set. Using 'FASTEXIT' as the default. Please configure this value if this is wrong.
+Config: Warning: Key PrintAllDevices is not set. Using 'false' as the default. Please configure this value if this is wrong.
+Config: Warning: Key PrintConfig is not set. Using 'false' as the default. Please configure this value if this is wrong.
+Config: Warning: Key StaggerRefresh is not set. Using 'false' as the default. Please configure this value if this is wrong.
+Config: Warning: Key UsePrecharge is not set. Using 'true' as the default. Please configure this value if this is wrong.
+Config: Warning: Key OffChipLatency is not set. Using '10' as the default. Please configure this value if this is wrong.
+Config: Warning: Key RBSize is not set. Using '32' as the default. Please configure this value if this is wrong.
+Config: Warning: Key MemoryPrefetcher is not set. Using 'none' as the default. Please configure this value if this is wrong.
+Config: Warning: Key PrefetchBufferSize is not set. Using '32' as the default. Please configure this value if this is wrong.
+Config: Warning: Key MLCLevels is not set. Using '1' as the default. Please configure this value if this is wrong.
+Config: Warning: Key WPVariance is not set. Using '1' as the default. Please configure this value if this is wrong.
+Config: Warning: Key UniformWrites is not set. Using 'true' as the default. Please configure this value if this is wrong.
+Config: Warning: Key WriteAllBits is not set. Using 'true' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Ereset is not set. Using '0.054331' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Eset is not set. Using '0.101581' as the default. Please configure this value if this is wrong.
+Config: Warning: Key nWP00 is not set. Using '0' as the default. Please configure this value if this is wrong.
+Config: Warning: Key nWP01 is not set. Using '7' as the default. Please configure this value if this is wrong.
+Config: Warning: Key nWP10 is not set. Using '5' as the default. Please configure this value if this is wrong.
+Config: Warning: Key nWP11 is not set. Using '1' as the default. Please configure this value if this is wrong.
+Config: Warning: Key WPMaxVariance is not set. Using '2' as the default. Please configure this value if this is wrong.
+Config: Warning: Key DeadlockTimer is not set. Using '10000000' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EnableDebug is not set. Using 'false' as the default. Please configure this value if this is wrong.
+Config: Warning: Key WritePausing is not set. Using 'false' as the default. Please configure this value if this is wrong.
+Config: Warning: Key PauseThreshold is not set. Using '0.4' as the default. Please configure this value if this is wrong.
+Config: Warning: Key MaxCancellations is not set. Using '4' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Decoder is not set. Using '' as the default. Please configure this value if this is wrong.
+Config: Warning: Key RankType is not set. Using '' as the default. Please configure this value if this is wrong.
+The parent hook name is defaultMemory.channel0.FRFCFS-WQF.channel0
+Creating 4 banks in all 8 devices.
+Config: Warning: Key BankType is not set. Using '' as the default. Please configure this value if this is wrong.
+NVMain: the address mapping order is 
+	Sub-Array 1
+	Row 6
+	Column 2
+	Bank 4
+	Rank 5
+	Channel 3
+defaultMemory.channel0.FRFCFS-WQF capacity is 4096 MB.
+Creating 4 command queues.
+traceMain (0xf6ec70)
+defaultMemory
+-- defaultMemory.channel0.FRFCFS-WQF
+---- defaultMemory.channel0.FRFCFS-WQF.channel0
+------ defaultMemory.channel0.FRFCFS-WQF.channel0.rank0
+-------- defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0
+---------- defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0
+-------- defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1
+---------- defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0
+-------- defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2
+---------- defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0
+-------- defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3
+---------- defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0
+*** Simulating 100 input cycles. (500 memory cycles) ***
+----traceMain currentCycle is 0
+----traceMain currentCycle is 1
+----traceMain currentCycle is 2
+----traceMain currentCycle is 3
+----NVMain::Cycle currentCycle is 0
+----StandardRank::Cycle currentCycle is 0
+----traceMain currentCycle is 4
+----traceMain currentCycle is 5
+----traceMain currentCycle is 6
+----traceMain currentCycle is 7
+----traceMain currentCycle is 8
+----NVMain::Cycle currentCycle is 1
+----StandardRank::Cycle currentCycle is 1
+----traceMain currentCycle is 9
+----traceMain currentCycle is 10
+----traceMain currentCycle is 11
+----traceMain currentCycle is 12
+----traceMain currentCycle is 13
+----NVMain::Cycle currentCycle is 2
+----StandardRank::Cycle currentCycle is 2
+----traceMain currentCycle is 14
+----traceMain currentCycle is 15
+----traceMain currentCycle is 16
+----traceMain currentCycle is 17
+----traceMain currentCycle is 18
+----NVMain::Cycle currentCycle is 3
+----StandardRank::Cycle currentCycle is 3
+----traceMain currentCycle is 19
+----traceMain currentCycle is 20
+----traceMain currentCycle is 21
+----traceMain currentCycle is 22
+----traceMain currentCycle is 23
+----NVMain::Cycle currentCycle is 4
+----StandardRank::Cycle currentCycle is 4
+----traceMain currentCycle is 24
+----traceMain currentCycle is 25
+----traceMain currentCycle is 26
+----traceMain currentCycle is 27
+----traceMain currentCycle is 28
+----NVMain::Cycle currentCycle is 5
+----StandardRank::Cycle currentCycle is 5
+----traceMain currentCycle is 29
+----traceMain currentCycle is 30
+----traceMain currentCycle is 31
+----traceMain currentCycle is 32
+----traceMain currentCycle is 33
+----NVMain::Cycle currentCycle is 6
+----StandardRank::Cycle currentCycle is 6
+----traceMain currentCycle is 34
+----traceMain currentCycle is 35
+----traceMain currentCycle is 36
+----traceMain currentCycle is 37
+----traceMain currentCycle is 38
+----NVMain::Cycle currentCycle is 7
+----StandardRank::Cycle currentCycle is 7
+----traceMain currentCycle is 39
+----traceMain currentCycle is 40
+----traceMain currentCycle is 41
+----traceMain currentCycle is 42
+----traceMain currentCycle is 43
+----NVMain::Cycle currentCycle is 8
+----StandardRank::Cycle currentCycle is 8
+----traceMain currentCycle is 44
+----traceMain currentCycle is 45
+----traceMain currentCycle is 46
+----traceMain currentCycle is 47
+----traceMain currentCycle is 48
+----NVMain::Cycle currentCycle is 9
+----StandardRank::Cycle currentCycle is 9
+----traceMain currentCycle is 49
+----traceMain currentCycle is 50
+----traceMain currentCycle is 51
+----traceMain currentCycle is 52
+----traceMain currentCycle is 53
+----NVMain::Cycle currentCycle is 10
+----StandardRank::Cycle currentCycle is 10
+----traceMain currentCycle is 54
+----traceMain currentCycle is 55
+----traceMain currentCycle is 56
+----traceMain currentCycle is 57
+----traceMain currentCycle is 58
+----NVMain::Cycle currentCycle is 11
+----StandardRank::Cycle currentCycle is 11
+----traceMain currentCycle is 59
+----traceMain currentCycle is 60
+----traceMain currentCycle is 61
+----traceMain currentCycle is 62
+----traceMain currentCycle is 63
+----NVMain::Cycle currentCycle is 12
+----StandardRank::Cycle currentCycle is 12
+----traceMain currentCycle is 64
+----traceMain currentCycle is 65
+----traceMain currentCycle is 66
+----traceMain currentCycle is 67
+----traceMain currentCycle is 68
+----NVMain::Cycle currentCycle is 13
+----StandardRank::Cycle currentCycle is 13
+----traceMain currentCycle is 69
+----traceMain currentCycle is 70
+----traceMain currentCycle is 71
+----traceMain currentCycle is 72
+----traceMain currentCycle is 73
+----NVMain::Cycle currentCycle is 14
+----StandardRank::Cycle currentCycle is 14
+----traceMain currentCycle is 74
+----traceMain currentCycle is 75
+----traceMain currentCycle is 76
+----traceMain currentCycle is 77
+----traceMain currentCycle is 78
+----NVMain::Cycle currentCycle is 15
+----StandardRank::Cycle currentCycle is 15
+----traceMain currentCycle is 79
+----traceMain currentCycle is 80
+----traceMain currentCycle is 81
+----traceMain currentCycle is 82
+----traceMain currentCycle is 83
+----NVMain::Cycle currentCycle is 16
+----StandardRank::Cycle currentCycle is 16
+----traceMain currentCycle is 84
+----traceMain currentCycle is 85
+----traceMain currentCycle is 86
+----traceMain currentCycle is 87
+----traceMain currentCycle is 88
+----NVMain::Cycle currentCycle is 17
+----StandardRank::Cycle currentCycle is 17
+----traceMain currentCycle is 89
+----traceMain currentCycle is 90
+----traceMain currentCycle is 91
+----traceMain currentCycle is 92
+----traceMain currentCycle is 93
+----NVMain::Cycle currentCycle is 18
+----StandardRank::Cycle currentCycle is 18
+----traceMain currentCycle is 94
+----traceMain currentCycle is 95
+----traceMain currentCycle is 96
+----traceMain currentCycle is 97
+----traceMain currentCycle is 98
+----NVMain::Cycle currentCycle is 19
+----StandardRank::Cycle currentCycle is 19
+----traceMain currentCycle is 99
+----traceMain currentCycle is 100
+----traceMain currentCycle is 101
+----traceMain currentCycle is 102
+----traceMain currentCycle is 103
+----NVMain::Cycle currentCycle is 20
+----StandardRank::Cycle currentCycle is 20
+----traceMain currentCycle is 104
+----traceMain currentCycle is 105
+----traceMain currentCycle is 106
+----traceMain currentCycle is 107
+----traceMain currentCycle is 108
+----NVMain::Cycle currentCycle is 21
+----StandardRank::Cycle currentCycle is 21
+----traceMain currentCycle is 109
+----traceMain currentCycle is 110
+----traceMain currentCycle is 111
+----traceMain currentCycle is 112
+----traceMain currentCycle is 113
+----NVMain::Cycle currentCycle is 22
+----StandardRank::Cycle currentCycle is 22
+----traceMain currentCycle is 114
+----traceMain currentCycle is 115
+----traceMain currentCycle is 116
+----traceMain currentCycle is 117
+----traceMain currentCycle is 118
+----NVMain::Cycle currentCycle is 23
+----StandardRank::Cycle currentCycle is 23
+----traceMain currentCycle is 119
+----traceMain currentCycle is 120
+----traceMain currentCycle is 121
+----traceMain currentCycle is 122
+----traceMain currentCycle is 123
+----NVMain::Cycle currentCycle is 24
+----StandardRank::Cycle currentCycle is 24
+----traceMain currentCycle is 124
+----traceMain currentCycle is 125
+----traceMain currentCycle is 126
+----traceMain currentCycle is 127
+----traceMain currentCycle is 128
+----NVMain::Cycle currentCycle is 25
+----StandardRank::Cycle currentCycle is 25
+----traceMain currentCycle is 129
+----traceMain currentCycle is 130
+----traceMain currentCycle is 131
+----traceMain currentCycle is 132
+----traceMain currentCycle is 133
+----NVMain::Cycle currentCycle is 26
+----StandardRank::Cycle currentCycle is 26
+----traceMain currentCycle is 134
+----traceMain currentCycle is 135
+----traceMain currentCycle is 136
+----traceMain currentCycle is 137
+----traceMain currentCycle is 138
+----NVMain::Cycle currentCycle is 27
+----StandardRank::Cycle currentCycle is 27
+----traceMain currentCycle is 139
+----traceMain currentCycle is 140
+----traceMain currentCycle is 141
+----traceMain currentCycle is 142
+----traceMain currentCycle is 143
+----NVMain::Cycle currentCycle is 28
+----StandardRank::Cycle currentCycle is 28
+----traceMain currentCycle is 144
+----traceMain currentCycle is 145
+----traceMain currentCycle is 146
+----traceMain currentCycle is 147
+----traceMain currentCycle is 148
+----NVMain::Cycle currentCycle is 29
+----StandardRank::Cycle currentCycle is 29
+----traceMain currentCycle is 149
+----traceMain currentCycle is 150
+----traceMain currentCycle is 151
+----traceMain currentCycle is 152
+----traceMain currentCycle is 153
+----NVMain::Cycle currentCycle is 30
+----StandardRank::Cycle currentCycle is 30
+----traceMain currentCycle is 154
+----traceMain currentCycle is 155
+----traceMain currentCycle is 156
+----traceMain currentCycle is 157
+----traceMain currentCycle is 158
+----NVMain::Cycle currentCycle is 31
+----StandardRank::Cycle currentCycle is 31
+----traceMain currentCycle is 159
+----traceMain currentCycle is 160
+----traceMain currentCycle is 161
+----traceMain currentCycle is 162
+----traceMain currentCycle is 163
+----NVMain::Cycle currentCycle is 32
+----StandardRank::Cycle currentCycle is 32
+----traceMain currentCycle is 164
+----traceMain currentCycle is 165
+----traceMain currentCycle is 166
+----traceMain currentCycle is 167
+----traceMain currentCycle is 168
+----NVMain::Cycle currentCycle is 33
+----StandardRank::Cycle currentCycle is 33
+----traceMain currentCycle is 169
+----traceMain currentCycle is 170
+----traceMain currentCycle is 171
+----traceMain currentCycle is 172
+----traceMain currentCycle is 173
+----NVMain::Cycle currentCycle is 34
+----StandardRank::Cycle currentCycle is 34
+----traceMain currentCycle is 174
+----traceMain currentCycle is 175
+----traceMain currentCycle is 176
+----traceMain currentCycle is 177
+----traceMain currentCycle is 178
+----NVMain::Cycle currentCycle is 35
+----StandardRank::Cycle currentCycle is 35
+----traceMain currentCycle is 179
+----traceMain currentCycle is 180
+----traceMain currentCycle is 181
+----traceMain currentCycle is 182
+----traceMain currentCycle is 183
+----NVMain::Cycle currentCycle is 36
+----StandardRank::Cycle currentCycle is 36
+----traceMain currentCycle is 184
+----traceMain currentCycle is 185
+----traceMain currentCycle is 186
+----traceMain currentCycle is 187
+----traceMain currentCycle is 188
+----NVMain::Cycle currentCycle is 37
+----StandardRank::Cycle currentCycle is 37
+----traceMain currentCycle is 189
+----traceMain currentCycle is 190
+----traceMain currentCycle is 191
+----traceMain currentCycle is 192
+----traceMain currentCycle is 193
+----NVMain::Cycle currentCycle is 38
+----StandardRank::Cycle currentCycle is 38
+----traceMain currentCycle is 194
+----traceMain currentCycle is 195
+----traceMain currentCycle is 196
+----traceMain currentCycle is 197
+----traceMain currentCycle is 198
+----NVMain::Cycle currentCycle is 39
+----StandardRank::Cycle currentCycle is 39
+----traceMain currentCycle is 199
+----traceMain currentCycle is 200
+----traceMain currentCycle is 201
+----traceMain currentCycle is 202
+----traceMain currentCycle is 203
+----NVMain::Cycle currentCycle is 40
+----StandardRank::Cycle currentCycle is 40
+----traceMain currentCycle is 204
+----traceMain currentCycle is 205
+----traceMain currentCycle is 206
+----traceMain currentCycle is 207
+----traceMain currentCycle is 208
+----NVMain::Cycle currentCycle is 41
+----StandardRank::Cycle currentCycle is 41
+----traceMain currentCycle is 209
+----traceMain currentCycle is 210
+----traceMain currentCycle is 211
+----traceMain currentCycle is 212
+----traceMain currentCycle is 213
+----NVMain::Cycle currentCycle is 42
+----StandardRank::Cycle currentCycle is 42
+----traceMain currentCycle is 214
+----traceMain currentCycle is 215
+----traceMain currentCycle is 216
+----traceMain currentCycle is 217
+----traceMain currentCycle is 218
+----NVMain::Cycle currentCycle is 43
+----StandardRank::Cycle currentCycle is 43
+----traceMain currentCycle is 219
+----traceMain currentCycle is 220
+----traceMain currentCycle is 221
+----traceMain currentCycle is 222
+----traceMain currentCycle is 223
+----NVMain::Cycle currentCycle is 44
+----StandardRank::Cycle currentCycle is 44
+----traceMain currentCycle is 224
+----traceMain currentCycle is 225
+----traceMain currentCycle is 226
+----traceMain currentCycle is 227
+----traceMain currentCycle is 228
+----NVMain::Cycle currentCycle is 45
+----StandardRank::Cycle currentCycle is 45
+----traceMain currentCycle is 229
+----traceMain currentCycle is 230
+----traceMain currentCycle is 231
+----traceMain currentCycle is 232
+----traceMain currentCycle is 233
+----NVMain::Cycle currentCycle is 46
+----StandardRank::Cycle currentCycle is 46
+----traceMain currentCycle is 234
+----traceMain currentCycle is 235
+----traceMain currentCycle is 236
+----traceMain currentCycle is 237
+----traceMain currentCycle is 238
+----NVMain::Cycle currentCycle is 47
+----StandardRank::Cycle currentCycle is 47
+----traceMain currentCycle is 239
+----traceMain currentCycle is 240
+----traceMain currentCycle is 241
+----traceMain currentCycle is 242
+----traceMain currentCycle is 243
+----NVMain::Cycle currentCycle is 48
+----StandardRank::Cycle currentCycle is 48
+----traceMain currentCycle is 244
+----traceMain currentCycle is 245
+----traceMain currentCycle is 246
+----traceMain currentCycle is 247
+----traceMain currentCycle is 248
+----NVMain::Cycle currentCycle is 49
+----StandardRank::Cycle currentCycle is 49
+----traceMain currentCycle is 249
+----traceMain currentCycle is 250
+----traceMain currentCycle is 251
+----traceMain currentCycle is 252
+----traceMain currentCycle is 253
+----NVMain::Cycle currentCycle is 50
+----StandardRank::Cycle currentCycle is 50
+----traceMain currentCycle is 254
+----traceMain currentCycle is 255
+----traceMain currentCycle is 256
+----traceMain currentCycle is 257
+----traceMain currentCycle is 258
+----NVMain::Cycle currentCycle is 51
+----StandardRank::Cycle currentCycle is 51
+----traceMain currentCycle is 259
+----traceMain currentCycle is 260
+----traceMain currentCycle is 261
+----traceMain currentCycle is 262
+----traceMain currentCycle is 263
+----NVMain::Cycle currentCycle is 52
+----StandardRank::Cycle currentCycle is 52
+----traceMain currentCycle is 264
+----traceMain currentCycle is 265
+----traceMain currentCycle is 266
+----traceMain currentCycle is 267
+----traceMain currentCycle is 268
+----NVMain::Cycle currentCycle is 53
+----StandardRank::Cycle currentCycle is 53
+----traceMain currentCycle is 269
+----traceMain currentCycle is 270
+----traceMain currentCycle is 271
+----traceMain currentCycle is 272
+----traceMain currentCycle is 273
+----NVMain::Cycle currentCycle is 54
+----StandardRank::Cycle currentCycle is 54
+----traceMain currentCycle is 274
+----traceMain currentCycle is 275
+----traceMain currentCycle is 276
+----traceMain currentCycle is 277
+----traceMain currentCycle is 278
+----NVMain::Cycle currentCycle is 55
+----StandardRank::Cycle currentCycle is 55
+----traceMain currentCycle is 279
+----traceMain currentCycle is 280
+----traceMain currentCycle is 281
+----traceMain currentCycle is 282
+----traceMain currentCycle is 283
+----NVMain::Cycle currentCycle is 56
+----StandardRank::Cycle currentCycle is 56
+----traceMain currentCycle is 284
+----traceMain currentCycle is 285
+----traceMain currentCycle is 286
+----traceMain currentCycle is 287
+----traceMain currentCycle is 288
+----NVMain::Cycle currentCycle is 57
+----StandardRank::Cycle currentCycle is 57
+----traceMain currentCycle is 289
+----traceMain currentCycle is 290
+----traceMain currentCycle is 291
+----traceMain currentCycle is 292
+----traceMain currentCycle is 293
+----NVMain::Cycle currentCycle is 58
+----StandardRank::Cycle currentCycle is 58
+----traceMain currentCycle is 294
+----traceMain currentCycle is 295
+----traceMain currentCycle is 296
+----traceMain currentCycle is 297
+----traceMain currentCycle is 298
+----NVMain::Cycle currentCycle is 59
+----StandardRank::Cycle currentCycle is 59
+----traceMain currentCycle is 299
+----traceMain currentCycle is 300
+----traceMain currentCycle is 301
+----traceMain currentCycle is 302
+----traceMain currentCycle is 303
+----NVMain::Cycle currentCycle is 60
+----StandardRank::Cycle currentCycle is 60
+----traceMain currentCycle is 304
+----traceMain currentCycle is 305
+----traceMain currentCycle is 306
+----traceMain currentCycle is 307
+----traceMain currentCycle is 308
+----NVMain::Cycle currentCycle is 61
+----StandardRank::Cycle currentCycle is 61
+----traceMain currentCycle is 309
+----traceMain currentCycle is 310
+----traceMain currentCycle is 311
+----traceMain currentCycle is 312
+----traceMain currentCycle is 313
+----NVMain::Cycle currentCycle is 62
+----StandardRank::Cycle currentCycle is 62
+----traceMain currentCycle is 314
+----traceMain currentCycle is 315
+----traceMain currentCycle is 316
+----traceMain currentCycle is 317
+----traceMain currentCycle is 318
+----NVMain::Cycle currentCycle is 63
+----StandardRank::Cycle currentCycle is 63
+----traceMain currentCycle is 319
+----traceMain currentCycle is 320
+----traceMain currentCycle is 321
+----traceMain currentCycle is 322
+----traceMain currentCycle is 323
+----NVMain::Cycle currentCycle is 64
+----StandardRank::Cycle currentCycle is 64
+----traceMain currentCycle is 324
+----traceMain currentCycle is 325
+----traceMain currentCycle is 326
+----traceMain currentCycle is 327
+----traceMain currentCycle is 328
+----NVMain::Cycle currentCycle is 65
+----StandardRank::Cycle currentCycle is 65
+----traceMain currentCycle is 329
+----traceMain currentCycle is 330
+----traceMain currentCycle is 331
+----traceMain currentCycle is 332
+----traceMain currentCycle is 333
+----NVMain::Cycle currentCycle is 66
+----StandardRank::Cycle currentCycle is 66
+----traceMain currentCycle is 334
+----traceMain currentCycle is 335
+----traceMain currentCycle is 336
+----traceMain currentCycle is 337
+----traceMain currentCycle is 338
+----NVMain::Cycle currentCycle is 67
+----StandardRank::Cycle currentCycle is 67
+----traceMain currentCycle is 339
+----traceMain currentCycle is 340
+----traceMain currentCycle is 341
+----traceMain currentCycle is 342
+----traceMain currentCycle is 343
+----NVMain::Cycle currentCycle is 68
+----StandardRank::Cycle currentCycle is 68
+----traceMain currentCycle is 344
+----traceMain currentCycle is 345
+----traceMain currentCycle is 346
+----traceMain currentCycle is 347
+----traceMain currentCycle is 348
+----NVMain::Cycle currentCycle is 69
+----StandardRank::Cycle currentCycle is 69
+----traceMain currentCycle is 349
+----traceMain currentCycle is 350
+----traceMain currentCycle is 351
+----traceMain currentCycle is 352
+----traceMain currentCycle is 353
+----NVMain::Cycle currentCycle is 70
+----StandardRank::Cycle currentCycle is 70
+----traceMain currentCycle is 354
+----traceMain currentCycle is 355
+----traceMain currentCycle is 356
+----traceMain currentCycle is 357
+----traceMain currentCycle is 358
+----NVMain::Cycle currentCycle is 71
+----StandardRank::Cycle currentCycle is 71
+----traceMain currentCycle is 359
+----traceMain currentCycle is 360
+----traceMain currentCycle is 361
+----traceMain currentCycle is 362
+----traceMain currentCycle is 363
+----NVMain::Cycle currentCycle is 72
+----StandardRank::Cycle currentCycle is 72
+----traceMain currentCycle is 364
+----traceMain currentCycle is 365
+----traceMain currentCycle is 366
+----traceMain currentCycle is 367
+----traceMain currentCycle is 368
+----NVMain::Cycle currentCycle is 73
+----StandardRank::Cycle currentCycle is 73
+----traceMain currentCycle is 369
+----traceMain currentCycle is 370
+----traceMain currentCycle is 371
+----traceMain currentCycle is 372
+----traceMain currentCycle is 373
+----NVMain::Cycle currentCycle is 74
+----StandardRank::Cycle currentCycle is 74
+----traceMain currentCycle is 374
+----traceMain currentCycle is 375
+----traceMain currentCycle is 376
+----traceMain currentCycle is 377
+----traceMain currentCycle is 378
+----NVMain::Cycle currentCycle is 75
+----StandardRank::Cycle currentCycle is 75
+----traceMain currentCycle is 379
+----traceMain currentCycle is 380
+----traceMain currentCycle is 381
+----traceMain currentCycle is 382
+----traceMain currentCycle is 383
+----NVMain::Cycle currentCycle is 76
+----StandardRank::Cycle currentCycle is 76
+----traceMain currentCycle is 384
+----traceMain currentCycle is 385
+----traceMain currentCycle is 386
+----traceMain currentCycle is 387
+----traceMain currentCycle is 388
+----NVMain::Cycle currentCycle is 77
+----StandardRank::Cycle currentCycle is 77
+----traceMain currentCycle is 389
+----traceMain currentCycle is 390
+----traceMain currentCycle is 391
+----traceMain currentCycle is 392
+----traceMain currentCycle is 393
+----NVMain::Cycle currentCycle is 78
+----StandardRank::Cycle currentCycle is 78
+----traceMain currentCycle is 394
+----traceMain currentCycle is 395
+----traceMain currentCycle is 396
+----traceMain currentCycle is 397
+----traceMain currentCycle is 398
+----NVMain::Cycle currentCycle is 79
+----StandardRank::Cycle currentCycle is 79
+----traceMain currentCycle is 399
+----traceMain currentCycle is 400
+----traceMain currentCycle is 401
+Waiting for MC----traceMain currentCycle is 403
+Waiting for MC----traceMain currentCycle is 404
+----NVMain::Cycle currentCycle is 80
+----StandardRank::Cycle currentCycle is 80
+Waiting for MC----traceMain currentCycle is 405
+Waiting for MC----traceMain currentCycle is 406
+Waiting for MC----traceMain currentCycle is 407
+Waiting for MC----traceMain currentCycle is 408
+Waiting for MC----traceMain currentCycle is 409
+----NVMain::Cycle currentCycle is 81
+----StandardRank::Cycle currentCycle is 81
+Waiting for MC----traceMain currentCycle is 410
+Waiting for MC----traceMain currentCycle is 411
+Waiting for MC----traceMain currentCycle is 412
+Waiting for MC----traceMain currentCycle is 413
+Waiting for MC----traceMain currentCycle is 414
+----NVMain::Cycle currentCycle is 82
+----StandardRank::Cycle currentCycle is 82
+Waiting for MC----traceMain currentCycle is 415
+Waiting for MC----traceMain currentCycle is 416
+Waiting for MC----traceMain currentCycle is 417
+Waiting for MC----traceMain currentCycle is 418
+Waiting for MC----traceMain currentCycle is 419
+----NVMain::Cycle currentCycle is 83
+----StandardRank::Cycle currentCycle is 83
+Waiting for MC----traceMain currentCycle is 420
+Waiting for MC----traceMain currentCycle is 421
+Waiting for MC----traceMain currentCycle is 422
+Waiting for MC----traceMain currentCycle is 423
+Waiting for MC----traceMain currentCycle is 424
+----NVMain::Cycle currentCycle is 84
+----StandardRank::Cycle currentCycle is 84
+Waiting for MC----traceMain currentCycle is 425
+Waiting for MC----traceMain currentCycle is 426
+Waiting for MC----traceMain currentCycle is 427
+Waiting for MC----traceMain currentCycle is 428
+Waiting for MC----traceMain currentCycle is 429
+----NVMain::Cycle currentCycle is 85
+----StandardRank::Cycle currentCycle is 85
+Waiting for MC----traceMain currentCycle is 430
+Waiting for MC----traceMain currentCycle is 431
+Waiting for MC----traceMain currentCycle is 432
+Waiting for MC----traceMain currentCycle is 433
+Waiting for MC----traceMain currentCycle is 434
+----NVMain::Cycle currentCycle is 86
+----StandardRank::Cycle currentCycle is 86
+Waiting for MC----traceMain currentCycle is 435
+Waiting for MC----traceMain currentCycle is 436
+Waiting for MC----traceMain currentCycle is 437
+Waiting for MC----traceMain currentCycle is 438
+Waiting for MC----traceMain currentCycle is 439
+----NVMain::Cycle currentCycle is 87
+----StandardRank::Cycle currentCycle is 87
+Waiting for MC----traceMain currentCycle is 440
+Waiting for MC----traceMain currentCycle is 441
+Waiting for MC----traceMain currentCycle is 442
+Waiting for MC----traceMain currentCycle is 443
+Waiting for MC----traceMain currentCycle is 444
+----NVMain::Cycle currentCycle is 88
+----StandardRank::Cycle currentCycle is 88
+Waiting for MC----traceMain currentCycle is 445
+Waiting for MC----traceMain currentCycle is 446
+Waiting for MC----traceMain currentCycle is 447
+Waiting for MC----traceMain currentCycle is 448
+Waiting for MC----traceMain currentCycle is 449
+----NVMain::Cycle currentCycle is 89
+----StandardRank::Cycle currentCycle is 89
+Waiting for MC----traceMain currentCycle is 450
+----traceMain currentCycle is 450
+----traceMain currentCycle is 451
+----traceMain currentCycle is 452
+----traceMain currentCycle is 453
+----NVMain::Cycle currentCycle is 90
+----StandardRank::Cycle currentCycle is 90
+----traceMain currentCycle is 454
+----traceMain currentCycle is 455
+----traceMain currentCycle is 456
+----traceMain currentCycle is 457
+----traceMain currentCycle is 458
+----NVMain::Cycle currentCycle is 91
+----StandardRank::Cycle currentCycle is 91
+----traceMain currentCycle is 459
+----traceMain currentCycle is 460
+----traceMain currentCycle is 461
+----traceMain currentCycle is 462
+Waiting for MC----traceMain currentCycle is 464
+----NVMain::Cycle currentCycle is 92
+----StandardRank::Cycle currentCycle is 92
+Waiting for MC----traceMain currentCycle is 465
+Waiting for MC----traceMain currentCycle is 466
+Waiting for MC----traceMain currentCycle is 467
+Waiting for MC----traceMain currentCycle is 468
+Waiting for MC----traceMain currentCycle is 469
+----NVMain::Cycle currentCycle is 93
+----StandardRank::Cycle currentCycle is 93
+Waiting for MC----traceMain currentCycle is 470
+Waiting for MC----traceMain currentCycle is 471
+Waiting for MC----traceMain currentCycle is 472
+Waiting for MC----traceMain currentCycle is 473
+Waiting for MC----traceMain currentCycle is 474
+----NVMain::Cycle currentCycle is 94
+----StandardRank::Cycle currentCycle is 94
+Waiting for MC----traceMain currentCycle is 475
+Waiting for MC----traceMain currentCycle is 476
+Waiting for MC----traceMain currentCycle is 477
+Waiting for MC----traceMain currentCycle is 478
+Waiting for MC----traceMain currentCycle is 479
+----NVMain::Cycle currentCycle is 95
+----StandardRank::Cycle currentCycle is 95
+Waiting for MC----traceMain currentCycle is 480
+Waiting for MC----traceMain currentCycle is 481
+Waiting for MC----traceMain currentCycle is 482
+Waiting for MC----traceMain currentCycle is 483
+Waiting for MC----traceMain currentCycle is 484
+----NVMain::Cycle currentCycle is 96
+----StandardRank::Cycle currentCycle is 96
+Waiting for MC----traceMain currentCycle is 485
+Waiting for MC----traceMain currentCycle is 486
+Waiting for MC----traceMain currentCycle is 487
+Waiting for MC----traceMain currentCycle is 488
+Waiting for MC----traceMain currentCycle is 489
+----NVMain::Cycle currentCycle is 97
+----StandardRank::Cycle currentCycle is 97
+Waiting for MC----traceMain currentCycle is 490
+Waiting for MC----traceMain currentCycle is 491
+Waiting for MC----traceMain currentCycle is 492
+Waiting for MC----traceMain currentCycle is 493
+Waiting for MC----traceMain currentCycle is 494
+----NVMain::Cycle currentCycle is 98
+----StandardRank::Cycle currentCycle is 98
+Waiting for MC----traceMain currentCycle is 495
+Waiting for MC----traceMain currentCycle is 496
+Waiting for MC----traceMain currentCycle is 497
+Waiting for MC----traceMain currentCycle is 498
+Waiting for MC----traceMain currentCycle is 499
+----NVMain::Cycle currentCycle is 99
+----StandardRank::Cycle currentCycle is 99
+Waiting for MC----traceMain currentCycle is 500
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.subArrayEnergy 0.17048nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.activeEnergy 0.1624nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.burstEnergy 0.00808nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.writeEnergy 0nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.refreshEnergy 0nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.cancelledWrites 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.cancelledWriteTime 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.pausedWrites 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.averagePausesPerRequest 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.measuredPauses 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.averagePausedRequestProgress 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.measuredProgresses 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.reads 5
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.activates 2
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.precharges 1
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.refreshes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.actWaits 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.worstCaseWrite 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.num00Writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.num01Writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.num10Writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.num11Writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.averageWriteTime 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.measuredWriteTimes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.mlcTimingHisto {}
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.cancelCountHisto {}
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.wpPauseHisto {}
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.wpCancelHisto {}
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.bankEnergy 0.17048nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.activeEnergy 0.1624nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.burstEnergy 0.00808nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.refreshEnergy 0nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.bankPower 1.7048e+06W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.activePower 1.624e+06W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.burstPower 80800W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.refreshPower 0W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.bandwidth 10449MB/s
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.dataCycles 20
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.powerCycles 98
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.utilization 0.204082
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.reads 5
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.activates 2
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.precharges 1
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.refreshes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.activeCycles 79
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.standbyCycles 19
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.fastExitActiveCycles 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.fastExitPrechargeCycles 2
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.slowExitPrechargeCycles 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.actWaits 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.subArrayEnergy 0.084432nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.activeEnergy 0.0812nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.burstEnergy 0.003232nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.writeEnergy 0nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.refreshEnergy 0nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.cancelledWrites 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.cancelledWriteTime 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.pausedWrites 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.averagePausesPerRequest 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.measuredPauses 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.averagePausedRequestProgress 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.measuredProgresses 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.reads 2
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.activates 1
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.precharges 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.refreshes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.actWaits 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.worstCaseWrite 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.num00Writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.num01Writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.num10Writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.num11Writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.averageWriteTime 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.measuredWriteTimes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.mlcTimingHisto {}
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.cancelCountHisto {}
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.wpPauseHisto {}
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.wpCancelHisto {}
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.bankEnergy 0.084432nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.activeEnergy 0.0812nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.burstEnergy 0.003232nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.refreshEnergy 0nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.bankPower 844320W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.activePower 812000W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.burstPower 32320W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.refreshPower 0W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.bandwidth 4179.59MB/s
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.dataCycles 8
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.powerCycles 98
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.utilization 0.0816327
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.reads 2
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.activates 1
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.precharges 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.refreshes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.activeCycles 76
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.standbyCycles 22
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.fastExitActiveCycles 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.fastExitPrechargeCycles 2
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.slowExitPrechargeCycles 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.actWaits 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.subArrayEnergy 0.082816nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.activeEnergy 0.0812nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.burstEnergy 0.001616nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.writeEnergy 0nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.refreshEnergy 0nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.cancelledWrites 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.cancelledWriteTime 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.pausedWrites 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.averagePausesPerRequest 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.measuredPauses 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.averagePausedRequestProgress 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.measuredProgresses 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.reads 1
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.activates 1
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.precharges 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.refreshes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.actWaits 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.worstCaseWrite 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.num00Writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.num01Writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.num10Writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.num11Writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.averageWriteTime 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.measuredWriteTimes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.mlcTimingHisto {}
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.cancelCountHisto {}
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.wpPauseHisto {}
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.wpCancelHisto {}
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.bankEnergy 0.082816nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.activeEnergy 0.0812nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.burstEnergy 0.001616nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.refreshEnergy 0nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.bankPower 828160W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.activePower 812000W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.burstPower 16160W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.refreshPower 0W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.bandwidth 2089.8MB/s
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.dataCycles 4
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.powerCycles 98
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.utilization 0.0408163
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.reads 1
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.activates 1
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.precharges 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.refreshes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.activeCycles 72
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.standbyCycles 26
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.fastExitActiveCycles 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.fastExitPrechargeCycles 2
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.slowExitPrechargeCycles 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.actWaits 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.subArrayEnergy 0nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.activeEnergy 0nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.burstEnergy 0nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.writeEnergy 0nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.refreshEnergy 0nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.cancelledWrites 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.cancelledWriteTime 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.pausedWrites 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.averagePausesPerRequest 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.measuredPauses 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.averagePausedRequestProgress 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.measuredProgresses 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.reads 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.activates 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.precharges 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.refreshes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.actWaits 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.worstCaseWrite 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.num00Writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.num01Writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.num10Writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.num11Writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.averageWriteTime 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.measuredWriteTimes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.mlcTimingHisto {}
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.cancelCountHisto {}
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.wpPauseHisto {}
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.wpCancelHisto {}
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.bankEnergy 0nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.activeEnergy 0nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.burstEnergy 0nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.refreshEnergy 0nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.bankPower 0W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.activePower 0W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.burstPower 0W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.refreshPower 0W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.bandwidth 0MB/s
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.dataCycles 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.powerCycles 98
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.utilization 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.reads 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.activates 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.precharges 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.refreshes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.activeCycles 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.standbyCycles 98
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.fastExitActiveCycles 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.fastExitPrechargeCycles 2
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.slowExitPrechargeCycles 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.actWaits 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.totalEnergy 9.04492nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.backgroundEnergy 8.70719nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.activateEnergy 0.3248nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.burstEnergy 0.012928nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.refreshEnergy 0nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.totalPower 0.0361797W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.backgroundPower 0.0348288W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.activatePower 0.0012992W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.burstPower 5.1712e-05W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.refreshPower 0W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.reads 8
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.activeCycles 80
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.standbyCycles 18
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.fastExitActiveCycles 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.fastExitPrechargeCycles 2
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.slowExitCycles 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.actWaits 8
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.actWaitTotal 15
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.actWaitAverage 1.875
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.rrdWaits 10
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.rrdWaitTotal 18
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.rrdWaitAverage 1.8
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.fawWaits 23
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.fawWaitTotal 186
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.fawWaitAverage 8.08696
+i0.defaultMemory.channel0.FRFCFS-WQF.mem_reads 43
+i0.defaultMemory.channel0.FRFCFS-WQF.mem_writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.rq_rb_hits 7
+i0.defaultMemory.channel0.FRFCFS-WQF.rq_rb_miss 4
+i0.defaultMemory.channel0.FRFCFS-WQF.wq_rb_hits 0
+i0.defaultMemory.channel0.FRFCFS-WQF.wq_rb_miss 0
+i0.defaultMemory.channel0.FRFCFS-WQF.total_drains 0
+i0.defaultMemory.channel0.FRFCFS-WQF.total_drain_writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.average_writes_per_drain 0
+i0.defaultMemory.channel0.FRFCFS-WQF.minimum_drain_writes 10000000000
+i0.defaultMemory.channel0.FRFCFS-WQF.maximum_drain_writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.total_drain_cycles 0
+i0.defaultMemory.channel0.FRFCFS-WQF.average_drain_cycles 0
+i0.defaultMemory.channel0.FRFCFS-WQF.minimum_drain_cycles 10000000000
+i0.defaultMemory.channel0.FRFCFS-WQF.maximum_drain_cycles 0
+i0.defaultMemory.channel0.FRFCFS-WQF.total_non_drain_cycles 0
+i0.defaultMemory.channel0.FRFCFS-WQF.average_drain_spacing 0
+i0.defaultMemory.channel0.FRFCFS-WQF.minimum_drain_spacing 10000000000
+i0.defaultMemory.channel0.FRFCFS-WQF.maximum_drain_spacing 0
+i0.defaultMemory.channel0.FRFCFS-WQF.total_read_cycles 0
+i0.defaultMemory.channel0.FRFCFS-WQF.average_read_spacing 0
+i0.defaultMemory.channel0.FRFCFS-WQF.minimum_read_spacing 10000000000
+i0.defaultMemory.channel0.FRFCFS-WQF.maximum_read_spacing 0
+i0.defaultMemory.channel0.FRFCFS-WQF.total_readqueue_size 0
+i0.defaultMemory.channel0.FRFCFS-WQF.average_predrain_readqueue_size 0
+i0.defaultMemory.channel0.FRFCFS-WQF.minimum_predrain_readqueue_size 10000000000
+i0.defaultMemory.channel0.FRFCFS-WQF.maximum_predrain_readqueue_size 0
+i0.defaultMemory.channel0.FRFCFS-WQF.total_reads_during_drain 0
+i0.defaultMemory.channel0.FRFCFS-WQF.average_reads_during_drain 0
+i0.defaultMemory.channel0.FRFCFS-WQF.minimum_reads_during_drain 10000000000
+i0.defaultMemory.channel0.FRFCFS-WQF.maximum_reads_during_drain 0
+i0.defaultMemory.channel0.FRFCFS-WQF.starvation_precharges 1
+i0.defaultMemory.channel0.FRFCFS-WQF.averageLatency 54.8
+i0.defaultMemory.channel0.FRFCFS-WQF.averageQueueLatency 28.2
+i0.defaultMemory.channel0.FRFCFS-WQF.averageTotalLatency 83
+i0.defaultMemory.channel0.FRFCFS-WQF.measuredLatencies 5
+i0.defaultMemory.channel0.FRFCFS-WQF.measuredQueueLatencies 5
+i0.defaultMemory.channel0.FRFCFS-WQF.measuredTotalLatencies 5
+i0.defaultMemory.channel0.FRFCFS-WQF.simulation_cycles 100
+i0.defaultMemory.channel0.FRFCFS-WQF.wakeupCount 0
+i0.defaultMemory.totalReadRequests 43
+i0.defaultMemory.totalWriteRequests 0
+i0.defaultMemory.successfulPrefetches 0
+i0.defaultMemory.unsuccessfulPrefetches 0
+Exiting at cycle 500 because simCycles 500 reached.
+Note: 39 requests still in-flight.

@@ -179,6 +179,7 @@ class NVMainRequest
         FLAG_FORCED = 32,               // This write can not be paused or cancelled
         FLAG_PRIORITY = 64,             // Request (or precursor) that takes priority over write
         FLAG_ISSUED = 128,              // Request has left the command queue
+        FLAG_ISSUED_BY_SB = 130,        // Request has left the Sync Buffer --zhuguoliang
         FLAG_COUNT
     };
 

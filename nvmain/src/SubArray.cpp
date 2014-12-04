@@ -1201,6 +1201,14 @@ bool SubArray::IsIssuable( NVMainRequest *req, FailReason *reason )
             reason->reason = UNSUPPORTED_COMMAND;
     }
 
+        if(rv==false){
+        
+            if( reason){
+               std::cout<<" NOT ISSUABLE from SubArray ---the reason is "<<reason->reason<<std::endl;  
+            }
+             std::cout<<" NOT ISSUABLE from SubArray "<<std::endl;    
+
+        }
     return rv;
 }
 

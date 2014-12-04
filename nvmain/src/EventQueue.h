@@ -141,7 +141,7 @@ class GlobalEventQueue
     ~GlobalEventQueue();
 
     void AddSystem( NVMain *subSystem, Config *config );
-    void AddSystem( Rank *hrank, Config *config );
+    void AddSystem( Rank *hrank, Config *config );/*zhuguoliang*/
     void Cycle( ncycle_t steps );
 
     void SetFrequency( double freq );

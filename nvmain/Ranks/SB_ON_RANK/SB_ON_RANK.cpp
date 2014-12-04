@@ -40,106 +40,67 @@
 #include <iostream>
 #include <sstream>
 #include <cassert>
-
+#include <algorithm>/*zhuguoliang for std::remove_if*/
 using namespace NVM;
+/* Command queue removal predicate. */
+bool WasIssuedSB( NVMainRequest *request );
+bool WasIssuedSB( NVMainRequest *request ) { return (request->flags & NVMainRequest::FLAG_ISSUED_BY_SB); }
 
 std::string GetFilePath( std::string file );
 
 SB_ON_RANK::SB_ON_RANK( )
 {
-    activeCycles = 0;
-    standbyCycles = 0;
-    fastExitActiveCycles = 0;
-    fastExitPrechargeCycles = 0;
-    slowExitCycles = 0;
+    //no state
+    buffer_draining= false;
+    max_buffer_size= 2;
+    memreq_buffer= NULL;
+    memreq_buffer = new std::deque<NVMainRequest *> [max_buffer_size];
+    syncValue = 0.0f;
 
-    totalEnergy = 0.0;
-    backgroundEnergy = 0.0;
-    activateEnergy = 0.0;
-    burstEnergy = 0.0;
-    refreshEnergy = 0.0;
-
-    totalPower = 0.0;
-    backgroundPower = 0.0;
-    activatePower = 0.0;
-    burstPower = 0.0;
-    refreshPower = 0.0;
-
-    reads = 0;
-    writes = 0;
-
-    actWaits = 0;
-    actWaitTotal = 0;
-    actWaitAverage = 0.0;
-
-    rrdWaits = 0;
-    rrdWaitTotal = 0;
-    rrdWaitAverage = 0.0;
-
-    fawWaits = 0;
-    fawWaitTotal = 0;
-    fawWaitAverage = 0.0;
-
-    lastActivate = NULL;
-    RAWindex = 0;
-
-    conf = NULL;
-
-    state = SB_ON_RANK_CLOSED;
-    backgroundEnergy = 0.0f;
-
-    psInterval = 0;
-    lastReset = 0;
 }
 
 SB_ON_RANK::~SB_ON_RANK( )
 {
-    delete [] lastActivate;
+    delete [] memreq_buffer; 
 }
 
 void SB_ON_RANK::SetConfig( Config *c, bool createChildren )
 {
+    //std::cout<< "SB_ON_RANK named " << StatName()<< std::endl;
     conf = c;
 
     Params *params = new Params( );
     params->SetParams( c );
     SetParams( params );
-
-    deviceWidth = p->DeviceWidth;
-    busWidth = p->BusWidth;
-
-    banksPerRefresh = p->BanksPerRefresh;
-
-    if( conf->GetValue( "RAW" ) == -1 )
-    {
-        std::cout << "NVMain Warning: RAW (Row Activation Window) is not "
-            << "specified. Has set it to 4 (FAW)" << std::endl;
-        rawNum = 4;
-    }
-    else
-        rawNum = p->RAW;
-
-    assert( rawNum != 0 );
-
-    /* Calculate the number of devices needed. */
-    deviceCount = busWidth / deviceWidth;
-    if( busWidth % deviceWidth != 0 )
-    {
-        std::cout << "NVMain: device width is not a multiple of the bus width!\n";
-        deviceCount++;
-    }
-
-    bankCount = p->BANKS;
+    
 
     if( createChildren )
     {
+        
+        std::vector<NVMObject_hook *>::iterator it;
+
+
+        //std::vector<NVMObject_hook *>& childNodes = GetChildren( );
+        //childNodes.clear();
+
+        ///////////////////////////////////////////////////////////////////////////////////////////
+        /* Orphan the bank created by interconnect?? I don`t know if I should call it here */
+        /*
+        
+        for( it = childNodes.begin(); it != childNodes.end(); it++ )
+        {
+            std::cout << "The children hook name is " << (*it)->StatName( ) << std::endl;
+        }
+        
+        childNodes.clear();
+        */
+        ///////////////////////////////////////////////////////////////////////////////////////////       
         /* When selecting a child, use the bank field from the decoder. */
         AddressTranslator *rankAT = DecoderFactory::CreateDecoderNoWarn( conf->GetString( "Decoder" ) );
         rankAT->SetTranslationMethod( GetParent( )->GetTrampoline( )->GetDecoder( )->GetTranslationMethod( ) );
-        rankAT->SetDefaultField( BANK_FIELD );
+        rankAT->SetDefaultField( RANK_FIELD );
         rankAT->SetConfig( c, createChildren );
         SetDecoder( rankAT );
- 
         /* Initialize ranks in config file, named HRANK_CONFIG*/
         std::string configFile;
         Config *Heterogeneous_RankConfig;
@@ -157,643 +118,138 @@ void SB_ON_RANK::SetConfig( Config *c, bool createChildren )
         hrank->SetEventQueue( hrankEventQueue);
         /* Shoud add NVMain pointer here instead of hrank*/
         GetGlobalEventQueue( )->AddSystem( hrank,  Heterogeneous_RankConfig);
-        hrank->SetConfig( Heterogeneous_RankConfig, createChildren );
 
-        /* Orphan the interconnect created by NVMain */
-        //std::vector<NVMObject_hook *>& childNodes = GetChildren( );
-
-        //childNodes.clear();
+        std::stringstream formatter;
+        
+        formatter.str( "" );
+        formatter << StatName( ) << ".hrank";
+        hrank->StatName( formatter.str( ) );
+        hrank->SetConfig( Heterogeneous_RankConfig,createChildren );
+        
         
 
+        //std::cout<< "SB_ON_RANK named " << hrank->StatName()<< std::endl;
+        //hrank->SetParent( this );
+        AddChild( hrank );
+        //hrank->SetParent( this );
         
-
-
-        std::cout << "Creating " << bankCount << " banks in all " 
-            << deviceCount << " devices.\n";
-
-
-
-
-        for( ncounter_t i = 0; i < bankCount; i++ )
+        hrank->RegisterStats( );
+        /*
+        std::vector<NVMObject_hook *>& childNodes = GetChildren( );
+        for( it = childNodes.begin(); it != childNodes.end(); it++ )
         {
-            std::stringstream formatter;
-
-            Bank *nextBank = BankFactory::CreateBankNoWarn( conf->GetString( "BankType" ) );
-
-            formatter << i;
-            nextBank->SetId( i );
-            formatter.str( "" );
-
-            formatter << StatName( ) << ".bank" << i;
-            nextBank->StatName( formatter.str( ) );
-
-            nextBank->SetParent( this );
-            AddChild( nextBank );
-
-            /* SetConfig recursively. */
-            nextBank->SetConfig( c, createChildren );
-            nextBank->RegisterStats( );
+            std::cout << "The children hook name is " << (*it)->StatName( ) << std::endl;
         }
-
-
+        */
+            /* SetConfig recursively. */
+            //hrank->SetConfig( conf, createChildren ); 
     }
 
-    /* 
-     * Make sure this doesn't cause unnecessary tRRD delays at start 
-     * TODO: have Activate check currentCycle < tRRD/tRAW maybe?
-     */
-    lastActivate = new ncycle_t[rawNum];
-    for( ncounter_t i = 0; i < rawNum; i++ )
-        lastActivate[i] = 0;
-
-    /* We'll say you can't do anything until the command has time to issue on the bus. */
-    nextRead = p->tCMD;
-    nextWrite = p->tCMD;
-    nextActivate = p->tCMD;
-    nextPrecharge = p->tCMD;
-
-    fawWaits = 0;
-    rrdWaits = 0;
-    actWaits = 0;
-
-    fawWaitTotal = 0;
-    rrdWaitTotal = 0;
-    actWaitTotal = 0;
+    SetDebugName( "SB_ON_RANK", c );
 }
 
 void SB_ON_RANK::RegisterStats( )
 {
-    if( p->EnergyModel == "current" )
-    {
-        AddUnitStat(totalEnergy, "mA*t");
-        AddUnitStat(backgroundEnergy, "mA*t");
-        AddUnitStat(activateEnergy, "mA*t");
-        AddUnitStat(burstEnergy, "mA*t");
-        AddUnitStat(refreshEnergy, "mA*t");
-    }
-    else
-    {
-        AddUnitStat(totalEnergy, "nJ");
-        AddUnitStat(backgroundEnergy, "nJ");
-        AddUnitStat(activateEnergy, "nJ");
-        AddUnitStat(burstEnergy, "nJ");
-        AddUnitStat(refreshEnergy, "nJ");
-    }
-
-    AddUnitStat(totalPower, "W");
-    AddUnitStat(backgroundPower, "W");
-    AddUnitStat(activatePower, "W");
-    AddUnitStat(burstPower, "W");
-    AddUnitStat(refreshPower, "W");
-
-    AddStat(reads);
-    AddStat(writes);
-
-    AddStat(activeCycles);
-    AddStat(standbyCycles);
-    AddStat(fastExitActiveCycles);
-    AddStat(fastExitPrechargeCycles);
-    AddStat(slowExitCycles);
-
-    AddStat(actWaits);
-    AddStat(actWaitTotal); 
-    AddStat(actWaitAverage);
-
-    AddStat(rrdWaits);
-    AddStat(rrdWaitTotal); 
-    AddStat(rrdWaitAverage); 
-
-    AddStat(fawWaits);
-    AddStat(fawWaitTotal);
-    AddStat(fawWaitAverage);
+    //already done in SB_ON_RANK::SETCONFIG. so don't need to do this here
+    //GetChild()->GetTrampoline( )->RegisterStats( );
 }
 
 bool SB_ON_RANK::Idle( )
 {
-    bool rankIdle = true;
-    for( ncounter_t i = 0; i < bankCount; i++ )
-    {
-        if( GetChild(i)->Idle( ) == false )
-        {
-            rankIdle = false;
-            break;
-        }
-    }
-
-    return rankIdle;
+    return GetChild()->GetTrampoline( ) ->Idle();
 }
+
+/*
 
 bool SB_ON_RANK::Activate( NVMainRequest *request )
 {
-    uint64_t activateBank;
-
-    request->address.GetTranslatedAddress( NULL, NULL, &activateBank, NULL, NULL, NULL );
-
-    if( activateBank >= bankCount )
-    {
-        std::cerr << "Rank: Attempted to activate non-existant bank " << activateBank << std::endl;
-        return false;
-    }
-    
-    /*
-     *  Ensure that the time since the last bank activation is >= tRRD. This is to limit
-     *  power consumption.
-     */
-    if( nextActivate <= GetEventQueue()->GetCurrentCycle() 
-        && lastActivate[( RAWindex + 1 ) % rawNum] + p->tRAW 
-            <= GetEventQueue( )->GetCurrentCycle( ) )
-    {
-        /* issue ACTIVATE to target bank */
-        GetChild( request )->IssueCommand( request );
-
-        if( state == SB_ON_RANK_CLOSED )
-            state = SB_ON_RANK_OPEN;
-
-        /* move to the next counter */
-        RAWindex = (RAWindex + 1) % rawNum;
-        lastActivate[RAWindex] = GetEventQueue()->GetCurrentCycle();
-        nextActivate = MAX( nextActivate, 
-                            GetEventQueue()->GetCurrentCycle() + p->tRRDR );
-    }
-    else
-    {
-        std::cerr << "NVMain Error: Rank Activation FAILED! " 
-            << "Did you check IsIssuable?" << std::endl;
-    }
-
-    return true;
+   
 }
 
 bool SB_ON_RANK::Read( NVMainRequest *request )
 {
-    uint64_t readBank;
-
-    request->address.GetTranslatedAddress( NULL, NULL, &readBank, NULL, NULL, NULL );
-
-    if( readBank >= bankCount )
-    {
-        std::cerr << "NVMain Error: Rank attempted to read non-existant bank: " 
-            << readBank << "!" << std::endl;
-        return false;
-    }
-
-    if( nextRead > GetEventQueue()->GetCurrentCycle() )
-    {
-        std::cerr << "NVMain Error: Rank Read violates the timing constraint: " 
-            << readBank << "!" << std::endl;
-        return false;
-    }
-
-    /* issue READ or READ_PRECHARGE to target bank */
-    bool success = GetChild( request )->IssueCommand( request );
-
-    /* Even though the command may be READ_PRECHARGE, it still works */
-    nextRead = MAX( nextRead, 
-                    GetEventQueue()->GetCurrentCycle() 
-                    + MAX( p->tBURST, p->tCCD ) * request->burstCount );
-
-    nextWrite = MAX( nextWrite, 
-                     GetEventQueue()->GetCurrentCycle() 
-                     + MAX( p->tBURST, p->tCCD ) * (request->burstCount - 1)
-                     + p->tCAS + p->tBURST + p->tRTRS - p->tCWD ); 
-
-    /* if it has implicit precharge, insert the precharge to close the rank */ 
-    if( request->type == READ_PRECHARGE )
-    {
-        NVMainRequest* dupPRE = new NVMainRequest;
-        dupPRE->type = PRECHARGE;
-        dupPRE->owner = this;
-
-        GetEventQueue( )->InsertEvent( EventResponse, this, dupPRE, 
-            MAX( p->tBURST, p->tCCD ) * (request->burstCount - 1)
-            + GetEventQueue( )->GetCurrentCycle( ) + p->tAL + p->tRTP );
-    }
-
-    if( success == false )
-    {
-        std::cerr << "NVMain Error: Rank Read FAILED! Did you check IsIssuable?" 
-            << std::endl;
-    }
-
-    return success;
+    
 }
 
 
 bool SB_ON_RANK::Write( NVMainRequest *request )
 {
-    uint64_t writeBank;
-
-    request->address.GetTranslatedAddress( NULL, NULL, &writeBank, NULL, NULL, NULL );
-
-    if( writeBank >= bankCount )
-    {
-        std::cerr << "NVMain Error: Attempted to write non-existant bank: " 
-            << writeBank << "!" << std::endl;
-        return false;
-    }
-
-    if( nextWrite > GetEventQueue()->GetCurrentCycle() )
-    {
-        std::cerr << "NVMain Error: Rank Write violates the timing constraint: " 
-            << writeBank << "!" << std::endl;
-        return false;
-    }
-
-    /* issue WRITE or WRITE_PRECHARGE to the target bank */
-    bool success = GetChild( request )->IssueCommand( request );
-
-    /* Even though the command may be WRITE_PRECHARGE, it still works */
-    nextRead = MAX( nextRead, 
-                    GetEventQueue()->GetCurrentCycle() 
-                    + MAX( p->tBURST, p->tCCD ) * (request->burstCount - 1)
-                    + p->tCWD + p->tBURST + p->tWTR );
-
-    nextWrite = MAX( nextWrite, 
-                     GetEventQueue()->GetCurrentCycle() 
-                     + MAX( p->tBURST, p->tCCD ) * request->burstCount );
-
-    /* if it has implicit precharge, insert the precharge to close the rank */ 
-    if( request->type == WRITE_PRECHARGE )
-    {
-        NVMainRequest* dupPRE = new NVMainRequest;
-        dupPRE->type = PRECHARGE;
-        dupPRE->owner = this;
-
-        GetEventQueue( )->InsertEvent( EventResponse, this, dupPRE, 
-                        GetEventQueue( )->GetCurrentCycle( ) 
-                        + MAX( p->tBURST, p->tCCD ) * (request->burstCount - 1)
-                        + p->tAL + p->tCWD + p->tBURST + p->tWR );
-    }
-
-    if( success == false )
-    {
-        std::cerr << "NVMain Error: Rank Write FAILED! Did you check IsIssuable?" 
-            << std::endl;
-    }
-
-    return success;
+   
 }
 
 bool SB_ON_RANK::Precharge( NVMainRequest *request )
 {
-    uint64_t preBank;
-
-    request->address.GetTranslatedAddress( NULL, NULL, &preBank, NULL, NULL, NULL );
-
-    if( preBank >= bankCount )
-    {
-        std::cerr << "NVMain Error: Rank Attempted to precharge non-existant bank: " 
-            << preBank << std::endl;
-        return false;
-    }
-
-    /*
-     *  There are no rank-level constraints on precharges. If the bank says timing
-     *  was met we can send the command to the bank.
-     */
-    /* issue PRECHARGE/PRECHARGE_ALL to the target bank */
-    bool success = GetChild( request )->IssueCommand( request );
-
-    if( Idle( ) )
-        state = SB_ON_RANK_CLOSED;
-
-    nextPrecharge = MAX( nextPrecharge, 
-                         GetEventQueue()->GetCurrentCycle() + p->tPPD );
-
-    if( success == false )
-    {
-        std::cerr << "NVMain Error: Rank Precharge FAILED! Did you check IsIssuable?" 
-            << std::endl;
-    }
-
-    return success;
+   
 }
 
 bool SB_ON_RANK::CanPowerDown( NVMainRequest *request )
 {
-    bool issuable = true;
-
-    if( state == SB_ON_RANK_REFRESHING )
-        return false;
-
-    for( ncounter_t childIdx = 0; childIdx < GetChildren().size(); childIdx++ )
-    {
-        if( GetChild(childIdx)->IsIssuable( request ) == false )
-        {
-            issuable = false;
-            break;
-        }
-    }
-
-    return issuable;
+    
 }
 
 bool SB_ON_RANK::PowerDown( NVMainRequest *request )
 {
-    /* 
-     * PowerDown() should be completed to all banks, partial PowerDown is
-     * incorrect. Therefore, call CanPowerDown() first before every PowerDown
-     */
-    for( ncounter_t childIdx = 0; childIdx < GetChildren().size(); childIdx++ )
-    {
-#ifndef NDEBUG
-        bool rv = GetChild(childIdx)->IssueCommand( request );
-        assert( rv == true );
-#else
-        GetChild(childIdx)->IssueCommand( request );
-#endif
-    }
-
-    switch( request->type )
-    {
-        case POWERDOWN_PDA:
-            state = SB_ON_RANK_PDA;
-            break;
-
-        case POWERDOWN_PDPF:
-            state = SB_ON_RANK_PDPF;
-            break;
-
-        case POWERDOWN_PDPS:
-            state = SB_ON_RANK_PDPS;
-            break;
-
-        default:
-            std::cerr<< "NVMain Error: Unrecognized PowerDown command " 
-                << request->type << " is detected in Rank " << std::endl; 
-            break;
-    }
-
-    GetEventQueue( )->InsertEvent( EventResponse, this, request, 
-            GetEventQueue()->GetCurrentCycle() + p->tPD );
     
-    return true;
 }
 
 bool SB_ON_RANK::CanPowerUp( NVMainRequest *request )
 {
-    bool issuable = true;
-    ncounter_t issuableCount = 0;
-
-    /* Since all banks are powered down, check the first bank is enough */
-    for( ncounter_t childIdx = 0; childIdx < GetChildren().size(); childIdx++ )
-    {
-        if( GetChild(childIdx)->IsIssuable( request ) == false )
-        {
-            issuable = false;
-        }
-        else
-        {
-            issuableCount++;
-        }
-    }
-
-    assert( issuableCount == 0 || issuableCount == GetChildren().size() );
-
-    return issuable;
+    
 }
 
 bool SB_ON_RANK::PowerUp( NVMainRequest *request )
 {
-    ncounter_t puTimer = 1;
-
-    /* 
-     * PowerUp() should be completed to all banks, partial PowerUp is
-     * incorrect. Therefore, call CanPowerUp() first before every PowerDown
-     */
-    for( ncounter_t childIdx = 0; childIdx < GetChildren().size(); childIdx++ )
-    {
-#ifndef NDEBUG
-        bool rv = GetChild(childIdx)->IssueCommand( request );
-        assert( rv == true );
-#else
-        GetChild(childIdx)->IssueCommand( request );
-#endif
-    }
-
-    switch( state )
-    {
-        case SB_ON_RANK_PDA:
-            state = SB_ON_RANK_OPEN;
-            puTimer = p->tXP;
-            break;
-
-        case SB_ON_RANK_PDPF:
-            puTimer = p->tXP;
-            state = SB_ON_RANK_CLOSED;
-            break;
-
-        case SB_ON_RANK_PDPS:
-            puTimer = p->tXPDLL;
-            state = SB_ON_RANK_CLOSED;
-            break;
-
-        default:
-            std::cerr<< "NVMain Error: PowerUp is issued to a Rank that is not " 
-                << "PowerDown before. The current rank state is " << state 
-                << std::endl; 
-            break;
-    }
-    
-    GetEventQueue( )->InsertEvent( EventResponse, this, request, 
-            GetEventQueue()->GetCurrentCycle() + puTimer );
-    
-    return true;
+   
 }
+
+*/
 
 /*
  * refresh is issued to those banks that start from the bank specified by the
  * request.  
  */
+/*
 bool SB_ON_RANK::Refresh( NVMainRequest *request )
 {
-    assert( nextActivate <= ( GetEventQueue()->GetCurrentCycle() ) );
-    uint64_t refreshBankGroupHead;
-    request->address.GetTranslatedAddress( 
-            NULL, NULL, &refreshBankGroupHead, NULL, NULL, NULL );
-
-    assert( (refreshBankGroupHead + banksPerRefresh) <= bankCount );
-
-    for( ncounter_t i = 0; i < banksPerRefresh; i++ )
-    {
-        NVMainRequest* refReq = new NVMainRequest;
-        *refReq = *request;
-        GetChild( refreshBankGroupHead+i )->IssueCommand( refReq );
-    }
-
-    state = SB_ON_RANK_REFRESHING;
-
-    request->owner = this;
-    GetEventQueue( )->InsertEvent( EventResponse, this, request, 
-        GetEventQueue()->GetCurrentCycle() + p->tRFC );
-
-    /*
-     * simply treat the REFRESH as an ACTIVATE. For a finer refresh
-     * granularity, the nextActivate does not block the other bank groups
-     */
-    nextActivate = MAX( nextActivate, GetEventQueue( )->GetCurrentCycle( ) 
-                                        + p->tRRDR );
-    RAWindex = (RAWindex + 1) % rawNum;
-    lastActivate[RAWindex] = GetEventQueue( )->GetCurrentCycle( );
-
-    return true;
-}
-
-ncycle_t SB_ON_RANK::NextIssuable( NVMainRequest *request )
-{
-    ncycle_t nextCompare = 0;
-    ncounter_t bank;
-
-    request->address.GetTranslatedAddress( NULL, NULL, &bank, NULL, NULL, NULL );
-
-    if( request->type == ACTIVATE || request->type == REFRESH ) nextCompare = MAX( nextActivate, lastActivate[(RAWindex+1)%rawNum] + p->tRAW );
-    else if( request->type == READ || request->type == READ_PRECHARGE ) nextCompare = nextRead;
-    else if( request->type == WRITE || request->type == WRITE_PRECHARGE ) nextCompare = nextWrite;
-    else if( request->type == PRECHARGE || request->type == PRECHARGE_ALL ) nextCompare = nextPrecharge;
-    else assert(false);
-        
-    return MAX(GetChild( request )->NextIssuable( request ), nextCompare );
-}
-
-bool SB_ON_RANK::IsIssuable( NVMainRequest *req, FailReason *reason )
-{
-    uint64_t opBank;
-    bool rv;
     
-    req->address.GetTranslatedAddress( NULL, NULL, &opBank, NULL, NULL, NULL );
+}
+*/
+ncycle_t SB_ON_RANK::NextIssuable( NVMainRequest *)
+{
+    
+    //zhuguoliang
+    std::cout<< "Warining!!!===========Calling SB_ON_RANK::NextIssuable I don't know how to deal with\n";
+    NVMainRequest *queueHead = memreq_buffer->at( 0 );
 
-    rv = true;
+            //std::cout << "0x" << std::hex << queueHead->address.GetPhysicalAddress( )
+            //          << " issuable at " << std::dec 
+            //          << GetChild( )->NextIssuable( queueHead ) << std::endl;
+            
+    return GetChild( )->NextIssuable( queueHead );
+}
 
-    if( req->type == ACTIVATE )
+
+//the next req that is issuable
+bool SB_ON_RANK::IsIssuable( NVMainRequest *req, FailReason *)
+{
+   bool rv = true;
+
+    /* during a request drain, no req can enqueue */
+    /* only have one child which is hrank ask it if the req is isissuable*/
+    if((memreq_buffer->size() >= max_buffer_size) || (buffer_draining ==true) || (!(GetChild( )->IsIssuable(req))))
     {
-        if( nextActivate > GetEventQueue( )->GetCurrentCycle( ) 
-            || ( lastActivate[(RAWindex + 1) % rawNum] + p->tRAW ) 
-                > GetEventQueue()->GetCurrentCycle() )  
-        {
-            rv = false;
-
-            if( reason ) 
-                reason->reason = RANK_TIMING;
-        }
-        else
-        {
-            rv = GetChild( req )->IsIssuable( req, reason );
-        }
-
-        if( rv == false )
-        {
-            if( nextActivate > GetEventQueue( )->GetCurrentCycle( ) )
-            {
-                actWaits++;
-                actWaitTotal += nextActivate - GetEventQueue( )->GetCurrentCycle( );
-            }
-
-            if( ( lastActivate[RAWindex] + p->tRRDR )
-                    > GetEventQueue( )->GetCurrentCycle( ) ) 
-            {
-                rrdWaits++;
-                rrdWaitTotal += ( lastActivate[RAWindex] + 
-                        p->tRRDR - (GetEventQueue()->GetCurrentCycle()) );
-            }
-            if( ( lastActivate[( RAWindex + 1 ) % rawNum] + p->tRAW )
-                    > GetEventQueue( )->GetCurrentCycle( ) ) 
-            {
-                fawWaits++;
-                fawWaitTotal += ( lastActivate[( RAWindex + 1 ) % rawNum] + 
-                    p->tRAW - GetEventQueue( )->GetCurrentCycle( ) );
-            }
-        }
+        rv = false;
     }
-    else if( req->type == READ || req->type == READ_PRECHARGE )
-    {
-        if( nextRead > GetEventQueue( )->GetCurrentCycle( ) )
-        {
-            rv = false;
 
-            if( reason ) 
-                reason->reason = RANK_TIMING;
-        }
-        else
-        {
-            rv = GetChild( req )->IsIssuable( req, reason );
-        }
+    if(rv==false){
+        std::cout<<" NOT ISSUABLE from SB_ON_RANK \n";
     }
-    else if( req->type == WRITE || req->type == WRITE_PRECHARGE )
-    {
-        if( nextWrite > GetEventQueue( )->GetCurrentCycle( ) )
-        {
-            rv = false;
 
-            if( reason ) 
-                reason->reason = RANK_TIMING;
-        }
-        else
-        {
-            rv = GetChild( req )->IsIssuable( req, reason );
-        }
-    }
-    else if( req->type == PRECHARGE || req->type == PRECHARGE_ALL )
-    {
-        if( nextPrecharge > GetEventQueue( )->GetCurrentCycle( ) ) 
-        {
-            rv = false;
-
-            if( reason ) 
-                reason->reason = RANK_TIMING;
-        }
-        else
-        {
-            rv = GetChild( req )->IsIssuable( req, reason );
-        }
-    }
-    else if( req->type == POWERDOWN_PDA 
-            || req->type == POWERDOWN_PDPF 
-            || req->type == POWERDOWN_PDPS )
-    {
-        rv = CanPowerDown( req );
-
-        if( !rv && reason ) 
-            reason->reason = RANK_TIMING;
-    }
-    else if( req->type == POWERUP )
-    {
-        rv = CanPowerUp( req );
-
-        if( !rv && reason ) 
-            reason->reason = RANK_TIMING;
-    }
-    else if( req->type == REFRESH )
-    {
-        /* firstly, check whether REFRESH can be issued to a rank */
-        if( nextActivate > GetEventQueue()->GetCurrentCycle() 
-            || ( lastActivate[( RAWindex + 1 ) % rawNum] + p->tRAW 
-                > GetEventQueue( )->GetCurrentCycle( ) )  )
-        {
-            rv = false;
-            if( reason ) 
-                reason->reason = RANK_TIMING;
-
-            return rv;
-        }
-
-        /* REFRESH can only be issued when all banks in the group are issuable */ 
-        assert( (opBank + banksPerRefresh) <= bankCount );
-
-        for( ncounter_t i = 0; i < banksPerRefresh; i++ )
-        {
-            rv = GetChild( opBank + i )->IsIssuable( req, reason );
-            if( rv == false )
-                return rv;
-        }
-    }
-    else
-    {
-        /* Unknown command -- See if child module can handle it. */
-        rv = GetChild( req )->IsIssuable( req, reason );
-    }
 
     return rv;
 }
+
+
 
 bool SB_ON_RANK::IssueCommand( NVMainRequest *req )
 {
@@ -801,11 +257,8 @@ bool SB_ON_RANK::IssueCommand( NVMainRequest *req )
 
     if( !IsIssuable( req ) )
     {
-        uint64_t bank, rank, channel;
-        req->address.GetTranslatedAddress( NULL, NULL, &bank, &rank, &channel, NULL );
-        std::cout << "NVMain: Rank: Warning: Command " << req->type 
-            << " @ Bank " << bank << " Rank " << rank << " Channel " << channel 
-            << " can not be issued!\n" << std::endl;
+        std::cout<< "Sync buffer full or buffer_draining on going\n";
+        return false;
     }
     else
     {
@@ -814,41 +267,42 @@ bool SB_ON_RANK::IssueCommand( NVMainRequest *req )
         switch( req->type )
         {
             case ACTIVATE:
-                rv = this->Activate( req );
+                memreq_buffer->push_back( req);
                 break;
             
             case READ:
             case READ_PRECHARGE:
-                rv = this->Read( req );
+                memreq_buffer->push_back( req);
                 break;
             
             case WRITE:
             case WRITE_PRECHARGE:
-                rv = this->Write( req );
+                memreq_buffer->push_back( req);
                 break;
             
             case PRECHARGE:
             case PRECHARGE_ALL:
-                rv = this->Precharge( req );
+                memreq_buffer->push_back( req);
                 break;
 
             case POWERDOWN_PDA:
             case POWERDOWN_PDPF: 
             case POWERDOWN_PDPS: 
-                rv = this->PowerDown( req );
+                memreq_buffer->push_back( req);
                 break;
 
             case POWERUP:
-                rv = this->PowerUp( req );
+                memreq_buffer->push_back( req);
                 break;
         
             case REFRESH:
-                rv = this->Refresh( req );
+                memreq_buffer->push_back( req);
                 break;
 
             default:
-                std::cout << "NVMain: Rank: Unknown operation in command queue! " 
+                std::cout << "NVMain:unknown request from MC! " 
                     << req->type << std::endl;
+                rv=false;
                 break;  
         }
     }
@@ -862,204 +316,106 @@ bool SB_ON_RANK::IssueCommand( NVMainRequest *req )
  */
 void SB_ON_RANK::Notify( NVMainRequest *request )
 {
-    OpType op = request->type;
-
-    /* We only care if other ranks are reading/writing (to avoid bus contention) */
-    if( op == READ || op == READ_PRECHARGE )
-    {
-        nextRead = MAX( nextRead, GetEventQueue()->GetCurrentCycle() 
-                                    + p->tBURST + p->tRTRS );
-
-        nextWrite = MAX( nextWrite, GetEventQueue()->GetCurrentCycle() 
-                                    + p->tCAS + p->tBURST + p->tRTRS - p->tCWD);
-    }
-    else if( op == WRITE || op == WRITE_PRECHARGE )
-    {
-        nextWrite = MAX( nextWrite, GetEventQueue()->GetCurrentCycle() 
-                                    + p->tBURST + p->tOST );
-
-        nextRead = MAX( nextRead, GetEventQueue()->GetCurrentCycle()
-                                    + p->tBURST + p->tCWD + p->tRTRS - p->tCAS );
-    }
+            GetChild( )->Notify( request );
 }
 
 bool SB_ON_RANK::RequestComplete( NVMainRequest* req )
 {
-    if( req->owner == this )
-    {
-        switch( req->type )
-        {
-            /* 
-             * check whether all banks are idle. some banks may be active
-             * due to the possible fine-grained structure 
-             */
-            case PRECHARGE:
-            case REFRESH:
-                {
-                    if( Idle( ) )
-                        state = SB_ON_RANK_CLOSED;
-
-                    break;
-                }
-
-            default:
-                break;
-        }
-
-        delete req;
-        return true;
-    }
-    else
-        return GetParent( )->RequestComplete( req );
+    
+    //maybe should del req from queue?
+    return GetParent( )->RequestComplete( req );
 }
+
+
+
+
+void SB_ON_RANK::SBCleanupCallback( void * /*data*/ )
+{
+    
+    memreq_buffer->erase(
+            std::remove_if( memreq_buffer->begin(),
+                            memreq_buffer->end(),
+                            WasIssuedSB),
+            memreq_buffer->end()
+        );
+    std::cout<< "SB_ON_RANK::SBCleanupCallback I am called on cycle "<<  GetEventQueue()->GetCurrentCycle() <<std::endl;
+}
+
+void SB_ON_RANK::CycleRequestBuffer( )
+{
+    FailReason fail;
+    if( !memreq_buffer->empty( )
+            && GetChild( )->IsIssuable( memreq_buffer->at( 0 ), &fail ) )
+    {
+        NVMainRequest *queueHead = memreq_buffer->at( 0 );
+        GetChild( )->IssueCommand( queueHead );
+        queueHead->flags |= NVMainRequest::FLAG_ISSUED_BY_SB;
+
+        /* Get this cleaned this up. */
+        ncycle_t cleanupCycle = GetEventQueue()->GetCurrentCycle() + 1;
+        bool cleanupScheduled = GetEventQueue()->FindCallback( this, 
+                                        (CallbackPtr)&SB_ON_RANK::SBCleanupCallback,
+                                        cleanupCycle, NULL, SBcleanupPriority );
+
+            if( !cleanupScheduled )
+                GetEventQueue( )->InsertCallback( this, 
+                                  (CallbackPtr)&SB_ON_RANK::SBCleanupCallback,
+                                  cleanupCycle, NULL, SBcleanupPriority );
+    }
+
+}
+
+
 
 void SB_ON_RANK::Cycle( ncycle_t steps )
 {
-    for( ncounter_t childIdx = 0; childIdx < GetChildCount( ); childIdx++ )
-        GetChild( childIdx )->Cycle( steps );
+    
+    /* Sync the momory clock with the bus clock. */
+    //double cpuFreq = static_cast<double>(p->CPUFreq);
+    double busFreq = static_cast<double>(p->CLK);
+    double memFreq = static_cast<double>(p->MEM_Freq);
 
-    /* Count cycle numbers and calculate background energy for each state */
-    switch( state )
+
+    //std::cout<<"MEM_Freq is "<< p->MEM_Freq<<std::endl;
+
+
+    syncValue += static_cast<double>( memFreq / busFreq );
+
+    
+    if( syncValue >= 1.0f )
     {
-        /* active powerdown */
-        case SB_ON_RANK_PDA:
-            fastExitActiveCycles += steps;
-            if( p->EnergyModel == "current" )
-                backgroundEnergy += ( p->EIDD3P * (double)steps ) * (double)deviceCount;  
-            else
-                backgroundEnergy += ( p->Epda * (double)steps );  
-            break;
-
-        /* precharge powerdown fast exit */
-        case SB_ON_RANK_PDPF:
-            fastExitPrechargeCycles += steps;
-            if( p->EnergyModel == "current" )
-                backgroundEnergy += ( p->EIDD2P1 * (double)steps ) * (double)deviceCount;
-            else 
-                backgroundEnergy += ( p->Epdpf * (double)steps );  
-            break;
-
-        /* precharge powerdown slow exit */
-        case SB_ON_RANK_PDPS:
-            slowExitCycles += steps;
-            if( p->EnergyModel == "current" )
-                backgroundEnergy += ( p->EIDD2P0 * (double)steps ) * (double)deviceCount;  
-            else 
-                backgroundEnergy += ( p->Epdps * (double)steps );  
-            break;
-
-        /* active standby */
-        case SB_ON_RANK_REFRESHING:
-        case SB_ON_RANK_OPEN:
-            activeCycles += steps;
-            if( p->EnergyModel == "current" )
-                backgroundEnergy += ( p->EIDD3N * (double)steps ) * (double)deviceCount;  
-            else
-                backgroundEnergy += ( p->Eactstdby * (double)steps );  
-            break;
-
-        /* precharge standby */
-        case SB_ON_RANK_CLOSED:
-            standbyCycles += steps;
-            if( p->EnergyModel == "current" )
-                backgroundEnergy += ( p->EIDD2N * (double)steps ) * (double)deviceCount;  
-            else
-                backgroundEnergy += ( p->Eprestdby * (double)steps );  
-            break;
-
-        default:
-            if( p->EnergyModel == "current" )
-                backgroundEnergy += ( p->EIDD2N * (double)steps ) * (double)deviceCount;  
-            else
-                backgroundEnergy += ( p->Eprestdby * (double)steps );  
-            break;
+        syncValue -= 1.0f;
     }
+    else
+    {
+        return;
+    }
+
+
+
+    /* Issue memory commands from the request buffer. */
+    CycleRequestBuffer( );
+
+    /* 
+    *  zhuguoliang
+    *  only have one child which is a hrank
+    */
+    assert(steps==1);
+    for( ncounter_t childIdx = 0; childIdx < GetChildCount( ); childIdx++ )
+        GetChild( childIdx )->Cycle( steps );//step always is 1
+
+
+    GetChild( )->GetTrampoline()->GetEventQueue()->Loop( steps );
+
 }
 
 void SB_ON_RANK::CalculateStats( )
 {
-    NVMObject::CalculateStats( );
-
-    totalEnergy = activateEnergy = burstEnergy = refreshEnergy = 0.0;
-    totalPower = backgroundPower = activatePower = burstPower = refreshPower = 0.0;
-    reads = writes = 0;
-
-    for( ncounter_t i = 0; i < bankCount; i++ )
-    {
-        StatType bankEstat = GetStat( GetChild(i), "bankEnergy" );
-        StatType actEstat =  GetStat( GetChild(i), "activeEnergy" );
-        StatType bstEstat =  GetStat( GetChild(i), "burstEnergy" );
-        StatType refEstat =  GetStat( GetChild(i), "refreshEnergy" );
-
-        totalEnergy += CastStat( bankEstat, double );
-        activateEnergy += CastStat( actEstat, double );
-        burstEnergy += CastStat( bstEstat, double );
-        refreshEnergy += CastStat( refEstat, double );
-
-        StatType readCount = GetStat( GetChild(i), "reads" );
-        StatType writeCount = GetStat( GetChild(i), "writes" );
-
-        reads += CastStat( readCount, ncounter_t );
-        writes += CastStat( writeCount, ncounter_t );
-    }
-
-
-    /* Get simulation time in nanoseconds (ns). Since energy is in nJ, energy / ns = W */
-    double simulationTime = 1.0;
-    
-    if( p->EnergyModel == "current" )
-    {
-        simulationTime = GetEventQueue()->GetCurrentCycle() - lastReset;
-    }
-    else
-    {
-        simulationTime = static_cast<double>(GetEventQueue()->GetCurrentCycle() - lastReset) 
-                       * (1000.0 / static_cast<double>(p->CLK));
-    }
-
-    if( simulationTime != 0 )
-    {
-        /* power in W */
-        if( p->EnergyModel == "current" )
-        {
-            backgroundPower = ( backgroundEnergy / (double)deviceCount * p->Voltage ) / (double)simulationTime / 1000.0; 
-            activatePower = ( activateEnergy * p->Voltage ) / (double)simulationTime / 1000.0; 
-            burstPower = ( burstEnergy * p->Voltage ) / (double)simulationTime / 1000.0; 
-            refreshPower = ( refreshEnergy * p->Voltage ) / (double)simulationTime / 1000.0; 
-        }
-        else
-        {
-            backgroundPower = backgroundEnergy / ((double)simulationTime);
-            activatePower = activateEnergy / ((double)simulationTime);
-            burstPower = burstEnergy / ((double)simulationTime);
-            refreshPower = refreshEnergy / ((double)simulationTime);
-        }
-    }
-
-    /* Current mode is measured on a per-device basis. */
-    if( p->EnergyModel == "current" )
-    {
-        /* energy breakdown. device is in lockstep within a rank */
-        activateEnergy *= (double)deviceCount;
-        burstEnergy *= (double)deviceCount;
-        refreshEnergy *= (double)deviceCount;
-
-        /* power breakdown. device is in lockstep within a rank */
-        activatePower *= (double)deviceCount;
-        burstPower *= (double)deviceCount;
-        refreshPower *= (double)deviceCount;
-    }
-
-    totalEnergy = activateEnergy + burstEnergy + refreshEnergy + backgroundEnergy;
-    totalPower = activatePower + burstPower + refreshPower + backgroundPower;
-
-    actWaitAverage = static_cast<double>(actWaitTotal) / static_cast<double>(actWaits);
-    rrdWaitAverage = static_cast<double>(rrdWaitTotal) / static_cast<double>(rrdWaits);
-    fawWaitAverage = static_cast<double>(fawWaitTotal) / static_cast<double>(fawWaits);
+    GetChild( )->CalculateStats( );
 }
 
 void SB_ON_RANK::ResetStats( )
 {
-    lastReset = GetEventQueue()->GetCurrentCycle();
+    GetChild( )->ResetStats( );
 }
 

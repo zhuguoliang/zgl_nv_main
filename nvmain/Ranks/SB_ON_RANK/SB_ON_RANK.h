@@ -42,6 +42,8 @@
 
 namespace NVM {
 
+
+const int SBcleanupPriority = -10;
 /*
  *  We use six rank states because our timing and energy parameters
  *  only tell us the delay of the entire read/write cycle to one bank.
@@ -90,8 +92,12 @@ class SB_ON_RANK : public Rank
     void CalculateStats( );
     void ResetStats( );
 
+
+    void SBCleanupCallback( void *data );
+
   protected:
     Config *conf;
+/*
     ncounter_t stateTimeout;
     uint64_t psInterval;
     SB_ON_RANK_State state;
@@ -104,6 +110,7 @@ class SB_ON_RANK : public Rank
     ncounter_t RAWindex;
     ncounter_t rawNum;
     ncounter_t banksPerRefresh;
+
 
     ncycle_t nextRead;
     ncycle_t nextWrite;
@@ -141,9 +148,26 @@ class SB_ON_RANK : public Rank
     bool PowerUp( NVMainRequest *request );
     bool CanPowerDown( NVMainRequest *request );
     bool CanPowerUp( NVMainRequest *request );
+*/
 
+
+    void CycleRequestBuffer( );
+/* 
+*  zhuguoliang 
+*  add these for Sync Buffer
+*  SB is acting like memory controller here ! 
+*  every req has < address data memcmd > in it
+*  Simply buffering req can fufill our need
+*
+*/
   private:
     Rank * hrank;
+    std::deque<NVMainRequest *> *memreq_buffer;
+    double syncValue;
+    //std::list<NVMainRequest *> *transactionQueues;
+    //std::deque<NVMainRequest *> *commandQueues;
+    ncounter_t max_buffer_size;
+    bool buffer_draining;
 };
 
 };

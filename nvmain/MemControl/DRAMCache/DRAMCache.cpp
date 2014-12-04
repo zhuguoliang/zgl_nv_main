@@ -163,6 +163,7 @@ void DRAMCache::SetConfig( Config *conf, bool createChildren )
         }
         /* Add mainMemory as the last child */
         AddChild( mainMemory );
+        //std::cout<< "mainMemory StatName is "<< mainMemory->StatName()<<std::endl;
     }
 
     /* DRC Variant will call base SetConfig */

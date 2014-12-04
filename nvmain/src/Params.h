@@ -74,6 +74,8 @@ class Params
     ncounter_t RATE;
     ncounter_t CPUFreq;
 
+    ncounter_t MEM_Freq;/*for decoupled_dimm ---zhuguoliang*/
+
     double EIDD0;
     double EIDD1;
     double EIDD2P0;
