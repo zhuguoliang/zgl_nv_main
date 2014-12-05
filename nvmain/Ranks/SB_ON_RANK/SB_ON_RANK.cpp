@@ -52,7 +52,7 @@ SB_ON_RANK::SB_ON_RANK( )
 {
     //no state
     buffer_draining= false;
-    max_buffer_size= 2;
+    max_buffer_size= 32;
     memreq_buffer= NULL;
     memreq_buffer = new std::deque<NVMainRequest *> [max_buffer_size];
     syncValue = 0.0f;
@@ -96,11 +96,17 @@ void SB_ON_RANK::SetConfig( Config *c, bool createChildren )
         */
         ///////////////////////////////////////////////////////////////////////////////////////////       
         /* When selecting a child, use the bank field from the decoder. */
+        
+//should set below to set decoder but SB_ON_RANK is only one layer and has only one child
+
+
+        /*
         AddressTranslator *rankAT = DecoderFactory::CreateDecoderNoWarn( conf->GetString( "Decoder" ) );
         rankAT->SetTranslationMethod( GetParent( )->GetTrampoline( )->GetDecoder( )->GetTranslationMethod( ) );
         rankAT->SetDefaultField( RANK_FIELD );
         rankAT->SetConfig( c, createChildren );
         SetDecoder( rankAT );
+        */
         /* Initialize ranks in config file, named HRANK_CONFIG*/
         std::string configFile;
         Config *Heterogeneous_RankConfig;
@@ -236,6 +242,7 @@ bool SB_ON_RANK::IsIssuable( NVMainRequest *req, FailReason *)
 
     /* during a request drain, no req can enqueue */
     /* only have one child which is hrank ask it if the req is isissuable*/
+   //if((memreq_buffer->size() >= max_buffer_size) || (buffer_draining ==true))
     if((memreq_buffer->size() >= max_buffer_size) || (buffer_draining ==true) || (!(GetChild( )->IsIssuable(req))))
     {
         rv = false;
@@ -243,6 +250,7 @@ bool SB_ON_RANK::IsIssuable( NVMainRequest *req, FailReason *)
 
     if(rv==false){
         std::cout<<" NOT ISSUABLE from SB_ON_RANK \n";
+        std::cout<<req->type<<std::endl;
     }
 
 
@@ -392,6 +400,7 @@ void SB_ON_RANK::Cycle( ncycle_t steps )
     }
 
 
+    std::cout<<"SB_ON_RANK::Cycle current memreq_buffer->size() = "<<memreq_buffer->size()<<std::endl;
 
     /* Issue memory commands from the request buffer. */
     CycleRequestBuffer( );

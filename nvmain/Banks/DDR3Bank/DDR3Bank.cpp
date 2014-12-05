@@ -127,11 +127,11 @@ void DDR3Bank::SetConfig( Config *config, bool createChildren )
 
     MATHeight = p->MATHeight;
     subArrayNum = p->ROWS / MATHeight;
-/*
+
     std::cout<<"MATHeight is "<<MATHeight<<std::endl;
     std::cout<<"p->ROWS is "<<p->ROWS<<std::endl;
     std::cout<<"subArrayNum is "<<subArrayNum<<std::endl;
-*/
+
     if( createChildren )
     {
         /* When selecting a child, use the subarray field from the decoder. */
@@ -874,7 +874,7 @@ bool DDR3Bank::IsIssuable( NVMainRequest *req, FailReason *reason )
         /*zhuguoliang*/
        if(rv==false){
         std::cout<<" NOT ISSUABLE from DDR3Bank \n";
-    }
+        }
 /*
         for( it = childNodes.begin(); it != childNodes.end(); it++ )
         {
