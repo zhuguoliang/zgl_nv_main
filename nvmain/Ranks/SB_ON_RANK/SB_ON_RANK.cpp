@@ -413,7 +413,7 @@ void SB_ON_RANK::Cycle( ncycle_t steps )
     for( ncounter_t childIdx = 0; childIdx < GetChildCount( ); childIdx++ )
         GetChild( childIdx )->Cycle( steps );//step always is 1
 
-
+//let the clock run
     GetChild( )->GetTrampoline()->GetEventQueue()->Loop( steps );
 
 }

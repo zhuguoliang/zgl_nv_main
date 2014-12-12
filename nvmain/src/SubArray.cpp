@@ -1209,6 +1209,8 @@ bool SubArray::IsIssuable( NVMainRequest *req, FailReason *reason )
              std::cout<<" NOT ISSUABLE from SubArray "<<std::endl;    
 
         }
+
+    //std::cout<<"SubArray ---the request type is "<<req->type<<std::endl;
     return rv;
 }
 
@@ -1259,6 +1261,9 @@ bool SubArray::IssueCommand( NVMainRequest *req )
                 break;  
         }
     }
+
+
+    std::cout<<"SubArray::IssueCommand ---the request type is "<<req->type<<std::endl;
 
     return rv;
 }
