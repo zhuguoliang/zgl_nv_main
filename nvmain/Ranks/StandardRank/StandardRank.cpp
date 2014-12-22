@@ -790,7 +790,7 @@ bool StandardRank::IsIssuable( NVMainRequest *req, FailReason *reason )
 
 
      if(rv==false){
-        std::cout<<" NOT ISSUABLE from StandardRank \n";
+        //std::cout<<" NOT ISSUABLE from StandardRank \n";
     }
 
     return rv;
@@ -919,7 +919,7 @@ void StandardRank::Cycle( ncycle_t steps )
     for( ncounter_t childIdx = 0; childIdx < GetChildCount( ); childIdx++ )
         GetChild( childIdx )->Cycle( steps );
     /*zhuguoliang*/
-    std::cout<< "----StandardRank::Cycle currentCycle is "<< GetEventQueue()->GetCurrentCycle() << std::endl;
+//    std::cout<< "----StandardRank::Cycle currentCycle is "<< GetEventQueue()->GetCurrentCycle() << std::endl;
     /* Count cycle numbers and calculate background energy for each state */
     switch( state )
     {

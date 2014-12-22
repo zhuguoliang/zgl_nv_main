@@ -1,21 +1,9 @@
 NVMain command line is:
-./nvmain.debug Config/PCM_ISSCC_2012_4GB.config Tests/Traces/hello_world.nvt 1000 
+./nvmain.debug Config/ZGL_Standard_DRAM_channel.config Tests/Traces/FFT.trace-split-3-1479.trc_nvmain 100000 
 
 Config: Warning: Key EventDriven is not set. Using 'false' as the default. Please configure this value if this is wrong.
-NVMain: GlobalEventQueue: Added a memory subsystem running at 400MHz. My frequency is 2000MHz.
-Config: Warning: Key EIDD0 is not set. Using '85' as the default. Please configure this value if this is wrong.
-Config: Warning: Key EIDD1 is not set. Using '54' as the default. Please configure this value if this is wrong.
-Config: Warning: Key EIDD2P0 is not set. Using '30' as the default. Please configure this value if this is wrong.
-Config: Warning: Key EIDD2P1 is not set. Using '30' as the default. Please configure this value if this is wrong.
-Config: Warning: Key EIDD2N is not set. Using '37' as the default. Please configure this value if this is wrong.
-Config: Warning: Key EIDD3P is not set. Using '35' as the default. Please configure this value if this is wrong.
-Config: Warning: Key EIDD3N is not set. Using '40' as the default. Please configure this value if this is wrong.
-Config: Warning: Key EIDD4R is not set. Using '160' as the default. Please configure this value if this is wrong.
-Config: Warning: Key EIDD4W is not set. Using '165' as the default. Please configure this value if this is wrong.
-Config: Warning: Key EIDD5B is not set. Using '200' as the default. Please configure this value if this is wrong.
-Config: Warning: Key EIDD6 is not set. Using '12' as the default. Please configure this value if this is wrong.
-Config: Warning: Key Eactstdby is not set. Using '0.09009' as the default. Please configure this value if this is wrong.
-Config: Warning: Key Eprestdby is not set. Using '0.083333' as the default. Please configure this value if this is wrong.
+NVMain: GlobalEventQueue: Added a memory subsystem running at 666MHz. My frequency is 3000MHz.
+Config: Warning: Key MEM_Freq is not set. Using '0' as the default. Please configure this value if this is wrong.
 Config: Warning: Key Rtt_nom is not set. Using '30' as the default. Please configure this value if this is wrong.
 Config: Warning: Key Rtt_wr is not set. Using '60' as the default. Please configure this value if this is wrong.
 Config: Warning: Key Rtt_cont is not set. Using '75' as the default. Please configure this value if this is wrong.
@@ -23,8 +11,6 @@ Config: Warning: Key VDDQ is not set. Using '1.5' as the default. Please configu
 Config: Warning: Key VSSQ is not set. Using '0' as the default. Please configure this value if this is wrong.
 Config: Warning: Key RanksPerDIMM is not set. Using '1' as the default. Please configure this value if this is wrong.
 Config: Warning: Key DataEncoder is not set. Using 'default' as the default. Please configure this value if this is wrong.
-Config: Warning: Key UseLowPower is not set. Using 'true' as the default. Please configure this value if this is wrong.
-Config: Warning: Key PowerDownMode is not set. Using 'FASTEXIT' as the default. Please configure this value if this is wrong.
 Config: Warning: Key PrintAllDevices is not set. Using 'false' as the default. Please configure this value if this is wrong.
 Config: Warning: Key PrintConfig is not set. Using 'false' as the default. Please configure this value if this is wrong.
 Config: Warning: Key StaggerRefresh is not set. Using 'false' as the default. Please configure this value if this is wrong.
@@ -50,28 +36,16 @@ Config: Warning: Key WritePausing is not set. Using 'false' as the default. Plea
 Config: Warning: Key PauseThreshold is not set. Using '0.4' as the default. Please configure this value if this is wrong.
 Config: Warning: Key MaxCancellations is not set. Using '4' as the default. Please configure this value if this is wrong.
 NVMain: the address mapping order is 
-	Sub-Array 1
-	Row 6
-	Column 2
-	Bank 4
-	Rank 5
-	Channel 3
+	Sub-Array 5
+	Row 2
+	Column 1
+	Bank 3
+	Rank 4
+	Channel 6
 Config: Warning: Key CONFIG_CHANNEL0 is not set. Using '' as the default. Please configure this value if this is wrong.
-Created a First Ready First Come First Serve memory         controller with write queue!
+Created a First Ready First Come First Serve memory controller!
 Config: Warning: Key EventDriven is not set. Using 'false' as the default. Please configure this value if this is wrong.
-Config: Warning: Key EIDD0 is not set. Using '85' as the default. Please configure this value if this is wrong.
-Config: Warning: Key EIDD1 is not set. Using '54' as the default. Please configure this value if this is wrong.
-Config: Warning: Key EIDD2P0 is not set. Using '30' as the default. Please configure this value if this is wrong.
-Config: Warning: Key EIDD2P1 is not set. Using '30' as the default. Please configure this value if this is wrong.
-Config: Warning: Key EIDD2N is not set. Using '37' as the default. Please configure this value if this is wrong.
-Config: Warning: Key EIDD3P is not set. Using '35' as the default. Please configure this value if this is wrong.
-Config: Warning: Key EIDD3N is not set. Using '40' as the default. Please configure this value if this is wrong.
-Config: Warning: Key EIDD4R is not set. Using '160' as the default. Please configure this value if this is wrong.
-Config: Warning: Key EIDD4W is not set. Using '165' as the default. Please configure this value if this is wrong.
-Config: Warning: Key EIDD5B is not set. Using '200' as the default. Please configure this value if this is wrong.
-Config: Warning: Key EIDD6 is not set. Using '12' as the default. Please configure this value if this is wrong.
-Config: Warning: Key Eactstdby is not set. Using '0.09009' as the default. Please configure this value if this is wrong.
-Config: Warning: Key Eprestdby is not set. Using '0.083333' as the default. Please configure this value if this is wrong.
+Config: Warning: Key MEM_Freq is not set. Using '0' as the default. Please configure this value if this is wrong.
 Config: Warning: Key Rtt_nom is not set. Using '30' as the default. Please configure this value if this is wrong.
 Config: Warning: Key Rtt_wr is not set. Using '60' as the default. Please configure this value if this is wrong.
 Config: Warning: Key Rtt_cont is not set. Using '75' as the default. Please configure this value if this is wrong.
@@ -79,8 +53,6 @@ Config: Warning: Key VDDQ is not set. Using '1.5' as the default. Please configu
 Config: Warning: Key VSSQ is not set. Using '0' as the default. Please configure this value if this is wrong.
 Config: Warning: Key RanksPerDIMM is not set. Using '1' as the default. Please configure this value if this is wrong.
 Config: Warning: Key DataEncoder is not set. Using 'default' as the default. Please configure this value if this is wrong.
-Config: Warning: Key UseLowPower is not set. Using 'true' as the default. Please configure this value if this is wrong.
-Config: Warning: Key PowerDownMode is not set. Using 'FASTEXIT' as the default. Please configure this value if this is wrong.
 Config: Warning: Key PrintAllDevices is not set. Using 'false' as the default. Please configure this value if this is wrong.
 Config: Warning: Key PrintConfig is not set. Using 'false' as the default. Please configure this value if this is wrong.
 Config: Warning: Key StaggerRefresh is not set. Using 'false' as the default. Please configure this value if this is wrong.
@@ -107,700 +79,2371 @@ Config: Warning: Key PauseThreshold is not set. Using '0.4' as the default. Plea
 Config: Warning: Key MaxCancellations is not set. Using '4' as the default. Please configure this value if this is wrong.
 Config: Warning: Key Decoder is not set. Using '' as the default. Please configure this value if this is wrong.
 Config: Warning: Key RankType is not set. Using '' as the default. Please configure this value if this is wrong.
-The parent hook name is defaultMemory.channel0.FRFCFS-WQF.channel0
-Creating 4 banks in all 8 devices.
+The parent hook name is defaultMemory.channel0.FRFCFS.channel0
+Creating 8 banks in all 16 devices.
 Config: Warning: Key BankType is not set. Using '' as the default. Please configure this value if this is wrong.
+MATHeight is 16384
+p->ROWS is 16384
 subArrayNum is 1
+MATHeight is 16384
+p->ROWS is 16384
 subArrayNum is 1
+MATHeight is 16384
+p->ROWS is 16384
 subArrayNum is 1
+MATHeight is 16384
+p->ROWS is 16384
+subArrayNum is 1
+MATHeight is 16384
+p->ROWS is 16384
+subArrayNum is 1
+MATHeight is 16384
+p->ROWS is 16384
+subArrayNum is 1
+MATHeight is 16384
+p->ROWS is 16384
+subArrayNum is 1
+MATHeight is 16384
+p->ROWS is 16384
+subArrayNum is 1
+The parent hook name is defaultMemory.channel0.FRFCFS.channel0
+Creating 8 banks in all 16 devices.
+MATHeight is 16384
+p->ROWS is 16384
+subArrayNum is 1
+MATHeight is 16384
+p->ROWS is 16384
+subArrayNum is 1
+MATHeight is 16384
+p->ROWS is 16384
+subArrayNum is 1
+MATHeight is 16384
+p->ROWS is 16384
+subArrayNum is 1
+MATHeight is 16384
+p->ROWS is 16384
+subArrayNum is 1
+MATHeight is 16384
+p->ROWS is 16384
+subArrayNum is 1
+MATHeight is 16384
+p->ROWS is 16384
+subArrayNum is 1
+MATHeight is 16384
+p->ROWS is 16384
 subArrayNum is 1
 NVMain: the address mapping order is 
-	Sub-Array 1
-	Row 6
-	Column 2
-	Bank 4
-	Rank 5
-	Channel 3
-defaultMemory.channel0.FRFCFS-WQF capacity is 4096 MB.
-Creating 4 command queues.
-traceMain (0x23b3c70)
+	Sub-Array 5
+	Row 2
+	Column 1
+	Bank 3
+	Rank 4
+	Channel 6
+defaultMemory.channel0.FRFCFS capacity is 4096 MB.
+Creating 16 command queues.
+traceMain (0x9d9c70)
 defaultMemory
--- defaultMemory.channel0.FRFCFS-WQF
----- defaultMemory.channel0.FRFCFS-WQF.channel0
------- defaultMemory.channel0.FRFCFS-WQF.channel0.rank0
--------- defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0
----------- defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0
--------- defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1
----------- defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0
--------- defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2
----------- defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0
--------- defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3
----------- defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0
-*** Simulating 1000 input cycles. (5000 memory cycles) ***
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-the size of children is 1
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.subArrayEnergy 1.30365nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.activeEnergy 1.218nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.burstEnergy 0.085648nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.writeEnergy 0nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.refreshEnergy 0nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.cancelledWrites 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.cancelledWriteTime 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.pausedWrites 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.averagePausesPerRequest 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.measuredPauses 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.averagePausedRequestProgress 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.measuredProgresses 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.reads 53
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.writes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.activates 15
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.precharges 14
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.refreshes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.worstCaseEndurance 18446744073709551615
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.averageEndurance 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.actWaits 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.actWaitTotal 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.actWaitAverage -nan
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.worstCaseWrite 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.num00Writes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.num01Writes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.num10Writes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.num11Writes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.averageWriteTime 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.measuredWriteTimes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.mlcTimingHisto {}
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.cancelCountHisto {}
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.wpPauseHisto {}
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.wpCancelHisto {}
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.bankEnergy 1.30365nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.activeEnergy 1.218nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.burstEnergy 0.085648nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.refreshEnergy 0nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.bankPower 1.30365e+06W
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.activePower 1.218e+06W
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.burstPower 85648W
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.refreshPower 0W
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.bandwidth 10876.2MB/s
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.dataCycles 212
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.powerCycles 998
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.utilization 0.212425
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.reads 53
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.writes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.activates 15
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.precharges 14
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.refreshes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.activeCycles 964
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.standbyCycles 34
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.fastExitActiveCycles 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.fastExitPrechargeCycles 2
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.slowExitPrechargeCycles 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.actWaits 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.actWaitTotal 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.actWaitAverage -nan
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.averageEndurance 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.worstCaseEndurance 18446744073709551615
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.subArrayEnergy 0.427008nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.activeEnergy 0.406nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.burstEnergy 0.021008nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.writeEnergy 0nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.refreshEnergy 0nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.cancelledWrites 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.cancelledWriteTime 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.pausedWrites 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.averagePausesPerRequest 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.measuredPauses 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.averagePausedRequestProgress 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.measuredProgresses 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.reads 13
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.writes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.activates 5
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.precharges 4
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.refreshes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.worstCaseEndurance 18446744073709551615
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.averageEndurance 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.actWaits 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.actWaitTotal 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.actWaitAverage -nan
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.worstCaseWrite 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.num00Writes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.num01Writes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.num10Writes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.num11Writes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.averageWriteTime 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.measuredWriteTimes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.mlcTimingHisto {}
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.cancelCountHisto {}
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.wpPauseHisto {}
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.wpCancelHisto {}
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.bankEnergy 0.427008nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.activeEnergy 0.406nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.burstEnergy 0.021008nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.refreshEnergy 0nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.bankPower 427008W
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.activePower 406000W
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.burstPower 21008W
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.refreshPower 0W
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.bandwidth 2667.74MB/s
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.dataCycles 52
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.powerCycles 998
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.utilization 0.0521042
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.reads 13
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.writes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.activates 5
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.precharges 4
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.refreshes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.activeCycles 972
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.standbyCycles 26
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.fastExitActiveCycles 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.fastExitPrechargeCycles 2
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.slowExitPrechargeCycles 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.actWaits 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.actWaitTotal 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.actWaitAverage -nan
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.averageEndurance 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.worstCaseEndurance 18446744073709551615
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.subArrayEnergy 0.253296nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.activeEnergy 0.2436nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.burstEnergy 0.009696nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.writeEnergy 0nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.refreshEnergy 0nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.cancelledWrites 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.cancelledWriteTime 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.pausedWrites 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.averagePausesPerRequest 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.measuredPauses 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.averagePausedRequestProgress 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.measuredProgresses 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.reads 6
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.writes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.activates 3
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.precharges 2
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.refreshes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.worstCaseEndurance 18446744073709551615
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.averageEndurance 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.actWaits 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.actWaitTotal 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.actWaitAverage -nan
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.worstCaseWrite 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.num00Writes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.num01Writes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.num10Writes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.num11Writes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.averageWriteTime 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.measuredWriteTimes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.mlcTimingHisto {}
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.cancelCountHisto {}
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.wpPauseHisto {}
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.wpCancelHisto {}
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.bankEnergy 0.253296nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.activeEnergy 0.2436nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.burstEnergy 0.009696nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.refreshEnergy 0nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.bankPower 253296W
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.activePower 243600W
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.burstPower 9696W
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.refreshPower 0W
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.bandwidth 1231.26MB/s
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.dataCycles 24
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.powerCycles 998
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.utilization 0.0240481
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.reads 6
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.writes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.activates 3
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.precharges 2
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.refreshes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.activeCycles 964
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.standbyCycles 34
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.fastExitActiveCycles 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.fastExitPrechargeCycles 2
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.slowExitPrechargeCycles 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.actWaits 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.actWaitTotal 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.actWaitAverage -nan
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.averageEndurance 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.worstCaseEndurance 18446744073709551615
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.subArrayEnergy 0.0812nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.activeEnergy 0.0812nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.burstEnergy 0nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.writeEnergy 0nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.refreshEnergy 0nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.cancelledWrites 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.cancelledWriteTime 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.pausedWrites 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.averagePausesPerRequest 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.measuredPauses 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.averagePausedRequestProgress 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.measuredProgresses 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.reads 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.writes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.activates 1
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.precharges 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.refreshes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.worstCaseEndurance 18446744073709551615
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.averageEndurance 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.actWaits 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.actWaitTotal 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.actWaitAverage -nan
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.worstCaseWrite 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.num00Writes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.num01Writes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.num10Writes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.num11Writes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.averageWriteTime 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.measuredWriteTimes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.mlcTimingHisto {}
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.cancelCountHisto {}
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.wpPauseHisto {}
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.wpCancelHisto {}
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.bankEnergy 0.0812nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.activeEnergy 0.0812nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.burstEnergy 0nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.refreshEnergy 0nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.bankPower 81200W
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.activePower 81200W
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.burstPower 0W
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.refreshPower 0W
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.bandwidth 0MB/s
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.dataCycles 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.powerCycles 998
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.utilization 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.reads 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.writes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.activates 1
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.precharges 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.refreshes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.activeCycles 22
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.standbyCycles 976
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.fastExitActiveCycles 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.fastExitPrechargeCycles 2
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.slowExitPrechargeCycles 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.actWaits 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.actWaitTotal 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.actWaitAverage -nan
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.averageEndurance 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.worstCaseEndurance 18446744073709551615
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.totalEnergy 91.8533nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.backgroundEnergy 89.7882nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.activateEnergy 1.9488nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.burstEnergy 0.116352nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.refreshEnergy 0nJ
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.totalPower 0.0367413W
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.backgroundPower 0.0359153W
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.activatePower 0.00077952W
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.burstPower 4.65408e-05W
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.refreshPower 0W
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.reads 72
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.writes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.activeCycles 980
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.standbyCycles 18
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.fastExitActiveCycles 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.fastExitPrechargeCycles 2
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.slowExitCycles 0
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.actWaits 13
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.actWaitTotal 24
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.actWaitAverage 1.84615
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.rrdWaits 15
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.rrdWaitTotal 27
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.rrdWaitAverage 1.8
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.fawWaits 23
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.fawWaitTotal 186
-i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.fawWaitAverage 8.08696
-i0.defaultMemory.channel0.FRFCFS-WQF.mem_reads 107
-i0.defaultMemory.channel0.FRFCFS-WQF.mem_writes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.rq_rb_hits 50
-i0.defaultMemory.channel0.FRFCFS-WQF.rq_rb_miss 25
-i0.defaultMemory.channel0.FRFCFS-WQF.wq_rb_hits 0
-i0.defaultMemory.channel0.FRFCFS-WQF.wq_rb_miss 0
-i0.defaultMemory.channel0.FRFCFS-WQF.total_drains 0
-i0.defaultMemory.channel0.FRFCFS-WQF.total_drain_writes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.average_writes_per_drain 0
-i0.defaultMemory.channel0.FRFCFS-WQF.minimum_drain_writes 10000000000
-i0.defaultMemory.channel0.FRFCFS-WQF.maximum_drain_writes 0
-i0.defaultMemory.channel0.FRFCFS-WQF.total_drain_cycles 0
-i0.defaultMemory.channel0.FRFCFS-WQF.average_drain_cycles 0
-i0.defaultMemory.channel0.FRFCFS-WQF.minimum_drain_cycles 10000000000
-i0.defaultMemory.channel0.FRFCFS-WQF.maximum_drain_cycles 0
-i0.defaultMemory.channel0.FRFCFS-WQF.total_non_drain_cycles 0
-i0.defaultMemory.channel0.FRFCFS-WQF.average_drain_spacing 0
-i0.defaultMemory.channel0.FRFCFS-WQF.minimum_drain_spacing 10000000000
-i0.defaultMemory.channel0.FRFCFS-WQF.maximum_drain_spacing 0
-i0.defaultMemory.channel0.FRFCFS-WQF.total_read_cycles 0
-i0.defaultMemory.channel0.FRFCFS-WQF.average_read_spacing 0
-i0.defaultMemory.channel0.FRFCFS-WQF.minimum_read_spacing 10000000000
-i0.defaultMemory.channel0.FRFCFS-WQF.maximum_read_spacing 0
-i0.defaultMemory.channel0.FRFCFS-WQF.total_readqueue_size 0
-i0.defaultMemory.channel0.FRFCFS-WQF.average_predrain_readqueue_size 0
-i0.defaultMemory.channel0.FRFCFS-WQF.minimum_predrain_readqueue_size 10000000000
-i0.defaultMemory.channel0.FRFCFS-WQF.maximum_predrain_readqueue_size 0
-i0.defaultMemory.channel0.FRFCFS-WQF.total_reads_during_drain 0
-i0.defaultMemory.channel0.FRFCFS-WQF.average_reads_during_drain 0
-i0.defaultMemory.channel0.FRFCFS-WQF.minimum_reads_during_drain 10000000000
-i0.defaultMemory.channel0.FRFCFS-WQF.maximum_reads_during_drain 0
-i0.defaultMemory.channel0.FRFCFS-WQF.starvation_precharges 8
-i0.defaultMemory.channel0.FRFCFS-WQF.averageLatency 34.1912
-i0.defaultMemory.channel0.FRFCFS-WQF.averageQueueLatency 294.426
-i0.defaultMemory.channel0.FRFCFS-WQF.averageTotalLatency 328.618
-i0.defaultMemory.channel0.FRFCFS-WQF.measuredLatencies 68
-i0.defaultMemory.channel0.FRFCFS-WQF.measuredQueueLatencies 68
-i0.defaultMemory.channel0.FRFCFS-WQF.measuredTotalLatencies 68
-i0.defaultMemory.channel0.FRFCFS-WQF.simulation_cycles 1000
-i0.defaultMemory.channel0.FRFCFS-WQF.wakeupCount 0
-i0.defaultMemory.totalReadRequests 107
-i0.defaultMemory.totalWriteRequests 0
+-- defaultMemory.channel0.FRFCFS
+---- defaultMemory.channel0.FRFCFS.channel0
+------ defaultMemory.channel0.FRFCFS.channel0.rank0
+-------- defaultMemory.channel0.FRFCFS.channel0.rank0.bank0
+---------- defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.subarray0
+-------- defaultMemory.channel0.FRFCFS.channel0.rank0.bank1
+---------- defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.subarray0
+-------- defaultMemory.channel0.FRFCFS.channel0.rank0.bank2
+---------- defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.subarray0
+-------- defaultMemory.channel0.FRFCFS.channel0.rank0.bank3
+---------- defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.subarray0
+-------- defaultMemory.channel0.FRFCFS.channel0.rank0.bank4
+---------- defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.subarray0
+-------- defaultMemory.channel0.FRFCFS.channel0.rank0.bank5
+---------- defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.subarray0
+-------- defaultMemory.channel0.FRFCFS.channel0.rank0.bank6
+---------- defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.subarray0
+-------- defaultMemory.channel0.FRFCFS.channel0.rank0.bank7
+---------- defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.subarray0
+------ defaultMemory.channel0.FRFCFS.channel0.rank1
+-------- defaultMemory.channel0.FRFCFS.channel0.rank1.bank0
+---------- defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.subarray0
+-------- defaultMemory.channel0.FRFCFS.channel0.rank1.bank1
+---------- defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.subarray0
+-------- defaultMemory.channel0.FRFCFS.channel0.rank1.bank2
+---------- defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.subarray0
+-------- defaultMemory.channel0.FRFCFS.channel0.rank1.bank3
+---------- defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.subarray0
+-------- defaultMemory.channel0.FRFCFS.channel0.rank1.bank4
+---------- defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.subarray0
+-------- defaultMemory.channel0.FRFCFS.channel0.rank1.bank5
+---------- defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.subarray0
+-------- defaultMemory.channel0.FRFCFS.channel0.rank1.bank6
+---------- defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.subarray0
+-------- defaultMemory.channel0.FRFCFS.channel0.rank1.bank7
+---------- defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.subarray0
+*** Simulating 100000 input cycles. (450451 memory cycles) ***
+----traceMain currentCycle is 0
+----traceMain currentCycle is 1
+----traceMain currentCycle is 2
+----NVMain::Cycle currentCycle is 0
+----StandardRank::Cycle currentCycle is 0
+----StandardRank::Cycle currentCycle is 0
+----traceMain currentCycle is 3
+----traceMain currentCycle is 4
+----traceMain currentCycle is 5
+----NVMain::Cycle currentCycle is 1
+----StandardRank::Cycle currentCycle is 1
+----StandardRank::Cycle currentCycle is 1
+----traceMain currentCycle is 6
+----traceMain currentCycle is 7
+----traceMain currentCycle is 8
+----NVMain::Cycle currentCycle is 2
+----StandardRank::Cycle currentCycle is 2
+----StandardRank::Cycle currentCycle is 2
+----traceMain currentCycle is 9
+----traceMain currentCycle is 10
+----traceMain currentCycle is 11
+----NVMain::Cycle currentCycle is 3
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 3
+----StandardRank::Cycle currentCycle is 3
+----traceMain currentCycle is 12
+----traceMain currentCycle is 13
+----traceMain currentCycle is 14
+----NVMain::Cycle currentCycle is 4
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray ---the reason is 7
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 4
+----StandardRank::Cycle currentCycle is 4
+----traceMain currentCycle is 15
+----traceMain currentCycle is 16
+----traceMain currentCycle is 17
+----NVMain::Cycle currentCycle is 5
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 5
+----StandardRank::Cycle currentCycle is 5
+----traceMain currentCycle is 18
+----traceMain currentCycle is 19
+----traceMain currentCycle is 20
+----NVMain::Cycle currentCycle is 6
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 6
+----StandardRank::Cycle currentCycle is 6
+----traceMain currentCycle is 21
+----traceMain currentCycle is 22
+----traceMain currentCycle is 23
+----NVMain::Cycle currentCycle is 7
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray ---the reason is 7
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 7
+----StandardRank::Cycle currentCycle is 7
+----traceMain currentCycle is 24
+----traceMain currentCycle is 25
+----traceMain currentCycle is 26
+----NVMain::Cycle currentCycle is 8
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray ---the reason is 7
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 8
+----StandardRank::Cycle currentCycle is 8
+----traceMain currentCycle is 27
+----traceMain currentCycle is 28
+----traceMain currentCycle is 29
+----NVMain::Cycle currentCycle is 9
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray ---the reason is 7
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 9
+----StandardRank::Cycle currentCycle is 9
+----traceMain currentCycle is 30
+----traceMain currentCycle is 31
+----traceMain currentCycle is 32
+----NVMain::Cycle currentCycle is 10
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 10
+----StandardRank::Cycle currentCycle is 10
+----traceMain currentCycle is 33
+----traceMain currentCycle is 34
+----traceMain currentCycle is 35
+----NVMain::Cycle currentCycle is 11
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 11
+----StandardRank::Cycle currentCycle is 11
+----traceMain currentCycle is 36
+----traceMain currentCycle is 37
+----traceMain currentCycle is 38
+----NVMain::Cycle currentCycle is 12
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 12
+----StandardRank::Cycle currentCycle is 12
+----traceMain currentCycle is 39
+----traceMain currentCycle is 40
+----traceMain currentCycle is 41
+----NVMain::Cycle currentCycle is 13
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 13
+----StandardRank::Cycle currentCycle is 13
+----traceMain currentCycle is 42
+----traceMain currentCycle is 43
+----traceMain currentCycle is 44
+----NVMain::Cycle currentCycle is 14
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 14
+----StandardRank::Cycle currentCycle is 14
+----traceMain currentCycle is 45
+----traceMain currentCycle is 46
+----traceMain currentCycle is 47
+----NVMain::Cycle currentCycle is 15
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray ---the reason is 7
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 15
+----StandardRank::Cycle currentCycle is 15
+----traceMain currentCycle is 48
+----traceMain currentCycle is 49
+----traceMain currentCycle is 50
+----NVMain::Cycle currentCycle is 16
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 16
+----StandardRank::Cycle currentCycle is 16
+----traceMain currentCycle is 51
+----traceMain currentCycle is 52
+----traceMain currentCycle is 53
+----NVMain::Cycle currentCycle is 17
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 17
+----StandardRank::Cycle currentCycle is 17
+----traceMain currentCycle is 54
+----traceMain currentCycle is 55
+----traceMain currentCycle is 56
+----NVMain::Cycle currentCycle is 18
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 18
+----StandardRank::Cycle currentCycle is 18
+----traceMain currentCycle is 57
+----traceMain currentCycle is 58
+----traceMain currentCycle is 59
+----NVMain::Cycle currentCycle is 19
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 19
+----StandardRank::Cycle currentCycle is 19
+----traceMain currentCycle is 60
+----traceMain currentCycle is 61
+----traceMain currentCycle is 62
+----NVMain::Cycle currentCycle is 20
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray ---the reason is 7
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 20
+----StandardRank::Cycle currentCycle is 20
+----traceMain currentCycle is 63
+----traceMain currentCycle is 64
+----traceMain currentCycle is 65
+----NVMain::Cycle currentCycle is 21
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray ---the reason is 7
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 21
+----StandardRank::Cycle currentCycle is 21
+----traceMain currentCycle is 66
+----traceMain currentCycle is 67
+----traceMain currentCycle is 68
+----NVMain::Cycle currentCycle is 22
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray ---the reason is 7
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray ---the reason is 4
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray ---the reason is 4
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 22
+----StandardRank::Cycle currentCycle is 22
+----traceMain currentCycle is 69
+----traceMain currentCycle is 70
+----traceMain currentCycle is 71
+----NVMain::Cycle currentCycle is 23
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray ---the reason is 4
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray ---the reason is 4
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 23
+----StandardRank::Cycle currentCycle is 23
+----traceMain currentCycle is 72
+----traceMain currentCycle is 73
+----traceMain currentCycle is 74
+----NVMain::Cycle currentCycle is 24
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray ---the reason is 7
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray ---the reason is 4
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray ---the reason is 4
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 24
+----StandardRank::Cycle currentCycle is 24
+----traceMain currentCycle is 75
+----traceMain currentCycle is 76
+----traceMain currentCycle is 77
+----NVMain::Cycle currentCycle is 25
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray ---the reason is 7
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray ---the reason is 4
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 25
+----StandardRank::Cycle currentCycle is 25
+----traceMain currentCycle is 78
+----traceMain currentCycle is 79
+----traceMain currentCycle is 80
+----NVMain::Cycle currentCycle is 26
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray ---the reason is 7
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 26
+----StandardRank::Cycle currentCycle is 26
+----traceMain currentCycle is 81
+----traceMain currentCycle is 82
+----traceMain currentCycle is 83
+----NVMain::Cycle currentCycle is 27
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray ---the reason is 4
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray ---the reason is 4
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray ---the reason is 4
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray ---the reason is 4
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 27
+----StandardRank::Cycle currentCycle is 27
+----traceMain currentCycle is 84
+----traceMain currentCycle is 85
+----traceMain currentCycle is 86
+----NVMain::Cycle currentCycle is 28
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray ---the reason is 7
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray ---the reason is 4
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray ---the reason is 4
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray ---the reason is 4
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray ---the reason is 4
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 28
+----StandardRank::Cycle currentCycle is 28
+----traceMain currentCycle is 87
+----traceMain currentCycle is 88
+----traceMain currentCycle is 89
+----NVMain::Cycle currentCycle is 29
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 29
+----StandardRank::Cycle currentCycle is 29
+----traceMain currentCycle is 90
+----traceMain currentCycle is 91
+----traceMain currentCycle is 92
+----NVMain::Cycle currentCycle is 30
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 30
+----StandardRank::Cycle currentCycle is 30
+----traceMain currentCycle is 93
+----traceMain currentCycle is 94
+----traceMain currentCycle is 95
+NVMainTraceReader: Reached EOF!
+Could not read next line from trace file!
+----NVMain::Cycle currentCycle is 31
+----StandardRank::Cycle currentCycle is 31
+----StandardRank::Cycle currentCycle is 31
+----NVMain::Cycle currentCycle is 32
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 32
+----StandardRank::Cycle currentCycle is 32
+----NVMain::Cycle currentCycle is 33
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray ---the reason is 4
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 33
+----StandardRank::Cycle currentCycle is 33
+----NVMain::Cycle currentCycle is 34
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray ---the reason is 4
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 34
+----StandardRank::Cycle currentCycle is 34
+----NVMain::Cycle currentCycle is 35
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray ---the reason is 4
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 35
+----StandardRank::Cycle currentCycle is 35
+----NVMain::Cycle currentCycle is 36
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray ---the reason is 4
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 36
+----StandardRank::Cycle currentCycle is 36
+----NVMain::Cycle currentCycle is 37
+----StandardRank::Cycle currentCycle is 37
+----StandardRank::Cycle currentCycle is 37
+----NVMain::Cycle currentCycle is 38
+ NOT ISSUABLE from SubArray ---the reason is 7
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 38
+----StandardRank::Cycle currentCycle is 38
+----NVMain::Cycle currentCycle is 39
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 39
+----StandardRank::Cycle currentCycle is 39
+----NVMain::Cycle currentCycle is 40
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 40
+----StandardRank::Cycle currentCycle is 40
+----NVMain::Cycle currentCycle is 41
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray ---the reason is 4
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 41
+----StandardRank::Cycle currentCycle is 41
+----NVMain::Cycle currentCycle is 42
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray ---the reason is 4
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray ---the reason is 4
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 42
+----StandardRank::Cycle currentCycle is 42
+----NVMain::Cycle currentCycle is 43
+ NOT ISSUABLE from SubArray ---the reason is 7
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 43
+----StandardRank::Cycle currentCycle is 43
+----NVMain::Cycle currentCycle is 44
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 44
+----StandardRank::Cycle currentCycle is 44
+----NVMain::Cycle currentCycle is 45
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 45
+----StandardRank::Cycle currentCycle is 45
+----NVMain::Cycle currentCycle is 46
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 46
+----StandardRank::Cycle currentCycle is 46
+----NVMain::Cycle currentCycle is 47
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 47
+----StandardRank::Cycle currentCycle is 47
+----NVMain::Cycle currentCycle is 48
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 48
+----StandardRank::Cycle currentCycle is 48
+----NVMain::Cycle currentCycle is 49
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 49
+----StandardRank::Cycle currentCycle is 49
+----NVMain::Cycle currentCycle is 50
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 50
+----StandardRank::Cycle currentCycle is 50
+----NVMain::Cycle currentCycle is 51
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 51
+----StandardRank::Cycle currentCycle is 51
+----NVMain::Cycle currentCycle is 52
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 52
+----StandardRank::Cycle currentCycle is 52
+----NVMain::Cycle currentCycle is 53
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 53
+----StandardRank::Cycle currentCycle is 53
+----NVMain::Cycle currentCycle is 54
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 54
+----StandardRank::Cycle currentCycle is 54
+----NVMain::Cycle currentCycle is 55
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 55
+----StandardRank::Cycle currentCycle is 55
+----NVMain::Cycle currentCycle is 56
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 56
+----StandardRank::Cycle currentCycle is 56
+----NVMain::Cycle currentCycle is 57
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 57
+----StandardRank::Cycle currentCycle is 57
+----NVMain::Cycle currentCycle is 58
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 58
+----StandardRank::Cycle currentCycle is 58
+----NVMain::Cycle currentCycle is 59
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 59
+----StandardRank::Cycle currentCycle is 59
+----NVMain::Cycle currentCycle is 60
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 60
+----StandardRank::Cycle currentCycle is 60
+----NVMain::Cycle currentCycle is 61
+----StandardRank::Cycle currentCycle is 61
+----StandardRank::Cycle currentCycle is 61
+----NVMain::Cycle currentCycle is 62
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 62
+----StandardRank::Cycle currentCycle is 62
+----NVMain::Cycle currentCycle is 63
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 63
+----StandardRank::Cycle currentCycle is 63
+----NVMain::Cycle currentCycle is 64
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 64
+----StandardRank::Cycle currentCycle is 64
+----NVMain::Cycle currentCycle is 65
+----StandardRank::Cycle currentCycle is 65
+----StandardRank::Cycle currentCycle is 65
+----NVMain::Cycle currentCycle is 66
+ NOT ISSUABLE from SubArray ---the reason is 7
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 66
+----StandardRank::Cycle currentCycle is 66
+----NVMain::Cycle currentCycle is 67
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 67
+----StandardRank::Cycle currentCycle is 67
+----NVMain::Cycle currentCycle is 68
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 68
+----StandardRank::Cycle currentCycle is 68
+----NVMain::Cycle currentCycle is 69
+----StandardRank::Cycle currentCycle is 69
+----StandardRank::Cycle currentCycle is 69
+----NVMain::Cycle currentCycle is 70
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 70
+----StandardRank::Cycle currentCycle is 70
+----NVMain::Cycle currentCycle is 71
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 71
+----StandardRank::Cycle currentCycle is 71
+----NVMain::Cycle currentCycle is 72
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 72
+----StandardRank::Cycle currentCycle is 72
+----NVMain::Cycle currentCycle is 73
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 73
+----StandardRank::Cycle currentCycle is 73
+----NVMain::Cycle currentCycle is 74
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 74
+----StandardRank::Cycle currentCycle is 74
+----NVMain::Cycle currentCycle is 75
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 75
+----StandardRank::Cycle currentCycle is 75
+----NVMain::Cycle currentCycle is 76
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 76
+----StandardRank::Cycle currentCycle is 76
+----NVMain::Cycle currentCycle is 77
+----StandardRank::Cycle currentCycle is 77
+----StandardRank::Cycle currentCycle is 77
+----NVMain::Cycle currentCycle is 78
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 78
+----StandardRank::Cycle currentCycle is 78
+----NVMain::Cycle currentCycle is 79
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 79
+----StandardRank::Cycle currentCycle is 79
+----NVMain::Cycle currentCycle is 80
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 80
+----StandardRank::Cycle currentCycle is 80
+----NVMain::Cycle currentCycle is 81
+----StandardRank::Cycle currentCycle is 81
+----StandardRank::Cycle currentCycle is 81
+----NVMain::Cycle currentCycle is 82
+ NOT ISSUABLE from SubArray ---the reason is 7
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 82
+----StandardRank::Cycle currentCycle is 82
+----NVMain::Cycle currentCycle is 83
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 83
+----StandardRank::Cycle currentCycle is 83
+----NVMain::Cycle currentCycle is 84
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 84
+----StandardRank::Cycle currentCycle is 84
+----NVMain::Cycle currentCycle is 85
+----StandardRank::Cycle currentCycle is 85
+----StandardRank::Cycle currentCycle is 85
+----NVMain::Cycle currentCycle is 86
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 86
+----StandardRank::Cycle currentCycle is 86
+----NVMain::Cycle currentCycle is 87
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 87
+----StandardRank::Cycle currentCycle is 87
+----NVMain::Cycle currentCycle is 88
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 88
+----StandardRank::Cycle currentCycle is 88
+----NVMain::Cycle currentCycle is 89
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 89
+----StandardRank::Cycle currentCycle is 89
+----NVMain::Cycle currentCycle is 90
+----StandardRank::Cycle currentCycle is 90
+----StandardRank::Cycle currentCycle is 90
+----NVMain::Cycle currentCycle is 91
+ NOT ISSUABLE from SubArray ---the reason is 7
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 91
+----StandardRank::Cycle currentCycle is 91
+----NVMain::Cycle currentCycle is 92
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 92
+----StandardRank::Cycle currentCycle is 92
+----NVMain::Cycle currentCycle is 93
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 93
+----StandardRank::Cycle currentCycle is 93
+----NVMain::Cycle currentCycle is 94
+----StandardRank::Cycle currentCycle is 94
+----StandardRank::Cycle currentCycle is 94
+----NVMain::Cycle currentCycle is 95
+ NOT ISSUABLE from SubArray ---the reason is 7
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 95
+----StandardRank::Cycle currentCycle is 95
+----NVMain::Cycle currentCycle is 96
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 96
+----StandardRank::Cycle currentCycle is 96
+----NVMain::Cycle currentCycle is 97
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 97
+----StandardRank::Cycle currentCycle is 97
+----NVMain::Cycle currentCycle is 98
+----StandardRank::Cycle currentCycle is 98
+----StandardRank::Cycle currentCycle is 98
+----NVMain::Cycle currentCycle is 99
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 99
+----StandardRank::Cycle currentCycle is 99
+----NVMain::Cycle currentCycle is 100
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 100
+----StandardRank::Cycle currentCycle is 100
+----NVMain::Cycle currentCycle is 101
+----StandardRank::Cycle currentCycle is 101
+----StandardRank::Cycle currentCycle is 101
+----NVMain::Cycle currentCycle is 102
+ NOT ISSUABLE from SubArray ---the reason is 7
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from DDR3Bank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 102
+----StandardRank::Cycle currentCycle is 102
+----NVMain::Cycle currentCycle is 103
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 103
+----StandardRank::Cycle currentCycle is 103
+----NVMain::Cycle currentCycle is 104
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 104
+----StandardRank::Cycle currentCycle is 104
+----NVMain::Cycle currentCycle is 105
+----StandardRank::Cycle currentCycle is 105
+----StandardRank::Cycle currentCycle is 105
+----NVMain::Cycle currentCycle is 106
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 106
+----StandardRank::Cycle currentCycle is 106
+----NVMain::Cycle currentCycle is 107
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 107
+----StandardRank::Cycle currentCycle is 107
+----NVMain::Cycle currentCycle is 108
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 108
+----StandardRank::Cycle currentCycle is 108
+----NVMain::Cycle currentCycle is 109
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 109
+----StandardRank::Cycle currentCycle is 109
+----NVMain::Cycle currentCycle is 110
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 110
+----StandardRank::Cycle currentCycle is 110
+----NVMain::Cycle currentCycle is 111
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 111
+----StandardRank::Cycle currentCycle is 111
+----NVMain::Cycle currentCycle is 112
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 112
+----StandardRank::Cycle currentCycle is 112
+----NVMain::Cycle currentCycle is 113
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 113
+----StandardRank::Cycle currentCycle is 113
+----NVMain::Cycle currentCycle is 114
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 114
+----StandardRank::Cycle currentCycle is 114
+----NVMain::Cycle currentCycle is 115
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 115
+----StandardRank::Cycle currentCycle is 115
+----NVMain::Cycle currentCycle is 116
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 116
+----StandardRank::Cycle currentCycle is 116
+----NVMain::Cycle currentCycle is 117
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 117
+----StandardRank::Cycle currentCycle is 117
+----NVMain::Cycle currentCycle is 118
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 118
+----StandardRank::Cycle currentCycle is 118
+----NVMain::Cycle currentCycle is 119
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 119
+----StandardRank::Cycle currentCycle is 119
+----NVMain::Cycle currentCycle is 120
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 120
+----StandardRank::Cycle currentCycle is 120
+----NVMain::Cycle currentCycle is 121
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 121
+----StandardRank::Cycle currentCycle is 121
+----NVMain::Cycle currentCycle is 122
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 122
+----StandardRank::Cycle currentCycle is 122
+----NVMain::Cycle currentCycle is 123
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 123
+----StandardRank::Cycle currentCycle is 123
+----NVMain::Cycle currentCycle is 124
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 124
+----StandardRank::Cycle currentCycle is 124
+----NVMain::Cycle currentCycle is 125
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 125
+----StandardRank::Cycle currentCycle is 125
+----NVMain::Cycle currentCycle is 126
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 126
+----StandardRank::Cycle currentCycle is 126
+----NVMain::Cycle currentCycle is 127
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 127
+----StandardRank::Cycle currentCycle is 127
+----NVMain::Cycle currentCycle is 128
+ NOT ISSUABLE from StandardRank 
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 128
+----StandardRank::Cycle currentCycle is 128
+----NVMain::Cycle currentCycle is 129
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 129
+----StandardRank::Cycle currentCycle is 129
+----NVMain::Cycle currentCycle is 130
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 130
+----StandardRank::Cycle currentCycle is 130
+----NVMain::Cycle currentCycle is 131
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 131
+----StandardRank::Cycle currentCycle is 131
+----NVMain::Cycle currentCycle is 132
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 132
+----StandardRank::Cycle currentCycle is 132
+----NVMain::Cycle currentCycle is 133
+ NOT ISSUABLE from SubArray 
+ NOT ISSUABLE from StandardRank 
+----StandardRank::Cycle currentCycle is 133
+----StandardRank::Cycle currentCycle is 133
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.subarray0.subArrayEnergy 251.5mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.subarray0.activeEnergy 189mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.subarray0.burstEnergy 62.5mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.subarray0.refreshEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.subarray0.cancelledWrites 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.subarray0.cancelledWriteTime 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.subarray0.pausedWrites 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.subarray0.averagePausesPerRequest 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.subarray0.measuredPauses 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.subarray0.averagePausedRequestProgress 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.subarray0.measuredProgresses 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.subarray0.reads 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.subarray0.writes 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.subarray0.activates 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.subarray0.precharges 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.subarray0.refreshes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.subarray0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.subarray0.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.subarray0.actWaits 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.subarray0.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.subarray0.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.subarray0.worstCaseWrite 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.subarray0.num00Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.subarray0.num01Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.subarray0.num10Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.subarray0.num11Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.subarray0.averageWriteTime 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.subarray0.measuredWriteTimes 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.subarray0.mlcTimingHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.subarray0.cancelCountHisto {0: 0}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.subarray0.wpPauseHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.subarray0.wpCancelHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.bankEnergy 251.5mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.activeEnergy 189mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.burstEnergy 62.5mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.refreshEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.bankPower 0.0028153W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.activePower 0.00211567W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.burstPower 0.000699627W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.refreshPower 0W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.bandwidth 1495.58MB/s
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.dataCycles 4
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.powerCycles 114
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.utilization 0.0350877
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.reads 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.writes 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.activates 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.precharges 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.refreshes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.activeCycles 93
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.standbyCycles 21
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.fastExitActiveCycles 5
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.fastExitPrechargeCycles 15
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.slowExitPrechargeCycles 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.actWaits 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.subarray0.subArrayEnergy 314mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.subarray0.activeEnergy 189mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.subarray0.burstEnergy 125mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.subarray0.refreshEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.subarray0.cancelledWrites 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.subarray0.cancelledWriteTime 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.subarray0.pausedWrites 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.subarray0.averagePausesPerRequest 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.subarray0.measuredPauses 2
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.subarray0.averagePausedRequestProgress 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.subarray0.measuredProgresses 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.subarray0.reads 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.subarray0.writes 2
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.subarray0.activates 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.subarray0.precharges 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.subarray0.refreshes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.subarray0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.subarray0.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.subarray0.actWaits 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.subarray0.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.subarray0.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.subarray0.worstCaseWrite 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.subarray0.num00Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.subarray0.num01Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.subarray0.num10Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.subarray0.num11Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.subarray0.averageWriteTime 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.subarray0.measuredWriteTimes 2
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.subarray0.mlcTimingHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.subarray0.cancelCountHisto {0: 1}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.subarray0.wpPauseHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.subarray0.wpCancelHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.bankEnergy 314mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.activeEnergy 189mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.burstEnergy 125mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.refreshEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.bankPower 0.00351493W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.activePower 0.00211567W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.burstPower 0.00139925W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.refreshPower 0W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.bandwidth 2991.16MB/s
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.dataCycles 8
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.powerCycles 114
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.utilization 0.0701754
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.reads 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.writes 2
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.activates 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.precharges 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.refreshes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.activeCycles 108
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.standbyCycles 6
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.fastExitActiveCycles 5
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.fastExitPrechargeCycles 15
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.slowExitPrechargeCycles 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.actWaits 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank1.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.subarray0.subArrayEnergy 251.5mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.subarray0.activeEnergy 189mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.subarray0.burstEnergy 62.5mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.subarray0.refreshEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.subarray0.cancelledWrites 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.subarray0.cancelledWriteTime 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.subarray0.pausedWrites 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.subarray0.averagePausesPerRequest 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.subarray0.measuredPauses 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.subarray0.averagePausedRequestProgress 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.subarray0.measuredProgresses 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.subarray0.reads 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.subarray0.writes 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.subarray0.activates 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.subarray0.precharges 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.subarray0.refreshes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.subarray0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.subarray0.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.subarray0.actWaits 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.subarray0.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.subarray0.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.subarray0.worstCaseWrite 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.subarray0.num00Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.subarray0.num01Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.subarray0.num10Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.subarray0.num11Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.subarray0.averageWriteTime 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.subarray0.measuredWriteTimes 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.subarray0.mlcTimingHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.subarray0.cancelCountHisto {0: 0}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.subarray0.wpPauseHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.subarray0.wpCancelHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.bankEnergy 251.5mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.activeEnergy 189mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.burstEnergy 62.5mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.refreshEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.bankPower 0.0028153W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.activePower 0.00211567W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.burstPower 0.000699627W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.refreshPower 0W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.bandwidth 1495.58MB/s
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.dataCycles 4
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.powerCycles 114
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.utilization 0.0350877
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.reads 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.writes 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.activates 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.precharges 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.refreshes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.activeCycles 88
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.standbyCycles 26
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.fastExitActiveCycles 5
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.fastExitPrechargeCycles 15
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.slowExitPrechargeCycles 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.actWaits 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank2.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.subarray0.subArrayEnergy 314mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.subarray0.activeEnergy 189mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.subarray0.burstEnergy 125mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.subarray0.refreshEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.subarray0.cancelledWrites 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.subarray0.cancelledWriteTime 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.subarray0.pausedWrites 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.subarray0.averagePausesPerRequest 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.subarray0.measuredPauses 2
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.subarray0.averagePausedRequestProgress 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.subarray0.measuredProgresses 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.subarray0.reads 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.subarray0.writes 2
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.subarray0.activates 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.subarray0.precharges 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.subarray0.refreshes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.subarray0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.subarray0.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.subarray0.actWaits 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.subarray0.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.subarray0.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.subarray0.worstCaseWrite 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.subarray0.num00Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.subarray0.num01Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.subarray0.num10Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.subarray0.num11Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.subarray0.averageWriteTime 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.subarray0.measuredWriteTimes 2
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.subarray0.mlcTimingHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.subarray0.cancelCountHisto {0: 1}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.subarray0.wpPauseHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.subarray0.wpCancelHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.bankEnergy 314mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.activeEnergy 189mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.burstEnergy 125mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.refreshEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.bankPower 0.00351493W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.activePower 0.00211567W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.burstPower 0.00139925W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.refreshPower 0W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.bandwidth 2991.16MB/s
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.dataCycles 8
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.powerCycles 114
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.utilization 0.0701754
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.reads 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.writes 2
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.activates 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.precharges 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.refreshes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.activeCycles 103
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.standbyCycles 11
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.fastExitActiveCycles 5
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.fastExitPrechargeCycles 15
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.slowExitPrechargeCycles 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.actWaits 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank3.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.subarray0.subArrayEnergy 309mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.subarray0.activeEnergy 189mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.subarray0.burstEnergy 120mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.subarray0.refreshEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.subarray0.cancelledWrites 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.subarray0.cancelledWriteTime 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.subarray0.pausedWrites 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.subarray0.averagePausesPerRequest 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.subarray0.measuredPauses 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.subarray0.averagePausedRequestProgress 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.subarray0.measuredProgresses 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.subarray0.reads 2
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.subarray0.writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.subarray0.activates 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.subarray0.precharges 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.subarray0.refreshes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.subarray0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.subarray0.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.subarray0.actWaits 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.subarray0.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.subarray0.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.subarray0.worstCaseWrite 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.subarray0.num00Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.subarray0.num01Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.subarray0.num10Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.subarray0.num11Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.subarray0.averageWriteTime 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.subarray0.measuredWriteTimes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.subarray0.mlcTimingHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.subarray0.cancelCountHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.subarray0.wpPauseHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.subarray0.wpCancelHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.bankEnergy 309mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.activeEnergy 189mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.burstEnergy 120mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.refreshEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.bankPower 0.00345896W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.activePower 0.00211567W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.burstPower 0.00134328W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.refreshPower 0W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.bandwidth 2991.16MB/s
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.dataCycles 8
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.powerCycles 114
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.utilization 0.0701754
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.reads 2
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.activates 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.precharges 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.refreshes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.activeCycles 82
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.standbyCycles 32
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.fastExitActiveCycles 5
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.fastExitPrechargeCycles 15
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.slowExitPrechargeCycles 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.actWaits 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.actWaitTotal 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.actWaitAverage 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank4.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.subarray0.subArrayEnergy 251.5mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.subarray0.activeEnergy 189mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.subarray0.burstEnergy 62.5mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.subarray0.refreshEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.subarray0.cancelledWrites 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.subarray0.cancelledWriteTime 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.subarray0.pausedWrites 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.subarray0.averagePausesPerRequest 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.subarray0.measuredPauses 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.subarray0.averagePausedRequestProgress 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.subarray0.measuredProgresses 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.subarray0.reads 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.subarray0.writes 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.subarray0.activates 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.subarray0.precharges 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.subarray0.refreshes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.subarray0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.subarray0.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.subarray0.actWaits 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.subarray0.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.subarray0.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.subarray0.worstCaseWrite 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.subarray0.num00Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.subarray0.num01Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.subarray0.num10Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.subarray0.num11Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.subarray0.averageWriteTime 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.subarray0.measuredWriteTimes 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.subarray0.mlcTimingHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.subarray0.cancelCountHisto {0: 0}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.subarray0.wpPauseHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.subarray0.wpCancelHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.bankEnergy 251.5mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.activeEnergy 189mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.burstEnergy 62.5mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.refreshEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.bankPower 0.0028153W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.activePower 0.00211567W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.burstPower 0.000699627W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.refreshPower 0W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.bandwidth 1495.58MB/s
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.dataCycles 4
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.powerCycles 114
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.utilization 0.0350877
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.reads 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.writes 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.activates 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.precharges 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.refreshes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.activeCycles 77
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.standbyCycles 37
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.fastExitActiveCycles 5
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.fastExitPrechargeCycles 15
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.slowExitPrechargeCycles 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.actWaits 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank5.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.subarray0.subArrayEnergy 251.5mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.subarray0.activeEnergy 189mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.subarray0.burstEnergy 62.5mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.subarray0.refreshEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.subarray0.cancelledWrites 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.subarray0.cancelledWriteTime 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.subarray0.pausedWrites 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.subarray0.averagePausesPerRequest 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.subarray0.measuredPauses 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.subarray0.averagePausedRequestProgress 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.subarray0.measuredProgresses 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.subarray0.reads 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.subarray0.writes 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.subarray0.activates 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.subarray0.precharges 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.subarray0.refreshes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.subarray0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.subarray0.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.subarray0.actWaits 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.subarray0.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.subarray0.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.subarray0.worstCaseWrite 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.subarray0.num00Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.subarray0.num01Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.subarray0.num10Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.subarray0.num11Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.subarray0.averageWriteTime 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.subarray0.measuredWriteTimes 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.subarray0.mlcTimingHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.subarray0.cancelCountHisto {0: 0}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.subarray0.wpPauseHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.subarray0.wpCancelHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.bankEnergy 251.5mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.activeEnergy 189mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.burstEnergy 62.5mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.refreshEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.bankPower 0.0028153W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.activePower 0.00211567W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.burstPower 0.000699627W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.refreshPower 0W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.bandwidth 1495.58MB/s
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.dataCycles 4
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.powerCycles 114
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.utilization 0.0350877
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.reads 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.writes 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.activates 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.precharges 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.refreshes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.activeCycles 98
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.standbyCycles 16
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.fastExitActiveCycles 5
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.fastExitPrechargeCycles 15
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.slowExitPrechargeCycles 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.actWaits 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank6.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.subarray0.subArrayEnergy 314mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.subarray0.activeEnergy 189mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.subarray0.burstEnergy 125mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.subarray0.refreshEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.subarray0.cancelledWrites 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.subarray0.cancelledWriteTime 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.subarray0.pausedWrites 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.subarray0.averagePausesPerRequest 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.subarray0.measuredPauses 2
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.subarray0.averagePausedRequestProgress 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.subarray0.measuredProgresses 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.subarray0.reads 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.subarray0.writes 2
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.subarray0.activates 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.subarray0.precharges 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.subarray0.refreshes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.subarray0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.subarray0.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.subarray0.actWaits 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.subarray0.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.subarray0.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.subarray0.worstCaseWrite 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.subarray0.num00Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.subarray0.num01Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.subarray0.num10Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.subarray0.num11Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.subarray0.averageWriteTime 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.subarray0.measuredWriteTimes 2
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.subarray0.mlcTimingHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.subarray0.cancelCountHisto {0: 1}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.subarray0.wpPauseHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.subarray0.wpCancelHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.bankEnergy 314mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.activeEnergy 189mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.burstEnergy 125mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.refreshEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.bankPower 0.00351493W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.activePower 0.00211567W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.burstPower 0.00139925W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.refreshPower 0W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.bandwidth 2991.16MB/s
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.dataCycles 8
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.powerCycles 114
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.utilization 0.0701754
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.reads 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.writes 2
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.activates 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.precharges 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.refreshes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.activeCycles 72
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.standbyCycles 42
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.fastExitActiveCycles 5
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.fastExitPrechargeCycles 15
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.slowExitPrechargeCycles 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.actWaits 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.actWaitTotal 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.actWaitAverage 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.bank7.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.totalEnergy 118784mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.backgroundEnergy 82672mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.activateEnergy 24192mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.burstEnergy 11920mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.refreshEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.totalPower 0.462078W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.backgroundPower 0.0578396W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.activatePower 0.270806W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.burstPower 0.133433W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.refreshPower 0W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.reads 2
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.writes 10
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.activeCycles 108
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.standbyCycles 6
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.fastExitActiveCycles 5
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.fastExitPrechargeCycles 15
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.slowExitCycles 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.actWaits 80
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.actWaitTotal 197
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.actWaitAverage 2.4625
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.rrdWaits 80
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.rrdWaitTotal 197
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.rrdWaitAverage 2.4625
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.fawWaits 33
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.fawWaitTotal 73
+i0.defaultMemory.channel0.FRFCFS.channel0.rank0.fawWaitAverage 2.21212
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.subarray0.subArrayEnergy 249mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.subarray0.activeEnergy 189mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.subarray0.burstEnergy 60mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.subarray0.refreshEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.subarray0.cancelledWrites 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.subarray0.cancelledWriteTime 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.subarray0.pausedWrites 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.subarray0.averagePausesPerRequest 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.subarray0.measuredPauses 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.subarray0.averagePausedRequestProgress 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.subarray0.measuredProgresses 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.subarray0.reads 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.subarray0.writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.subarray0.activates 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.subarray0.precharges 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.subarray0.refreshes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.subarray0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.subarray0.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.subarray0.actWaits 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.subarray0.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.subarray0.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.subarray0.worstCaseWrite 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.subarray0.num00Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.subarray0.num01Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.subarray0.num10Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.subarray0.num11Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.subarray0.averageWriteTime 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.subarray0.measuredWriteTimes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.subarray0.mlcTimingHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.subarray0.cancelCountHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.subarray0.wpPauseHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.subarray0.wpCancelHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.bankEnergy 249mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.activeEnergy 189mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.burstEnergy 60mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.refreshEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.bankPower 0.00278731W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.activePower 0.00211567W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.burstPower 0.000671642W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.refreshPower 0W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.bandwidth 1332MB/s
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.dataCycles 4
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.powerCycles 128
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.utilization 0.03125
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.reads 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.activates 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.precharges 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.refreshes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.activeCycles 114
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.standbyCycles 14
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.fastExitActiveCycles 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.fastExitPrechargeCycles 6
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.slowExitPrechargeCycles 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.actWaits 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.subarray0.subArrayEnergy 439mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.subarray0.activeEnergy 189mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.subarray0.burstEnergy 250mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.subarray0.refreshEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.subarray0.cancelledWrites 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.subarray0.cancelledWriteTime 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.subarray0.pausedWrites 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.subarray0.averagePausesPerRequest 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.subarray0.measuredPauses 4
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.subarray0.averagePausedRequestProgress 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.subarray0.measuredProgresses 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.subarray0.reads 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.subarray0.writes 4
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.subarray0.activates 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.subarray0.precharges 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.subarray0.refreshes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.subarray0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.subarray0.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.subarray0.actWaits 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.subarray0.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.subarray0.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.subarray0.worstCaseWrite 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.subarray0.num00Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.subarray0.num01Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.subarray0.num10Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.subarray0.num11Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.subarray0.averageWriteTime 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.subarray0.measuredWriteTimes 4
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.subarray0.mlcTimingHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.subarray0.cancelCountHisto {0: 3}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.subarray0.wpPauseHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.subarray0.wpCancelHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.bankEnergy 439mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.activeEnergy 189mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.burstEnergy 250mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.refreshEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.bankPower 0.00491418W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.activePower 0.00211567W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.burstPower 0.00279851W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.refreshPower 0W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.bandwidth 5328MB/s
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.dataCycles 16
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.powerCycles 128
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.utilization 0.125
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.reads 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.writes 4
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.activates 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.precharges 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.refreshes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.activeCycles 109
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.standbyCycles 19
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.fastExitActiveCycles 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.fastExitPrechargeCycles 6
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.slowExitPrechargeCycles 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.actWaits 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank1.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.subarray0.subArrayEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.subarray0.activeEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.subarray0.burstEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.subarray0.refreshEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.subarray0.cancelledWrites 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.subarray0.cancelledWriteTime 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.subarray0.pausedWrites 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.subarray0.averagePausesPerRequest 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.subarray0.measuredPauses 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.subarray0.averagePausedRequestProgress 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.subarray0.measuredProgresses 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.subarray0.reads 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.subarray0.writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.subarray0.activates 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.subarray0.precharges 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.subarray0.refreshes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.subarray0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.subarray0.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.subarray0.actWaits 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.subarray0.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.subarray0.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.subarray0.worstCaseWrite 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.subarray0.num00Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.subarray0.num01Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.subarray0.num10Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.subarray0.num11Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.subarray0.averageWriteTime 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.subarray0.measuredWriteTimes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.subarray0.mlcTimingHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.subarray0.cancelCountHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.subarray0.wpPauseHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.subarray0.wpCancelHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.bankEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.activeEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.burstEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.refreshEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.bankPower 0W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.activePower 0W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.burstPower 0W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.refreshPower 0W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.bandwidth 0MB/s
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.dataCycles 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.powerCycles 128
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.utilization 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.reads 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.activates 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.precharges 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.refreshes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.activeCycles 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.standbyCycles 128
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.fastExitActiveCycles 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.fastExitPrechargeCycles 6
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.slowExitPrechargeCycles 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.actWaits 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank2.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.subarray0.subArrayEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.subarray0.activeEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.subarray0.burstEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.subarray0.refreshEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.subarray0.cancelledWrites 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.subarray0.cancelledWriteTime 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.subarray0.pausedWrites 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.subarray0.averagePausesPerRequest 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.subarray0.measuredPauses 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.subarray0.averagePausedRequestProgress 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.subarray0.measuredProgresses 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.subarray0.reads 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.subarray0.writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.subarray0.activates 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.subarray0.precharges 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.subarray0.refreshes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.subarray0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.subarray0.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.subarray0.actWaits 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.subarray0.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.subarray0.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.subarray0.worstCaseWrite 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.subarray0.num00Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.subarray0.num01Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.subarray0.num10Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.subarray0.num11Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.subarray0.averageWriteTime 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.subarray0.measuredWriteTimes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.subarray0.mlcTimingHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.subarray0.cancelCountHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.subarray0.wpPauseHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.subarray0.wpCancelHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.bankEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.activeEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.burstEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.refreshEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.bankPower 0W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.activePower 0W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.burstPower 0W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.refreshPower 0W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.bandwidth 0MB/s
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.dataCycles 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.powerCycles 128
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.utilization 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.reads 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.activates 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.precharges 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.refreshes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.activeCycles 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.standbyCycles 128
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.fastExitActiveCycles 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.fastExitPrechargeCycles 6
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.slowExitPrechargeCycles 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.actWaits 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank3.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.subarray0.subArrayEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.subarray0.activeEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.subarray0.burstEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.subarray0.refreshEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.subarray0.cancelledWrites 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.subarray0.cancelledWriteTime 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.subarray0.pausedWrites 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.subarray0.averagePausesPerRequest 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.subarray0.measuredPauses 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.subarray0.averagePausedRequestProgress 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.subarray0.measuredProgresses 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.subarray0.reads 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.subarray0.writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.subarray0.activates 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.subarray0.precharges 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.subarray0.refreshes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.subarray0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.subarray0.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.subarray0.actWaits 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.subarray0.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.subarray0.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.subarray0.worstCaseWrite 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.subarray0.num00Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.subarray0.num01Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.subarray0.num10Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.subarray0.num11Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.subarray0.averageWriteTime 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.subarray0.measuredWriteTimes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.subarray0.mlcTimingHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.subarray0.cancelCountHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.subarray0.wpPauseHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.subarray0.wpCancelHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.bankEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.activeEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.burstEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.refreshEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.bankPower 0W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.activePower 0W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.burstPower 0W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.refreshPower 0W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.bandwidth 0MB/s
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.dataCycles 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.powerCycles 128
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.utilization 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.reads 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.activates 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.precharges 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.refreshes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.activeCycles 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.standbyCycles 128
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.fastExitActiveCycles 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.fastExitPrechargeCycles 6
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.slowExitPrechargeCycles 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.actWaits 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank4.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.subarray0.subArrayEnergy 249mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.subarray0.activeEnergy 189mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.subarray0.burstEnergy 60mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.subarray0.refreshEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.subarray0.cancelledWrites 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.subarray0.cancelledWriteTime 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.subarray0.pausedWrites 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.subarray0.averagePausesPerRequest 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.subarray0.measuredPauses 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.subarray0.averagePausedRequestProgress 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.subarray0.measuredProgresses 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.subarray0.reads 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.subarray0.writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.subarray0.activates 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.subarray0.precharges 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.subarray0.refreshes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.subarray0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.subarray0.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.subarray0.actWaits 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.subarray0.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.subarray0.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.subarray0.worstCaseWrite 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.subarray0.num00Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.subarray0.num01Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.subarray0.num10Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.subarray0.num11Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.subarray0.averageWriteTime 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.subarray0.measuredWriteTimes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.subarray0.mlcTimingHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.subarray0.cancelCountHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.subarray0.wpPauseHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.subarray0.wpCancelHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.bankEnergy 249mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.activeEnergy 189mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.burstEnergy 60mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.refreshEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.bankPower 0.00278731W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.activePower 0.00211567W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.burstPower 0.000671642W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.refreshPower 0W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.bandwidth 1332MB/s
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.dataCycles 4
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.powerCycles 128
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.utilization 0.03125
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.reads 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.activates 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.precharges 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.refreshes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.activeCycles 104
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.standbyCycles 24
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.fastExitActiveCycles 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.fastExitPrechargeCycles 6
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.slowExitPrechargeCycles 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.actWaits 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank5.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.subarray0.subArrayEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.subarray0.activeEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.subarray0.burstEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.subarray0.refreshEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.subarray0.cancelledWrites 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.subarray0.cancelledWriteTime 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.subarray0.pausedWrites 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.subarray0.averagePausesPerRequest 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.subarray0.measuredPauses 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.subarray0.averagePausedRequestProgress 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.subarray0.measuredProgresses 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.subarray0.reads 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.subarray0.writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.subarray0.activates 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.subarray0.precharges 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.subarray0.refreshes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.subarray0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.subarray0.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.subarray0.actWaits 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.subarray0.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.subarray0.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.subarray0.worstCaseWrite 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.subarray0.num00Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.subarray0.num01Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.subarray0.num10Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.subarray0.num11Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.subarray0.averageWriteTime 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.subarray0.measuredWriteTimes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.subarray0.mlcTimingHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.subarray0.cancelCountHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.subarray0.wpPauseHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.subarray0.wpCancelHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.bankEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.activeEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.burstEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.refreshEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.bankPower 0W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.activePower 0W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.burstPower 0W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.refreshPower 0W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.bandwidth 0MB/s
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.dataCycles 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.powerCycles 128
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.utilization 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.reads 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.activates 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.precharges 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.refreshes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.activeCycles 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.standbyCycles 128
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.fastExitActiveCycles 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.fastExitPrechargeCycles 6
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.slowExitPrechargeCycles 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.actWaits 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank6.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.subarray0.subArrayEnergy 251.5mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.subarray0.activeEnergy 189mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.subarray0.burstEnergy 62.5mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.subarray0.refreshEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.subarray0.cancelledWrites 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.subarray0.cancelledWriteTime 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.subarray0.pausedWrites 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.subarray0.averagePausesPerRequest 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.subarray0.measuredPauses 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.subarray0.averagePausedRequestProgress 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.subarray0.measuredProgresses 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.subarray0.reads 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.subarray0.writes 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.subarray0.activates 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.subarray0.precharges 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.subarray0.refreshes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.subarray0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.subarray0.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.subarray0.actWaits 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.subarray0.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.subarray0.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.subarray0.worstCaseWrite 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.subarray0.num00Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.subarray0.num01Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.subarray0.num10Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.subarray0.num11Writes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.subarray0.averageWriteTime 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.subarray0.measuredWriteTimes 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.subarray0.mlcTimingHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.subarray0.cancelCountHisto {0: 0}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.subarray0.wpPauseHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.subarray0.wpCancelHisto {}
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.bankEnergy 251.5mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.activeEnergy 189mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.burstEnergy 62.5mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.refreshEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.bankPower 0.0028153W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.activePower 0.00211567W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.burstPower 0.000699627W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.refreshPower 0W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.bandwidth 1332MB/s
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.dataCycles 4
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.powerCycles 128
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.utilization 0.03125
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.reads 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.writes 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.activates 1
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.precharges 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.refreshes 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.activeCycles 99
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.standbyCycles 29
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.fastExitActiveCycles 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.fastExitPrechargeCycles 6
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.slowExitPrechargeCycles 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.actWaits 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.actWaitAverage -nan
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.bank7.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.totalEnergy 103144mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.backgroundEnergy 84128mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.activateEnergy 12096mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.burstEnergy 6920mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.refreshEnergy 0mA*t
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.totalPower 0.271724W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.backgroundPower 0.0588582W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.activatePower 0.135403W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.burstPower 0.0774627W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.refreshPower 0W
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.reads 2
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.writes 5
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.activeCycles 114
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.standbyCycles 14
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.fastExitActiveCycles 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.fastExitPrechargeCycles 6
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.slowExitCycles 0
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.actWaits 16
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.actWaitTotal 34
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.actWaitAverage 2.125
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.rrdWaits 17
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.rrdWaitTotal 35
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.rrdWaitAverage 2.05882
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.fawWaits 52
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.fawWaitTotal 371
+i0.defaultMemory.channel0.FRFCFS.channel0.rank1.fawWaitAverage 7.13462
+i0.defaultMemory.channel0.FRFCFS.mem_reads 4
+i0.defaultMemory.channel0.FRFCFS.mem_writes 15
+i0.defaultMemory.channel0.FRFCFS.rb_hits 7
+i0.defaultMemory.channel0.FRFCFS.rb_miss 12
+i0.defaultMemory.channel0.FRFCFS.starvation_precharges 0
+i0.defaultMemory.channel0.FRFCFS.averageLatency 55.4737
+i0.defaultMemory.channel0.FRFCFS.averageQueueLatency 20.4737
+i0.defaultMemory.channel0.FRFCFS.averageTotalLatency 75.9474
+i0.defaultMemory.channel0.FRFCFS.measuredLatencies 19
+i0.defaultMemory.channel0.FRFCFS.measuredQueueLatencies 19
+i0.defaultMemory.channel0.FRFCFS.measuredTotalLatencies 19
+i0.defaultMemory.channel0.FRFCFS.write_pauses 0
+i0.defaultMemory.channel0.FRFCFS.simulation_cycles 134
+i0.defaultMemory.channel0.FRFCFS.wakeupCount 0
+i0.defaultMemory.totalReadRequests 4
+i0.defaultMemory.totalWriteRequests 15
 i0.defaultMemory.successfulPrefetches 0
 i0.defaultMemory.unsuccessfulPrefetches 0
-Exiting at cycle 5000 because simCycles 5000 reached.
-Note: 40 requests still in-flight.
+Exiting at cycle 403 because simCycles 450451 reached.

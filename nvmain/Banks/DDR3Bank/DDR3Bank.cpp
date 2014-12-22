@@ -873,7 +873,7 @@ bool DDR3Bank::IsIssuable( NVMainRequest *req, FailReason *reason )
         rv = GetChild( req )->IsIssuable( req, reason );
         /*zhuguoliang*/
        if(rv==false){
-        std::cout<<" NOT ISSUABLE from DDR3Bank \n";
+        //std::cout<<" NOT ISSUABLE from DDR3Bank \n";
         }
 /*
         for( it = childNodes.begin(); it != childNodes.end(); it++ )

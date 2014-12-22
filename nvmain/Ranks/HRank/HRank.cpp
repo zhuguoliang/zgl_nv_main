@@ -919,7 +919,7 @@ void HRank::Cycle( ncycle_t steps )
     for( ncounter_t childIdx = 0; childIdx < GetChildCount( ); childIdx++ )
         GetChild( childIdx )->Cycle( steps );
     /*zhuguoliang*/
-    std::cout<< "----HRank::Cycle currentCycle is "<< GetEventQueue()->GetCurrentCycle() << std::endl;
+//    std::cout<< "----HRank::Cycle currentCycle is "<< GetEventQueue()->GetCurrentCycle() << std::endl;
     /* Count cycle numbers and calculate background energy for each state */
     switch( state )
     {
