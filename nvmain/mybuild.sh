@@ -1,0 +1,1 @@
+scons --build-type=debug

@@ -45,7 +45,12 @@
 #include <cassert>
 #include <iostream>
 #include <limits>
+////////////////////////////////
 
+/*zhuguoliang*/
+#include <fstream>
+#include <iomanip>
+////////////////////////////
 #define WriteCellData WriteCellData2
 
 using namespace NVM;
@@ -132,20 +137,38 @@ SubArray::SubArray( )
     subArrayId = -1;
 
     psInterval = 0;
+
+    /*zhuguoliang*/
+    //////////////////
+    row_access_counter=NULL;
+    /////////////////////
 }
 
 SubArray::~SubArray( )
 {
+    delete []row_access_counter;
 }
 
 void SubArray::SetConfig( Config *c, bool createChildren )
 {
     conf = c;
-
+///////////////////////
+    unsigned int i = 0;
+///////////////////
     Params *params = new Params( );
     params->SetParams( c );
     SetParams( params );
 
+
+///////////////////////////////////////////////
+
+/*zhuguoliang*/
+    row_access_counter=new ncounter_t[p->ROWS];
+    for(i=0;i<p->ROWS;i++){
+        row_access_counter[i]=0;
+    }
+
+////////////////////////////////////////////////
     MATHeight = p->MATHeight;
     /* customize MAT size */
     if( conf->KeyExists( "MATWidth" ) )
@@ -356,6 +379,8 @@ bool SubArray::Read( NVMainRequest *request )
 
     request->address.GetTranslatedAddress( &readRow, NULL, NULL, NULL, NULL, NULL );
 
+
+
     /* Check if we need to cancel or pause a write to service this request. */
     CheckWritePausing( );
 
@@ -491,6 +516,8 @@ bool SubArray::Read( NVMainRequest *request )
     reads++;
     dataCycles += p->tBURST;
     
+    //zhuguoliang
+    row_access_counter[readRow]++;
     return true;
 }
 
@@ -714,6 +741,8 @@ bool SubArray::Write( NVMainRequest *request )
     writes++;
     dataCycles += p->tBURST;
     
+      //zhuguoliang
+    row_access_counter[writeRow]++;
     return true;
 }
 
@@ -1469,8 +1498,27 @@ void SubArray::CalculateStats( )
     cancelCountHisto = PyDictHistogram<uint64_t, uint64_t>( cancelCountMap );
     wpPauseHisto = PyDictHistogram<double, uint64_t>( wpPauseMap );
     wpCancelHisto = PyDictHistogram<double, uint64_t>( wpCancelMap );
-}
 
+    //zhuguoliang
+    WriteMyStats_ToFile( );
+}
+//////////////////////////////////////////////////////////////////////
+void SubArray::WriteMyStats_ToFile( )
+{
+    unsigned int i;
+    std::ofstream ofile;               //定义输出文件
+    std::string fname(GetParent()->GetTrampoline()->StatName());
+    std::string suffix(".row_access_counter.out");
+    fname+=suffix;
+    ofile.open(fname,std::iostream::app);     //作为输出文件打开
+    for(i=0;i<p->ROWS;i++){
+        if(row_access_counter[i]!=0){
+            ofile<<i<<"\t"<<row_access_counter[i]<<std::endl;
+        }  
+    }
+    ofile.close();        //关闭文件
+}
+//////////////////////////////////////////////////////////////////////////
 bool SubArray::Idle( )
 {
     return ( state == SUBARRAY_CLOSED || state == SUBARRAY_PRECHARGING );

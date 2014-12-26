@@ -15,9 +15,11 @@ AccessPredictorFactory	Utils/AccessPredictor/AccessPredictorFactory.h	/^    Acce
 AccessPredictorFactory	Utils/AccessPredictor/AccessPredictorFactory.h	/^class AccessPredictorFactory$/;"	c	namespace:NVM
 Activate	Banks/CachedDDR3Bank/CachedDDR3Bank.cpp	/^bool CachedDDR3Bank::Activate( NVMainRequest *request )$/;"	f	class:CachedDDR3Bank
 Activate	Banks/DDR3Bank/DDR3Bank.cpp	/^bool DDR3Bank::Activate( NVMainRequest *request )$/;"	f	class:DDR3Bank
+Activate	Ranks/HRank/HRank.cpp	/^bool HRank::Activate( NVMainRequest *request )$/;"	f	class:HRank
 Activate	Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::Activate( NVMainRequest *request )$/;"	f	class:StandardRank
 Activate	build/Banks/CachedDDR3Bank/CachedDDR3Bank.cpp	/^bool CachedDDR3Bank::Activate( NVMainRequest *request )$/;"	f	class:CachedDDR3Bank
 Activate	build/Banks/DDR3Bank/DDR3Bank.cpp	/^bool DDR3Bank::Activate( NVMainRequest *request )$/;"	f	class:DDR3Bank
+Activate	build/Ranks/HRank/HRank.cpp	/^bool HRank::Activate( NVMainRequest *request )$/;"	f	class:HRank
 Activate	build/Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::Activate( NVMainRequest *request )$/;"	f	class:StandardRank
 Activate	build/src/SubArray.cpp	/^bool SubArray::Activate( NVMainRequest *request )$/;"	f	class:SubArray
 Activate	src/SubArray.cpp	/^bool SubArray::Activate( NVMainRequest *request )$/;"	f	class:SubArray
@@ -144,6 +146,7 @@ CalculateStats	MemControl/LO-Cache/LO-Cache.cpp	/^void LO_Cache::CalculateStats(
 CalculateStats	MemControl/MissMap/MissMap.cpp	/^void MissMap::CalculateStats( )$/;"	f	class:MissMap
 CalculateStats	MemControl/PredictorDRC/PredictorDRC.cpp	/^void PredictorDRC::CalculateStats( )$/;"	f	class:PredictorDRC
 CalculateStats	NVM/nvmain.cpp	/^void NVMain::CalculateStats( )$/;"	f	class:NVMain
+CalculateStats	Ranks/HRank/HRank.cpp	/^void HRank::CalculateStats( )$/;"	f	class:HRank
 CalculateStats	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::CalculateStats( )$/;"	f	class:SB_ON_RANK
 CalculateStats	Ranks/StandardRank/StandardRank.cpp	/^void StandardRank::CalculateStats( )$/;"	f	class:StandardRank
 CalculateStats	build/Banks/CachedDDR3Bank/CachedDDR3Bank.cpp	/^void CachedDDR3Bank::CalculateStats( )$/;"	f	class:CachedDDR3Bank
@@ -160,6 +163,7 @@ CalculateStats	build/MemControl/LO-Cache/LO-Cache.cpp	/^void LO_Cache::Calculate
 CalculateStats	build/MemControl/MissMap/MissMap.cpp	/^void MissMap::CalculateStats( )$/;"	f	class:MissMap
 CalculateStats	build/MemControl/PredictorDRC/PredictorDRC.cpp	/^void PredictorDRC::CalculateStats( )$/;"	f	class:PredictorDRC
 CalculateStats	build/NVM/nvmain.cpp	/^void NVMain::CalculateStats( )$/;"	f	class:NVMain
+CalculateStats	build/Ranks/HRank/HRank.cpp	/^void HRank::CalculateStats( )$/;"	f	class:HRank
 CalculateStats	build/Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::CalculateStats( )$/;"	f	class:SB_ON_RANK
 CalculateStats	build/Ranks/StandardRank/StandardRank.cpp	/^void StandardRank::CalculateStats( )$/;"	f	class:StandardRank
 CalculateStats	build/src/MemoryController.cpp	/^void MemoryController::CalculateStats( )$/;"	f	class:MemoryController
@@ -179,9 +183,13 @@ Callback	build/src/NVMObject.cpp	/^void NVMObject_hook::Callback( void *data )$/
 Callback	src/NVMObject.cpp	/^void NVMObject::Callback( void * \/*data*\/ )$/;"	f	class:NVMObject
 Callback	src/NVMObject.cpp	/^void NVMObject_hook::Callback( void *data )$/;"	f	class:NVMObject_hook
 CallbackPtr	src/EventQueue.h	/^typedef void (NVMObject::*CallbackPtr)(void*);$/;"	t	namespace:NVM
+CanPowerDown	Ranks/HRank/HRank.cpp	/^bool HRank::CanPowerDown( NVMainRequest *request )$/;"	f	class:HRank
 CanPowerDown	Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::CanPowerDown( NVMainRequest *request )$/;"	f	class:StandardRank
+CanPowerDown	build/Ranks/HRank/HRank.cpp	/^bool HRank::CanPowerDown( NVMainRequest *request )$/;"	f	class:HRank
 CanPowerDown	build/Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::CanPowerDown( NVMainRequest *request )$/;"	f	class:StandardRank
+CanPowerUp	Ranks/HRank/HRank.cpp	/^bool HRank::CanPowerUp( NVMainRequest *request )$/;"	f	class:HRank
 CanPowerUp	Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::CanPowerUp( NVMainRequest *request )$/;"	f	class:StandardRank
+CanPowerUp	build/Ranks/HRank/HRank.cpp	/^bool HRank::CanPowerUp( NVMainRequest *request )$/;"	f	class:HRank
 CanPowerUp	build/Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::CanPowerUp( NVMainRequest *request )$/;"	f	class:StandardRank
 CastStat	src/Stats.h	63;"	d
 CheckDrainState	Simulators/gem5/nvmain_mem.cc	/^void NVMainMemory::CheckDrainState( )$/;"	f	class:NVMainMemory
@@ -287,6 +295,7 @@ Cycle	MemControl/MissMap/MissMap.cpp	/^void MissMap::Cycle( ncycle_t )$/;"	f	cla
 Cycle	MemControl/PerfectMemory/PerfectMemory.cpp	/^void PerfectMemory::Cycle( ncycle_t )$/;"	f	class:PerfectMemory
 Cycle	MemControl/PredictorDRC/PredictorDRC.cpp	/^void PredictorDRC::Cycle( ncycle_t steps )$/;"	f	class:PredictorDRC
 Cycle	NVM/nvmain.cpp	/^void NVMain::Cycle( ncycle_t steps )$/;"	f	class:NVMain
+Cycle	Ranks/HRank/HRank.cpp	/^void HRank::Cycle( ncycle_t steps )$/;"	f	class:HRank
 Cycle	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::Cycle( ncycle_t steps )$/;"	f	class:SB_ON_RANK
 Cycle	Ranks/StandardRank/StandardRank.cpp	/^void StandardRank::Cycle( ncycle_t steps )$/;"	f	class:StandardRank
 Cycle	Simulators/gem5/NVMainControl.hh	/^    void Cycle(NVM::ncycle_t) {}$/;"	f	class:NVMainControl
@@ -310,6 +319,7 @@ Cycle	build/MemControl/MissMap/MissMap.cpp	/^void MissMap::Cycle( ncycle_t )$/;"
 Cycle	build/MemControl/PerfectMemory/PerfectMemory.cpp	/^void PerfectMemory::Cycle( ncycle_t )$/;"	f	class:PerfectMemory
 Cycle	build/MemControl/PredictorDRC/PredictorDRC.cpp	/^void PredictorDRC::Cycle( ncycle_t steps )$/;"	f	class:PredictorDRC
 Cycle	build/NVM/nvmain.cpp	/^void NVMain::Cycle( ncycle_t steps )$/;"	f	class:NVMain
+Cycle	build/Ranks/HRank/HRank.cpp	/^void HRank::Cycle( ncycle_t steps )$/;"	f	class:HRank
 Cycle	build/Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::Cycle( ncycle_t steps )$/;"	f	class:SB_ON_RANK
 Cycle	build/Ranks/StandardRank/StandardRank.cpp	/^void StandardRank::Cycle( ncycle_t steps )$/;"	f	class:StandardRank
 Cycle	build/Utils/AccessPredictor/AccessPredictor.cpp	/^void AccessPredictor::Cycle( ncycle_t )$/;"	f	class:AccessPredictor
@@ -802,6 +812,17 @@ GetWrites	src/Bank.h	/^    virtual ncounter_t GetWrites( ) { return 0; }$/;"	f	c
 GlobalEventQueue	build/src/EventQueue.cpp	/^GlobalEventQueue::GlobalEventQueue( )$/;"	f	class:GlobalEventQueue
 GlobalEventQueue	src/EventQueue.cpp	/^GlobalEventQueue::GlobalEventQueue( )$/;"	f	class:GlobalEventQueue
 GlobalEventQueue	src/EventQueue.h	/^class GlobalEventQueue$/;"	c	namespace:NVM
+HRank	Ranks/HRank/HRank.cpp	/^HRank::HRank( )$/;"	f	class:HRank
+HRank	Ranks/HRank/HRank.h	/^class HRank : public Rank$/;"	c	namespace:NVM
+HRank	build/Ranks/HRank/HRank.cpp	/^HRank::HRank( )$/;"	f	class:HRank
+HRank_CLOSED	Ranks/HRank/HRank.h	/^    HRank_CLOSED,    \/***< all banks in the rank are closed (standby) *\/$/;"	e	enum:NVM::HRank_State
+HRank_OPEN	Ranks/HRank/HRank.h	/^    HRank_OPEN,      \/***< Rank has at least one open bank  *\/$/;"	e	enum:NVM::HRank_State
+HRank_PDA	Ranks/HRank/HRank.h	/^    HRank_PDA,       \/***< Rank is in active powered down mode *\/$/;"	e	enum:NVM::HRank_State
+HRank_PDPF	Ranks/HRank/HRank.h	/^    HRank_PDPF,      \/***< Rank is in precharge powered down, fast exit mode *\/$/;"	e	enum:NVM::HRank_State
+HRank_PDPS	Ranks/HRank/HRank.h	/^    HRank_PDPS       \/***< Rank is in precharge powered down, slow exit mode *\/$/;"	e	enum:NVM::HRank_State
+HRank_REFRESHING	Ranks/HRank/HRank.h	/^    HRank_REFRESHING,\/***< some banks in the rank are refreshing *\/$/;"	e	enum:NVM::HRank_State
+HRank_State	Ranks/HRank/HRank.h	/^enum HRank_State $/;"	g	namespace:NVM
+HRank_UNKNOWN	Ranks/HRank/HRank.h	/^    HRank_UNKNOWN,   \/***< Unknown state. Uh oh. *\/$/;"	e	enum:NVM::HRank_State
 HandleLowPower	build/src/MemoryController.cpp	/^void MemoryController::HandleLowPower( )$/;"	f	class:MemoryController
 HandleLowPower	src/MemoryController.cpp	/^void MemoryController::HandleLowPower( )$/;"	f	class:MemoryController
 HandleRefresh	build/src/MemoryController.cpp	/^bool MemoryController::HandleRefresh( )$/;"	f	class:MemoryController
@@ -826,9 +847,11 @@ HookFactory	Utils/HookFactory.h	/^    HookFactory( ) { }$/;"	f	class:NVM::HookFa
 HookFactory	Utils/HookFactory.h	/^class HookFactory$/;"	c	namespace:NVM
 HookType	src/NVMObject.h	/^enum HookType { NVMHOOK_NONE = 0,$/;"	g	namespace:NVM
 Idle	Banks/DDR3Bank/DDR3Bank.cpp	/^bool DDR3Bank::Idle( )$/;"	f	class:DDR3Bank
+Idle	Ranks/HRank/HRank.cpp	/^bool HRank::Idle( )$/;"	f	class:HRank
 Idle	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^bool SB_ON_RANK::Idle( )$/;"	f	class:SB_ON_RANK
 Idle	Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::Idle( )$/;"	f	class:StandardRank
 Idle	build/Banks/DDR3Bank/DDR3Bank.cpp	/^bool DDR3Bank::Idle( )$/;"	f	class:DDR3Bank
+Idle	build/Ranks/HRank/HRank.cpp	/^bool HRank::Idle( )$/;"	f	class:HRank
 Idle	build/Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^bool SB_ON_RANK::Idle( )$/;"	f	class:SB_ON_RANK
 Idle	build/Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::Idle( )$/;"	f	class:StandardRank
 Idle	build/src/Bank.cpp	/^bool Bank::Idle( )$/;"	f	class:Bank
@@ -898,6 +921,7 @@ IsIssuable	MemControl/LH-Cache/LH-Cache.cpp	/^bool LH_Cache::IsIssuable( NVMainR
 IsIssuable	MemControl/LO-Cache/LO-Cache.cpp	/^bool LO_Cache::IsIssuable( NVMainRequest * \/*request*\/, FailReason * \/*fail*\/ )$/;"	f	class:LO_Cache
 IsIssuable	MemControl/PredictorDRC/PredictorDRC.cpp	/^bool PredictorDRC::IsIssuable( NVMainRequest * req, FailReason * \/*fail*\/ )$/;"	f	class:PredictorDRC
 IsIssuable	NVM/nvmain.cpp	/^bool NVMain::IsIssuable( NVMainRequest *request, FailReason *reason )$/;"	f	class:NVMain
+IsIssuable	Ranks/HRank/HRank.cpp	/^bool HRank::IsIssuable( NVMainRequest *req, FailReason *reason )$/;"	f	class:HRank
 IsIssuable	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^bool SB_ON_RANK::IsIssuable( NVMainRequest *req, FailReason *)$/;"	f	class:SB_ON_RANK
 IsIssuable	Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::IsIssuable( NVMainRequest *req, FailReason *reason )$/;"	f	class:StandardRank
 IsIssuable	Utils/Caches/CacheBank.cpp	/^bool CacheBank::IsIssuable( NVMainRequest * \/*req*\/, FailReason * \/*reason*\/ )$/;"	f	class:CacheBank
@@ -913,6 +937,7 @@ IsIssuable	build/MemControl/LH-Cache/LH-Cache.cpp	/^bool LH_Cache::IsIssuable( N
 IsIssuable	build/MemControl/LO-Cache/LO-Cache.cpp	/^bool LO_Cache::IsIssuable( NVMainRequest * \/*request*\/, FailReason * \/*fail*\/ )$/;"	f	class:LO_Cache
 IsIssuable	build/MemControl/PredictorDRC/PredictorDRC.cpp	/^bool PredictorDRC::IsIssuable( NVMainRequest * req, FailReason * \/*fail*\/ )$/;"	f	class:PredictorDRC
 IsIssuable	build/NVM/nvmain.cpp	/^bool NVMain::IsIssuable( NVMainRequest *request, FailReason *reason )$/;"	f	class:NVMain
+IsIssuable	build/Ranks/HRank/HRank.cpp	/^bool HRank::IsIssuable( NVMainRequest *req, FailReason *reason )$/;"	f	class:HRank
 IsIssuable	build/Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^bool SB_ON_RANK::IsIssuable( NVMainRequest *req, FailReason *)$/;"	f	class:SB_ON_RANK
 IsIssuable	build/Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::IsIssuable( NVMainRequest *req, FailReason *reason )$/;"	f	class:StandardRank
 IsIssuable	build/Utils/Caches/CacheBank.cpp	/^bool CacheBank::IsIssuable( NVMainRequest * \/*req*\/, FailReason * \/*reason*\/ )$/;"	f	class:CacheBank
@@ -972,6 +997,7 @@ IssueCommand	MemControl/MissMap/MissMap.cpp	/^bool MissMap::IssueCommand( NVMain
 IssueCommand	MemControl/PerfectMemory/PerfectMemory.cpp	/^bool PerfectMemory::IssueCommand( NVMainRequest *req )$/;"	f	class:PerfectMemory
 IssueCommand	MemControl/PredictorDRC/PredictorDRC.cpp	/^bool PredictorDRC::IssueCommand( NVMainRequest *req )$/;"	f	class:PredictorDRC
 IssueCommand	NVM/nvmain.cpp	/^bool NVMain::IssueCommand( NVMainRequest *request )$/;"	f	class:NVMain
+IssueCommand	Ranks/HRank/HRank.cpp	/^bool HRank::IssueCommand( NVMainRequest *req )$/;"	f	class:HRank
 IssueCommand	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^bool SB_ON_RANK::IssueCommand( NVMainRequest *req )$/;"	f	class:SB_ON_RANK
 IssueCommand	Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::IssueCommand( NVMainRequest *req )$/;"	f	class:StandardRank
 IssueCommand	Utils/Caches/CacheBank.cpp	/^bool CacheBank::IssueCommand( NVMainRequest *nreq )$/;"	f	class:CacheBank
@@ -992,6 +1018,7 @@ IssueCommand	build/MemControl/MissMap/MissMap.cpp	/^bool MissMap::IssueCommand( 
 IssueCommand	build/MemControl/PerfectMemory/PerfectMemory.cpp	/^bool PerfectMemory::IssueCommand( NVMainRequest *req )$/;"	f	class:PerfectMemory
 IssueCommand	build/MemControl/PredictorDRC/PredictorDRC.cpp	/^bool PredictorDRC::IssueCommand( NVMainRequest *req )$/;"	f	class:PredictorDRC
 IssueCommand	build/NVM/nvmain.cpp	/^bool NVMain::IssueCommand( NVMainRequest *request )$/;"	f	class:NVMain
+IssueCommand	build/Ranks/HRank/HRank.cpp	/^bool HRank::IssueCommand( NVMainRequest *req )$/;"	f	class:HRank
 IssueCommand	build/Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^bool SB_ON_RANK::IssueCommand( NVMainRequest *req )$/;"	f	class:SB_ON_RANK
 IssueCommand	build/Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::IssueCommand( NVMainRequest *req )$/;"	f	class:StandardRank
 IssueCommand	build/Utils/Caches/CacheBank.cpp	/^bool CacheBank::IssueCommand( NVMainRequest *nreq )$/;"	f	class:CacheBank
@@ -1025,6 +1052,7 @@ IssuePrefetch	NVM/nvmain.cpp	/^void NVMain::IssuePrefetch( NVMainRequest *reques
 IssuePrefetch	build/NVM/nvmain.cpp	/^void NVMain::IssuePrefetch( NVMainRequest *request )$/;"	f	class:NVMain
 KeyExists	build/src/Config.cpp	/^bool Config::KeyExists( std::string key )$/;"	f	class:Config
 KeyExists	src/Config.cpp	/^bool Config::KeyExists( std::string key )$/;"	f	class:Config
+L	my_histogram.py	/^L=[]$/;"	v
 LH_Cache	MemControl/LH-Cache/LH-Cache.cpp	/^LH_Cache::LH_Cache( )$/;"	f	class:LH_Cache
 LH_Cache	MemControl/LH-Cache/LH-Cache.h	/^class LH_Cache : public AbstractDRAMCache $/;"	c	namespace:NVM
 LH_Cache	build/MemControl/LH-Cache/LH-Cache.cpp	/^LH_Cache::LH_Cache( )$/;"	f	class:LH_Cache
@@ -1048,6 +1076,7 @@ MAX	src/NVMObject.cpp	/^ncycle_t NVMObject::MAX( const ncycle_t a, const ncycle_
 MEM_BANK	src/TranslationMethod.h	/^    MEM_BANK = 2, $/;"	e	enum:NVM::MemoryPartition
 MEM_CHANNEL	src/TranslationMethod.h	/^    MEM_CHANNEL = 4,$/;"	e	enum:NVM::MemoryPartition
 MEM_COL	src/TranslationMethod.h	/^    MEM_COL = 1, $/;"	e	enum:NVM::MemoryPartition
+MEM_Freq	src/Params.h	/^    ncounter_t MEM_Freq;\/*for decoupled_dimm ---zhuguoliang*\/$/;"	m	class:NVM::Params
 MEM_RANK	src/TranslationMethod.h	/^    MEM_RANK = 3, $/;"	e	enum:NVM::MemoryPartition
 MEM_REQUEST_COMPLETE	include/NVMainRequest.h	/^    MEM_REQUEST_COMPLETE,   \/* finished request *\/$/;"	e	enum:NVM::MemRequestStatus
 MEM_REQUEST_INCOMPLETE	include/NVMainRequest.h	/^    MEM_REQUEST_INCOMPLETE, \/* Incomplete request *\/$/;"	e	enum:NVM::MemRequestStatus
@@ -1160,6 +1189,7 @@ NVM	NVM/nvmain.h	/^namespace NVM {$/;"	n
 NVM	Prefetchers/NaivePrefetcher/NaivePrefetcher.h	/^namespace NVM {$/;"	n
 NVM	Prefetchers/PrefetcherFactory.h	/^namespace NVM {$/;"	n
 NVM	Prefetchers/STeMS/STeMS.h	/^namespace NVM {$/;"	n
+NVM	Ranks/HRank/HRank.h	/^namespace NVM {$/;"	n
 NVM	Ranks/RankFactory.h	/^namespace NVM {$/;"	n
 NVM	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^namespace NVM {$/;"	n
 NVM	Ranks/StandardRank/StandardRank.h	/^namespace NVM {$/;"	n
@@ -1274,9 +1304,11 @@ NaivePrefetcher	Prefetchers/NaivePrefetcher/NaivePrefetcher.h	/^class NaivePrefe
 NeedRefresh	build/src/MemoryController.cpp	/^bool MemoryController::NeedRefresh( const ncounter_t bank, const uint64_t rank )$/;"	f	class:MemoryController
 NeedRefresh	src/MemoryController.cpp	/^bool MemoryController::NeedRefresh( const ncounter_t bank, const uint64_t rank )$/;"	f	class:MemoryController
 NextIssuable	Banks/DDR3Bank/DDR3Bank.cpp	/^ncycle_t DDR3Bank::NextIssuable( NVMainRequest *request )$/;"	f	class:DDR3Bank
+NextIssuable	Ranks/HRank/HRank.cpp	/^ncycle_t HRank::NextIssuable( NVMainRequest *request )$/;"	f	class:HRank
 NextIssuable	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^ncycle_t SB_ON_RANK::NextIssuable( NVMainRequest *)$/;"	f	class:SB_ON_RANK
 NextIssuable	Ranks/StandardRank/StandardRank.cpp	/^ncycle_t StandardRank::NextIssuable( NVMainRequest *request )$/;"	f	class:StandardRank
 NextIssuable	build/Banks/DDR3Bank/DDR3Bank.cpp	/^ncycle_t DDR3Bank::NextIssuable( NVMainRequest *request )$/;"	f	class:DDR3Bank
+NextIssuable	build/Ranks/HRank/HRank.cpp	/^ncycle_t HRank::NextIssuable( NVMainRequest *request )$/;"	f	class:HRank
 NextIssuable	build/Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^ncycle_t SB_ON_RANK::NextIssuable( NVMainRequest *)$/;"	f	class:SB_ON_RANK
 NextIssuable	build/Ranks/StandardRank/StandardRank.cpp	/^ncycle_t StandardRank::NextIssuable( NVMainRequest *request )$/;"	f	class:StandardRank
 NextIssuable	build/src/MemoryController.cpp	/^ncycle_t MemoryController::NextIssuable( NVMainRequest * \/*request*\/ )$/;"	f	class:MemoryController
@@ -1294,8 +1326,10 @@ NormalDistribution	Endurance/Distributions/Normal.cpp	/^NormalDistribution::Norm
 NormalDistribution	Endurance/Distributions/Normal.h	/^class NormalDistribution : public EnduranceDistribution$/;"	c	namespace:NVM
 NormalDistribution	build/Endurance/Distributions/Normal.cpp	/^NormalDistribution::NormalDistribution( )$/;"	f	class:NormalDistribution
 NormalDistribution	build/Endurance/Distributions/Normal.cpp	/^NormalDistribution::NormalDistribution( Config *conf )$/;"	f	class:NormalDistribution
+Notify	Ranks/HRank/HRank.cpp	/^void HRank::Notify( NVMainRequest *request )$/;"	f	class:HRank
 Notify	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::Notify( NVMainRequest *request )$/;"	f	class:SB_ON_RANK
 Notify	Ranks/StandardRank/StandardRank.cpp	/^void StandardRank::Notify( NVMainRequest *request )$/;"	f	class:StandardRank
+Notify	build/Ranks/HRank/HRank.cpp	/^void HRank::Notify( NVMainRequest *request )$/;"	f	class:HRank
 Notify	build/Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::Notify( NVMainRequest *request )$/;"	f	class:SB_ON_RANK
 Notify	build/Ranks/StandardRank/StandardRank.cpp	/^void StandardRank::Notify( NVMainRequest *request )$/;"	f	class:StandardRank
 Notify	build/src/NVMObject.cpp	/^void NVMObject::Notify( NVMainRequest * )$/;"	f	class:NVMObject
@@ -1357,21 +1391,27 @@ PostTrace	Utils/PostTrace/PostTrace.cpp	/^PostTrace::PostTrace( )$/;"	f	class:Po
 PostTrace	Utils/PostTrace/PostTrace.h	/^class PostTrace : public NVMObject$/;"	c	namespace:NVM
 PostTrace	build/Utils/PostTrace/PostTrace.cpp	/^PostTrace::PostTrace( )$/;"	f	class:PostTrace
 PowerDown	Banks/DDR3Bank/DDR3Bank.cpp	/^bool DDR3Bank::PowerDown( NVMainRequest *request )$/;"	f	class:DDR3Bank
+PowerDown	Ranks/HRank/HRank.cpp	/^bool HRank::PowerDown( NVMainRequest *request )$/;"	f	class:HRank
 PowerDown	Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::PowerDown( NVMainRequest *request )$/;"	f	class:StandardRank
 PowerDown	build/Banks/DDR3Bank/DDR3Bank.cpp	/^bool DDR3Bank::PowerDown( NVMainRequest *request )$/;"	f	class:DDR3Bank
+PowerDown	build/Ranks/HRank/HRank.cpp	/^bool HRank::PowerDown( NVMainRequest *request )$/;"	f	class:HRank
 PowerDown	build/Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::PowerDown( NVMainRequest *request )$/;"	f	class:StandardRank
 PowerDown	build/src/MemoryController.cpp	/^void MemoryController::PowerDown( const ncounter_t& rankId )$/;"	f	class:MemoryController
 PowerDown	src/MemoryController.cpp	/^void MemoryController::PowerDown( const ncounter_t& rankId )$/;"	f	class:MemoryController
 PowerDownMode	src/Params.h	/^    std::string PowerDownMode;$/;"	m	class:NVM::Params
 PowerUp	Banks/DDR3Bank/DDR3Bank.cpp	/^bool DDR3Bank::PowerUp( NVMainRequest * \/*request*\/ )$/;"	f	class:DDR3Bank
+PowerUp	Ranks/HRank/HRank.cpp	/^bool HRank::PowerUp( NVMainRequest *request )$/;"	f	class:HRank
 PowerUp	Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::PowerUp( NVMainRequest *request )$/;"	f	class:StandardRank
 PowerUp	build/Banks/DDR3Bank/DDR3Bank.cpp	/^bool DDR3Bank::PowerUp( NVMainRequest * \/*request*\/ )$/;"	f	class:DDR3Bank
+PowerUp	build/Ranks/HRank/HRank.cpp	/^bool HRank::PowerUp( NVMainRequest *request )$/;"	f	class:HRank
 PowerUp	build/Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::PowerUp( NVMainRequest *request )$/;"	f	class:StandardRank
 PowerUp	build/src/MemoryController.cpp	/^void MemoryController::PowerUp( const ncounter_t& rankId )$/;"	f	class:MemoryController
 PowerUp	src/MemoryController.cpp	/^void MemoryController::PowerUp( const ncounter_t& rankId )$/;"	f	class:MemoryController
 Precharge	Banks/DDR3Bank/DDR3Bank.cpp	/^bool DDR3Bank::Precharge( NVMainRequest *request )$/;"	f	class:DDR3Bank
+Precharge	Ranks/HRank/HRank.cpp	/^bool HRank::Precharge( NVMainRequest *request )$/;"	f	class:HRank
 Precharge	Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::Precharge( NVMainRequest *request )$/;"	f	class:StandardRank
 Precharge	build/Banks/DDR3Bank/DDR3Bank.cpp	/^bool DDR3Bank::Precharge( NVMainRequest *request )$/;"	f	class:DDR3Bank
+Precharge	build/Ranks/HRank/HRank.cpp	/^bool HRank::Precharge( NVMainRequest *request )$/;"	f	class:HRank
 Precharge	build/Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::Precharge( NVMainRequest *request )$/;"	f	class:StandardRank
 Precharge	build/src/SubArray.cpp	/^bool SubArray::Precharge( NVMainRequest *request )$/;"	f	class:SubArray
 Precharge	src/SubArray.cpp	/^bool SubArray::Precharge( NVMainRequest *request )$/;"	f	class:SubArray
@@ -1434,6 +1474,7 @@ RANK_UNKNOWN	src/Rank.h	/^    RANK_UNKNOWN,   \/***< Unknown state. Uh oh. *\/$/
 RATE	Simulators/gem5/nvmain_mem.hh	/^    uint64_t RATE;$/;"	m	class:NVMainMemory
 RATE	src/Params.h	/^    ncounter_t RATE;$/;"	m	class:NVM::Params
 RAW	src/Params.h	/^    ncounter_t RAW;$/;"	m	class:NVM::Params
+RAWindex	Ranks/HRank/HRank.h	/^    ncounter_t RAWindex;$/;"	m	class:NVM::HRank
 RAWindex	Ranks/StandardRank/StandardRank.h	/^    ncounter_t RAWindex;$/;"	m	class:NVM::StandardRank
 RBSize	src/Params.h	/^    ncounter_t RBSize;$/;"	m	class:NVM::Params
 RDBAllocations	Banks/CachedDDR3Bank/CachedDDR3Bank.h	/^    ncounter_t RDBAllocations;$/;"	m	class:NVM::CachedDDR3Bank
@@ -1461,6 +1502,7 @@ Read	Endurance/ByteModel/ByteModel.cpp	/^ncycles_t ByteModel::Read( NVMainReques
 Read	Endurance/NullModel/NullModel.cpp	/^ncycles_t NullModel::Read( NVMainRequest* \/*request*\/ )$/;"	f	class:NullModel
 Read	Endurance/RowModel/RowModel.cpp	/^ncycles_t RowModel::Read( NVMainRequest *request )$/;"	f	class:RowModel
 Read	Endurance/WordModel/WordModel.cpp	/^ncycles_t WordModel::Read( NVMainRequest *request )$/;"	f	class:WordModel
+Read	Ranks/HRank/HRank.cpp	/^bool HRank::Read( NVMainRequest *request )$/;"	f	class:HRank
 Read	Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::Read( NVMainRequest *request )$/;"	f	class:StandardRank
 Read	Utils/Caches/CacheBank.cpp	/^bool CacheBank::Read( NVMAddress& addr, NVMDataBlock *data )$/;"	f	class:CacheBank
 Read	build/Banks/CachedDDR3Bank/CachedDDR3Bank.cpp	/^bool CachedDDR3Bank::Read( NVMainRequest *request )$/;"	f	class:CachedDDR3Bank
@@ -1471,6 +1513,7 @@ Read	build/Endurance/ByteModel/ByteModel.cpp	/^ncycles_t ByteModel::Read( NVMain
 Read	build/Endurance/NullModel/NullModel.cpp	/^ncycles_t NullModel::Read( NVMainRequest* \/*request*\/ )$/;"	f	class:NullModel
 Read	build/Endurance/RowModel/RowModel.cpp	/^ncycles_t RowModel::Read( NVMainRequest *request )$/;"	f	class:RowModel
 Read	build/Endurance/WordModel/WordModel.cpp	/^ncycles_t WordModel::Read( NVMainRequest *request )$/;"	f	class:WordModel
+Read	build/Ranks/HRank/HRank.cpp	/^bool HRank::Read( NVMainRequest *request )$/;"	f	class:HRank
 Read	build/Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::Read( NVMainRequest *request )$/;"	f	class:StandardRank
 Read	build/Utils/Caches/CacheBank.cpp	/^bool CacheBank::Read( NVMAddress& addr, NVMDataBlock *data )$/;"	f	class:CacheBank
 Read	build/src/Config.cpp	/^void Config::Read( std::string filename )$/;"	f	class:Config
@@ -1481,8 +1524,10 @@ Read	src/DataEncoder.cpp	/^ncycle_t DataEncoder::Read( NVMainRequest* \/*request
 Read	src/SubArray.cpp	/^bool SubArray::Read( NVMainRequest *request )$/;"	f	class:SubArray
 ReconBuf	Prefetchers/STeMS/STeMS.h	/^    std::map<uint64_t, PatternSequence*> ReconBuf; \/\/ Reconstruction Buffer$/;"	m	class:NVM::STeMS
 Refresh	Banks/DDR3Bank/DDR3Bank.cpp	/^bool DDR3Bank::Refresh( NVMainRequest *request )$/;"	f	class:DDR3Bank
+Refresh	Ranks/HRank/HRank.cpp	/^bool HRank::Refresh( NVMainRequest *request )$/;"	f	class:HRank
 Refresh	Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::Refresh( NVMainRequest *request )$/;"	f	class:StandardRank
 Refresh	build/Banks/DDR3Bank/DDR3Bank.cpp	/^bool DDR3Bank::Refresh( NVMainRequest *request )$/;"	f	class:DDR3Bank
+Refresh	build/Ranks/HRank/HRank.cpp	/^bool HRank::Refresh( NVMainRequest *request )$/;"	f	class:HRank
 Refresh	build/Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::Refresh( NVMainRequest *request )$/;"	f	class:StandardRank
 Refresh	build/src/SubArray.cpp	/^bool SubArray::Refresh( NVMainRequest* request )$/;"	f	class:SubArray
 Refresh	src/SubArray.cpp	/^bool SubArray::Refresh( NVMainRequest* request )$/;"	f	class:SubArray
@@ -1503,6 +1548,7 @@ RegisterStats	MemControl/LO-Cache/LO-Cache.cpp	/^void LO_Cache::RegisterStats( )
 RegisterStats	MemControl/MissMap/MissMap.cpp	/^void MissMap::RegisterStats( )$/;"	f	class:MissMap
 RegisterStats	MemControl/PredictorDRC/PredictorDRC.cpp	/^void PredictorDRC::RegisterStats( )$/;"	f	class:PredictorDRC
 RegisterStats	NVM/nvmain.cpp	/^void NVMain::RegisterStats( )$/;"	f	class:NVMain
+RegisterStats	Ranks/HRank/HRank.cpp	/^void HRank::RegisterStats( )$/;"	f	class:HRank
 RegisterStats	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::RegisterStats( )$/;"	f	class:SB_ON_RANK
 RegisterStats	Ranks/StandardRank/StandardRank.cpp	/^void StandardRank::RegisterStats( )$/;"	f	class:StandardRank
 RegisterStats	build/Banks/CachedDDR3Bank/CachedDDR3Bank.cpp	/^void CachedDDR3Bank::RegisterStats( )$/;"	f	class:CachedDDR3Bank
@@ -1518,6 +1564,7 @@ RegisterStats	build/MemControl/LO-Cache/LO-Cache.cpp	/^void LO_Cache::RegisterSt
 RegisterStats	build/MemControl/MissMap/MissMap.cpp	/^void MissMap::RegisterStats( )$/;"	f	class:MissMap
 RegisterStats	build/MemControl/PredictorDRC/PredictorDRC.cpp	/^void PredictorDRC::RegisterStats( )$/;"	f	class:PredictorDRC
 RegisterStats	build/NVM/nvmain.cpp	/^void NVMain::RegisterStats( )$/;"	f	class:NVMain
+RegisterStats	build/Ranks/HRank/HRank.cpp	/^void HRank::RegisterStats( )$/;"	f	class:HRank
 RegisterStats	build/Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::RegisterStats( )$/;"	f	class:SB_ON_RANK
 RegisterStats	build/Ranks/StandardRank/StandardRank.cpp	/^void StandardRank::RegisterStats( )$/;"	f	class:StandardRank
 RegisterStats	build/src/MemoryController.cpp	/^void MemoryController::RegisterStats( )$/;"	f	class:MemoryController
@@ -1543,6 +1590,7 @@ RequestComplete	MemControl/LO-Cache/LO-Cache.cpp	/^bool LO_Cache::RequestComplet
 RequestComplete	MemControl/MissMap/MissMap.cpp	/^bool MissMap::RequestComplete( NVMainRequest *req )$/;"	f	class:MissMap
 RequestComplete	MemControl/PredictorDRC/PredictorDRC.cpp	/^bool PredictorDRC::RequestComplete( NVMainRequest *req )$/;"	f	class:PredictorDRC
 RequestComplete	NVM/nvmain.cpp	/^bool NVMain::RequestComplete( NVMainRequest *request )$/;"	f	class:NVMain
+RequestComplete	Ranks/HRank/HRank.cpp	/^bool HRank::RequestComplete( NVMainRequest* req )$/;"	f	class:HRank
 RequestComplete	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^bool SB_ON_RANK::RequestComplete( NVMainRequest* req )$/;"	f	class:SB_ON_RANK
 RequestComplete	Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::RequestComplete( NVMainRequest* req )$/;"	f	class:StandardRank
 RequestComplete	Simulators/gem5/NVMainControl.cc	/^NVMainControl::RequestComplete(NVMainRequest *creq)$/;"	f	class:NVMainControl
@@ -1562,6 +1610,7 @@ RequestComplete	build/MemControl/LO-Cache/LO-Cache.cpp	/^bool LO_Cache::RequestC
 RequestComplete	build/MemControl/MissMap/MissMap.cpp	/^bool MissMap::RequestComplete( NVMainRequest *req )$/;"	f	class:MissMap
 RequestComplete	build/MemControl/PredictorDRC/PredictorDRC.cpp	/^bool PredictorDRC::RequestComplete( NVMainRequest *req )$/;"	f	class:PredictorDRC
 RequestComplete	build/NVM/nvmain.cpp	/^bool NVMain::RequestComplete( NVMainRequest *request )$/;"	f	class:NVMain
+RequestComplete	build/Ranks/HRank/HRank.cpp	/^bool HRank::RequestComplete( NVMainRequest* req )$/;"	f	class:HRank
 RequestComplete	build/Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^bool SB_ON_RANK::RequestComplete( NVMainRequest* req )$/;"	f	class:SB_ON_RANK
 RequestComplete	build/Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::RequestComplete( NVMainRequest* req )$/;"	f	class:StandardRank
 RequestComplete	build/Utils/Caches/CacheBank.cpp	/^bool CacheBank::RequestComplete( NVMainRequest *req )$/;"	f	class:CacheBank
@@ -1590,8 +1639,10 @@ ResetRefresh	build/src/MemoryController.cpp	/^void MemoryController::ResetRefres
 ResetRefresh	src/MemoryController.cpp	/^void MemoryController::ResetRefresh( const ncounter_t bank, const uint64_t rank )$/;"	f	class:MemoryController
 ResetRefreshQueued	build/src/MemoryController.cpp	/^void MemoryController::ResetRefreshQueued( const ncounter_t bank, const ncounter_t rank )$/;"	f	class:MemoryController
 ResetRefreshQueued	src/MemoryController.cpp	/^void MemoryController::ResetRefreshQueued( const ncounter_t bank, const ncounter_t rank )$/;"	f	class:MemoryController
+ResetStats	Ranks/HRank/HRank.cpp	/^void HRank::ResetStats( )$/;"	f	class:HRank
 ResetStats	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::ResetStats( )$/;"	f	class:SB_ON_RANK
 ResetStats	Ranks/StandardRank/StandardRank.cpp	/^void StandardRank::ResetStats( )$/;"	f	class:StandardRank
+ResetStats	build/Ranks/HRank/HRank.cpp	/^void HRank::ResetStats( )$/;"	f	class:HRank
 ResetStats	build/Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::ResetStats( )$/;"	f	class:SB_ON_RANK
 ResetStats	build/Ranks/StandardRank/StandardRank.cpp	/^void StandardRank::ResetStats( )$/;"	f	class:StandardRank
 ResetStats	build/src/NVMObject.cpp	/^void NVMObject::ResetStats( )$/;"	f	class:NVMObject
@@ -1622,6 +1673,8 @@ RubyTraceReader	traceReader/RubyTrace/RubyTraceReader.cpp	/^RubyTraceReader::Rub
 RubyTraceReader	traceReader/RubyTrace/RubyTraceReader.h	/^class RubyTraceReader : public GenericTraceReader$/;"	c	namespace:NVM
 RunTrace	build/traceSim/traceMain.cpp	/^int TraceMain::RunTrace( int argc, char *argv[] )$/;"	f	class:TraceMain
 RunTrace	traceSim/traceMain.cpp	/^int TraceMain::RunTrace( int argc, char *argv[] )$/;"	f	class:TraceMain
+SBCleanupCallback	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::SBCleanupCallback( void * \/*data*\/ )$/;"	f	class:SB_ON_RANK
+SBCleanupCallback	build/Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::SBCleanupCallback( void * \/*data*\/ )$/;"	f	class:SB_ON_RANK
 SB_ON_RANK	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^SB_ON_RANK::SB_ON_RANK( )$/;"	f	class:SB_ON_RANK
 SB_ON_RANK	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^class SB_ON_RANK : public Rank$/;"	c	namespace:NVM
 SB_ON_RANK	build/Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^SB_ON_RANK::SB_ON_RANK( )$/;"	f	class:SB_ON_RANK
@@ -1633,6 +1686,7 @@ SB_ON_RANK_PDPS	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    SB_ON_RANK_PDPS       \/***<
 SB_ON_RANK_REFRESHING	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    SB_ON_RANK_REFRESHING,\/***< some banks in the rank are refreshing *\/$/;"	e	enum:NVM::SB_ON_RANK_State
 SB_ON_RANK_State	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^enum SB_ON_RANK_State $/;"	g	namespace:NVM
 SB_ON_RANK_UNKNOWN	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    SB_ON_RANK_UNKNOWN,   \/***< Unknown state. Uh oh. *\/$/;"	e	enum:NVM::SB_ON_RANK_State
+SBcleanupPriority	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^const int SBcleanupPriority = -10;$/;"	m	namespace:NVM
 SBuffer	MemControl/SBuffer/SBuffer.cpp	/^SBuffer::SBuffer()$/;"	f	class:SBuffer
 STANDARDRANK_CLOSED	Ranks/StandardRank/StandardRank.h	/^    STANDARDRANK_CLOSED,    \/***< all banks in the rank are closed (standby) *\/$/;"	e	enum:NVM::StandardRank_State
 STANDARDRANK_OPEN	Ranks/StandardRank/StandardRank.h	/^    STANDARDRANK_OPEN,      \/***< Rank has at least one open bank  *\/$/;"	e	enum:NVM::StandardRank_State
@@ -1697,6 +1751,7 @@ SetConfig	MemControl/MissMap/MissMap.cpp	/^void MissMap::SetConfig( Config *conf
 SetConfig	MemControl/PredictorDRC/PredictorDRC.cpp	/^void PredictorDRC::SetConfig( Config *conf, bool createChildren )$/;"	f	class:PredictorDRC
 SetConfig	MemControl/SBuffer/SBuffer.cpp	/^void SBuffer::SetConfig( Config *conf, bool createChildren )$/;"	f	class:SBuffer
 SetConfig	NVM/nvmain.cpp	/^void NVMain::SetConfig( Config *conf, std::string memoryName, bool createChildren )$/;"	f	class:NVMain
+SetConfig	Ranks/HRank/HRank.cpp	/^void HRank::SetConfig( Config *c, bool createChildren )$/;"	f	class:HRank
 SetConfig	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::SetConfig( Config *c, bool createChildren )$/;"	f	class:SB_ON_RANK
 SetConfig	Ranks/StandardRank/StandardRank.cpp	/^void StandardRank::SetConfig( Config *c, bool createChildren )$/;"	f	class:StandardRank
 SetConfig	Utils/AccessPredictor/VariablePredictor/VariablePredictor.cpp	/^void VariablePredictor::SetConfig( Config *config, bool \/*createChildren*\/ )$/;"	f	class:VariablePredictor
@@ -1719,6 +1774,7 @@ SetConfig	build/MemControl/LO-Cache/LO-Cache.cpp	/^void LO_Cache::SetConfig( Con
 SetConfig	build/MemControl/MissMap/MissMap.cpp	/^void MissMap::SetConfig( Config *conf, bool createChildren )$/;"	f	class:MissMap
 SetConfig	build/MemControl/PredictorDRC/PredictorDRC.cpp	/^void PredictorDRC::SetConfig( Config *conf, bool createChildren )$/;"	f	class:PredictorDRC
 SetConfig	build/NVM/nvmain.cpp	/^void NVMain::SetConfig( Config *conf, std::string memoryName, bool createChildren )$/;"	f	class:NVMain
+SetConfig	build/Ranks/HRank/HRank.cpp	/^void HRank::SetConfig( Config *c, bool createChildren )$/;"	f	class:HRank
 SetConfig	build/Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::SetConfig( Config *c, bool createChildren )$/;"	f	class:SB_ON_RANK
 SetConfig	build/Ranks/StandardRank/StandardRank.cpp	/^void StandardRank::SetConfig( Config *c, bool createChildren )$/;"	f	class:StandardRank
 SetConfig	build/Utils/AccessPredictor/VariablePredictor/VariablePredictor.cpp	/^void VariablePredictor::SetConfig( Config *config, bool \/*createChildren*\/ )$/;"	f	class:VariablePredictor
@@ -1906,6 +1962,7 @@ StatName	src/NVMObject.cpp	/^std::string NVMObject_hook::StatName( )$/;"	f	class
 StatName	src/NVMObject.cpp	/^void NVMObject::StatName( std::string name )$/;"	f	class:NVMObject
 StatName	src/NVMObject.cpp	/^void NVMObject_hook::StatName( std::string name )$/;"	f	class:NVMObject_hook
 StatType	src/Stats.h	/^typedef void * StatType;$/;"	t	namespace:NVM
+Stat_key	My_Data_Analysis.py	/^def Stat_key(key,incre,tracename):$/;"	f
 Stats	build/src/Stats.cpp	/^Stats::Stats( )$/;"	f	class:Stats
 Stats	src/Stats.cpp	/^Stats::Stats( )$/;"	f	class:Stats
 Stats	src/Stats.h	/^class Stats$/;"	c	namespace:NVM
@@ -2010,6 +2067,7 @@ Write	Endurance/ByteModel/ByteModel.cpp	/^ncycles_t ByteModel::Write( NVMainRequ
 Write	Endurance/NullModel/NullModel.cpp	/^ncycles_t NullModel::Write( NVMainRequest* \/*request*\/, NVMDataBlock& \/*oldData*\/ ) $/;"	f	class:NullModel
 Write	Endurance/RowModel/RowModel.cpp	/^ncycles_t RowModel::Write( NVMainRequest *request, NVMDataBlock& \/*oldData*\/ ) $/;"	f	class:RowModel
 Write	Endurance/WordModel/WordModel.cpp	/^ncycles_t WordModel::Write( NVMainRequest *request, NVMDataBlock& \/*oldData*\/ ) $/;"	f	class:WordModel
+Write	Ranks/HRank/HRank.cpp	/^bool HRank::Write( NVMainRequest *request )$/;"	f	class:HRank
 Write	Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::Write( NVMainRequest *request )$/;"	f	class:StandardRank
 Write	Utils/Caches/CacheBank.cpp	/^bool CacheBank::Write( NVMAddress& addr, NVMDataBlock& data )$/;"	f	class:CacheBank
 Write	build/Banks/CachedDDR3Bank/CachedDDR3Bank.cpp	/^bool CachedDDR3Bank::Write( NVMainRequest *request )$/;"	f	class:CachedDDR3Bank
@@ -2020,6 +2078,7 @@ Write	build/Endurance/ByteModel/ByteModel.cpp	/^ncycles_t ByteModel::Write( NVMa
 Write	build/Endurance/NullModel/NullModel.cpp	/^ncycles_t NullModel::Write( NVMainRequest* \/*request*\/, NVMDataBlock& \/*oldData*\/ ) $/;"	f	class:NullModel
 Write	build/Endurance/RowModel/RowModel.cpp	/^ncycles_t RowModel::Write( NVMainRequest *request, NVMDataBlock& \/*oldData*\/ ) $/;"	f	class:RowModel
 Write	build/Endurance/WordModel/WordModel.cpp	/^ncycles_t WordModel::Write( NVMainRequest *request, NVMDataBlock& \/*oldData*\/ ) $/;"	f	class:WordModel
+Write	build/Ranks/HRank/HRank.cpp	/^bool HRank::Write( NVMainRequest *request )$/;"	f	class:HRank
 Write	build/Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::Write( NVMainRequest *request )$/;"	f	class:StandardRank
 Write	build/Utils/Caches/CacheBank.cpp	/^bool CacheBank::Write( NVMAddress& addr, NVMDataBlock& data )$/;"	f	class:CacheBank
 Write	build/src/DataEncoder.cpp	/^ncycle_t DataEncoder::Write( NVMainRequest* \/*request*\/ )$/;"	f	class:DataEncoder
@@ -2065,6 +2124,7 @@ __FRFCFS_H__	MemControl/FRFCFS/FRFCFS.h	35;"	d
 __FRFCFS_WQF_WQF_H__	MemControl/FRFCFS-WQF/FRFCFS-WQF.h	37;"	d
 __GENERICTRACEREADER_H__	traceReader/GenericTraceReader.h	35;"	d
 __GENERICTRACEWRITER_H__	traceWriter/GenericTraceWriter.h	35;"	d
+__HRank_H__	Ranks/HRank/HRank.h	37;"	d
 __INCLUDE_FAIL_REASONS_H__	include/FailReasons.h	35;"	d
 __INCLUDE_NVMTYPES_H__	include/NVMTypes.h	35;"	d
 __INTERCONNECTFACTORY_H__	Interconnect/InterconnectFactory.h	35;"	d
@@ -2140,20 +2200,26 @@ accessCounts	src/SimInterface.h	/^    std::map< uint64_t, unsigned int > accessC
 accessTime	Utils/Caches/CacheBank.h	/^    uint64_t accessTime, stateTimer;$/;"	m	class:NVM::CacheBank
 accuracy	Utils/AccessPredictor/VariablePredictor/VariablePredictor.h	/^    double accuracy;$/;"	m	class:NVM::VariablePredictor
 actWaitAverage	Banks/DDR3Bank/DDR3Bank.h	/^    double actWaitAverage;$/;"	m	class:NVM::DDR3Bank
+actWaitAverage	Ranks/HRank/HRank.h	/^    double actWaitAverage;$/;"	m	class:NVM::HRank
 actWaitAverage	Ranks/StandardRank/StandardRank.h	/^    double actWaitAverage;$/;"	m	class:NVM::StandardRank
 actWaitAverage	src/SubArray.h	/^    double actWaitAverage;$/;"	m	class:NVM::SubArray
 actWaitTotal	Banks/DDR3Bank/DDR3Bank.h	/^    ncounter_t actWaitTotal;$/;"	m	class:NVM::DDR3Bank
+actWaitTotal	Ranks/HRank/HRank.h	/^    ncounter_t actWaitTotal;$/;"	m	class:NVM::HRank
 actWaitTotal	Ranks/StandardRank/StandardRank.h	/^    ncounter_t actWaitTotal;$/;"	m	class:NVM::StandardRank
 actWaitTotal	src/SubArray.h	/^    ncounter_t actWaitTotal;$/;"	m	class:NVM::SubArray
 actWaits	Banks/DDR3Bank/DDR3Bank.h	/^    ncounter_t actWaits;$/;"	m	class:NVM::DDR3Bank
+actWaits	Ranks/HRank/HRank.h	/^    ncounter_t actWaits;$/;"	m	class:NVM::HRank
 actWaits	Ranks/StandardRank/StandardRank.h	/^    ncounter_t actWaits;$/;"	m	class:NVM::StandardRank
 actWaits	src/SubArray.h	/^    ncounter_t actWaits;$/;"	m	class:NVM::SubArray
+activateEnergy	Ranks/HRank/HRank.h	/^    double totalEnergy, backgroundEnergy, activateEnergy, burstEnergy, refreshEnergy;$/;"	m	class:NVM::HRank
 activateEnergy	Ranks/StandardRank/StandardRank.h	/^    double totalEnergy, backgroundEnergy, activateEnergy, burstEnergy, refreshEnergy;$/;"	m	class:NVM::StandardRank
+activatePower	Ranks/HRank/HRank.h	/^    double totalPower, backgroundPower, activatePower, burstPower, refreshPower;$/;"	m	class:NVM::HRank
 activatePower	Ranks/StandardRank/StandardRank.h	/^    double totalPower, backgroundPower, activatePower, burstPower, refreshPower;$/;"	m	class:NVM::StandardRank
 activateQueued	src/MemoryController.h	/^    bool **activateQueued;$/;"	m	class:NVM::MemoryController
 activates	Banks/DDR3Bank/DDR3Bank.h	/^    ncounter_t reads, writes, activates, precharges, refreshes;$/;"	m	class:NVM::DDR3Bank
 activates	src/SubArray.h	/^    ncounter_t reads, writes, activates, precharges, refreshes;$/;"	m	class:NVM::SubArray
 activeCycles	Banks/DDR3Bank/DDR3Bank.h	/^    ncounter_t activeCycles;$/;"	m	class:NVM::DDR3Bank
+activeCycles	Ranks/HRank/HRank.h	/^    ncounter_t activeCycles;$/;"	m	class:NVM::HRank
 activeCycles	Ranks/StandardRank/StandardRank.h	/^    ncounter_t activeCycles;$/;"	m	class:NVM::StandardRank
 activeEnergy	Banks/DDR3Bank/DDR3Bank.h	/^    double activeEnergy;$/;"	m	class:NVM::DDR3Bank
 activeEnergy	src/SubArray.h	/^    double activeEnergy;$/;"	m	class:NVM::SubArray
@@ -2168,6 +2234,7 @@ address	Utils/Caches/CacheBank.h	/^    NVMAddress address;$/;"	m	struct:NVM::Cac
 address	Utils/Caches/CacheBank.h	/^    NVMAddress address;$/;"	m	struct:NVM::CacheRequest
 address	include/NVMainRequest.h	/^    NVMAddress address;            \/\/< Address of request$/;"	m	class:NVM::NVMainRequest
 address	traceReader/TraceLine.h	/^    NVMAddress address;$/;"	m	class:NVM::TraceLine
+all_files	my_histogram.py	/^def all_files(root, patterns="*", single_level=False, yield_folders=False):$/;"	f
 allocationReadsHisto	Banks/CachedDDR3Bank/CachedDDR3Bank.h	/^    std::string allocationReadsHisto;$/;"	m	class:NVM::CachedDDR3Bank
 allocationReadsMap	Banks/CachedDDR3Bank/CachedDDR3Bank.h	/^    std::map<uint64_t, uint64_t> allocationReadsMap; \/\/ Number of reads in an allocation, Count$/;"	m	class:NVM::CachedDDR3Bank
 allocationWritesHisto	Banks/CachedDDR3Bank/CachedDDR3Bank.h	/^    std::string allocationWritesHisto;$/;"	m	class:NVM::CachedDDR3Bank
@@ -2207,10 +2274,13 @@ average_predrain_readqueue_size	MemControl/FRFCFS-WQF/FRFCFS-WQF.h	/^    double 
 average_read_spacing	MemControl/FRFCFS-WQF/FRFCFS-WQF.h	/^    double   average_read_spacing;$/;"	m	class:NVM::FRFCFS_WQF
 average_reads_during_drain	MemControl/FRFCFS-WQF/FRFCFS-WQF.h	/^    double   average_reads_during_drain;$/;"	m	class:NVM::FRFCFS_WQF
 average_writes_per_drain	MemControl/FRFCFS-WQF/FRFCFS-WQF.h	/^    double   average_writes_per_drain;$/;"	m	class:NVM::FRFCFS_WQF
+backgroundEnergy	Ranks/HRank/HRank.h	/^    double totalEnergy, backgroundEnergy, activateEnergy, burstEnergy, refreshEnergy;$/;"	m	class:NVM::HRank
 backgroundEnergy	Ranks/StandardRank/StandardRank.h	/^    double totalEnergy, backgroundEnergy, activateEnergy, burstEnergy, refreshEnergy;$/;"	m	class:NVM::StandardRank
+backgroundPower	Ranks/HRank/HRank.h	/^    double totalPower, backgroundPower, activatePower, burstPower, refreshPower;$/;"	m	class:NVM::HRank
 backgroundPower	Ranks/StandardRank/StandardRank.h	/^    double totalPower, backgroundPower, activatePower, burstPower, refreshPower;$/;"	m	class:NVM::StandardRank
 bandwidth	Banks/DDR3Bank/DDR3Bank.h	/^    double bandwidth;$/;"	m	class:NVM::DDR3Bank
 bank	include/NVMAddress.h	/^    uint64_t bank;$/;"	m	class:NVM::NVMAddress
+bankCount	Ranks/HRank/HRank.h	/^    ncounter_t bankCount;$/;"	m	class:NVM::HRank
 bankCount	Ranks/StandardRank/StandardRank.h	/^    ncounter_t bankCount;$/;"	m	class:NVM::StandardRank
 bankEnergy	Banks/DDR3Bank/DDR3Bank.h	/^    double bankEnergy;$/;"	m	class:NVM::DDR3Bank
 bankId	Banks/DDR3Bank/DDR3Bank.h	/^    ncounter_t bankId;$/;"	m	class:NVM::DDR3Bank
@@ -2223,6 +2293,7 @@ bank_bit_0	Simulators/gem5/NVMainControl.py	/^    bank_bit_0 = Param.Int(8, "");
 bank_busy_time	Simulators/gem5/NVMainControl.py	/^    bank_busy_time = Param.Int(11, "");$/;"	v	class:NVMMemoryControl
 bank_queue_size	Simulators/gem5/NVMainControl.py	/^    bank_queue_size = Param.Int(12, "");$/;"	v	class:NVMMemoryControl
 banks	MemControl/LO-Cache/LO-Cache.h	/^    ncounter_t ranks, banks;$/;"	m	class:NVM::LO_Cache
+banksPerRefresh	Ranks/HRank/HRank.h	/^    ncounter_t banksPerRefresh;$/;"	m	class:NVM::HRank
 banksPerRefresh	Ranks/StandardRank/StandardRank.h	/^    ncounter_t banksPerRefresh;$/;"	m	class:NVM::StandardRank
 banks_per_rank	Simulators/gem5/NVMainControl.py	/^    banks_per_rank = Param.Int(8, "");$/;"	v	class:NVMMemoryControl
 basic_bus_busy_time	Simulators/gem5/NVMainControl.py	/^    basic_bus_busy_time = Param.Int(2, "");$/;"	v	class:NVMMemoryControl
@@ -2236,12 +2307,15 @@ bufferedReads	Utils/CoinMigrator/CoinMigrator.h	/^    ncounter_t bufferedReads;$
 bulkCmd	include/NVMainRequest.h	/^    BulkCommand bulkCmd;           \/\/< Bulk Commands (i.e., Read+Precharge, Write+Precharge, etc)$/;"	m	class:NVM::NVMainRequest
 burstCount	include/NVMainRequest.h	/^    ncounter_t burstCount;         \/\/< Number of bursts (used for variable-size requests.$/;"	m	class:NVM::NVMainRequest
 burstEnergy	Banks/DDR3Bank/DDR3Bank.h	/^    double burstEnergy;$/;"	m	class:NVM::DDR3Bank
+burstEnergy	Ranks/HRank/HRank.h	/^    double totalEnergy, backgroundEnergy, activateEnergy, burstEnergy, refreshEnergy;$/;"	m	class:NVM::HRank
 burstEnergy	Ranks/StandardRank/StandardRank.h	/^    double totalEnergy, backgroundEnergy, activateEnergy, burstEnergy, refreshEnergy;$/;"	m	class:NVM::StandardRank
 burstEnergy	src/SubArray.h	/^    double burstEnergy;$/;"	m	class:NVM::SubArray
 burstLength	src/AddressTranslator.h	/^    int burstLength;$/;"	m	class:NVM::AddressTranslator
 burstPower	Banks/DDR3Bank/DDR3Bank.h	/^    double burstPower;$/;"	m	class:NVM::DDR3Bank
+burstPower	Ranks/HRank/HRank.h	/^    double totalPower, backgroundPower, activatePower, burstPower, refreshPower;$/;"	m	class:NVM::HRank
 burstPower	Ranks/StandardRank/StandardRank.h	/^    double totalPower, backgroundPower, activatePower, burstPower, refreshPower;$/;"	m	class:NVM::StandardRank
 busBurstLength	Utils/Visualizer/Visualizer.h	/^    ncycle_t busBurstLength;$/;"	m	class:NVM::Visualizer
+busWidth	Ranks/HRank/HRank.h	/^    ncounter_t busWidth;$/;"	m	class:NVM::HRank
 busWidth	Ranks/StandardRank/StandardRank.h	/^    ncounter_t busWidth;$/;"	m	class:NVM::StandardRank
 busWidth	src/AddressTranslator.h	/^    int busWidth;$/;"	m	class:NVM::AddressTranslator
 cacheEntry	Utils/Caches/CacheBank.h	/^    CacheEntry **cacheEntry;$/;"	m	class:NVM::CacheBank
@@ -2280,6 +2354,7 @@ common_interval	Scripts/StatsParser.py	/^common_interval = 9999999$/;"	v
 completionCycle	include/NVMainRequest.h	/^    ncycle_t completionCycle;      \/\/< When the request was sent back to the requestor$/;"	m	class:NVM::NVMainRequest
 conf	Interconnect/OffChipBus/OffChipBus.h	/^    Config *conf;$/;"	m	class:NVM::OffChipBus
 conf	Interconnect/OnChipBus/OnChipBus.h	/^    Config *conf;$/;"	m	class:NVM::OnChipBus
+conf	Ranks/HRank/HRank.h	/^    Config *conf;$/;"	m	class:NVM::HRank
 conf	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    Config *conf;$/;"	m	class:NVM::SB_ON_RANK
 conf	Ranks/StandardRank/StandardRank.h	/^    Config *conf;$/;"	m	class:NVM::StandardRank
 conf	src/SimInterface.h	/^    Config *conf;$/;"	m	class:NVM::SimInterface
@@ -2316,6 +2391,7 @@ cycle	traceReader/TraceLine.h	/^    ncycle_t cycle;$/;"	m	class:NVM::TraceLine
 data	Utils/Caches/CacheBank.h	/^    NVMDataBlock data;$/;"	m	struct:NVM::CacheEntry
 data	Utils/Caches/CacheBank.h	/^    NVMDataBlock data;$/;"	m	struct:NVM::CacheRequest
 data	include/NVMainRequest.h	/^    NVMDataBlock data;             \/\/< Data to be written, or data that would be read$/;"	m	class:NVM::NVMainRequest
+data	my_histogram.py	/^data=[]$/;"	v
 data	src/EventQueue.h	/^    void *data;                  \/* Generic data to pass to callback. *\/$/;"	m	class:NVM::Event
 data	traceReader/TraceLine.h	/^    NVMDataBlock data;$/;"	m	class:NVM::TraceLine
 dataCycles	Banks/DDR3Bank/DDR3Bank.h	/^    ncounter_t dataCycles;$/;"	m	class:NVM::DDR3Bank
@@ -2333,13 +2409,16 @@ decodeFunc	Utils/Caches/CacheBank.h	/^    CacheSetDecoder decodeFunc;$/;"	m	clas
 decoder	src/NVMObject.h	/^    AddressTranslator *decoder;$/;"	m	class:NVM::NVMObject
 defaultField	src/AddressTranslator.h	/^    TranslationField defaultField;$/;"	m	class:NVM::AddressTranslator
 delayedRefreshCounter	src/MemoryController.h	/^    ncounter_t **delayedRefreshCounter; $/;"	m	class:NVM::MemoryController
+delete_last_line	My_Data_Analysis.py	/^def delete_last_line(fname):$/;"	f
 delta	Prefetchers/STeMS/STeMS.h	/^    uint64_t delta[16];$/;"	m	struct:NVM::PatternSequence
 demoBuffered	Utils/CoinMigrator/CoinMigrator.h	/^    bool promoBuffered, demoBuffered; $/;"	m	class:NVM::CoinMigrator
 demoRequest	Utils/CoinMigrator/CoinMigrator.h	/^    NVMainRequest *demoRequest;$/;"	m	class:NVM::CoinMigrator
 demotee	Utils/CoinMigrator/CoinMigrator.h	/^    NVMAddress demotee, promotee; $/;"	m	class:NVM::CoinMigrator
 dequeue	Simulators/gem5/NVMainControl.cc	/^NVMainControl::dequeue()$/;"	f	class:NVMainControl
 detectDeadlocks	Utils/RequestTracer/RequestTracer.h	/^    bool detectDeadlocks;$/;"	m	class:NVM::RequestTracer
+deviceCount	Ranks/HRank/HRank.h	/^    ncounter_t deviceCount;$/;"	m	class:NVM::HRank
 deviceCount	Ranks/StandardRank/StandardRank.h	/^    ncounter_t deviceCount;$/;"	m	class:NVM::StandardRank
+deviceWidth	Ranks/HRank/HRank.h	/^    ncounter_t deviceWidth;$/;"	m	class:NVM::HRank
 deviceWidth	Ranks/StandardRank/StandardRank.h	/^    ncounter_t deviceWidth;$/;"	m	class:NVM::StandardRank
 deviceWidth	traceWriter/DRAMPower2Trace/DRAMPower2TraceWriter.h	/^    ncounter_t deviceWidth;$/;"	m	class:NVM::DRAMPower2TraceWriter
 deviceWidth	traceWriter/VerilogTrace/VerilogTraceWriter.h	/^    ncounter_t deviceWidth;$/;"	m	class:NVM::VerilogTraceWriter
@@ -2389,11 +2468,16 @@ expectedrc	Tests/Regressions.py	/^            expectedrc = testdata["tests"][idx
 faillog	Tests/Regressions.py	/^        faillog = testdata["tests"][idx]["name"] + ".out"$/;"	v
 falsePredictions	Utils/AccessPredictor/VariablePredictor/VariablePredictor.h	/^    ncounter_t truePredictions, falsePredictions;$/;"	m	class:NVM::VariablePredictor
 fastExitActiveCycles	Banks/DDR3Bank/DDR3Bank.h	/^    ncounter_t fastExitActiveCycles;$/;"	m	class:NVM::DDR3Bank
+fastExitActiveCycles	Ranks/HRank/HRank.h	/^    ncounter_t fastExitActiveCycles;$/;"	m	class:NVM::HRank
 fastExitActiveCycles	Ranks/StandardRank/StandardRank.h	/^    ncounter_t fastExitActiveCycles;$/;"	m	class:NVM::StandardRank
 fastExitPrechargeCycles	Banks/DDR3Bank/DDR3Bank.h	/^    ncounter_t fastExitPrechargeCycles;$/;"	m	class:NVM::DDR3Bank
+fastExitPrechargeCycles	Ranks/HRank/HRank.h	/^    ncounter_t fastExitPrechargeCycles;$/;"	m	class:NVM::HRank
 fastExitPrechargeCycles	Ranks/StandardRank/StandardRank.h	/^    ncounter_t fastExitPrechargeCycles;$/;"	m	class:NVM::StandardRank
+fawWaitAverage	Ranks/HRank/HRank.h	/^    double fawWaitAverage;$/;"	m	class:NVM::HRank
 fawWaitAverage	Ranks/StandardRank/StandardRank.h	/^    double fawWaitAverage;$/;"	m	class:NVM::StandardRank
+fawWaitTotal	Ranks/HRank/HRank.h	/^    ncounter_t fawWaitTotal;$/;"	m	class:NVM::HRank
 fawWaitTotal	Ranks/StandardRank/StandardRank.h	/^    ncounter_t fawWaitTotal;$/;"	m	class:NVM::StandardRank
+fawWaits	Ranks/HRank/HRank.h	/^    ncounter_t fawWaits;$/;"	m	class:NVM::HRank
 fawWaits	Ranks/StandardRank/StandardRank.h	/^    ncounter_t fawWaits;$/;"	m	class:NVM::StandardRank
 fetched	Prefetchers/STeMS/STeMS.h	/^    bool fetched[16];$/;"	m	struct:NVM::PatternSequence
 fileName	src/Config.h	/^    std::string fileName;$/;"	m	class:NVM::Config
@@ -2455,6 +2539,7 @@ idleTimer	Banks/DDR3Bank/DDR3Bank.h	/^    ncounter_t idleTimer;$/;"	m	class:NVM:
 idleTimer	src/SubArray.h	/^    ncounter_t idleTimer;$/;"	m	class:NVM::SubArray
 ignoreBits	Decoders/DRCDecoder/DRCDecoder.h	/^    uint64_t ignoreBits;$/;"	m	class:NVM::DRCDecoder
 inRDBCount	Banks/CachedDDR3Bank/CachedDDR3Bank.h	/^    ncounter_t inRDBCount;$/;"	m	class:NVM::CachedDDR3Bank
+increment	My_Data_Analysis.py	/^increment = int(sys.argv[2])$/;"	v
 index	Scripts/StatsParser.py	/^        index = index + 1$/;"	v
 index	Scripts/StatsParser.py	/^    index = 0$/;"	v
 index	Scripts/StatsParser.py	/^    index = index + 1$/;"	v
@@ -2477,7 +2562,9 @@ item_index	Scripts/StatsParser.py	/^            item_index = 0$/;"	v
 item_index	Scripts/StatsParser.py	/^            item_index = item_index + 1$/;"	v
 item_index	Scripts/StatsParser.py	/^        item_index = 0$/;"	v
 json_data	Tests/Regressions.py	/^json_data = open('Tests.json')$/;"	v
+key_name	My_Data_Analysis.py	/^key_name = sys.argv[1]$/;"	v
 lastActivate	Banks/DDR3Bank/DDR3Bank.h	/^    ncycle_t lastActivate;$/;"	m	class:NVM::DDR3Bank
+lastActivate	Ranks/HRank/HRank.h	/^    ncycle_t* lastActivate;$/;"	m	class:NVM::HRank
 lastActivate	Ranks/StandardRank/StandardRank.h	/^    ncycle_t* lastActivate;$/;"	m	class:NVM::StandardRank
 lastActivate	src/SubArray.h	/^    ncycle_t lastActivate;$/;"	m	class:NVM::SubArray
 lastCommand	traceWriter/DRAMPower2Trace/DRAMPower2TraceWriter.h	/^    ncycle_t lastCommand;$/;"	m	class:NVM::DRAMPower2TraceWriter
@@ -2487,10 +2574,12 @@ lastEventCycle	src/EventQueue.h	/^    ncycle_t lastEventCycle;$/;"	m	class:NVM::
 lastIssueCycle	src/MemoryController.h	/^    ncycle_t lastIssueCycle;$/;"	m	class:NVM::MemoryController
 lastOperation	Banks/DDR3Bank/DDR3Bank.h	/^    NVMainRequest lastOperation;$/;"	m	class:NVM::DDR3Bank
 lastOperation	src/SubArray.h	/^    NVMainRequest lastOperation;$/;"	m	class:NVM::SubArray
+lastReset	Ranks/HRank/HRank.h	/^    ncycle_t lastReset;$/;"	m	class:NVM::HRank
 lastReset	Ranks/StandardRank/StandardRank.h	/^    ncycle_t lastReset;$/;"	m	class:NVM::StandardRank
 lastWakeup	Simulators/gem5/nvmain_mem.hh	/^    Tick lastWakeup;$/;"	m	class:NVMainMemory
 lat	Simulators/gem5/nvmain_mem.hh	/^    Tick lat;$/;"	m	class:NVMainMemory
 lat_var	Simulators/gem5/nvmain_mem.hh	/^    Tick lat_var;$/;"	m	class:NVMainMemory
+length	My_Data_Analysis.py	/^length = len(sys.argv)$/;"	v
 life	src/EnduranceModel.h	/^    std::map<uint64_t, uint64_t> life;$/;"	m	class:NVM::EnduranceModel
 lineLength	Utils/Visualizer/Visualizer.h	/^    ncounter_t lineLength;$/;"	m	class:NVM::Visualizer
 locks	MemControl/LH-Cache/LH-Cache.h	/^    BankLocked locks;$/;"	m	class:NVM::LH_Cache
@@ -2624,6 +2713,7 @@ minimum_drain_writes	MemControl/FRFCFS-WQF/FRFCFS-WQF.h	/^    uint64_t minimum_d
 minimum_predrain_readqueue_size	MemControl/FRFCFS-WQF/FRFCFS-WQF.h	/^    uint64_t minimum_predrain_readqueue_size;$/;"	m	class:NVM::FRFCFS_WQF
 minimum_read_spacing	MemControl/FRFCFS-WQF/FRFCFS-WQF.h	/^    uint64_t minimum_read_spacing;$/;"	m	class:NVM::FRFCFS_WQF
 minimum_reads_during_drain	MemControl/FRFCFS-WQF/FRFCFS-WQF.h	/^    uint64_t minimum_reads_during_drain;$/;"	m	class:NVM::FRFCFS_WQF
+minus_two_consecutive_line	My_Data_Analysis.py	/^def minus_two_consecutive_line(fname):$/;"	f
 missChildId	Utils/AccessPredictor/AccessPredictor.h	/^    ncounter_t hitChildId, missChildId;$/;"	m	class:NVM::AccessPredictor
 missMap	MemControl/MissMap/MissMap.h	/^    CacheBank *missMap;$/;"	m	class:NVM::MissMap
 missMapAllocations	MemControl/MissMap/MissMap.h	/^    uint64_t missMapAllocations, missMapWrites;$/;"	m	class:NVM::MissMap
@@ -2642,6 +2732,7 @@ mlog2	include/NVMHelpers.cpp	/^int mlog2( int num )$/;"	f	namespace:NVM
 mm_reads	MemControl/LH-Cache/LH-Cache.h	/^    uint64_t mm_reqs, mm_reads, fills;$/;"	m	class:NVM::LH_Cache
 mm_reqs	MemControl/LH-Cache/LH-Cache.h	/^    uint64_t mm_reqs, mm_reads, fills;$/;"	m	class:NVM::LH_Cache
 moduleName	Utils/RequestTracer/RequestTracer.h	/^        std::string moduleName;$/;"	m	class:NVM::RequestTracer::TracedRequest
+mu	my_histogram.py	/^mu = 100 # mean of distribution$/;"	v
 nWP00	src/Params.h	/^    ncycle_t nWP00;$/;"	m	class:NVM::Params
 nWP01	src/Params.h	/^    ncycle_t nWP01;$/;"	m	class:NVM::Params
 nWP10	src/Params.h	/^    ncycle_t nWP10;$/;"	m	class:NVM::Params
@@ -2653,6 +2744,7 @@ ncycle_t	include/NVMTypes.h	/^typedef uint64_t  ncycle_t;$/;"	t	namespace:NVM
 ncycles_t	include/NVMTypes.h	/^typedef int64_t   ncycles_t;$/;"	t	namespace:NVM
 next	Utils/RequestTracer/RequestTracer.h	/^        TracedRequest *next;$/;"	m	class:NVM::RequestTracer::TracedRequest
 nextActivate	Banks/DDR3Bank/DDR3Bank.h	/^    ncycle_t nextActivate;$/;"	m	class:NVM::DDR3Bank
+nextActivate	Ranks/HRank/HRank.h	/^    ncycle_t nextActivate;$/;"	m	class:NVM::HRank
 nextActivate	Ranks/StandardRank/StandardRank.h	/^    ncycle_t nextActivate;$/;"	m	class:NVM::StandardRank
 nextActivate	src/SubArray.h	/^    ncycle_t nextActivate;$/;"	m	class:NVM::SubArray
 nextActivatePreWrite	src/SubArray.h	/^    ncycle_t nextActivatePreWrite;$/;"	m	class:NVM::SubArray
@@ -2667,10 +2759,12 @@ nextPowerDownDone	Banks/DDR3Bank/DDR3Bank.h	/^    ncycle_t nextPowerDownDone;$/;
 nextPowerDownPreWrite	src/SubArray.h	/^    ncycle_t nextPowerDownPreWrite;$/;"	m	class:NVM::SubArray
 nextPowerUp	Banks/DDR3Bank/DDR3Bank.h	/^    ncycle_t nextPowerUp;$/;"	m	class:NVM::DDR3Bank
 nextPrecharge	Banks/DDR3Bank/DDR3Bank.h	/^    ncycle_t nextPrecharge;$/;"	m	class:NVM::DDR3Bank
+nextPrecharge	Ranks/HRank/HRank.h	/^    ncycle_t nextPrecharge;$/;"	m	class:NVM::HRank
 nextPrecharge	Ranks/StandardRank/StandardRank.h	/^    ncycle_t nextPrecharge;$/;"	m	class:NVM::StandardRank
 nextPrecharge	src/SubArray.h	/^    ncycle_t nextPrecharge;$/;"	m	class:NVM::SubArray
 nextPrechargePreWrite	src/SubArray.h	/^    ncycle_t nextPrechargePreWrite;$/;"	m	class:NVM::SubArray
 nextRead	Banks/DDR3Bank/DDR3Bank.h	/^    ncycle_t nextRead;$/;"	m	class:NVM::DDR3Bank
+nextRead	Ranks/HRank/HRank.h	/^    ncycle_t nextRead;$/;"	m	class:NVM::HRank
 nextRead	Ranks/StandardRank/StandardRank.h	/^    ncycle_t nextRead;$/;"	m	class:NVM::StandardRank
 nextRead	src/SubArray.h	/^    ncycle_t nextRead;$/;"	m	class:NVM::SubArray
 nextReadPreWrite	src/SubArray.h	/^    ncycle_t nextReadPreWrite;$/;"	m	class:NVM::SubArray
@@ -2680,6 +2774,7 @@ nextRefreshDone	Banks/DDR3Bank/DDR3Bank.h	/^    ncycle_t nextRefreshDone;$/;"	m	
 nextRefreshRank	src/MemoryController.h	/^    ncounter_t nextRefreshRank, nextRefreshBank; $/;"	m	class:NVM::MemoryController
 nextTag	src/TagGenerator.h	/^    int nextTag;$/;"	m	class:NVM::TagGenerator
 nextWrite	Banks/DDR3Bank/DDR3Bank.h	/^    ncycle_t nextWrite;$/;"	m	class:NVM::DDR3Bank
+nextWrite	Ranks/HRank/HRank.h	/^    ncycle_t nextWrite;$/;"	m	class:NVM::HRank
 nextWrite	Ranks/StandardRank/StandardRank.h	/^    ncycle_t nextWrite;$/;"	m	class:NVM::StandardRank
 nextWrite	src/SubArray.h	/^    ncycle_t nextWrite;$/;"	m	class:NVM::SubArray
 nextWritePreWrite	src/SubArray.h	/^    ncycle_t nextWritePreWrite;$/;"	m	class:NVM::SubArray
@@ -2707,6 +2802,7 @@ numRanks	Utils/PostTrace/PostTrace.h	/^    ncounter_t numRanks, numBanks, numCha
 numRanks	Utils/Visualizer/Visualizer.h	/^    ncounter_t numRanks, numBanks;$/;"	m	class:NVM::Visualizer
 numSets	Utils/Caches/CacheBank.h	/^    uint64_t numSets, numAssoc, cachelineSize;$/;"	m	class:NVM::CacheBank
 numSubarrays	Decoders/Migrator/Migrator.h	/^    uint64_t numChannels, numBanks, numRanks, numSubarrays;$/;"	m	class:NVM::Migrator
+num_bins	my_histogram.py	/^num_bins = 100$/;"	v
 nvmainDebugInhibitor	src/Debug.h	/^static nullstream nvmainDebugInhibitor;$/;"	m	namespace:NVM
 nvmainPtr	Simulators/gem5/NVMainControl.hh	/^        NVM::NVMain *nvmainPtr;$/;"	m	class:NVMainControl::NVMainStatPrinter
 nvmainPtr	Simulators/gem5/NVMainControl.hh	/^        NVM::NVMain *nvmainPtr;$/;"	m	class:NVMainControl::NVMainStatReseter
@@ -2769,6 +2865,8 @@ perRank	traceWriter/GenericTraceWriter.h	/^    bool perRank;$/;"	m	class:NVM::Ge
 perfectFills	MemControl/LO-Cache/LO-Cache.h	/^    bool perfectFills;$/;"	m	class:NVM::LO_Cache
 pfTrigger	include/NVMainRequest.h	/^    NVMAddress pfTrigger;          \/\/< Address that triggered this prefetch$/;"	m	class:NVM::NVMainRequest
 physicalAddress	include/NVMAddress.h	/^    uint64_t physicalAddress;$/;"	m	class:NVM::NVMAddress
+plot	My_Data_Analysis.py	/^def plot(stat_file_name):$/;"	f
+plot_bar	My_Data_Analysis.py	/^def plot_bar(stat_file_name):$/;"	f
 port	Simulators/gem5/NVMainMemory.py	/^    port = SlavePort("Slave ports")$/;"	v	class:NVMainMemory
 port	Simulators/gem5/nvmain_mem.hh	/^    MemoryPort port;$/;"	m	class:NVMainMemory
 powerCycles	Banks/DDR3Bank/DDR3Bank.h	/^    ncounter_t powerCycles;$/;"	m	class:NVM::DDR3Bank
@@ -2801,6 +2899,7 @@ promotee	Utils/CoinMigrator/CoinMigrator.h	/^    NVMAddress demotee, promotee; $
 promotionChannel	Utils/CoinMigrator/CoinMigrator.h	/^    ncounter_t promotionChannel;$/;"	m	class:NVM::CoinMigrator
 promotionChannelParams	Utils/CoinMigrator/CoinMigrator.h	/^    Params *promotionChannelParams;$/;"	m	class:NVM::CoinMigrator
 psInterval	MemControl/LH-Cache/LH-Cache.h	/^    uint64_t psInterval;$/;"	m	class:NVM::LH_Cache
+psInterval	Ranks/HRank/HRank.h	/^    uint64_t psInterval;$/;"	m	class:NVM::HRank
 psInterval	Ranks/StandardRank/StandardRank.h	/^    uint64_t psInterval;$/;"	m	class:NVM::StandardRank
 psInterval	src/MemoryController.h	/^    ncounter_t psInterval;$/;"	m	class:NVM::MemoryController
 psInterval	src/Stats.h	/^    ncounter_t psInterval;$/;"	m	class:NVM::Stats
@@ -2819,6 +2918,7 @@ ranks	Interconnect/OnChipBus/OnChipBus.h	/^    Rank **ranks;$/;"	m	class:NVM::On
 ranks	MemControl/LO-Cache/LO-Cache.h	/^    ncounter_t ranks, banks;$/;"	m	class:NVM::LO_Cache
 ranks_per_dimm	Simulators/gem5/NVMainControl.py	/^    ranks_per_dimm = Param.Int(2, "");$/;"	v	class:NVMMemoryControl
 rawData	include/NVMDataBlock.h	/^    uint8_t *rawData;$/;"	m	class:NVM::NVMDataBlock
+rawNum	Ranks/HRank/HRank.h	/^    ncounter_t rawNum;$/;"	m	class:NVM::HRank
 rawNum	Ranks/StandardRank/StandardRank.h	/^    ncounter_t rawNum;$/;"	m	class:NVM::StandardRank
 rb_hits	MemControl/FCFS/FCFS.h	/^    uint64_t rb_hits;$/;"	m	class:NVM::FCFS
 rb_hits	MemControl/FRFCFS/FRFCFS.h	/^    uint64_t rb_hits;$/;"	m	class:NVM::FRFCFS
@@ -2837,6 +2937,7 @@ readVersion	traceReader/NVMainTrace/NVMainTraceReader.h	/^    bool readVersion;$
 read_write_delay	Simulators/gem5/NVMainControl.py	/^    read_write_delay = Param.Int(2, "");$/;"	v	class:NVMMemoryControl
 reads	Banks/CachedDDR3Bank/CachedDDR3Bank.h	/^    ncounter_t reads;$/;"	m	struct:NVM::CachedRowBuffer
 reads	Banks/DDR3Bank/DDR3Bank.h	/^    ncounter_t reads, writes, activates, precharges, refreshes;$/;"	m	class:NVM::DDR3Bank
+reads	Ranks/HRank/HRank.h	/^    ncounter_t reads, writes;$/;"	m	class:NVM::HRank
 reads	Ranks/StandardRank/StandardRank.h	/^    ncounter_t reads, writes;$/;"	m	class:NVM::StandardRank
 reads	src/SubArray.h	/^    ncounter_t reads, writes, activates, precharges, refreshes;$/;"	m	class:NVM::SubArray
 reason	include/FailReasons.h	/^    FailReasons reason;$/;"	m	class:NVM::FailReason
@@ -2847,9 +2948,11 @@ recvRetry	Simulators/gem5/nvmain_mem.cc	/^void NVMainMemory::MemoryPort::recvRet
 recvRetry	Simulators/gem5/nvmain_mem.cc	/^void NVMainMemory::recvRetry( )$/;"	f	class:NVMainMemory
 recvTimingReq	Simulators/gem5/nvmain_mem.cc	/^NVMainMemory::MemoryPort::recvTimingReq(PacketPtr pkt)$/;"	f	class:NVMainMemory::MemoryPort
 refreshEnergy	Banks/DDR3Bank/DDR3Bank.h	/^    double refreshEnergy;$/;"	m	class:NVM::DDR3Bank
+refreshEnergy	Ranks/HRank/HRank.h	/^    double totalEnergy, backgroundEnergy, activateEnergy, burstEnergy, refreshEnergy;$/;"	m	class:NVM::HRank
 refreshEnergy	Ranks/StandardRank/StandardRank.h	/^    double totalEnergy, backgroundEnergy, activateEnergy, burstEnergy, refreshEnergy;$/;"	m	class:NVM::StandardRank
 refreshEnergy	src/SubArray.h	/^    double refreshEnergy;$/;"	m	class:NVM::SubArray
 refreshPower	Banks/DDR3Bank/DDR3Bank.h	/^    double refreshPower;$/;"	m	class:NVM::DDR3Bank
+refreshPower	Ranks/HRank/HRank.h	/^    double totalPower, backgroundPower, activatePower, burstPower, refreshPower;$/;"	m	class:NVM::HRank
 refreshPower	Ranks/StandardRank/StandardRank.h	/^    double totalPower, backgroundPower, activatePower, burstPower, refreshPower;$/;"	m	class:NVM::StandardRank
 refreshPriority	src/MemoryController.h	/^const int refreshPriority = 20;$/;"	m	namespace:NVM
 refreshQueued	src/MemoryController.h	/^    bool **refreshQueued;$/;"	m	class:NVM::MemoryController
@@ -2872,10 +2975,14 @@ retryWrite	Simulators/gem5/nvmain_mem.hh	/^    bool retryRead, retryWrite, retry
 row	include/NVMAddress.h	/^    uint64_t row;$/;"	m	class:NVM::NVMAddress
 rowBufferCount	Banks/CachedDDR3Bank/CachedDDR3Bank.h	/^    ncounter_t rowBufferCount;$/;"	m	class:NVM::CachedDDR3Bank
 rowBufferSize	Banks/CachedDDR3Bank/CachedDDR3Bank.h	/^    ncounter_t rowBufferSize;$/;"	m	class:NVM::CachedDDR3Bank
+row_access_counter	src/SubArray.h	/^    ncounter_t *row_access_counter;$/;"	m	class:NVM::SubArray
 rq_rb_hits	MemControl/FRFCFS-WQF/FRFCFS-WQF.h	/^    uint64_t rq_rb_hits;$/;"	m	class:NVM::FRFCFS_WQF
 rq_rb_miss	MemControl/FRFCFS-WQF/FRFCFS-WQF.h	/^    uint64_t rq_rb_miss;$/;"	m	class:NVM::FRFCFS_WQF
+rrdWaitAverage	Ranks/HRank/HRank.h	/^    double rrdWaitAverage;$/;"	m	class:NVM::HRank
 rrdWaitAverage	Ranks/StandardRank/StandardRank.h	/^    double rrdWaitAverage;$/;"	m	class:NVM::StandardRank
+rrdWaitTotal	Ranks/HRank/HRank.h	/^    ncounter_t rrdWaitTotal;$/;"	m	class:NVM::HRank
 rrdWaitTotal	Ranks/StandardRank/StandardRank.h	/^    ncounter_t rrdWaitTotal;$/;"	m	class:NVM::StandardRank
+rrdWaits	Ranks/HRank/HRank.h	/^    ncounter_t rrdWaits;$/;"	m	class:NVM::HRank
 rrdWaits	Ranks/StandardRank/StandardRank.h	/^    ncounter_t rrdWaits;$/;"	m	class:NVM::StandardRank
 s	Scripts/StatsParser.py	/^    s = 'Finding max interval in file ' + f$/;"	v
 s	Scripts/StatsParser.py	/^    s = 'i' + str(dump_interval[index]) + '.' + line.strip()$/;"	v
@@ -2888,6 +2995,7 @@ serialize	Simulators/gem5/NVMainControl.cc	/^NVMainControl::serialize(std::ostre
 serialize	Simulators/gem5/nvmain_mem.cc	/^void NVMainMemory::serialize(std::ostream& os)$/;"	f	class:NVMainMemory
 setConsumer	Simulators/gem5/NVMainControl.cc	/^NVMainControl::setConsumer(Consumer* consumer_ptr)$/;"	f	class:NVMainControl
 setDescription	Simulators/gem5/NVMainControl.hh	/^    void setDescription(const std::string& name) { m_description = name; };$/;"	f	class:NVMainControl
+sigma	my_histogram.py	/^sigma = 15 # standard deviation of distribution$/;"	v
 simInterface	NVM/nvmain.h	/^    SimInterface *simInterface;$/;"	m	class:NVM::NVMain
 simInterface	build/NVM/nvmain.h	/^    SimInterface *simInterface;$/;"	m	class:NVM::NVMain
 simPtr	src/Config.h	/^    SimInterface *simPtr;$/;"	m	class:NVM::Config
@@ -2896,11 +3004,13 @@ size	Prefetchers/STeMS/STeMS.h	/^    uint64_t size;$/;"	m	struct:NVM::PatternSeq
 size	include/NVMDataBlock.h	/^    uint64_t size;$/;"	m	class:NVM::NVMDataBlock
 slist	Scripts/StatsParser.py	/^    slist = open(options.m5stats, 'r')$/;"	v
 slist	Scripts/StatsParser.py	/^slist = open(options.stats, 'r')$/;"	v
+slowExitCycles	Ranks/HRank/HRank.h	/^    ncounter_t slowExitCycles;$/;"	m	class:NVM::HRank
 slowExitCycles	Ranks/StandardRank/StandardRank.h	/^    ncounter_t slowExitCycles;$/;"	m	class:NVM::StandardRank
 slowExitPrechargeCycles	Banks/DDR3Bank/DDR3Bank.h	/^    ncounter_t slowExitPrechargeCycles;$/;"	m	class:NVM::DDR3Bank
 split_line	Scripts/StatsParser.py	/^                    split_line = line.split('#')$/;"	v
 split_string	Scripts/StatsParser.py	/^                    split_string = split_line[0]$/;"	v
 standbyCycles	Banks/DDR3Bank/DDR3Bank.h	/^    ncounter_t standbyCycles;$/;"	m	class:NVM::DDR3Bank
+standbyCycles	Ranks/HRank/HRank.h	/^    ncounter_t standbyCycles;$/;"	m	class:NVM::HRank
 standbyCycles	Ranks/StandardRank/StandardRank.h	/^    ncounter_t standbyCycles;$/;"	m	class:NVM::StandardRank
 startCycle	Utils/Visualizer/Visualizer.h	/^    ncycle_t startCycle, endCycle, endCycle2;$/;"	m	class:NVM::Visualizer
 startedPrefetch	Prefetchers/STeMS/STeMS.h	/^    bool startedPrefetch;$/;"	m	struct:NVM::PatternSequence
@@ -2923,9 +3033,11 @@ statStream	Simulators/gem5/NVMainControl.hh	/^        std::ofstream statStream;$
 statStream	Simulators/gem5/nvmain_mem.hh	/^        std::ofstream statStream;$/;"	m	class:NVMainMemory::NVMainStatPrinter
 statType	src/Stats.h	/^    std::string name, statType, units;$/;"	m	class:NVM::StatBase
 state	Banks/DDR3Bank/DDR3Bank.h	/^    DDR3BankState state;$/;"	m	class:NVM::DDR3Bank
+state	Ranks/HRank/HRank.h	/^    HRank_State state;$/;"	m	class:NVM::HRank
 state	Ranks/StandardRank/StandardRank.h	/^    StandardRank_State state;$/;"	m	class:NVM::StandardRank
 state	Utils/Caches/CacheBank.h	/^    CacheState state;$/;"	m	class:NVM::CacheBank
 state	src/SubArray.h	/^    SubArrayState state;$/;"	m	class:NVM::SubArray
+stateTimeout	Ranks/HRank/HRank.h	/^    ncounter_t stateTimeout;$/;"	m	class:NVM::HRank
 stateTimeout	Ranks/StandardRank/StandardRank.h	/^    ncounter_t stateTimeout;$/;"	m	class:NVM::StandardRank
 stateTimer	Utils/Caches/CacheBank.h	/^    uint64_t accessTime, stateTimer;$/;"	m	class:NVM::CacheBank
 stats	src/AddressTranslator.h	/^    Stats *stats;$/;"	m	class:NVM::AddressTranslator
@@ -2942,6 +3054,7 @@ successfulPrefetches	build/NVM/nvmain.h	/^    ncounter_t successfulPrefetches;$/
 syncValue	Interconnect/OffChipBus/OffChipBus.h	/^    double syncValue;$/;"	m	class:NVM::OffChipBus
 syncValue	Interconnect/OnChipBus/OnChipBus.h	/^    double syncValue;$/;"	m	class:NVM::OnChipBus
 syncValue	NVM/nvmain.h	/^    double syncValue;$/;"	m	class:NVM::NVMain
+syncValue	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    double syncValue;$/;"	m	class:NVM::SB_ON_RANK
 syncValue	build/NVM/nvmain.h	/^    double syncValue;$/;"	m	class:NVM::NVMain
 tAL	src/Params.h	/^    ncycle_t tAL;$/;"	m	class:NVM::Params
 tBURST	Simulators/gem5/nvmain_mem.hh	/^    uint64_t tBURST;$/;"	m	class:NVMainMemory
@@ -2985,10 +3098,15 @@ testdata	Tests/Regressions.py	/^testdata = json.load(json_data)$/;"	v
 testgem5	Tests/Regressions.py	/^    testgem5 = False$/;"	v
 testgem5	Tests/Regressions.py	/^testgem5 = True$/;"	v
 testlog	Tests/Regressions.py	/^        testlog = open(options.tempfile, 'w')$/;"	v
+thefiles	my_histogram.py	/^thefiles = list(all_files('\/home\/zhuguoliang\/projects\/GGP\/Benchmark_Rapl_Test','*.out'))$/;"	v
+theta	my_histogram.py	/^theta=[]$/;"	v
 threadId	include/NVMainRequest.h	/^    ncounters_t threadId;                  \/\/< Thread ID of issuing application$/;"	m	class:NVM::NVMainRequest
 threadId	traceReader/TraceLine.h	/^    ncounters_t threadId;$/;"	m	class:NVM::TraceLine
 tick	Simulators/gem5/nvmain_mem.cc	/^void NVMainMemory::tick( )$/;"	f	class:NVMainMemory
+time_line	my_histogram.py	/^time_line=[]$/;"	v
+totalEnergy	Ranks/HRank/HRank.h	/^    double totalEnergy, backgroundEnergy, activateEnergy, burstEnergy, refreshEnergy;$/;"	m	class:NVM::HRank
 totalEnergy	Ranks/StandardRank/StandardRank.h	/^    double totalEnergy, backgroundEnergy, activateEnergy, burstEnergy, refreshEnergy;$/;"	m	class:NVM::StandardRank
+totalPower	Ranks/HRank/HRank.h	/^    double totalPower, backgroundPower, activatePower, burstPower, refreshPower;$/;"	m	class:NVM::HRank
 totalPower	Ranks/StandardRank/StandardRank.h	/^    double totalPower, backgroundPower, activatePower, burstPower, refreshPower;$/;"	m	class:NVM::StandardRank
 totalPromotionPages	Utils/CoinMigrator/CoinMigrator.h	/^    ncounter_t totalPromotionPages;$/;"	m	class:NVM::CoinMigrator
 totalReadRequests	NVM/nvmain.h	/^    ncounter_t totalReadRequests;$/;"	m	class:NVM::NVMain
@@ -3016,6 +3134,7 @@ traceFile	traceWriter/VerilogTrace/VerilogTraceWriter.h	/^    std::string traceF
 traceRanks	Utils/PostTrace/PostTrace.h	/^    ncounter_t traceRanks, traceChannels;$/;"	m	class:NVM::PostTrace
 traceVersion	traceReader/NVMainTrace/NVMainTraceReader.h	/^    unsigned int traceVersion;$/;"	m	class:NVM::NVMainTraceReader
 traceWriter	Utils/PostTrace/PostTrace.h	/^    GenericTraceWriter ***traceWriter;$/;"	m	class:NVM::PostTrace
+trace_name	My_Data_Analysis.py	/^trace_name = sys.argv[3]$/;"	v
 tracedRequests	Utils/RequestTracer/RequestTracer.h	/^    std::map<uint64_t, TracedRequest*> tracedRequests;$/;"	m	class:NVM::RequestTracer
 trampoline	src/NVMObject.h	/^    NVMObject *trampoline;$/;"	m	class:NVM::NVMObject_hook
 transactionQueueCount	src/MemoryController.h	/^    ncounter_t transactionQueueCount;$/;"	m	class:NVM::MemoryController
@@ -3081,9 +3200,12 @@ write_pauses	MemControl/FRFCFS/FRFCFS.h	/^    uint64_t write_pauses;$/;"	m	class
 writebackCount	Banks/CachedDDR3Bank/CachedDDR3Bank.h	/^    ncounter_t writebackCount;$/;"	m	class:NVM::CachedDDR3Bank
 writes	Banks/CachedDDR3Bank/CachedDDR3Bank.h	/^    ncounter_t writes;$/;"	m	struct:NVM::CachedRowBuffer
 writes	Banks/DDR3Bank/DDR3Bank.h	/^    ncounter_t reads, writes, activates, precharges, refreshes;$/;"	m	class:NVM::DDR3Bank
+writes	Ranks/HRank/HRank.h	/^    ncounter_t reads, writes;$/;"	m	class:NVM::HRank
 writes	Ranks/StandardRank/StandardRank.h	/^    ncounter_t reads, writes;$/;"	m	class:NVM::StandardRank
 writes	src/SubArray.h	/^    ncounter_t reads, writes, activates, precharges, refreshes;$/;"	m	class:NVM::SubArray
+x	my_histogram.py	/^x = mu + sigma * np.random.randn(10000)$/;"	v
 xmlFile	traceWriter/DRAMPower2Trace/DRAMPower2TraceWriter.h	/^    std::ofstream trace, xmlFile;$/;"	m	class:NVM::DRAMPower2TraceWriter
+y	my_histogram.py	/^y = mlab.normpdf(bins, mu, sigma)$/;"	v
 ~AbstractDRAMCache	MemControl/DRAMCache/AbstractDRAMCache.h	/^  virtual ~AbstractDRAMCache( ) { };$/;"	f	class:NVM::AbstractDRAMCache
 ~AccessPredictor	Utils/AccessPredictor/AccessPredictor.cpp	/^AccessPredictor::~AccessPredictor( )$/;"	f	class:AccessPredictor
 ~AccessPredictor	build/Utils/AccessPredictor/AccessPredictor.cpp	/^AccessPredictor::~AccessPredictor( )$/;"	f	class:AccessPredictor
@@ -3139,6 +3261,8 @@ xmlFile	traceWriter/DRAMPower2Trace/DRAMPower2TraceWriter.h	/^    std::ofstream 
 ~GenericTraceWriter	traceWriter/GenericTraceWriter.cpp	/^GenericTraceWriter::~GenericTraceWriter( )$/;"	f	class:GenericTraceWriter
 ~GlobalEventQueue	build/src/EventQueue.cpp	/^GlobalEventQueue::~GlobalEventQueue( )$/;"	f	class:GlobalEventQueue
 ~GlobalEventQueue	src/EventQueue.cpp	/^GlobalEventQueue::~GlobalEventQueue( )$/;"	f	class:GlobalEventQueue
+~HRank	Ranks/HRank/HRank.cpp	/^HRank::~HRank( )$/;"	f	class:HRank
+~HRank	build/Ranks/HRank/HRank.cpp	/^HRank::~HRank( )$/;"	f	class:HRank
 ~HookFactory	Utils/HookFactory.h	/^    ~HookFactory( ) { }$/;"	f	class:NVM::HookFactory
 ~Interconnect	src/Interconnect.h	/^    virtual ~Interconnect( ) { }$/;"	f	class:NVM::Interconnect
 ~InterconnectFactory	Interconnect/InterconnectFactory.h	/^    ~InterconnectFactory( ) { }$/;"	f	class:NVM::InterconnectFactory

@@ -643,6 +643,15 @@ predictor	MemControl/PredictorDRC/PredictorDRC.h	/^    AccessPredictor *predicto
 SBuffer	MemControl/SBuffer/SBuffer.cpp	/^SBuffer::SBuffer()$/;"	f	class:SBuffer
 SetConfig	MemControl/SBuffer/SBuffer.cpp	/^void SBuffer::SetConfig( Config *conf, bool createChildren )$/;"	f	class:SBuffer
 ~SBuffer	MemControl/SBuffer/SBuffer.cpp	/^SBuffer::~SBuffer( )$/;"	f	class:SBuffer
+Stat_key	My_Data_Analysis.py	/^def Stat_key(key,incre,tracename):$/;"	f
+delete_last_line	My_Data_Analysis.py	/^def delete_last_line(fname):$/;"	f
+increment	My_Data_Analysis.py	/^increment = int(sys.argv[2])$/;"	v
+key_name	My_Data_Analysis.py	/^key_name = sys.argv[1]$/;"	v
+length	My_Data_Analysis.py	/^length = len(sys.argv)$/;"	v
+minus_two_consecutive_line	My_Data_Analysis.py	/^def minus_two_consecutive_line(fname):$/;"	f
+plot	My_Data_Analysis.py	/^def plot(stat_file_name):$/;"	f
+plot_bar	My_Data_Analysis.py	/^def plot_bar(stat_file_name):$/;"	f
+trace_name	My_Data_Analysis.py	/^trace_name = sys.argv[3]$/;"	v
 CalculateStats	NVM/nvmain.cpp	/^void NVMain::CalculateStats( )$/;"	f	class:NVMain
 CheckPrefetch	NVM/nvmain.cpp	/^bool NVMain::CheckPrefetch( NVMainRequest *request )$/;"	f	class:NVMain
 Cycle	NVM/nvmain.cpp	/^void NVMain::Cycle( ncycle_t steps )$/;"	f	class:NVMain
@@ -710,6 +719,82 @@ startedPrefetch	Prefetchers/STeMS/STeMS.h	/^    bool startedPrefetch;$/;"	m	stru
 useCount	Prefetchers/STeMS/STeMS.h	/^    uint64_t useCount;$/;"	m	struct:NVM::PatternSequence
 used	Prefetchers/STeMS/STeMS.h	/^    bool used[16];$/;"	m	struct:NVM::PatternSequence
 ~STeMS	Prefetchers/STeMS/STeMS.h	/^    ~STeMS( ) { }$/;"	f	class:NVM::STeMS
+Activate	Ranks/HRank/HRank.cpp	/^bool HRank::Activate( NVMainRequest *request )$/;"	f	class:HRank
+CalculateStats	Ranks/HRank/HRank.cpp	/^void HRank::CalculateStats( )$/;"	f	class:HRank
+CanPowerDown	Ranks/HRank/HRank.cpp	/^bool HRank::CanPowerDown( NVMainRequest *request )$/;"	f	class:HRank
+CanPowerUp	Ranks/HRank/HRank.cpp	/^bool HRank::CanPowerUp( NVMainRequest *request )$/;"	f	class:HRank
+Cycle	Ranks/HRank/HRank.cpp	/^void HRank::Cycle( ncycle_t steps )$/;"	f	class:HRank
+HRank	Ranks/HRank/HRank.cpp	/^HRank::HRank( )$/;"	f	class:HRank
+Idle	Ranks/HRank/HRank.cpp	/^bool HRank::Idle( )$/;"	f	class:HRank
+IsIssuable	Ranks/HRank/HRank.cpp	/^bool HRank::IsIssuable( NVMainRequest *req, FailReason *reason )$/;"	f	class:HRank
+IssueCommand	Ranks/HRank/HRank.cpp	/^bool HRank::IssueCommand( NVMainRequest *req )$/;"	f	class:HRank
+NextIssuable	Ranks/HRank/HRank.cpp	/^ncycle_t HRank::NextIssuable( NVMainRequest *request )$/;"	f	class:HRank
+Notify	Ranks/HRank/HRank.cpp	/^void HRank::Notify( NVMainRequest *request )$/;"	f	class:HRank
+PowerDown	Ranks/HRank/HRank.cpp	/^bool HRank::PowerDown( NVMainRequest *request )$/;"	f	class:HRank
+PowerUp	Ranks/HRank/HRank.cpp	/^bool HRank::PowerUp( NVMainRequest *request )$/;"	f	class:HRank
+Precharge	Ranks/HRank/HRank.cpp	/^bool HRank::Precharge( NVMainRequest *request )$/;"	f	class:HRank
+Read	Ranks/HRank/HRank.cpp	/^bool HRank::Read( NVMainRequest *request )$/;"	f	class:HRank
+Refresh	Ranks/HRank/HRank.cpp	/^bool HRank::Refresh( NVMainRequest *request )$/;"	f	class:HRank
+RegisterStats	Ranks/HRank/HRank.cpp	/^void HRank::RegisterStats( )$/;"	f	class:HRank
+RequestComplete	Ranks/HRank/HRank.cpp	/^bool HRank::RequestComplete( NVMainRequest* req )$/;"	f	class:HRank
+ResetStats	Ranks/HRank/HRank.cpp	/^void HRank::ResetStats( )$/;"	f	class:HRank
+SetConfig	Ranks/HRank/HRank.cpp	/^void HRank::SetConfig( Config *c, bool createChildren )$/;"	f	class:HRank
+Write	Ranks/HRank/HRank.cpp	/^bool HRank::Write( NVMainRequest *request )$/;"	f	class:HRank
+~HRank	Ranks/HRank/HRank.cpp	/^HRank::~HRank( )$/;"	f	class:HRank
+HRank	Ranks/HRank/HRank.h	/^class HRank : public Rank$/;"	c	namespace:NVM
+HRank_CLOSED	Ranks/HRank/HRank.h	/^    HRank_CLOSED,    \/***< all banks in the rank are closed (standby) *\/$/;"	e	enum:NVM::HRank_State
+HRank_OPEN	Ranks/HRank/HRank.h	/^    HRank_OPEN,      \/***< Rank has at least one open bank  *\/$/;"	e	enum:NVM::HRank_State
+HRank_PDA	Ranks/HRank/HRank.h	/^    HRank_PDA,       \/***< Rank is in active powered down mode *\/$/;"	e	enum:NVM::HRank_State
+HRank_PDPF	Ranks/HRank/HRank.h	/^    HRank_PDPF,      \/***< Rank is in precharge powered down, fast exit mode *\/$/;"	e	enum:NVM::HRank_State
+HRank_PDPS	Ranks/HRank/HRank.h	/^    HRank_PDPS       \/***< Rank is in precharge powered down, slow exit mode *\/$/;"	e	enum:NVM::HRank_State
+HRank_REFRESHING	Ranks/HRank/HRank.h	/^    HRank_REFRESHING,\/***< some banks in the rank are refreshing *\/$/;"	e	enum:NVM::HRank_State
+HRank_State	Ranks/HRank/HRank.h	/^enum HRank_State $/;"	g	namespace:NVM
+HRank_UNKNOWN	Ranks/HRank/HRank.h	/^    HRank_UNKNOWN,   \/***< Unknown state. Uh oh. *\/$/;"	e	enum:NVM::HRank_State
+NVM	Ranks/HRank/HRank.h	/^namespace NVM {$/;"	n
+RAWindex	Ranks/HRank/HRank.h	/^    ncounter_t RAWindex;$/;"	m	class:NVM::HRank
+__HRank_H__	Ranks/HRank/HRank.h	37;"	d
+actWaitAverage	Ranks/HRank/HRank.h	/^    double actWaitAverage;$/;"	m	class:NVM::HRank
+actWaitTotal	Ranks/HRank/HRank.h	/^    ncounter_t actWaitTotal;$/;"	m	class:NVM::HRank
+actWaits	Ranks/HRank/HRank.h	/^    ncounter_t actWaits;$/;"	m	class:NVM::HRank
+activateEnergy	Ranks/HRank/HRank.h	/^    double totalEnergy, backgroundEnergy, activateEnergy, burstEnergy, refreshEnergy;$/;"	m	class:NVM::HRank
+activatePower	Ranks/HRank/HRank.h	/^    double totalPower, backgroundPower, activatePower, burstPower, refreshPower;$/;"	m	class:NVM::HRank
+activeCycles	Ranks/HRank/HRank.h	/^    ncounter_t activeCycles;$/;"	m	class:NVM::HRank
+backgroundEnergy	Ranks/HRank/HRank.h	/^    double totalEnergy, backgroundEnergy, activateEnergy, burstEnergy, refreshEnergy;$/;"	m	class:NVM::HRank
+backgroundPower	Ranks/HRank/HRank.h	/^    double totalPower, backgroundPower, activatePower, burstPower, refreshPower;$/;"	m	class:NVM::HRank
+bankCount	Ranks/HRank/HRank.h	/^    ncounter_t bankCount;$/;"	m	class:NVM::HRank
+banksPerRefresh	Ranks/HRank/HRank.h	/^    ncounter_t banksPerRefresh;$/;"	m	class:NVM::HRank
+burstEnergy	Ranks/HRank/HRank.h	/^    double totalEnergy, backgroundEnergy, activateEnergy, burstEnergy, refreshEnergy;$/;"	m	class:NVM::HRank
+burstPower	Ranks/HRank/HRank.h	/^    double totalPower, backgroundPower, activatePower, burstPower, refreshPower;$/;"	m	class:NVM::HRank
+busWidth	Ranks/HRank/HRank.h	/^    ncounter_t busWidth;$/;"	m	class:NVM::HRank
+conf	Ranks/HRank/HRank.h	/^    Config *conf;$/;"	m	class:NVM::HRank
+deviceCount	Ranks/HRank/HRank.h	/^    ncounter_t deviceCount;$/;"	m	class:NVM::HRank
+deviceWidth	Ranks/HRank/HRank.h	/^    ncounter_t deviceWidth;$/;"	m	class:NVM::HRank
+fastExitActiveCycles	Ranks/HRank/HRank.h	/^    ncounter_t fastExitActiveCycles;$/;"	m	class:NVM::HRank
+fastExitPrechargeCycles	Ranks/HRank/HRank.h	/^    ncounter_t fastExitPrechargeCycles;$/;"	m	class:NVM::HRank
+fawWaitAverage	Ranks/HRank/HRank.h	/^    double fawWaitAverage;$/;"	m	class:NVM::HRank
+fawWaitTotal	Ranks/HRank/HRank.h	/^    ncounter_t fawWaitTotal;$/;"	m	class:NVM::HRank
+fawWaits	Ranks/HRank/HRank.h	/^    ncounter_t fawWaits;$/;"	m	class:NVM::HRank
+lastActivate	Ranks/HRank/HRank.h	/^    ncycle_t* lastActivate;$/;"	m	class:NVM::HRank
+lastReset	Ranks/HRank/HRank.h	/^    ncycle_t lastReset;$/;"	m	class:NVM::HRank
+nextActivate	Ranks/HRank/HRank.h	/^    ncycle_t nextActivate;$/;"	m	class:NVM::HRank
+nextPrecharge	Ranks/HRank/HRank.h	/^    ncycle_t nextPrecharge;$/;"	m	class:NVM::HRank
+nextRead	Ranks/HRank/HRank.h	/^    ncycle_t nextRead;$/;"	m	class:NVM::HRank
+nextWrite	Ranks/HRank/HRank.h	/^    ncycle_t nextWrite;$/;"	m	class:NVM::HRank
+psInterval	Ranks/HRank/HRank.h	/^    uint64_t psInterval;$/;"	m	class:NVM::HRank
+rawNum	Ranks/HRank/HRank.h	/^    ncounter_t rawNum;$/;"	m	class:NVM::HRank
+reads	Ranks/HRank/HRank.h	/^    ncounter_t reads, writes;$/;"	m	class:NVM::HRank
+refreshEnergy	Ranks/HRank/HRank.h	/^    double totalEnergy, backgroundEnergy, activateEnergy, burstEnergy, refreshEnergy;$/;"	m	class:NVM::HRank
+refreshPower	Ranks/HRank/HRank.h	/^    double totalPower, backgroundPower, activatePower, burstPower, refreshPower;$/;"	m	class:NVM::HRank
+rrdWaitAverage	Ranks/HRank/HRank.h	/^    double rrdWaitAverage;$/;"	m	class:NVM::HRank
+rrdWaitTotal	Ranks/HRank/HRank.h	/^    ncounter_t rrdWaitTotal;$/;"	m	class:NVM::HRank
+rrdWaits	Ranks/HRank/HRank.h	/^    ncounter_t rrdWaits;$/;"	m	class:NVM::HRank
+slowExitCycles	Ranks/HRank/HRank.h	/^    ncounter_t slowExitCycles;$/;"	m	class:NVM::HRank
+standbyCycles	Ranks/HRank/HRank.h	/^    ncounter_t standbyCycles;$/;"	m	class:NVM::HRank
+state	Ranks/HRank/HRank.h	/^    HRank_State state;$/;"	m	class:NVM::HRank
+stateTimeout	Ranks/HRank/HRank.h	/^    ncounter_t stateTimeout;$/;"	m	class:NVM::HRank
+totalEnergy	Ranks/HRank/HRank.h	/^    double totalEnergy, backgroundEnergy, activateEnergy, burstEnergy, refreshEnergy;$/;"	m	class:NVM::HRank
+totalPower	Ranks/HRank/HRank.h	/^    double totalPower, backgroundPower, activatePower, burstPower, refreshPower;$/;"	m	class:NVM::HRank
+writes	Ranks/HRank/HRank.h	/^    ncounter_t reads, writes;$/;"	m	class:NVM::HRank
 CreateNewRank	Ranks/RankFactory.cpp	/^Rank *RankFactory::CreateNewRank( std::string rankName )$/;"	f	class:RankFactory
 CreateRank	Ranks/RankFactory.cpp	/^Rank *RankFactory::CreateRank( std::string rankName )$/;"	f	class:RankFactory
 CreateRankNoWarn	Ranks/RankFactory.cpp	/^Rank *RankFactory::CreateRankNoWarn( std::string rankName )$/;"	f	class:RankFactory
@@ -729,6 +814,7 @@ Notify	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::Notify( NVMainRequest 
 RegisterStats	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::RegisterStats( )$/;"	f	class:SB_ON_RANK
 RequestComplete	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^bool SB_ON_RANK::RequestComplete( NVMainRequest* req )$/;"	f	class:SB_ON_RANK
 ResetStats	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::ResetStats( )$/;"	f	class:SB_ON_RANK
+SBCleanupCallback	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::SBCleanupCallback( void * \/*data*\/ )$/;"	f	class:SB_ON_RANK
 SB_ON_RANK	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^SB_ON_RANK::SB_ON_RANK( )$/;"	f	class:SB_ON_RANK
 SetConfig	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::SetConfig( Config *c, bool createChildren )$/;"	f	class:SB_ON_RANK
 WasIssuedSB	Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^bool WasIssuedSB( NVMainRequest *request ) { return (request->flags & NVMainRequest::FLAG_ISSUED_BY_SB); }$/;"	f
@@ -743,12 +829,14 @@ SB_ON_RANK_PDPS	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    SB_ON_RANK_PDPS       \/***<
 SB_ON_RANK_REFRESHING	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    SB_ON_RANK_REFRESHING,\/***< some banks in the rank are refreshing *\/$/;"	e	enum:NVM::SB_ON_RANK_State
 SB_ON_RANK_State	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^enum SB_ON_RANK_State $/;"	g	namespace:NVM
 SB_ON_RANK_UNKNOWN	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    SB_ON_RANK_UNKNOWN,   \/***< Unknown state. Uh oh. *\/$/;"	e	enum:NVM::SB_ON_RANK_State
+SBcleanupPriority	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^const int SBcleanupPriority = -10;$/;"	m	namespace:NVM
 __SB_ON_RANK_H__	Ranks/SB_ON_RANK/SB_ON_RANK.h	34;"	d
 buffer_draining	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    bool buffer_draining;$/;"	m	class:NVM::SB_ON_RANK
 conf	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    Config *conf;$/;"	m	class:NVM::SB_ON_RANK
 hrank	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    Rank * hrank;$/;"	m	class:NVM::SB_ON_RANK
 max_buffer_size	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    ncounter_t max_buffer_size;$/;"	m	class:NVM::SB_ON_RANK
 memreq_buffer	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    std::deque<NVMainRequest *> *memreq_buffer;$/;"	m	class:NVM::SB_ON_RANK
+syncValue	Ranks/SB_ON_RANK/SB_ON_RANK.h	/^    double syncValue;$/;"	m	class:NVM::SB_ON_RANK
 Activate	Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::Activate( NVMainRequest *request )$/;"	f	class:StandardRank
 CalculateStats	Ranks/StandardRank/StandardRank.cpp	/^void StandardRank::CalculateStats( )$/;"	f	class:StandardRank
 CanPowerDown	Ranks/StandardRank/StandardRank.cpp	/^bool StandardRank::CanPowerDown( NVMainRequest *request )$/;"	f	class:StandardRank
@@ -1588,6 +1676,28 @@ CreateNewPrefetcher	build/Prefetchers/PrefetcherFactory.cpp	/^Prefetcher *Prefet
 DoPrefetch	build/Prefetchers/STeMS/STeMS.cpp	/^bool STeMS::DoPrefetch( NVMainRequest *triggerOp, $/;"	f	class:STeMS
 FetchNextUnused	build/Prefetchers/STeMS/STeMS.cpp	/^void STeMS::FetchNextUnused( PatternSequence *rps, int count, $/;"	f	class:STeMS
 NotifyAccess	build/Prefetchers/STeMS/STeMS.cpp	/^bool STeMS::NotifyAccess( NVMainRequest *accessOp, $/;"	f	class:STeMS
+Activate	build/Ranks/HRank/HRank.cpp	/^bool HRank::Activate( NVMainRequest *request )$/;"	f	class:HRank
+CalculateStats	build/Ranks/HRank/HRank.cpp	/^void HRank::CalculateStats( )$/;"	f	class:HRank
+CanPowerDown	build/Ranks/HRank/HRank.cpp	/^bool HRank::CanPowerDown( NVMainRequest *request )$/;"	f	class:HRank
+CanPowerUp	build/Ranks/HRank/HRank.cpp	/^bool HRank::CanPowerUp( NVMainRequest *request )$/;"	f	class:HRank
+Cycle	build/Ranks/HRank/HRank.cpp	/^void HRank::Cycle( ncycle_t steps )$/;"	f	class:HRank
+HRank	build/Ranks/HRank/HRank.cpp	/^HRank::HRank( )$/;"	f	class:HRank
+Idle	build/Ranks/HRank/HRank.cpp	/^bool HRank::Idle( )$/;"	f	class:HRank
+IsIssuable	build/Ranks/HRank/HRank.cpp	/^bool HRank::IsIssuable( NVMainRequest *req, FailReason *reason )$/;"	f	class:HRank
+IssueCommand	build/Ranks/HRank/HRank.cpp	/^bool HRank::IssueCommand( NVMainRequest *req )$/;"	f	class:HRank
+NextIssuable	build/Ranks/HRank/HRank.cpp	/^ncycle_t HRank::NextIssuable( NVMainRequest *request )$/;"	f	class:HRank
+Notify	build/Ranks/HRank/HRank.cpp	/^void HRank::Notify( NVMainRequest *request )$/;"	f	class:HRank
+PowerDown	build/Ranks/HRank/HRank.cpp	/^bool HRank::PowerDown( NVMainRequest *request )$/;"	f	class:HRank
+PowerUp	build/Ranks/HRank/HRank.cpp	/^bool HRank::PowerUp( NVMainRequest *request )$/;"	f	class:HRank
+Precharge	build/Ranks/HRank/HRank.cpp	/^bool HRank::Precharge( NVMainRequest *request )$/;"	f	class:HRank
+Read	build/Ranks/HRank/HRank.cpp	/^bool HRank::Read( NVMainRequest *request )$/;"	f	class:HRank
+Refresh	build/Ranks/HRank/HRank.cpp	/^bool HRank::Refresh( NVMainRequest *request )$/;"	f	class:HRank
+RegisterStats	build/Ranks/HRank/HRank.cpp	/^void HRank::RegisterStats( )$/;"	f	class:HRank
+RequestComplete	build/Ranks/HRank/HRank.cpp	/^bool HRank::RequestComplete( NVMainRequest* req )$/;"	f	class:HRank
+ResetStats	build/Ranks/HRank/HRank.cpp	/^void HRank::ResetStats( )$/;"	f	class:HRank
+SetConfig	build/Ranks/HRank/HRank.cpp	/^void HRank::SetConfig( Config *c, bool createChildren )$/;"	f	class:HRank
+Write	build/Ranks/HRank/HRank.cpp	/^bool HRank::Write( NVMainRequest *request )$/;"	f	class:HRank
+~HRank	build/Ranks/HRank/HRank.cpp	/^HRank::~HRank( )$/;"	f	class:HRank
 CreateNewRank	build/Ranks/RankFactory.cpp	/^Rank *RankFactory::CreateNewRank( std::string rankName )$/;"	f	class:RankFactory
 CreateRank	build/Ranks/RankFactory.cpp	/^Rank *RankFactory::CreateRank( std::string rankName )$/;"	f	class:RankFactory
 CreateRankNoWarn	build/Ranks/RankFactory.cpp	/^Rank *RankFactory::CreateRankNoWarn( std::string rankName )$/;"	f	class:RankFactory
@@ -1602,6 +1712,7 @@ Notify	build/Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::Notify( NVMainRe
 RegisterStats	build/Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::RegisterStats( )$/;"	f	class:SB_ON_RANK
 RequestComplete	build/Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^bool SB_ON_RANK::RequestComplete( NVMainRequest* req )$/;"	f	class:SB_ON_RANK
 ResetStats	build/Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::ResetStats( )$/;"	f	class:SB_ON_RANK
+SBCleanupCallback	build/Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::SBCleanupCallback( void * \/*data*\/ )$/;"	f	class:SB_ON_RANK
 SB_ON_RANK	build/Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^SB_ON_RANK::SB_ON_RANK( )$/;"	f	class:SB_ON_RANK
 SetConfig	build/Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^void SB_ON_RANK::SetConfig( Config *c, bool createChildren )$/;"	f	class:SB_ON_RANK
 WasIssuedSB	build/Ranks/SB_ON_RANK/SB_ON_RANK.cpp	/^bool WasIssuedSB( NVMainRequest *request ) { return (request->flags & NVMainRequest::FLAG_ISSUED_BY_SB); }$/;"	f
@@ -2279,6 +2390,17 @@ threadId	include/NVMainRequest.h	/^    ncounters_t threadId;                  \/
 type	include/NVMainRequest.h	/^    OpType type;                   \/\/< Operation type of request (read, write, etc)$/;"	m	class:NVM::NVMainRequest
 writeProgress	include/NVMainRequest.h	/^    ncycle_t writeProgress;        \/\/< Number of cycles remaining for write request$/;"	m	class:NVM::NVMainRequest
 ~NVMainRequest	include/NVMainRequest.h	/^    ~NVMainRequest( )$/;"	f	class:NVM::NVMainRequest
+L	my_histogram.py	/^L=[]$/;"	v
+all_files	my_histogram.py	/^def all_files(root, patterns="*", single_level=False, yield_folders=False):$/;"	f
+data	my_histogram.py	/^data=[]$/;"	v
+mu	my_histogram.py	/^mu = 100 # mean of distribution$/;"	v
+num_bins	my_histogram.py	/^num_bins = 100$/;"	v
+sigma	my_histogram.py	/^sigma = 15 # standard deviation of distribution$/;"	v
+thefiles	my_histogram.py	/^thefiles = list(all_files('\/home\/zhuguoliang\/projects\/GGP\/Benchmark_Rapl_Test','*.out'))$/;"	v
+theta	my_histogram.py	/^theta=[]$/;"	v
+time_line	my_histogram.py	/^time_line=[]$/;"	v
+x	my_histogram.py	/^x = mu + sigma * np.random.randn(10000)$/;"	v
+y	my_histogram.py	/^y = mlab.normpdf(bins, mu, sigma)$/;"	v
 AddressTranslator	src/AddressTranslator.cpp	/^AddressTranslator::AddressTranslator( )$/;"	f	class:AddressTranslator
 Divide	src/AddressTranslator.cpp	/^uint64_t AddressTranslator::Divide( uint64_t partSize, MemoryPartition partition )$/;"	f	class:AddressTranslator
 FindOrder	src/AddressTranslator.cpp	/^void AddressTranslator::FindOrder( int order, MemoryPartition *p )$/;"	f	class:AddressTranslator
@@ -2781,6 +2903,7 @@ HighWaterMark	src/Params.h	/^    int HighWaterMark; \/\/ write drain high waterm
 InitPD	src/Params.h	/^    bool InitPD;$/;"	m	class:NVM::Params
 LowWaterMark	src/Params.h	/^    int LowWaterMark; \/\/ write drain low watermark$/;"	m	class:NVM::Params
 MATHeight	src/Params.h	/^    ncounter_t MATHeight;$/;"	m	class:NVM::Params
+MEM_Freq	src/Params.h	/^    ncounter_t MEM_Freq;\/*for decoupled_dimm ---zhuguoliang*\/$/;"	m	class:NVM::Params
 MLCLevels	src/Params.h	/^    ncounter_t MLCLevels;$/;"	m	class:NVM::Params
 MULT	src/Params.h	/^    ncounter_t MULT;$/;"	m	class:NVM::Params
 MaxCancellations	src/Params.h	/^    ncounter_t MaxCancellations;$/;"	m	class:NVM::Params
@@ -3045,6 +3168,7 @@ psInterval	src/SubArray.h	/^    ncounter_t psInterval;$/;"	m	class:NVM::SubArray
 reads	src/SubArray.h	/^    ncounter_t reads, writes, activates, precharges, refreshes;$/;"	m	class:NVM::SubArray
 refreshEnergy	src/SubArray.h	/^    double refreshEnergy;$/;"	m	class:NVM::SubArray
 refreshes	src/SubArray.h	/^    ncounter_t reads, writes, activates, precharges, refreshes;$/;"	m	class:NVM::SubArray
+row_access_counter	src/SubArray.h	/^    ncounter_t *row_access_counter;$/;"	m	class:NVM::SubArray
 state	src/SubArray.h	/^    SubArrayState state;$/;"	m	class:NVM::SubArray
 subArrayEnergy	src/SubArray.h	/^    double subArrayEnergy;$/;"	m	class:NVM::SubArray
 subArrayId	src/SubArray.h	/^    ncounter_t subArrayId;$/;"	m	class:NVM::SubArray
