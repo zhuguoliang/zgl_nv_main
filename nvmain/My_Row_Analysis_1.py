@@ -46,28 +46,25 @@ def minus_two_consecutive_line(fname):
 #default incre=1000
 #total 1000*100=100000 runs
 def mult_run(incre,tracename):
-    os.system("rm -rf row_count")
+    ROW_COUNT_FILE_NAME = "row_count."+ tracename.split("/")[4]
+    os.system("rm -rf " + ROW_COUNT_FILE_NAME)
     cycle=0
-    for i in range(2):
+    for i in range(100):
         cycle = cycle + incre
         out_fname = "test.out.normal" 
         cmd = "./nvmain.debug Config/ZGL_Standard_DRAM_channel.config " + tracename + " " + str(cycle) + " > " + "/dev/null"
         os.system("rm -rf *.out")
-        print cmd
         os.system(cmd)
         tot_row_count=0
         for path in all_files('.','*.out'):
             count = len(open(path,'rU').readlines())
             tot_row_count +=count
             print path + " line_count is " + str(count)
-            #print tot_row_count
-            #os.system("rm -rf " + path)
-        print tot_row_count
-        open("row_count",'a').write(str(cycle)+"_")
-        open("row_count",'a').write(str(tot_row_count))
-        open("row_count",'a').write("\n")
-        for path in all_files('.','*.out'):
             os.system("rm -rf " + path)
+        
+        open(ROW_COUNT_FILE_NAME,'a').write(str(cycle)+"_")
+        open(ROW_COUNT_FILE_NAME,'a').write(str(tot_row_count))
+        open(ROW_COUNT_FILE_NAME,'a').write("\n")
 
             
 
@@ -128,8 +125,17 @@ def plot_multi(file_name_list):
 
 
 #mult_run(1000, "../../../traces/429_ref.trace.trc_nvmain")
+#100*1M
+mult_run(1000000, "../../../HMTT_1GB/401_ref.trace0.trc_nvmain")
+mult_run(1000000, "../../../HMTT_1GB/403_ref.trace0.trc_nvmain")
+mult_run(1000000, "../../../HMTT_1GB/429_ref.trace0.trc_nvmain")
+mult_run(1000000, "../../../HMTT_1GB/437_ref.trace0.trc_nvmain")
+mult_run(1000000, "../../../HMTT_1GB/450_ref.trace0.trc_nvmain")
+mult_run(1000000, "../../../HMTT_1GB/453_ref.trace0.trc_nvmain")
+mult_run(1000000, "../../../HMTT_1GB/462_ref.trace0.trc_nvmain")
+mult_run(1000000, "../../../HMTT_1GB/464_ref.trace0.trc_nvmain")
+mult_run(1000000, "../../../HMTT_1GB/470_ref.trace0.trc_nvmain")
 mult_run(1000000, "../../../HMTT_1GB/471_ref.trace0.trc_nvmain")
-
 #1. run with minus
 #minus_two_consecutive_line("row_count")
 #plot("row_count.minus")
@@ -137,8 +143,10 @@ mult_run(1000000, "../../../HMTT_1GB/471_ref.trace0.trc_nvmain")
 
 #2 run without minus
 #plot("row_count")
-
-#fname_list=["row_count.401","row_count.403","row_count.429","row_count.437",
-#"row_count.450","row_count.453","row_count.462","row_count.464","row_count.470","row_count.471"]
+#"row_count.437_ref.trace0.trc_nvmain"???
+#fname_list=["row_count.401_ref.trace0.trc_nvmain","row_count.403_ref.trace0.trc_nvmain","row_count.429_ref.trace0.trc_nvmain",
+#"row_count.450_ref.trace0.trc_nvmain","row_count.453_ref.trace0.trc_nvmain",
+#"row_count.462_ref.trace0.trc_nvmain","row_count.464_ref.trace0.trc_nvmain","row_count.470_ref.trace0.trc_nvmain",
+#"row_count.471_ref.trace0.trc_nvmain"]
 #plot_multi(fname_list)
 
