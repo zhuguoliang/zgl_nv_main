@@ -189,16 +189,20 @@ int TraceMain::RunTrace( int argc, char *argv[] )
     else
         simulateCycles = atoi( argv[3] );
 
-    std::cout << "*** Simulating " << simulateCycles << " input cycles. (";
-
+//    std::cout << "*** Simulating " << simulateCycles << " input cycles. (";
+    std::cout << "*** Simulating " << simulateCycles << " memory cycles. (";//zhuguoliang
     /*
      *  The trace cycle is assumed to be the rate that the CPU/LLC is issuing. 
      *  Scale the simulation cycles to be the number of *memory cycles* to run.
      */
-    simulateCycles = (uint64_t)ceil( ((double)(config->GetValue( "CPUFreq" )) 
-                    / (double)(config->GetValue( "CLK" ))) * simulateCycles ); 
+ //   simulateCycles = (uint64_t)ceil( ((double)(config->GetValue( "CPUFreq" )) 
+  //                  / (double)(config->GetValue( "CLK" ))) * simulateCycles ); 
 
-    std::cout << simulateCycles << " memory cycles) ***" << std::endl;
+//    std::cout << simulateCycles << " memory cycles) ***" << std::endl;
+
+
+    //std::cout << simulateCycles << " cpu cycles) ***" << std::endl;//zhuguoliang
+
 
     currentCycle = 0;
     while( currentCycle <= simulateCycles || simulateCycles == 0 )

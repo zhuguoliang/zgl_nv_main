@@ -1043,6 +1043,8 @@ void DDR3Bank::CalculateStats( )
 
     CalculatePower( );
 
+    std::cout<< "utilization is " << utilization <<std::endl;
+    std::cout<< "idealBandwidth is "<< idealBandwidth <<std::endl;
     bandwidth = (utilization * idealBandwidth);
     powerCycles = activeCycles + standbyCycles;
 

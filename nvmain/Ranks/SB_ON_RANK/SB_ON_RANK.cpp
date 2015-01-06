@@ -346,7 +346,7 @@ void SB_ON_RANK::SBCleanupCallback( void * /*data*/ )
                             WasIssuedSB),
             memreq_buffer->end()
         );
-    std::cout<< "SB_ON_RANK::SBCleanupCallback I am called on cycle "<<  GetEventQueue()->GetCurrentCycle() <<std::endl;
+//    std::cout<< "SB_ON_RANK::SBCleanupCallback I am called on cycle "<<  GetEventQueue()->GetCurrentCycle() <<std::endl;
 }
 
 void SB_ON_RANK::CycleRequestBuffer( )
@@ -400,7 +400,7 @@ void SB_ON_RANK::Cycle( ncycle_t steps )
     }
 
 
-    std::cout<<"SB_ON_RANK::Cycle current memreq_buffer->size() = "<<memreq_buffer->size()<<std::endl;
+//    std::cout<<"SB_ON_RANK::Cycle current memreq_buffer->size() = "<<memreq_buffer->size()<<std::endl;
 
     /* Issue memory commands from the request buffer. */
     CycleRequestBuffer( );
