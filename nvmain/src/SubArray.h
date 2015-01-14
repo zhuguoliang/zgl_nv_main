@@ -46,8 +46,6 @@
 #include "src/Params.h"
 
 #include <iostream>
-///////////////////////////////////////
-//#define ROW_NUM 
 
 namespace NVM {
 
@@ -117,7 +115,6 @@ class SubArray : public NVMObject
 
     void RegisterStats( );
     void CalculateStats( );
-    void WriteMyStats_ToFile( );/*zhuguoliang*/
 
     ncounter_t GetId( );
     std::string GetName( );
@@ -189,10 +186,7 @@ class SubArray : public NVMObject
 
     ncounter_t reads, writes, activates, precharges, refreshes;
     ncounter_t idleTimer;
-///////////////////////////////////////////////////////////
-    /*zhuguoliang*/
-    ncounter_t *row_access_counter;
-///////////////////////////////////////////////////////////////
+
     ncounter_t openRow;
 
     DataEncoder *dataEncoder;

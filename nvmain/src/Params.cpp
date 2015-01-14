@@ -263,10 +263,9 @@ void Params::SetParams( Config *c )
     c->GetValueUL( "BusWidth", BusWidth );
     c->GetValueUL( "DeviceWidth", DeviceWidth );
     c->GetValueUL( "CLK", CLK );
-    c->GetValueUL( "CLK", CLK );
     c->GetValueUL( "MULT", MULT );
     c->GetValueUL( "RATE", RATE );
-    c->GetValueUL( "MEM_Freq", MEM_Freq );
+    c->GetValueUL( "CPUFreq", CPUFreq );
 
     c->GetEnergy( "EIDD0", EIDD0 );
     c->GetEnergy( "EIDD1", EIDD1 );

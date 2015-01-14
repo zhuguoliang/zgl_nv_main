@@ -45,12 +45,7 @@
 #include <cassert>
 #include <iostream>
 #include <limits>
-////////////////////////////////
 
-/*zhuguoliang*/
-#include <fstream>
-#include <iomanip>
-////////////////////////////
 #define WriteCellData WriteCellData2
 
 using namespace NVM;
@@ -137,38 +132,20 @@ SubArray::SubArray( )
     subArrayId = -1;
 
     psInterval = 0;
-
-    /*zhuguoliang*/
-    //////////////////
-    row_access_counter=NULL;
-    /////////////////////
 }
 
 SubArray::~SubArray( )
 {
-    delete []row_access_counter;
 }
 
 void SubArray::SetConfig( Config *c, bool createChildren )
 {
     conf = c;
-///////////////////////
-    unsigned int i = 0;
-///////////////////
+
     Params *params = new Params( );
     params->SetParams( c );
     SetParams( params );
 
-
-///////////////////////////////////////////////
-
-/*zhuguoliang*/
-    row_access_counter=new ncounter_t[p->ROWS];
-    for(i=0;i<p->ROWS;i++){
-        row_access_counter[i]=0;
-    }
-
-////////////////////////////////////////////////
     MATHeight = p->MATHeight;
     /* customize MAT size */
     if( conf->KeyExists( "MATWidth" ) )
@@ -379,8 +356,6 @@ bool SubArray::Read( NVMainRequest *request )
 
     request->address.GetTranslatedAddress( &readRow, NULL, NULL, NULL, NULL, NULL );
 
-
-
     /* Check if we need to cancel or pause a write to service this request. */
     CheckWritePausing( );
 
@@ -516,8 +491,6 @@ bool SubArray::Read( NVMainRequest *request )
     reads++;
     dataCycles += p->tBURST;
     
-    //zhuguoliang
-    row_access_counter[readRow]++;
     return true;
 }
 
@@ -741,8 +714,6 @@ bool SubArray::Write( NVMainRequest *request )
     writes++;
     dataCycles += p->tBURST;
     
-      //zhuguoliang
-    row_access_counter[writeRow]++;
     return true;
 }
 
@@ -1020,12 +991,6 @@ ncycle_t SubArray::WriteCellData2( NVMainRequest *request )
         ncounter_t writeCount10 = CountBitsMLC2( 2, rawData, writeBytes32 );
         ncounter_t writeCount11 = CountBitsMLC2( 3, rawData, writeBytes32 );
 
-        std::cout<<"++++++++++++++++++write count is +++++++++++++SubArray::WriteCellData2+++++" <<std::endl;
-        std::cout<<"writeCount00 is "<<  writeCount00<<std::endl;
-        std::cout<<"writeCount01 is "<<  writeCount01<<std::endl;
-        std::cout<<"writeCount10 is "<<  writeCount10<<std::endl;
-        std::cout<<"writeCount11 is "<<  writeCount11<<std::endl;
-
         assert( (writeCount00 + writeCount01 + writeCount10 + writeCount11)
                 == (memoryWordSize/2) );
 
@@ -1089,8 +1054,7 @@ ncycle_t SubArray::WriteCellData2( NVMainRequest *request )
         }
         else
         {
-            std::cout<<"Should fail here but I modified it zhuguoliang! "<<std::endl;
-            //assert(false);
+            assert(false);
         }
 
         /* Insert times for write cancellation and pausing. */
@@ -1237,16 +1201,6 @@ bool SubArray::IsIssuable( NVMainRequest *req, FailReason *reason )
             reason->reason = UNSUPPORTED_COMMAND;
     }
 
-        if(rv==false){
-        
-            if( reason){
-          //     std::cout<<" NOT ISSUABLE from SubArray ---the reason is "<<reason->reason<<std::endl;  
-            }
-          //   std::cout<<" NOT ISSUABLE from SubArray "<<std::endl;    
-
-        }
-
-    //std::cout<<"SubArray ---the request type is "<<req->type<<std::endl;
     return rv;
 }
 
@@ -1297,9 +1251,6 @@ bool SubArray::IssueCommand( NVMainRequest *req )
                 break;  
         }
     }
-
-
-   // std::cout<<"SubArray::IssueCommand ---the request type is "<<req->type<<std::endl;
 
     return rv;
 }
@@ -1498,27 +1449,8 @@ void SubArray::CalculateStats( )
     cancelCountHisto = PyDictHistogram<uint64_t, uint64_t>( cancelCountMap );
     wpPauseHisto = PyDictHistogram<double, uint64_t>( wpPauseMap );
     wpCancelHisto = PyDictHistogram<double, uint64_t>( wpCancelMap );
+}
 
-    //zhuguoliang
-    WriteMyStats_ToFile( );
-}
-//////////////////////////////////////////////////////////////////////
-void SubArray::WriteMyStats_ToFile( )
-{
-    unsigned int i;
-    std::ofstream ofile;               //定义输出文件
-    std::string fname(GetParent()->GetTrampoline()->StatName());
-    std::string suffix(".row_access_counter.out");
-    fname+=suffix;
-    ofile.open(fname,std::iostream::app);     //作为输出文件打开
-    for(i=0;i<p->ROWS;i++){
-        if(row_access_counter[i]!=0){
-            ofile<<i<<"\t"<<row_access_counter[i]<<std::endl;
-        }  
-    }
-    ofile.close();        //关闭文件
-}
-//////////////////////////////////////////////////////////////////////////
 bool SubArray::Idle( )
 {
     return ( state == SUBARRAY_CLOSED || state == SUBARRAY_PRECHARGING );

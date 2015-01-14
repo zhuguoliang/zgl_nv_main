@@ -76,9 +76,6 @@ class Rank : public NVMObject
     ~Rank( ) { }
 
     virtual void SetConfig( Config * /*c*/, bool /*createChildren*/ = true ) { }
-    //zhuguoliang
-    //do this to pass name to my rank
-    //virtual void SetConfig( Config * /*c*/, std::string, bool /*createChildren*/ = true ) { }
 
     virtual bool Idle( );
 

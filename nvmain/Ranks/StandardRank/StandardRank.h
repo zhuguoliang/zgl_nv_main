@@ -76,7 +76,7 @@ class StandardRank : public Rank
     ~StandardRank( );
 
     void SetConfig( Config *c, bool createChildren = true );
-    //void SetConfig( Config *c, std::string rankName,bool createChildren =true);
+
     bool IssueCommand( NVMainRequest *request );
     bool IsIssuable( NVMainRequest *request, FailReason *reason = NULL );
     void Notify( NVMainRequest *request );

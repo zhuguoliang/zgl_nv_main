@@ -128,10 +128,6 @@ void DDR3Bank::SetConfig( Config *config, bool createChildren )
     MATHeight = p->MATHeight;
     subArrayNum = p->ROWS / MATHeight;
 
-    std::cout<<"MATHeight is "<<MATHeight<<std::endl;
-    std::cout<<"p->ROWS is "<<p->ROWS<<std::endl;
-    std::cout<<"subArrayNum is "<<subArrayNum<<std::endl;
-
     if( createChildren )
     {
         /* When selecting a child, use the subarray field from the decoder. */
@@ -141,8 +137,6 @@ void DDR3Bank::SetConfig( Config *config, bool createChildren )
         bankAT->SetDefaultField( SUBARRAY_FIELD );
         bankAT->SetConfig( config, createChildren );
         SetDecoder( bankAT );
-
-        //std::cout<<"subArrayNum is "<<subArrayNum<<std::endl;
 
         for( ncounter_t i = 0; i < subArrayNum; i++ )
         {
@@ -863,25 +857,7 @@ bool DDR3Bank::IsIssuable( NVMainRequest *req, FailReason *reason )
     else
     {
         /* Unknown command, just ask child modules. */
-        //std::cout<< "req->type = "<< req->type
-/*
-         std::vector<NVMObject_hook *>::iterator it;
-        std::vector<NVMObject_hook *>& childNodes = GetChildren( );
-        
-        std::cout<< "the size of children is "<< childNodes.size()<<std::endl;      
-*/
         rv = GetChild( req )->IsIssuable( req, reason );
-        /*zhuguoliang*/
-       if(rv==false){
-        //std::cout<<" NOT ISSUABLE from DDR3Bank \n";
-        }
-/*
-        for( it = childNodes.begin(); it != childNodes.end(); it++ )
-        {
-            std::cout << "The children hook name is " << (*it)->StatName( ) << std::endl;
-        }
-
-*/
     }
 
     return rv;
@@ -1043,8 +1019,6 @@ void DDR3Bank::CalculateStats( )
 
     CalculatePower( );
 
-    std::cout<< "utilization is " << utilization <<std::endl;
-    std::cout<< "idealBandwidth is "<< idealBandwidth <<std::endl;
     bandwidth = (utilization * idealBandwidth);
     powerCycles = activeCycles + standbyCycles;
 

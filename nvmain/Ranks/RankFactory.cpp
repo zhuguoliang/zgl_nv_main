@@ -37,10 +37,6 @@
 /* Add your decoder's include file below. */
 #include "Ranks/StandardRank/StandardRank.h"
 
-#include "Ranks/SB_ON_RANK/SB_ON_RANK.h"
-#include "Ranks/HRank/HRank.h"
-
-
 using namespace NVM;
 
 Rank *RankFactory::CreateRank( std::string rankName )
@@ -48,8 +44,6 @@ Rank *RankFactory::CreateRank( std::string rankName )
     Rank *rank = NULL;
 
     if( rankName == "StandardRank" ) rank = new StandardRank( );
-    else if (rankName == "SB_ON_RANK" ) rank = new SB_ON_RANK( );/*zhuguoliang*/
-    else if (rankName == "HRank" ) rank = new HRank( );/*zhuguoliang*/
     //else if( rankName == "CachedRank" ) rank = new CachedRank( );
 
     return rank;

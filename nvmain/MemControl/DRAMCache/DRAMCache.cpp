@@ -88,15 +88,6 @@ void DRAMCache::SetConfig( Config *conf, bool createChildren )
         /* Orphan the interconnect created by NVMain */
         std::vector<NVMObject_hook *>& childNodes = GetChildren( );
 
-        /*zhuguoliang*/
-        std::vector<NVMObject_hook *>::iterator it;
-        std::cout << "Orphan the interconnect created by NVMain\n";
-        for( it = childNodes.begin(); it != childNodes.end(); it++ )
-        {
-            std::cout << "The children hook name is " << (*it)->StatName( ) << std::endl;
-        }
-        /*zhuguoliang*/
-
         childNodes.clear();
 
         if( !conf->KeyExists( "DRCVariant" ) )
@@ -163,7 +154,6 @@ void DRAMCache::SetConfig( Config *conf, bool createChildren )
         }
         /* Add mainMemory as the last child */
         AddChild( mainMemory );
-        //std::cout<< "mainMemory StatName is "<< mainMemory->StatName()<<std::endl;
     }
 
     /* DRC Variant will call base SetConfig */
