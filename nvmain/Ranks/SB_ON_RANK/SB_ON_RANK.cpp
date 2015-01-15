@@ -249,8 +249,8 @@ bool SB_ON_RANK::IsIssuable( NVMainRequest *req, FailReason *)
     }
 
     if(rv==false){
-        std::cout<<" NOT ISSUABLE from SB_ON_RANK \n";
-        std::cout<<req->type<<std::endl;
+       // std::cout<<" NOT ISSUABLE from SB_ON_RANK \n";
+        //std::cout<<req->type<<std::endl;
     }
 
 
@@ -413,8 +413,25 @@ void SB_ON_RANK::Cycle( ncycle_t steps )
     for( ncounter_t childIdx = 0; childIdx < GetChildCount( ); childIdx++ )
         GetChild( childIdx )->Cycle( steps );//step always is 1
 
+//    std::cout<<"SB_ON_RANK::Cycle golbal "<<GetEventQueue()->GetCurrentCycle()<<std::endl;
+ //   std::cout<<"SB_ON_RANK::Cycle hrank time "<<GetChild( )->GetTrampoline()->GetEventQueue()->GetCurrentCycle()<<std::endl;
 //let the clock run
+    //zhuguoliang
+    //TODO: whether add this for sync?
+    //cycle and process
+   
     GetChild( )->GetTrampoline()->GetEventQueue()->Loop( steps );
+ /*  
+    if(GetChild( )->GetTrampoline()->GetEventQueue()->eventMap.count( GetChild( )->GetTrampoline()->GetEventQueue()->nextEventCycle )){
+        std::cout<<"SB_ON_RANK EVENTQUEUE ";
+        GetChild( )->GetTrampoline()->GetEventQueue()->PrintEventQueue();    
+    }
+
+    if(GetEventQueue()->eventMap.count( GetEventQueue()->nextEventCycle )){
+        std::cout<<"Global EVENTQUEUE ";
+        GetEventQueue()->PrintEventQueue();    
+    }
+*/       
 
 }
 

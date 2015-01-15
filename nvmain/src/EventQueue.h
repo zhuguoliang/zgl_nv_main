@@ -116,6 +116,7 @@ class EventQueue
     void Process( );
     void Loop( );
     void Loop( ncycle_t steps );
+    void PrintEventQueue();
 
     void SetFrequency( double freq );
     double GetFrequency( );
@@ -124,13 +125,15 @@ class EventQueue
     ncycle_t GetCurrentCycle( );
     void SetCurrentCycle( ncycle_t curCycle );
 
-  private:
+    std::map< ncycle_t, EventList> eventMap;
     ncycle_t nextEventCycle;
+  private:
+    //ncycle_t nextEventCycle;
     ncycle_t lastEventCycle;
     ncycle_t currentCycle; 
     double frequency;
-
-    std::map< ncycle_t, EventList> eventMap; 
+    //std::map< ncycle_t, EventList> eventMap;
+     
 };
 
 

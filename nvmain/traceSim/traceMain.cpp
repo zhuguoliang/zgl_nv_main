@@ -112,6 +112,12 @@ int TraceMain::RunTrace( int argc, char *argv[] )
     SetTagGenerator( tagGenerator );
     std::ofstream statStream;
 
+    /* Read another config file to tune between two config*/
+    Config *Myconfig = new Config( );
+    Myconfig->Read("Config/ZGL_PCM_ISSCC_2012_4GB_with_HMTT.config");
+    Myconfig->SetSimInterface( simInterface );
+    //////////////////////////////////////////////////////////
+
     /* Allow for overriding config parameter values for trace simulations from command line. */
     if( argc > 4 )
     {
@@ -175,6 +181,9 @@ int TraceMain::RunTrace( int argc, char *argv[] )
 
     std::cout << "traceMain (" << (void*)(this) << ")" << std::endl;
     nvmain->PrintHierarchy( );
+    nvmain->Init_V_P(config);
+    nvmain->Init_NV_P(Myconfig);
+
 
     if( config->KeyExists( "TraceReader" ) )
         trace = TraceReaderFactory::CreateNewTraceReader( 
@@ -360,6 +369,7 @@ int TraceMain::RunTrace( int argc, char *argv[] )
                   << std::endl;
 
     delete config;
+    delete Myconfig;
     delete stats;
 
     return 0;

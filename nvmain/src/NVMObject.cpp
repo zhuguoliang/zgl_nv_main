@@ -232,6 +232,32 @@ void NVMObject_hook::PrintHierarchy( int depth )
     trampoline->PrintHierarchy( depth );
 }
 
+void NVMObject_hook::TuneParm( bool NV )
+{
+    trampoline->TuneParm( NV);
+}
+
+void NVMObject_hook::Init_V_P(Config *conf)
+{
+    trampoline->Init_V_P( conf);
+}
+
+void NVMObject_hook::Init_NV_P(Config *conf)
+{
+    trampoline->Init_NV_P( conf);
+}
+
+void NVMObject_hook::SetNVParams(Params *params )
+{
+    trampoline->SetNVParams( params);
+}
+
+void NVMObject_hook::SetVParams(Params *params )
+{
+    trampoline->SetVParams( params);
+}
+
+
 void NVMObject_hook::SetStats( Stats *s )
 {
     trampoline->SetStats( s );
@@ -598,6 +624,60 @@ void NVMObject::PrintHierarchy( int depth )
     {
         (*it)->PrintHierarchy( depth + 1 );
     }
+}
+
+
+void NVMObject::TuneParm( bool NV)
+{
+    if(NV){
+        p=NV_p;
+    }
+    else{
+        p=V_p;
+    }
+    std::vector<NVMObject_hook *>::iterator it;
+    for( it = children.begin(); it != children.end(); it++ )
+    {
+        (*it)->TuneParm( NV );
+    }
+}
+
+//Call in ?
+void NVMObject::Init_NV_P(Config *conf)
+{
+    Params *params = new Params( );
+    params->SetParams( conf );
+    SetNVParams(params);
+    std::cout<<"NVMObject::params->Erd is"<<params->Erd<<std::endl;
+    std::vector<NVMObject_hook *>::iterator it;
+    for( it = children.begin(); it != children.end(); it++ )
+    {
+        (*it)->Init_NV_P( conf );
+    }
+
+}
+
+void NVMObject::Init_V_P(Config *conf)
+{
+    Params *params = new Params( );
+    params->SetParams( conf );
+    SetVParams(params);
+    std::vector<NVMObject_hook *>::iterator it;
+    for( it = children.begin(); it != children.end(); it++ )
+    {
+        (*it)->Init_V_P( conf );
+    }
+
+}
+
+void NVMObject::SetNVParams(Params *params )
+{
+    NV_p=params;
+}
+
+void NVMObject::SetVParams(Params *params )
+{
+    V_p=params;
 }
 
 void NVMObject::SetStats( Stats *s )

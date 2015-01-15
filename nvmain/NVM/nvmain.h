@@ -80,6 +80,8 @@ class NVMain : public NVMObject
 
     void EnqueuePendingMemoryRequests( NVMainRequest *request );
 
+    bool BottomHalf( NVMainRequest *request);
+
   private:
     Config *config;
     Config **channelConfig;

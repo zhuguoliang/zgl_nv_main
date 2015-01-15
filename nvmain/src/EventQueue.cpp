@@ -359,6 +359,7 @@ void EventQueue::Process( )
 {
     /* Process all the events at the next cycle, and figure out the next next cycle. */
     assert( eventMap.count( nextEventCycle ) );
+    //PrintEventQueue();
 
     EventList& eventList = eventMap[nextEventCycle];
     EventList::iterator it;
@@ -415,6 +416,24 @@ void EventQueue::Process( )
         /* map is sorted by keys, so this works out. */
         nextEventCycle = eventMap.begin()->first; 
     }
+}
+
+void EventQueue::PrintEventQueue()
+{
+    /* Process all the events at the next cycle, and figure out the next next cycle. */
+    assert( eventMap.count( nextEventCycle ) );
+
+    EventList& eventList = eventMap[nextEventCycle];
+    EventList::iterator it;
+    for( it = eventList.begin( ); it != eventList.end( ); it++ )
+    {
+        std::cout<<" -"<<(*it)->GetRecipient( )->StatName()<< "@"<<(*it)->GetCycle( )<<"-";
+ //       if((*it)->GetRequest( ))
+ //           std::cout<<"req owner is "<<(*it)->GetRequest( )->owner->StatName()<<std::endl;
+
+    }
+    std::cout<<std::endl;
+
 }
 
 void EventQueue::SetFrequency( double freq )

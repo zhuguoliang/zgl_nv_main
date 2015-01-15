@@ -57,6 +57,8 @@ BetweenWriteIterations	src/SubArray.cpp	/^bool SubArray::BetweenWriteIterations(
 BitModel	Endurance/BitModel/BitModel.cpp	/^BitModel::BitModel( )$/;"	f	class:BitModel
 BitModel	Endurance/BitModel/BitModel.h	/^class BitModel : public EnduranceModel$/;"	c	namespace:NVM
 BitModel	build/Endurance/BitModel/BitModel.cpp	/^BitModel::BitModel( )$/;"	f	class:BitModel
+BottomHalf	NVM/nvmain.cpp	/^bool NVMain::BottomHalf( NVMainRequest *request)$/;"	f	class:NVMain
+BottomHalf	build/NVM/nvmain.cpp	/^bool NVMain::BottomHalf( NVMainRequest *request)$/;"	f	class:NVMain
 BulkCommand	include/NVMainRequest.h	/^enum BulkCommand $/;"	g	namespace:NVM
 BusWidth	Simulators/gem5/nvmain_mem.hh	/^    uint64_t BusWidth;$/;"	m	class:NVMainMemory
 BusWidth	src/Params.h	/^    ncounter_t BusWidth;$/;"	m	class:NVM::Params
@@ -138,6 +140,7 @@ CalculateStats	Decoders/DRCDecoder/DRCDecoder.h	/^    void CalculateStats( ) { }
 CalculateStats	Interconnect/OffChipBus/OffChipBus.cpp	/^void OffChipBus::CalculateStats( )$/;"	f	class:OffChipBus
 CalculateStats	Interconnect/OnChipBus/OnChipBus.cpp	/^void OnChipBus::CalculateStats( )$/;"	f	class:OnChipBus
 CalculateStats	MemControl/DRAMCache/DRAMCache.cpp	/^void DRAMCache::CalculateStats( )$/;"	f	class:DRAMCache
+CalculateStats	MemControl/EASY_CTRL/EASY_CTRL.cpp	/^void EASY_CTRL::CalculateStats( )$/;"	f	class:EASY_CTRL
 CalculateStats	MemControl/FCFS/FCFS.cpp	/^void FCFS::CalculateStats( )$/;"	f	class:FCFS
 CalculateStats	MemControl/FRFCFS-WQF/FRFCFS-WQF.cpp	/^void FRFCFS_WQF::CalculateStats( )$/;"	f	class:FRFCFS_WQF
 CalculateStats	MemControl/FRFCFS/FRFCFS.cpp	/^void FRFCFS::CalculateStats( )$/;"	f	class:FRFCFS
@@ -286,6 +289,7 @@ Cycle	Banks/DDR3Bank/DDR3Bank.cpp	/^void DDR3Bank::Cycle( ncycle_t steps )$/;"	f
 Cycle	Interconnect/OffChipBus/OffChipBus.cpp	/^void OffChipBus::Cycle( ncycle_t steps )$/;"	f	class:OffChipBus
 Cycle	Interconnect/OnChipBus/OnChipBus.cpp	/^void OnChipBus::Cycle( ncycle_t steps )$/;"	f	class:OnChipBus
 Cycle	MemControl/DRAMCache/DRAMCache.cpp	/^void DRAMCache::Cycle( ncycle_t steps )$/;"	f	class:DRAMCache
+Cycle	MemControl/EASY_CTRL/EASY_CTRL.cpp	/^void EASY_CTRL::Cycle( ncycle_t steps )$/;"	f	class:EASY_CTRL
 Cycle	MemControl/FCFS/FCFS.cpp	/^void FCFS::Cycle( ncycle_t steps )$/;"	f	class:FCFS
 Cycle	MemControl/FRFCFS-WQF/FRFCFS-WQF.cpp	/^void FRFCFS_WQF::Cycle( ncycle_t steps )$/;"	f	class:FRFCFS_WQF
 Cycle	MemControl/FRFCFS/FRFCFS.cpp	/^void FRFCFS::Cycle( ncycle_t steps )$/;"	f	class:FRFCFS
@@ -410,6 +414,8 @@ Drain	build/src/NVMObject.cpp	/^bool NVMObject_hook::Drain( )$/;"	f	class:NVMObj
 Drain	src/NVMObject.cpp	/^bool NVMObject::Drain( )$/;"	f	class:NVMObject
 Drain	src/NVMObject.cpp	/^bool NVMObject_hook::Drain( )$/;"	f	class:NVMObject_hook
 DummyPredicate	src/MemoryController.h	/^    class DummyPredicate : public SchedulingPredicate$/;"	c	class:NVM::MemoryController
+EASY_CTRL	MemControl/EASY_CTRL/EASY_CTRL.cpp	/^EASY_CTRL::EASY_CTRL( )$/;"	f	class:EASY_CTRL
+EASY_CTRL	MemControl/EASY_CTRL/EASY_CTRL.h	/^class EASY_CTRL : public MemoryController$/;"	c	namespace:NVM
 EIDD0	src/Params.h	/^    double EIDD0;$/;"	m	class:NVM::Params
 EIDD1	src/Params.h	/^    double EIDD1;$/;"	m	class:NVM::Params
 EIDD2N	src/Params.h	/^    double EIDD2N;$/;"	m	class:NVM::Params
@@ -885,6 +891,14 @@ Init	traceWriter/VerilogTrace/VerilogTraceWriter.cpp	/^void VerilogTraceWriter::
 InitPD	src/Params.h	/^    bool InitPD;$/;"	m	class:NVM::Params
 InitQueues	build/src/MemoryController.cpp	/^void MemoryController::InitQueues( unsigned int numQueues )$/;"	f	class:MemoryController
 InitQueues	src/MemoryController.cpp	/^void MemoryController::InitQueues( unsigned int numQueues )$/;"	f	class:MemoryController
+Init_NV_P	build/src/NVMObject.cpp	/^void NVMObject::Init_NV_P(Config *conf)$/;"	f	class:NVMObject
+Init_NV_P	build/src/NVMObject.cpp	/^void NVMObject_hook::Init_NV_P(Config *conf)$/;"	f	class:NVMObject_hook
+Init_NV_P	src/NVMObject.cpp	/^void NVMObject::Init_NV_P(Config *conf)$/;"	f	class:NVMObject
+Init_NV_P	src/NVMObject.cpp	/^void NVMObject_hook::Init_NV_P(Config *conf)$/;"	f	class:NVMObject_hook
+Init_V_P	build/src/NVMObject.cpp	/^void NVMObject::Init_V_P(Config *conf)$/;"	f	class:NVMObject
+Init_V_P	build/src/NVMObject.cpp	/^void NVMObject_hook::Init_V_P(Config *conf)$/;"	f	class:NVMObject_hook
+Init_V_P	src/NVMObject.cpp	/^void NVMObject::Init_V_P(Config *conf)$/;"	f	class:NVMObject
+Init_V_P	src/NVMObject.cpp	/^void NVMObject_hook::Init_V_P(Config *conf)$/;"	f	class:NVMObject_hook
 InsertCallback	build/src/EventQueue.cpp	/^void EventQueue::InsertCallback( NVMObject *recipient, CallbackPtr method,$/;"	f	class:EventQueue
 InsertCallback	src/EventQueue.cpp	/^void EventQueue::InsertCallback( NVMObject *recipient, CallbackPtr method,$/;"	f	class:EventQueue
 InsertEvent	build/src/EventQueue.cpp	/^void EventQueue::InsertEvent( Event *event, ncycle_t when, int priority )$/;"	f	class:EventQueue
@@ -914,6 +928,7 @@ IsIssuable	Banks/DDR3Bank/DDR3Bank.cpp	/^bool DDR3Bank::IsIssuable( NVMainReques
 IsIssuable	Interconnect/OffChipBus/OffChipBus.cpp	/^bool OffChipBus::IsIssuable( NVMainRequest *req, FailReason *reason )$/;"	f	class:OffChipBus
 IsIssuable	Interconnect/OnChipBus/OnChipBus.cpp	/^bool OnChipBus::IsIssuable( NVMainRequest *req, FailReason *reason )$/;"	f	class:OnChipBus
 IsIssuable	MemControl/DRAMCache/DRAMCache.cpp	/^bool DRAMCache::IsIssuable( NVMainRequest * req, FailReason * \/*fail*\/ )$/;"	f	class:DRAMCache
+IsIssuable	MemControl/EASY_CTRL/EASY_CTRL.cpp	/^bool EASY_CTRL::IsIssuable( NVMainRequest * \/*request*\/, FailReason * \/*fail*\/ )$/;"	f	class:EASY_CTRL
 IsIssuable	MemControl/FCFS/FCFS.cpp	/^bool FCFS::IsIssuable( NVMainRequest * \/*request*\/, FailReason * \/*fail*\/ )$/;"	f	class:FCFS
 IsIssuable	MemControl/FRFCFS-WQF/FRFCFS-WQF.cpp	/^bool FRFCFS_WQF::IsIssuable( NVMainRequest *request, FailReason * \/*fail*\/ )$/;"	f	class:FRFCFS_WQF
 IsIssuable	MemControl/FRFCFS/FRFCFS.cpp	/^bool FRFCFS::IsIssuable( NVMainRequest * \/*request*\/, FailReason * \/*fail*\/ )$/;"	f	class:FRFCFS
@@ -988,6 +1003,7 @@ IssueCommand	Banks/DDR3Bank/DDR3Bank.cpp	/^bool DDR3Bank::IssueCommand( NVMainRe
 IssueCommand	Interconnect/OffChipBus/OffChipBus.cpp	/^bool OffChipBus::IssueCommand( NVMainRequest *req )$/;"	f	class:OffChipBus
 IssueCommand	Interconnect/OnChipBus/OnChipBus.cpp	/^bool OnChipBus::IssueCommand( NVMainRequest *req )$/;"	f	class:OnChipBus
 IssueCommand	MemControl/DRAMCache/DRAMCache.cpp	/^bool DRAMCache::IssueCommand( NVMainRequest *req )$/;"	f	class:DRAMCache
+IssueCommand	MemControl/EASY_CTRL/EASY_CTRL.cpp	/^bool EASY_CTRL::IssueCommand( NVMainRequest *req )$/;"	f	class:EASY_CTRL
 IssueCommand	MemControl/FCFS/FCFS.cpp	/^bool FCFS::IssueCommand( NVMainRequest *request )$/;"	f	class:FCFS
 IssueCommand	MemControl/FRFCFS-WQF/FRFCFS-WQF.cpp	/^bool FRFCFS_WQF::IssueCommand( NVMainRequest *request )$/;"	f	class:FRFCFS_WQF
 IssueCommand	MemControl/FRFCFS/FRFCFS.cpp	/^bool FRFCFS::IssueCommand( NVMainRequest *req )$/;"	f	class:FRFCFS
@@ -1052,7 +1068,6 @@ IssuePrefetch	NVM/nvmain.cpp	/^void NVMain::IssuePrefetch( NVMainRequest *reques
 IssuePrefetch	build/NVM/nvmain.cpp	/^void NVMain::IssuePrefetch( NVMainRequest *request )$/;"	f	class:NVMain
 KeyExists	build/src/Config.cpp	/^bool Config::KeyExists( std::string key )$/;"	f	class:Config
 KeyExists	src/Config.cpp	/^bool Config::KeyExists( std::string key )$/;"	f	class:Config
-L	my_histogram.py	/^L=[]$/;"	v
 LH_Cache	MemControl/LH-Cache/LH-Cache.cpp	/^LH_Cache::LH_Cache( )$/;"	f	class:LH_Cache
 LH_Cache	MemControl/LH-Cache/LH-Cache.h	/^class LH_Cache : public AbstractDRAMCache $/;"	c	namespace:NVM
 LH_Cache	build/MemControl/LH-Cache/LH-Cache.cpp	/^LH_Cache::LH_Cache( )$/;"	f	class:LH_Cache
@@ -1176,6 +1191,7 @@ NVM	Interconnect/OffChipBus/OffChipBus.h	/^namespace NVM {$/;"	n
 NVM	Interconnect/OnChipBus/OnChipBus.h	/^namespace NVM {$/;"	n
 NVM	MemControl/DRAMCache/AbstractDRAMCache.h	/^namespace NVM {$/;"	n
 NVM	MemControl/DRAMCache/DRAMCache.h	/^namespace NVM {$/;"	n
+NVM	MemControl/EASY_CTRL/EASY_CTRL.h	/^namespace NVM {$/;"	n
 NVM	MemControl/FCFS/FCFS.h	/^namespace NVM {$/;"	n
 NVM	MemControl/FRFCFS-WQF/FRFCFS-WQF.h	/^namespace NVM {$/;"	n
 NVM	MemControl/FRFCFS/FRFCFS.h	/^namespace NVM {$/;"	n
@@ -1298,6 +1314,7 @@ NVMainTraceWriter	traceWriter/NVMainTrace/NVMainTraceWriter.cpp	/^NVMainTraceWri
 NVMainTraceWriter	traceWriter/NVMainTrace/NVMainTraceWriter.h	/^class NVMainTraceWriter : public GenericTraceWriter$/;"	c	namespace:NVM
 NVMainWarmUp	Simulators/gem5/NVMainMemory.py	/^    NVMainWarmUp = Param.Bool(False, "Enable to warm up the internal cache in NVMain")$/;"	v	class:NVMainMemory
 NVMainWarmUp	Simulators/gem5/nvmain_mem.hh	/^    bool NVMainWarmUp;$/;"	m	class:NVMainMemory
+NV_p	src/NVMObject.h	/^    Params *NV_p;\/\/non-volatile param$/;"	m	class:NVM::NVMObject
 NWB	MemControl/LH-Cache/LH-Cache.h	/^    NoWriteBuffering NWB;$/;"	m	class:NVM::LH_Cache
 NaivePrefetcher	Prefetchers/NaivePrefetcher/NaivePrefetcher.h	/^    NaivePrefetcher( ) { }$/;"	f	class:NVM::NaivePrefetcher
 NaivePrefetcher	Prefetchers/NaivePrefetcher/NaivePrefetcher.h	/^class NaivePrefetcher : public Prefetcher$/;"	c	namespace:NVM
@@ -1437,6 +1454,8 @@ PrintAll	build/src/Stats.cpp	/^void Stats::PrintAll( std::ostream& stream )$/;"	
 PrintAll	src/Stats.cpp	/^void Stats::PrintAll( std::ostream& stream )$/;"	f	class:Stats
 PrintAllDevices	src/Params.h	/^    bool PrintAllDevices;$/;"	m	class:NVM::Params
 PrintConfig	src/Params.h	/^    bool PrintConfig;$/;"	m	class:NVM::Params
+PrintEventQueue	build/src/EventQueue.cpp	/^void EventQueue::PrintEventQueue()$/;"	f	class:EventQueue
+PrintEventQueue	src/EventQueue.cpp	/^void EventQueue::PrintEventQueue()$/;"	f	class:EventQueue
 PrintGraphs	src/Params.h	/^    bool PrintGraphs;$/;"	m	class:NVM::Params
 PrintHierarchy	build/src/NVMObject.cpp	/^void NVMObject::PrintHierarchy( int depth )$/;"	f	class:NVMObject
 PrintHierarchy	build/src/NVMObject.cpp	/^void NVMObject_hook::PrintHierarchy( int depth )$/;"	f	class:NVMObject_hook
@@ -1540,6 +1559,7 @@ RegisterStats	DataEncoders/FlipNWrite/FlipNWrite.cpp	/^void FlipNWrite::Register
 RegisterStats	Decoders/DRCDecoder/DRCDecoder.h	/^    void RegisterStats( ) { }$/;"	f	class:NVM::DRCDecoder
 RegisterStats	Decoders/Migrator/Migrator.cpp	/^void Migrator::RegisterStats( )$/;"	f	class:Migrator
 RegisterStats	MemControl/DRAMCache/DRAMCache.cpp	/^void DRAMCache::RegisterStats( )$/;"	f	class:DRAMCache
+RegisterStats	MemControl/EASY_CTRL/EASY_CTRL.cpp	/^void EASY_CTRL::RegisterStats( )$/;"	f	class:EASY_CTRL
 RegisterStats	MemControl/FCFS/FCFS.cpp	/^void FCFS::RegisterStats( )$/;"	f	class:FCFS
 RegisterStats	MemControl/FRFCFS-WQF/FRFCFS-WQF.cpp	/^void FRFCFS_WQF::RegisterStats( )$/;"	f	class:FRFCFS_WQF
 RegisterStats	MemControl/FRFCFS/FRFCFS.cpp	/^void FRFCFS::RegisterStats( )$/;"	f	class:FRFCFS
@@ -1582,6 +1602,7 @@ RemoveEvent	src/EventQueue.cpp	/^bool EventQueue::RemoveEvent( Event *event, ncy
 RemoveStat	src/Stats.h	57;"	d
 RequestComplete	Interconnect/OffChipBus/OffChipBus.cpp	/^bool OffChipBus::RequestComplete( NVMainRequest *request )$/;"	f	class:OffChipBus
 RequestComplete	MemControl/DRAMCache/DRAMCache.cpp	/^bool DRAMCache::RequestComplete( NVMainRequest *req )$/;"	f	class:DRAMCache
+RequestComplete	MemControl/EASY_CTRL/EASY_CTRL.cpp	/^bool EASY_CTRL::RequestComplete( NVMainRequest * request )$/;"	f	class:EASY_CTRL
 RequestComplete	MemControl/FCFS/FCFS.cpp	/^bool FCFS::RequestComplete( NVMainRequest * request )$/;"	f	class:FCFS
 RequestComplete	MemControl/FRFCFS-WQF/FRFCFS-WQF.cpp	/^bool FRFCFS_WQF::RequestComplete( NVMainRequest * request )$/;"	f	class:FRFCFS_WQF
 RequestComplete	MemControl/FRFCFS/FRFCFS.cpp	/^bool FRFCFS::RequestComplete( NVMainRequest * request )$/;"	f	class:FRFCFS
@@ -1742,6 +1763,7 @@ SetConfig	Endurance/WordModel/WordModel.cpp	/^void WordModel::SetConfig( Config 
 SetConfig	Interconnect/OffChipBus/OffChipBus.cpp	/^void OffChipBus::SetConfig( Config *c, bool createChildren )$/;"	f	class:OffChipBus
 SetConfig	Interconnect/OnChipBus/OnChipBus.cpp	/^void OnChipBus::SetConfig( Config *c, bool createChildren )$/;"	f	class:OnChipBus
 SetConfig	MemControl/DRAMCache/DRAMCache.cpp	/^void DRAMCache::SetConfig( Config *conf, bool createChildren )$/;"	f	class:DRAMCache
+SetConfig	MemControl/EASY_CTRL/EASY_CTRL.cpp	/^void EASY_CTRL::SetConfig( Config *conf, bool createChildren )$/;"	f	class:EASY_CTRL
 SetConfig	MemControl/FCFS/FCFS.cpp	/^void FCFS::SetConfig( Config *conf, bool createChildren )$/;"	f	class:FCFS
 SetConfig	MemControl/FRFCFS-WQF/FRFCFS-WQF.cpp	/^void FRFCFS_WQF::SetConfig( Config *conf, bool createChildren )$/;"	f	class:FRFCFS_WQF
 SetConfig	MemControl/FRFCFS/FRFCFS.cpp	/^void FRFCFS::SetConfig( Config *conf, bool createChildren )$/;"	f	class:FRFCFS
@@ -1860,6 +1882,10 @@ SetMigrationState	Decoders/Migrator/Migrator.cpp	/^void Migrator::SetMigrationSt
 SetMigrationState	build/Decoders/Migrator/Migrator.cpp	/^void Migrator::SetMigrationState( NVMAddress& address, MigratorState newState )$/;"	f	class:Migrator
 SetMissDestination	Utils/AccessPredictor/AccessPredictor.cpp	/^void AccessPredictor::SetMissDestination( ncounter_t childId )$/;"	f	class:AccessPredictor
 SetMissDestination	build/Utils/AccessPredictor/AccessPredictor.cpp	/^void AccessPredictor::SetMissDestination( ncounter_t childId )$/;"	f	class:AccessPredictor
+SetNVParams	build/src/NVMObject.cpp	/^void NVMObject::SetNVParams(Params *params )$/;"	f	class:NVMObject
+SetNVParams	build/src/NVMObject.cpp	/^void NVMObject_hook::SetNVParams(Params *params )$/;"	f	class:NVMObject_hook
+SetNVParams	src/NVMObject.cpp	/^void NVMObject::SetNVParams(Params *params )$/;"	f	class:NVMObject
+SetNVParams	src/NVMObject.cpp	/^void NVMObject_hook::SetNVParams(Params *params )$/;"	f	class:NVMObject_hook
 SetName	Banks/DDR3Bank/DDR3Bank.cpp	/^void DDR3Bank::SetName( std::string )$/;"	f	class:DDR3Bank
 SetName	build/Banks/DDR3Bank/DDR3Bank.cpp	/^void DDR3Bank::SetName( std::string )$/;"	f	class:DDR3Bank
 SetName	build/src/SubArray.cpp	/^void SubArray::SetName( std::string )$/;"	f	class:SubArray
@@ -1930,6 +1956,10 @@ SetTranslationMethod	build/src/AddressTranslator.cpp	/^void AddressTranslator::S
 SetTranslationMethod	src/AddressTranslator.cpp	/^void AddressTranslator::SetTranslationMethod( TranslationMethod *m )$/;"	f	class:AddressTranslator
 SetType	src/EventQueue.h	/^    void SetType( EventType e ) { type = e; }$/;"	f	class:NVM::Event
 SetUnits	src/Stats.h	/^    void SetUnits( std::string u ) { units = u; }$/;"	f	class:NVM::StatBase
+SetVParams	build/src/NVMObject.cpp	/^void NVMObject::SetVParams(Params *params )$/;"	f	class:NVMObject
+SetVParams	build/src/NVMObject.cpp	/^void NVMObject_hook::SetVParams(Params *params )$/;"	f	class:NVMObject_hook
+SetVParams	src/NVMObject.cpp	/^void NVMObject::SetVParams(Params *params )$/;"	f	class:NVMObject
+SetVParams	src/NVMObject.cpp	/^void NVMObject_hook::SetVParams(Params *params )$/;"	f	class:NVMObject_hook
 SetValid	build/include/NVMDataBlock.cpp	/^void NVMDataBlock::SetValid( bool valid )$/;"	f	class:NVMDataBlock
 SetValid	include/NVMDataBlock.cpp	/^void NVMDataBlock::SetValid( bool valid )$/;"	f	class:NVMDataBlock
 SetValue	build/src/Config.cpp	/^void Config::SetValue( std::string key, std::string value )$/;"	f	class:Config
@@ -2017,6 +2047,10 @@ TranslationMethod	src/TranslationMethod.cpp	/^TranslationMethod::TranslationMeth
 TranslationMethod	src/TranslationMethod.h	/^class TranslationMethod$/;"	c	namespace:NVM
 TryMigration	Utils/CoinMigrator/CoinMigrator.cpp	/^bool CoinMigrator::TryMigration( NVMainRequest *request, bool atomic )$/;"	f	class:CoinMigrator
 TryMigration	build/Utils/CoinMigrator/CoinMigrator.cpp	/^bool CoinMigrator::TryMigration( NVMainRequest *request, bool atomic )$/;"	f	class:CoinMigrator
+TuneParm	build/src/NVMObject.cpp	/^void NVMObject::TuneParm( bool NV)$/;"	f	class:NVMObject
+TuneParm	build/src/NVMObject.cpp	/^void NVMObject_hook::TuneParm( bool NV )$/;"	f	class:NVMObject_hook
+TuneParm	src/NVMObject.cpp	/^void NVMObject::TuneParm( bool NV)$/;"	f	class:NVMObject
+TuneParm	src/NVMObject.cpp	/^void NVMObject_hook::TuneParm( bool NV )$/;"	f	class:NVMObject_hook
 UNKNOWN_ACCESS	include/NVMainRequest.h	/^    UNKNOWN_ACCESS,     \/* Undefined access right *\/$/;"	e	enum:NVM::NVMAccessType
 UNKNOWN_FAILURE	include/FailReasons.h	/^enum FailReasons { UNKNOWN_FAILURE,$/;"	e	enum:NVM::FailReasons
 UNSUPPORTED_COMMAND	include/FailReasons.h	/^                   UNSUPPORTED_COMMAND$/;"	e	enum:NVM::FailReasons
@@ -2034,6 +2068,7 @@ UpdateEndurance	src/SubArray.cpp	/^ncycle_t SubArray::UpdateEndurance( NVMainReq
 UseLowPower	src/Params.h	/^    bool UseLowPower;$/;"	m	class:NVM::Params
 UsePrecharge	src/Params.h	/^    bool UsePrecharge;$/;"	m	class:NVM::Params
 UseRefresh	src/Params.h	/^    bool UseRefresh;$/;"	m	class:NVM::Params
+V_p	src/NVMObject.h	/^    Params *V_p;\/\/volatile param$/;"	m	class:NVM::NVMObject
 VariablePredictor	Utils/AccessPredictor/VariablePredictor/VariablePredictor.cpp	/^VariablePredictor::VariablePredictor( )$/;"	f	class:VariablePredictor
 VariablePredictor	Utils/AccessPredictor/VariablePredictor/VariablePredictor.h	/^class VariablePredictor : public AccessPredictor$/;"	c	namespace:NVM
 VariablePredictor	build/Utils/AccessPredictor/VariablePredictor/VariablePredictor.cpp	/^VariablePredictor::VariablePredictor( )$/;"	f	class:VariablePredictor
@@ -2086,11 +2121,13 @@ Write	build/src/SubArray.cpp	/^bool SubArray::Write( NVMainRequest *request )$/;
 Write	src/DataEncoder.cpp	/^ncycle_t DataEncoder::Write( NVMainRequest* \/*request*\/ )$/;"	f	class:DataEncoder
 Write	src/SubArray.cpp	/^bool SubArray::Write( NVMainRequest *request )$/;"	f	class:SubArray
 WriteAllBits	src/Params.h	/^    bool WriteAllBits; \/\/ Set false to calculate write energy on a per-bit basis$/;"	m	class:NVM::Params
-WriteCellData	build/src/SubArray.cpp	49;"	d	file:
-WriteCellData	src/SubArray.cpp	49;"	d	file:
+WriteCellData	build/src/SubArray.cpp	54;"	d	file:
+WriteCellData	src/SubArray.cpp	54;"	d	file:
 WriteCellData2	build/src/SubArray.cpp	/^ncycle_t SubArray::WriteCellData2( NVMainRequest *request )$/;"	f	class:SubArray
 WriteCellData2	src/SubArray.cpp	/^ncycle_t SubArray::WriteCellData2( NVMainRequest *request )$/;"	f	class:SubArray
 WriteMode	src/SubArray.h	/^enum WriteMode $/;"	g	namespace:NVM
+WriteMyStats_ToFile	build/src/SubArray.cpp	/^void SubArray::WriteMyStats_ToFile( )$/;"	f	class:SubArray
+WriteMyStats_ToFile	src/SubArray.cpp	/^void SubArray::WriteMyStats_ToFile( )$/;"	f	class:SubArray
 WritePausing	src/Params.h	/^    bool WritePausing;$/;"	m	class:NVM::Params
 WriteTraceLine	build/traceWriter/DRAMPower2Trace/DRAMPower2TraceWriter.cpp	/^void DRAMPower2TraceWriter::WriteTraceLine( std::ostream& stream, TraceLine *line )$/;"	f	class:DRAMPower2TraceWriter
 WriteTraceLine	build/traceWriter/NVMainTrace/NVMainTraceWriter.cpp	/^void NVMainTraceWriter::WriteTraceLine( std::ostream& stream, TraceLine *line )$/;"	f	class:NVMainTraceWriter
@@ -2115,6 +2152,7 @@ __DATAENCODER_H__	src/DataEncoder.h	35;"	d
 __DDR3BANK_H__	Banks/DDR3Bank/DDR3Bank.h	37;"	d
 __DECODERFACTORY_H__	Decoders/DecoderFactory.h	35;"	d
 __DRAMPOWER2TRACEWRITER_H__	traceWriter/DRAMPower2Trace/DRAMPower2TraceWriter.h	35;"	d
+__EASY_CTRL_H__	MemControl/EASY_CTRL/EASY_CTRL.h	35;"	d
 __ENDURANCEDISTRIBUTIONFACTORY_H__	Endurance/EnduranceDistributionFactory.h	35;"	d
 __ENDURANCEDISTRIBUTION_H__	src/EnduranceDistribution.h	35;"	d
 __ENDURANCEMODELFACTORY_H__	Endurance/EnduranceModelFactory.h	35;"	d
@@ -2234,7 +2272,10 @@ address	Utils/Caches/CacheBank.h	/^    NVMAddress address;$/;"	m	struct:NVM::Cac
 address	Utils/Caches/CacheBank.h	/^    NVMAddress address;$/;"	m	struct:NVM::CacheRequest
 address	include/NVMainRequest.h	/^    NVMAddress address;            \/\/< Address of request$/;"	m	class:NVM::NVMainRequest
 address	traceReader/TraceLine.h	/^    NVMAddress address;$/;"	m	class:NVM::TraceLine
-all_files	my_histogram.py	/^def all_files(root, patterns="*", single_level=False, yield_folders=False):$/;"	f
+all_files	My_Footprint_Analysis.py	/^def all_files(root, patterns='*', single_level=False,yield_folders=False):$/;"	f
+all_files	My_Row_Analysis.py	/^def all_files(root, patterns='*', single_level=False,yield_folders=False):$/;"	f
+all_files	My_Row_Analysis_1.py	/^def all_files(root, patterns='*', single_level=False,yield_folders=False):$/;"	f
+all_files	test.py	/^def all_files(root, patterns='*', single_level=False,yield_folders=False):$/;"	f
 allocationReadsHisto	Banks/CachedDDR3Bank/CachedDDR3Bank.h	/^    std::string allocationReadsHisto;$/;"	m	class:NVM::CachedDDR3Bank
 allocationReadsMap	Banks/CachedDDR3Bank/CachedDDR3Bank.h	/^    std::map<uint64_t, uint64_t> allocationReadsMap; \/\/ Number of reads in an allocation, Count$/;"	m	class:NVM::CachedDDR3Bank
 allocationWritesHisto	Banks/CachedDDR3Bank/CachedDDR3Bank.h	/^    std::string allocationWritesHisto;$/;"	m	class:NVM::CachedDDR3Bank
@@ -2251,6 +2292,7 @@ averageFillLatency	MemControl/LH-Cache/LH-Cache.h	/^    double averageFillLatenc
 averageFillQueueLatency	MemControl/LH-Cache/LH-Cache.h	/^    double averageFillLatency, averageFillQueueLatency;$/;"	m	class:NVM::LH_Cache
 averageHitLatency	MemControl/LH-Cache/LH-Cache.h	/^    double averageHitLatency, averageHitQueueLatency;$/;"	m	class:NVM::LH_Cache
 averageHitQueueLatency	MemControl/LH-Cache/LH-Cache.h	/^    double averageHitLatency, averageHitQueueLatency;$/;"	m	class:NVM::LH_Cache
+averageLatency	MemControl/EASY_CTRL/EASY_CTRL.h	/^    double averageLatency, averageQueueLatency, averageTotalLatency;$/;"	m	class:NVM::EASY_CTRL
 averageLatency	MemControl/FCFS/FCFS.h	/^    double averageLatency, averageQueueLatency, averageTotalLatency;$/;"	m	class:NVM::FCFS
 averageLatency	MemControl/FRFCFS-WQF/FRFCFS-WQF.h	/^    double   averageLatency, averageQueueLatency, averageTotalLatency;$/;"	m	class:NVM::FRFCFS_WQF
 averageLatency	MemControl/FRFCFS/FRFCFS.h	/^    double averageLatency, averageQueueLatency, averageTotalLatency;$/;"	m	class:NVM::FRFCFS
@@ -2260,9 +2302,11 @@ averageMissLatency	MemControl/LH-Cache/LH-Cache.h	/^    double averageMissLatenc
 averageMissQueueLatency	MemControl/LH-Cache/LH-Cache.h	/^    double averageMissLatency, averageMissQueueLatency;$/;"	m	class:NVM::LH_Cache
 averagePausedRequestProgress	src/SubArray.h	/^    double averagePausedRequestProgress;$/;"	m	class:NVM::SubArray
 averagePausesPerRequest	src/SubArray.h	/^    double averagePausesPerRequest;$/;"	m	class:NVM::SubArray
+averageQueueLatency	MemControl/EASY_CTRL/EASY_CTRL.h	/^    double averageLatency, averageQueueLatency, averageTotalLatency;$/;"	m	class:NVM::EASY_CTRL
 averageQueueLatency	MemControl/FCFS/FCFS.h	/^    double averageLatency, averageQueueLatency, averageTotalLatency;$/;"	m	class:NVM::FCFS
 averageQueueLatency	MemControl/FRFCFS-WQF/FRFCFS-WQF.h	/^    double   averageLatency, averageQueueLatency, averageTotalLatency;$/;"	m	class:NVM::FRFCFS_WQF
 averageQueueLatency	MemControl/FRFCFS/FRFCFS.h	/^    double averageLatency, averageQueueLatency, averageTotalLatency;$/;"	m	class:NVM::FRFCFS
+averageTotalLatency	MemControl/EASY_CTRL/EASY_CTRL.h	/^    double averageLatency, averageQueueLatency, averageTotalLatency;$/;"	m	class:NVM::EASY_CTRL
 averageTotalLatency	MemControl/FCFS/FCFS.h	/^    double averageLatency, averageQueueLatency, averageTotalLatency;$/;"	m	class:NVM::FCFS
 averageTotalLatency	MemControl/FRFCFS-WQF/FRFCFS-WQF.h	/^    double   averageLatency, averageQueueLatency, averageTotalLatency;$/;"	m	class:NVM::FRFCFS_WQF
 averageTotalLatency	MemControl/FRFCFS/FRFCFS.h	/^    double averageLatency, averageQueueLatency, averageTotalLatency;$/;"	m	class:NVM::FRFCFS
@@ -2373,7 +2417,10 @@ configparams	Simulators/gem5/NVMainControl.py	/^    configparams = Param.String(
 configparams	Simulators/gem5/NVMainMemory.py	/^    configparams = Param.String("", "")$/;"	v	class:NVMainMemory
 configvalues	Simulators/gem5/NVMainControl.py	/^    configvalues = Param.String("", "")$/;"	v	class:NVMMemoryControl
 configvalues	Simulators/gem5/NVMainMemory.py	/^    configvalues = Param.String("", "")$/;"	v	class:NVMainMemory
+count	My_Footprint_Analysis.py	/^    count =  len(open(path,'rU').readlines())$/;"	v
 count	src/TranslationMethod.h	/^    uint64_t count[6];$/;"	m	class:NVM::TranslationMethod
+count	test.py	/^    count = len(open(path,'rU').readlines())$/;"	v
+cpu_insts	MemControl/EASY_CTRL/EASY_CTRL.h	/^    uint64_t cpu_insts;$/;"	m	class:NVM::EASY_CTRL
 cpu_insts	MemControl/FRFCFS/FRFCFS.h	/^    uint64_t cpu_insts;$/;"	m	class:NVM::FRFCFS
 create	Simulators/gem5/NVMainControl.cc	/^NVMMemoryControlParams::create()$/;"	f	class:NVMMemoryControlParams
 create	Simulators/gem5/nvmain_mem.cc	/^NVMainMemoryParams::create()$/;"	f	class:NVMainMemoryParams
@@ -2391,7 +2438,6 @@ cycle	traceReader/TraceLine.h	/^    ncycle_t cycle;$/;"	m	class:NVM::TraceLine
 data	Utils/Caches/CacheBank.h	/^    NVMDataBlock data;$/;"	m	struct:NVM::CacheEntry
 data	Utils/Caches/CacheBank.h	/^    NVMDataBlock data;$/;"	m	struct:NVM::CacheRequest
 data	include/NVMainRequest.h	/^    NVMDataBlock data;             \/\/< Data to be written, or data that would be read$/;"	m	class:NVM::NVMainRequest
-data	my_histogram.py	/^data=[]$/;"	v
 data	src/EventQueue.h	/^    void *data;                  \/* Generic data to pass to callback. *\/$/;"	m	class:NVM::Event
 data	traceReader/TraceLine.h	/^    NVMDataBlock data;$/;"	m	class:NVM::TraceLine
 dataCycles	Banks/DDR3Bank/DDR3Bank.h	/^    ncounter_t dataCycles;$/;"	m	class:NVM::DDR3Bank
@@ -2460,7 +2506,7 @@ enqueue	Simulators/gem5/NVMainControl.cc	/^NVMainControl::enqueue(const MsgPtr& 
 enqueueMemRef	Simulators/gem5/NVMainControl.cc	/^NVMainControl::enqueueMemRef(MemoryNode *memRef)$/;"	f	class:NVMainControl
 enqueueToDirectory	Simulators/gem5/NVMainControl.cc	/^NVMainControl::enqueueToDirectory(MemoryNode *req, Cycles latency)$/;"	f	class:NVMainControl
 eventDriven	src/EventQueue.h	/^    bool eventDriven;$/;"	m	class:NVM::GlobalEventQueue
-eventMap	src/EventQueue.h	/^    std::map< ncycle_t, EventList> eventMap; $/;"	m	class:NVM::EventQueue
+eventMap	src/EventQueue.h	/^    std::map< ncycle_t, EventList> eventMap;$/;"	m	class:NVM::EventQueue
 eventQueue	src/NVMObject.h	/^    EventQueue *eventQueue;$/;"	m	class:NVM::NVMObject
 eventQueues	src/EventQueue.h	/^    std::map<EventQueue *, double> eventQueues;$/;"	m	class:NVM::GlobalEventQueue
 executeCycle	Simulators/gem5/NVMainControl.cc	/^NVMainControl::executeCycle()$/;"	f	class:NVMainControl
@@ -2662,6 +2708,7 @@ measuredFillLatencies	MemControl/LH-Cache/LH-Cache.h	/^    uint64_t measuredFill
 measuredFillQueueLatencies	MemControl/LH-Cache/LH-Cache.h	/^    uint64_t measuredFillLatencies, measuredFillQueueLatencies;$/;"	m	class:NVM::LH_Cache
 measuredHitLatencies	MemControl/LH-Cache/LH-Cache.h	/^    uint64_t measuredHitLatencies, measuredHitQueueLatencies;$/;"	m	class:NVM::LH_Cache
 measuredHitQueueLatencies	MemControl/LH-Cache/LH-Cache.h	/^    uint64_t measuredHitLatencies, measuredHitQueueLatencies;$/;"	m	class:NVM::LH_Cache
+measuredLatencies	MemControl/EASY_CTRL/EASY_CTRL.h	/^    uint64_t measuredLatencies, measuredQueueLatencies, measuredTotalLatencies;$/;"	m	class:NVM::EASY_CTRL
 measuredLatencies	MemControl/FCFS/FCFS.h	/^    uint64_t measuredLatencies, measuredQueueLatencies, measuredTotalLatencies;$/;"	m	class:NVM::FCFS
 measuredLatencies	MemControl/FRFCFS-WQF/FRFCFS-WQF.h	/^    uint64_t measuredLatencies, measuredQueueLatencies, measuredTotalLatencies;$/;"	m	class:NVM::FRFCFS_WQF
 measuredLatencies	MemControl/FRFCFS/FRFCFS.h	/^    uint64_t measuredLatencies, measuredQueueLatencies, measuredTotalLatencies;$/;"	m	class:NVM::FRFCFS
@@ -2671,21 +2718,26 @@ measuredMissLatencies	MemControl/LH-Cache/LH-Cache.h	/^    uint64_t measuredMiss
 measuredMissQueueLatencies	MemControl/LH-Cache/LH-Cache.h	/^    uint64_t measuredMissLatencies, measuredMissQueueLatencies;$/;"	m	class:NVM::LH_Cache
 measuredPauses	src/SubArray.h	/^    ncounter_t measuredPauses;$/;"	m	class:NVM::SubArray
 measuredProgresses	src/SubArray.h	/^    ncounter_t measuredProgresses;$/;"	m	class:NVM::SubArray
+measuredQueueLatencies	MemControl/EASY_CTRL/EASY_CTRL.h	/^    uint64_t measuredLatencies, measuredQueueLatencies, measuredTotalLatencies;$/;"	m	class:NVM::EASY_CTRL
 measuredQueueLatencies	MemControl/FCFS/FCFS.h	/^    uint64_t measuredLatencies, measuredQueueLatencies, measuredTotalLatencies;$/;"	m	class:NVM::FCFS
 measuredQueueLatencies	MemControl/FRFCFS-WQF/FRFCFS-WQF.h	/^    uint64_t measuredLatencies, measuredQueueLatencies, measuredTotalLatencies;$/;"	m	class:NVM::FRFCFS_WQF
 measuredQueueLatencies	MemControl/FRFCFS/FRFCFS.h	/^    uint64_t measuredLatencies, measuredQueueLatencies, measuredTotalLatencies;$/;"	m	class:NVM::FRFCFS
+measuredTotalLatencies	MemControl/EASY_CTRL/EASY_CTRL.h	/^    uint64_t measuredLatencies, measuredQueueLatencies, measuredTotalLatencies;$/;"	m	class:NVM::EASY_CTRL
 measuredTotalLatencies	MemControl/FCFS/FCFS.h	/^    uint64_t measuredLatencies, measuredQueueLatencies, measuredTotalLatencies;$/;"	m	class:NVM::FCFS
 measuredTotalLatencies	MemControl/FRFCFS-WQF/FRFCFS-WQF.h	/^    uint64_t measuredLatencies, measuredQueueLatencies, measuredTotalLatencies;$/;"	m	class:NVM::FRFCFS_WQF
 measuredTotalLatencies	MemControl/FRFCFS/FRFCFS.h	/^    uint64_t measuredLatencies, measuredQueueLatencies, measuredTotalLatencies;$/;"	m	class:NVM::FRFCFS
 measuredWriteTimes	src/SubArray.h	/^    ncounter_t measuredWriteTimes;$/;"	m	class:NVM::SubArray
+memQueue	MemControl/EASY_CTRL/EASY_CTRL.h	/^    NVMTransactionQueue *memQueue;$/;"	m	class:NVM::EASY_CTRL
 memQueue	MemControl/FRFCFS/FRFCFS.h	/^    NVMTransactionQueue *memQueue;$/;"	m	class:NVM::FRFCFS
 mem_ctl_latency	Simulators/gem5/NVMainControl.py	/^    mem_ctl_latency = Param.Cycles(12, "");$/;"	v	class:NVMMemoryControl
 mem_fixed_delay	Simulators/gem5/NVMainControl.py	/^    mem_fixed_delay = Param.Cycles(0, "");$/;"	v	class:NVMMemoryControl
 mem_random_arbitrate	Simulators/gem5/NVMainControl.py	/^    mem_random_arbitrate = Param.Int(0, "");$/;"	v	class:NVMMemoryControl
+mem_reads	MemControl/EASY_CTRL/EASY_CTRL.h	/^    uint64_t mem_reads, mem_writes;$/;"	m	class:NVM::EASY_CTRL
 mem_reads	MemControl/FCFS/FCFS.h	/^    uint64_t mem_reads, mem_writes;$/;"	m	class:NVM::FCFS
 mem_reads	MemControl/FRFCFS-WQF/FRFCFS-WQF.h	/^    uint64_t mem_reads, mem_writes;$/;"	m	class:NVM::FRFCFS_WQF
 mem_reads	MemControl/FRFCFS/FRFCFS.h	/^    uint64_t mem_reads, mem_writes;$/;"	m	class:NVM::FRFCFS
 mem_reads	MemControl/LH-Cache/LH-Cache.h	/^    uint64_t mem_reads, mem_writes;$/;"	m	class:NVM::LH_Cache
+mem_writes	MemControl/EASY_CTRL/EASY_CTRL.h	/^    uint64_t mem_reads, mem_writes;$/;"	m	class:NVM::EASY_CTRL
 mem_writes	MemControl/FCFS/FCFS.h	/^    uint64_t mem_reads, mem_writes;$/;"	m	class:NVM::FCFS
 mem_writes	MemControl/FRFCFS-WQF/FRFCFS-WQF.h	/^    uint64_t mem_reads, mem_writes;$/;"	m	class:NVM::FRFCFS_WQF
 mem_writes	MemControl/FRFCFS/FRFCFS.h	/^    uint64_t mem_reads, mem_writes;$/;"	m	class:NVM::FRFCFS
@@ -2714,6 +2766,8 @@ minimum_predrain_readqueue_size	MemControl/FRFCFS-WQF/FRFCFS-WQF.h	/^    uint64_
 minimum_read_spacing	MemControl/FRFCFS-WQF/FRFCFS-WQF.h	/^    uint64_t minimum_read_spacing;$/;"	m	class:NVM::FRFCFS_WQF
 minimum_reads_during_drain	MemControl/FRFCFS-WQF/FRFCFS-WQF.h	/^    uint64_t minimum_reads_during_drain;$/;"	m	class:NVM::FRFCFS_WQF
 minus_two_consecutive_line	My_Data_Analysis.py	/^def minus_two_consecutive_line(fname):$/;"	f
+minus_two_consecutive_line	My_Row_Analysis.py	/^def minus_two_consecutive_line(fname):$/;"	f
+minus_two_consecutive_line	My_Row_Analysis_1.py	/^def minus_two_consecutive_line(fname):$/;"	f
 missChildId	Utils/AccessPredictor/AccessPredictor.h	/^    ncounter_t hitChildId, missChildId;$/;"	m	class:NVM::AccessPredictor
 missMap	MemControl/MissMap/MissMap.h	/^    CacheBank *missMap;$/;"	m	class:NVM::MissMap
 missMapAllocations	MemControl/MissMap/MissMap.h	/^    uint64_t missMapAllocations, missMapWrites;$/;"	m	class:NVM::MissMap
@@ -2732,7 +2786,8 @@ mlog2	include/NVMHelpers.cpp	/^int mlog2( int num )$/;"	f	namespace:NVM
 mm_reads	MemControl/LH-Cache/LH-Cache.h	/^    uint64_t mm_reqs, mm_reads, fills;$/;"	m	class:NVM::LH_Cache
 mm_reqs	MemControl/LH-Cache/LH-Cache.h	/^    uint64_t mm_reqs, mm_reads, fills;$/;"	m	class:NVM::LH_Cache
 moduleName	Utils/RequestTracer/RequestTracer.h	/^        std::string moduleName;$/;"	m	class:NVM::RequestTracer::TracedRequest
-mu	my_histogram.py	/^mu = 100 # mean of distribution$/;"	v
+mult_run	My_Row_Analysis.py	/^def mult_run(incre,tracename):$/;"	f
+mult_run	My_Row_Analysis_1.py	/^def mult_run(incre,tracename):$/;"	f
 nWP00	src/Params.h	/^    ncycle_t nWP00;$/;"	m	class:NVM::Params
 nWP01	src/Params.h	/^    ncycle_t nWP01;$/;"	m	class:NVM::Params
 nWP10	src/Params.h	/^    ncycle_t nWP10;$/;"	m	class:NVM::Params
@@ -2802,7 +2857,6 @@ numRanks	Utils/PostTrace/PostTrace.h	/^    ncounter_t numRanks, numBanks, numCha
 numRanks	Utils/Visualizer/Visualizer.h	/^    ncounter_t numRanks, numBanks;$/;"	m	class:NVM::Visualizer
 numSets	Utils/Caches/CacheBank.h	/^    uint64_t numSets, numAssoc, cachelineSize;$/;"	m	class:NVM::CacheBank
 numSubarrays	Decoders/Migrator/Migrator.h	/^    uint64_t numChannels, numBanks, numRanks, numSubarrays;$/;"	m	class:NVM::Migrator
-num_bins	my_histogram.py	/^num_bins = 100$/;"	v
 nvmainDebugInhibitor	src/Debug.h	/^static nullstream nvmainDebugInhibitor;$/;"	m	namespace:NVM
 nvmainPtr	Simulators/gem5/NVMainControl.hh	/^        NVM::NVMain *nvmainPtr;$/;"	m	class:NVMainControl::NVMainStatPrinter
 nvmainPtr	Simulators/gem5/NVMainControl.hh	/^        NVM::NVMain *nvmainPtr;$/;"	m	class:NVMainControl::NVMainStatReseter
@@ -2844,7 +2898,7 @@ outstandingFills	MemControl/LO-Cache/LO-Cache.h	/^    std::map<NVMainRequest *, 
 outstandingRequests	traceSim/traceMain.h	/^    ncounter_t outstandingRequests;$/;"	m	class:NVM::TraceMain
 owner	Utils/Caches/CacheBank.h	/^    NVMObject *owner;$/;"	m	struct:NVM::CacheRequest
 owner	include/NVMainRequest.h	/^    NVMObject *owner;              \/\/< Pointer to the object that created this request$/;"	m	class:NVM::NVMainRequest
-p	src/NVMObject.h	/^    Params *p;$/;"	m	class:NVM::NVMObject
+p	src/NVMObject.h	/^    Params *p;\/\/current param used$/;"	m	class:NVM::NVMObject
 packet	Simulators/gem5/nvmain_mem.hh	/^        PacketPtr packet;$/;"	m	struct:NVMainMemory::NVMainMemoryRequest
 params	Simulators/gem5/nvmain_mem.hh	/^    params() const$/;"	f	class:NVMainMemory
 parent	src/NVMObject.h	/^    NVMObject_hook *parent;$/;"	m	class:NVM::NVMObject
@@ -2866,7 +2920,11 @@ perfectFills	MemControl/LO-Cache/LO-Cache.h	/^    bool perfectFills;$/;"	m	class
 pfTrigger	include/NVMainRequest.h	/^    NVMAddress pfTrigger;          \/\/< Address that triggered this prefetch$/;"	m	class:NVM::NVMainRequest
 physicalAddress	include/NVMAddress.h	/^    uint64_t physicalAddress;$/;"	m	class:NVM::NVMAddress
 plot	My_Data_Analysis.py	/^def plot(stat_file_name):$/;"	f
+plot	My_Row_Analysis.py	/^def plot(stat_file_name):$/;"	f
+plot	My_Row_Analysis_1.py	/^def plot(stat_file_name):$/;"	f
 plot_bar	My_Data_Analysis.py	/^def plot_bar(stat_file_name):$/;"	f
+plot_multi	My_Row_Analysis.py	/^def plot_multi(file_name_list):$/;"	f
+plot_multi	My_Row_Analysis_1.py	/^def plot_multi(file_name_list):$/;"	f
 port	Simulators/gem5/NVMainMemory.py	/^    port = SlavePort("Slave ports")$/;"	v	class:NVMainMemory
 port	Simulators/gem5/nvmain_mem.hh	/^    MemoryPort port;$/;"	m	class:NVMainMemory
 powerCycles	Banks/DDR3Bank/DDR3Bank.h	/^    ncounter_t powerCycles;$/;"	m	class:NVM::DDR3Bank
@@ -2907,6 +2965,7 @@ psInterval	src/SubArray.h	/^    ncounter_t psInterval;$/;"	m	class:NVM::SubArray
 queriedMemory	Utils/CoinMigrator/CoinMigrator.h	/^    bool queriedMemory;$/;"	m	class:NVM::CoinMigrator
 queueCycle	include/NVMainRequest.h	/^    ncycle_t queueCycle;           \/\/< When the memory controller accepted (queued) the request$/;"	m	class:NVM::NVMainRequest
 queueModel	src/MemoryController.h	/^    QueueModel queueModel;$/;"	m	class:NVM::MemoryController
+queueSize	MemControl/EASY_CTRL/EASY_CTRL.h	/^    uint64_t queueSize;$/;"	m	class:NVM::EASY_CTRL
 queueSize	MemControl/FCFS/FCFS.h	/^    uint64_t queueSize;$/;"	m	class:NVM::FCFS
 queueSize	MemControl/FRFCFS/FRFCFS.h	/^    uint64_t queueSize;$/;"	m	class:NVM::FRFCFS
 queueWaits	Utils/CoinMigrator/CoinMigrator.h	/^    ncounter_t queueWaits;$/;"	m	class:NVM::CoinMigrator
@@ -2920,10 +2979,12 @@ ranks_per_dimm	Simulators/gem5/NVMainControl.py	/^    ranks_per_dimm = Param.Int
 rawData	include/NVMDataBlock.h	/^    uint8_t *rawData;$/;"	m	class:NVM::NVMDataBlock
 rawNum	Ranks/HRank/HRank.h	/^    ncounter_t rawNum;$/;"	m	class:NVM::HRank
 rawNum	Ranks/StandardRank/StandardRank.h	/^    ncounter_t rawNum;$/;"	m	class:NVM::StandardRank
+rb_hits	MemControl/EASY_CTRL/EASY_CTRL.h	/^    uint64_t rb_hits;$/;"	m	class:NVM::EASY_CTRL
 rb_hits	MemControl/FCFS/FCFS.h	/^    uint64_t rb_hits;$/;"	m	class:NVM::FCFS
 rb_hits	MemControl/FRFCFS/FRFCFS.h	/^    uint64_t rb_hits;$/;"	m	class:NVM::FRFCFS
 rb_hits	MemControl/LH-Cache/LH-Cache.h	/^    uint64_t rb_hits, rb_miss;$/;"	m	class:NVM::LH_Cache
 rb_hits	MemControl/LO-Cache/LO-Cache.h	/^    ncounter_t rb_hits, rb_miss;$/;"	m	class:NVM::LO_Cache
+rb_miss	MemControl/EASY_CTRL/EASY_CTRL.h	/^    uint64_t rb_miss;$/;"	m	class:NVM::EASY_CTRL
 rb_miss	MemControl/FCFS/FCFS.h	/^    uint64_t rb_miss;$/;"	m	class:NVM::FCFS
 rb_miss	MemControl/FRFCFS/FRFCFS.h	/^    uint64_t rb_miss;$/;"	m	class:NVM::FRFCFS
 rb_miss	MemControl/LH-Cache/LH-Cache.h	/^    uint64_t rb_hits, rb_miss;$/;"	m	class:NVM::LH_Cache
@@ -2995,7 +3056,6 @@ serialize	Simulators/gem5/NVMainControl.cc	/^NVMainControl::serialize(std::ostre
 serialize	Simulators/gem5/nvmain_mem.cc	/^void NVMainMemory::serialize(std::ostream& os)$/;"	f	class:NVMainMemory
 setConsumer	Simulators/gem5/NVMainControl.cc	/^NVMainControl::setConsumer(Consumer* consumer_ptr)$/;"	f	class:NVMainControl
 setDescription	Simulators/gem5/NVMainControl.hh	/^    void setDescription(const std::string& name) { m_description = name; };$/;"	f	class:NVMainControl
-sigma	my_histogram.py	/^sigma = 15 # standard deviation of distribution$/;"	v
 simInterface	NVM/nvmain.h	/^    SimInterface *simInterface;$/;"	m	class:NVM::NVMain
 simInterface	build/NVM/nvmain.h	/^    SimInterface *simInterface;$/;"	m	class:NVM::NVMain
 simPtr	src/Config.h	/^    SimInterface *simPtr;$/;"	m	class:NVM::Config
@@ -3018,6 +3078,7 @@ startup	Simulators/gem5/nvmain_mem.cc	/^void NVMainMemory::startup()$/;"	f	class
 starvationCounter	src/MemoryController.h	/^    ncounter_t ***starvationCounter;$/;"	m	class:NVM::MemoryController
 starvationThreshold	MemControl/LO-Cache/LO-Cache.h	/^    ncounter_t starvationThreshold;$/;"	m	class:NVM::LO_Cache
 starvationThreshold	src/MemoryController.h	/^    ncounter_t starvationThreshold;$/;"	m	class:NVM::MemoryController
+starvation_precharges	MemControl/EASY_CTRL/EASY_CTRL.h	/^    uint64_t starvation_precharges;$/;"	m	class:NVM::EASY_CTRL
 starvation_precharges	MemControl/FRFCFS-WQF/FRFCFS-WQF.h	/^    uint64_t starvation_precharges;$/;"	m	class:NVM::FRFCFS_WQF
 starvation_precharges	MemControl/FRFCFS/FRFCFS.h	/^    uint64_t starvation_precharges;$/;"	m	class:NVM::FRFCFS
 starvation_precharges	MemControl/LH-Cache/LH-Cache.h	/^    uint64_t starvation_precharges;$/;"	m	class:NVM::LH_Cache
@@ -3098,12 +3159,11 @@ testdata	Tests/Regressions.py	/^testdata = json.load(json_data)$/;"	v
 testgem5	Tests/Regressions.py	/^    testgem5 = False$/;"	v
 testgem5	Tests/Regressions.py	/^testgem5 = True$/;"	v
 testlog	Tests/Regressions.py	/^        testlog = open(options.tempfile, 'w')$/;"	v
-thefiles	my_histogram.py	/^thefiles = list(all_files('\/home\/zhuguoliang\/projects\/GGP\/Benchmark_Rapl_Test','*.out'))$/;"	v
-theta	my_histogram.py	/^theta=[]$/;"	v
 threadId	include/NVMainRequest.h	/^    ncounters_t threadId;                  \/\/< Thread ID of issuing application$/;"	m	class:NVM::NVMainRequest
 threadId	traceReader/TraceLine.h	/^    ncounters_t threadId;$/;"	m	class:NVM::TraceLine
 tick	Simulators/gem5/nvmain_mem.cc	/^void NVMainMemory::tick( )$/;"	f	class:NVMainMemory
-time_line	my_histogram.py	/^time_line=[]$/;"	v
+tot_row_count	My_Footprint_Analysis.py	/^tot_row_count=0$/;"	v
+tot_row_count	test.py	/^tot_row_count=0$/;"	v
 totalEnergy	Ranks/HRank/HRank.h	/^    double totalEnergy, backgroundEnergy, activateEnergy, burstEnergy, refreshEnergy;$/;"	m	class:NVM::HRank
 totalEnergy	Ranks/StandardRank/StandardRank.h	/^    double totalEnergy, backgroundEnergy, activateEnergy, burstEnergy, refreshEnergy;$/;"	m	class:NVM::StandardRank
 totalPower	Ranks/HRank/HRank.h	/^    double totalPower, backgroundPower, activatePower, burstPower, refreshPower;$/;"	m	class:NVM::HRank
@@ -3196,6 +3256,7 @@ writeQueueSize	MemControl/FRFCFS-WQF/FRFCFS-WQF.h	/^    uint64_t writeQueueSize;
 writeRequest	src/SubArray.h	/^    NVMainRequest *writeRequest;$/;"	m	class:NVM::SubArray
 writeStart	src/SubArray.h	/^    ncycle_t writeStart;$/;"	m	class:NVM::SubArray
 writeTime	Utils/Caches/CacheBank.h	/^    uint64_t readTime, writeTime;$/;"	m	class:NVM::CacheBank
+write_pauses	MemControl/EASY_CTRL/EASY_CTRL.h	/^    uint64_t write_pauses;$/;"	m	class:NVM::EASY_CTRL
 write_pauses	MemControl/FRFCFS/FRFCFS.h	/^    uint64_t write_pauses;$/;"	m	class:NVM::FRFCFS
 writebackCount	Banks/CachedDDR3Bank/CachedDDR3Bank.h	/^    ncounter_t writebackCount;$/;"	m	class:NVM::CachedDDR3Bank
 writes	Banks/CachedDDR3Bank/CachedDDR3Bank.h	/^    ncounter_t writes;$/;"	m	struct:NVM::CachedRowBuffer
@@ -3203,9 +3264,7 @@ writes	Banks/DDR3Bank/DDR3Bank.h	/^    ncounter_t reads, writes, activates, prec
 writes	Ranks/HRank/HRank.h	/^    ncounter_t reads, writes;$/;"	m	class:NVM::HRank
 writes	Ranks/StandardRank/StandardRank.h	/^    ncounter_t reads, writes;$/;"	m	class:NVM::StandardRank
 writes	src/SubArray.h	/^    ncounter_t reads, writes, activates, precharges, refreshes;$/;"	m	class:NVM::SubArray
-x	my_histogram.py	/^x = mu + sigma * np.random.randn(10000)$/;"	v
 xmlFile	traceWriter/DRAMPower2Trace/DRAMPower2TraceWriter.h	/^    std::ofstream trace, xmlFile;$/;"	m	class:NVM::DRAMPower2TraceWriter
-y	my_histogram.py	/^y = mlab.normpdf(bins, mu, sigma)$/;"	v
 ~AbstractDRAMCache	MemControl/DRAMCache/AbstractDRAMCache.h	/^  virtual ~AbstractDRAMCache( ) { };$/;"	f	class:NVM::AbstractDRAMCache
 ~AccessPredictor	Utils/AccessPredictor/AccessPredictor.cpp	/^AccessPredictor::~AccessPredictor( )$/;"	f	class:AccessPredictor
 ~AccessPredictor	build/Utils/AccessPredictor/AccessPredictor.cpp	/^AccessPredictor::~AccessPredictor( )$/;"	f	class:AccessPredictor
@@ -3238,6 +3297,7 @@ y	my_histogram.py	/^y = mlab.normpdf(bins, mu, sigma)$/;"	v
 ~DataEncoder	src/DataEncoder.cpp	/^DataEncoder::~DataEncoder( )$/;"	f	class:DataEncoder
 ~DataEncoderFactory	DataEncoders/DataEncoderFactory.h	/^    ~DataEncoderFactory( ) { }$/;"	f	class:NVM::DataEncoderFactory
 ~DecoderFactory	Decoders/DecoderFactory.h	/^    ~DecoderFactory( ) { }$/;"	f	class:NVM::DecoderFactory
+~EASY_CTRL	MemControl/EASY_CTRL/EASY_CTRL.cpp	/^EASY_CTRL::~EASY_CTRL( )$/;"	f	class:EASY_CTRL
 ~EnduranceDistribution	src/EnduranceDistribution.h	/^     virtual ~EnduranceDistribution( ) { }$/;"	f	class:NVM::EnduranceDistribution
 ~EnduranceDistributionFactory	Endurance/EnduranceDistributionFactory.h	/^    ~EnduranceDistributionFactory( ) { }$/;"	f	class:NVM::EnduranceDistributionFactory
 ~EnduranceModel	src/EnduranceModel.h	/^    ~EnduranceModel( ) {}$/;"	f	class:NVM::EnduranceModel

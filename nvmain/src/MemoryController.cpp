@@ -1571,6 +1571,7 @@ bool MemoryController::IssueMemoryCommands( NVMainRequest *req )
         req->issueCycle = GetEventQueue()->GetCurrentCycle();
 
         NVMainRequest *actRequest = MakeActivateRequest( req );
+        std::cout<<GetEventQueue()->GetCurrentCycle()<<" MemoryController::IssueMemoryCommands Making Activate request for req type"<< req-> type<< std::endl;
         actRequest->flags |= (writingArray != NULL && writingArray->IsWriting( )) ? NVMainRequest::FLAG_PRIORITY : 0;
         commandQueues[queueId].push_back( actRequest );
 
@@ -1615,6 +1616,10 @@ bool MemoryController::IssueMemoryCommands( NVMainRequest *req )
         }
 
         NVMainRequest *actRequest = MakeActivateRequest( req );
+
+        std::cout<<GetEventQueue()->GetCurrentCycle()<<" MemoryController::IssueMemoryCommands Making Activate request for req type"<< req-> type<< std::endl;
+
+
         actRequest->flags |= (writingArray != NULL && writingArray->IsWriting( )) ? NVMainRequest::FLAG_PRIORITY : 0;
         commandQueues[queueId].push_back( actRequest );
         commandQueues[queueId].push_back( req );
@@ -1646,6 +1651,7 @@ bool MemoryController::IssueMemoryCommands( NVMainRequest *req )
             assert( p->ClosePage != 2 );
 
             commandQueues[queueId].push_back( MakeImplicitPrechargeRequest( req ) );
+            std::cout<<GetEventQueue()->GetCurrentCycle()<<" MemoryController::IssueMemoryCommands Making Precharge request for req type"<< req-> type<< std::endl;
             activeSubArray[rank][bank][subarray] = false;
             effectiveRow[rank][bank][subarray] = p->ROWS;
             effectiveMuxedRow[rank][bank][subarray] = p->ROWS;

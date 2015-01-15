@@ -1139,6 +1139,7 @@ bool SubArray::IsIssuable( NVMainRequest *req, FailReason *reason )
     uint64_t opRow;
     bool rv = true;
 
+    //std::cout<<"SubArray::p->Erd is"<<p->Erd<<std::endl;
     req->address.GetTranslatedAddress( &opRow, NULL, NULL, NULL, NULL, NULL );
 
     if( nextCommand != CMD_NOP )
@@ -1154,6 +1155,25 @@ bool SubArray::IsIssuable( NVMainRequest *req, FailReason *reason )
             rv = false;
             if( reason ) 
                 reason->reason = SUBARRAY_TIMING;
+/*
+            std::cout<<"In SubArray::IsIssuable req->type is ACTIVATE"<<std::endl;
+            std::cout<< "nextActivate is "<<nextActivate<<std::endl;
+            std::cout<< "current cycle is"<<GetEventQueue()->GetCurrentCycle()<<std::endl;
+            std::cout<< "p->UsePrecharge is " << p->UsePrecharge<<std::endl;
+            std::cout<< "state is "<<state<<std::endl;
+
+            //subarray is open need precharge but the command is 
+            std::cout<< "p->WritePausing is " << p->WritePausing<<std::endl;
+            std::cout<< "isWriting is " << isWriting<<std::endl;
+            //std::cout<< "writeRequest->flags is "<<writeRequest->flags<<std::endl;
+            std::cout<< "NVMainRequest::FLAG_FORCED is "<<NVMainRequest::FLAG_FORCED<<std::endl;
+            std::cout<< "req->flags is "<<req->flags<<std::endl;
+            std::cout<< "NVMainRequest::FLAG_PRIORITY is"<<NVMainRequest::FLAG_PRIORITY<<std::endl;
+        
+            //std::cout<< "Line 1 is "<< (bool)(nextActivate > (GetEventQueue()->GetCurrentCycle())<<std::endl;
+            //std::cout<< "Line 2 is "<< (bool)(p->UsePrecharge && state != SUBARRAY_CLOSED)<<std::endl;
+            //std::cout<< "Line 3 is "<< (bool)(p->WritePausing && isWriting && !(req->flags & NVMainRequest::FLAG_PRIORITY)) )<<std::endl;
+*/
         }
 
         if( rv == false )
@@ -1240,9 +1260,11 @@ bool SubArray::IsIssuable( NVMainRequest *req, FailReason *reason )
         if(rv==false){
         
             if( reason){
-          //     std::cout<<" NOT ISSUABLE from SubArray ---the reason is "<<reason->reason<<std::endl;  
+               std::cout<<" NOT ISSUABLE from SubArray ---the reason is "<<reason->reason<<std::endl;
+               //no output means   reason->reason = UNKNOWN_FAILURE
             }
-          //   std::cout<<" NOT ISSUABLE from SubArray "<<std::endl;    
+             //std::cout<<" NOT ISSUABLE from SubArray "<<std::endl;
+             //std::cout<<"NOT ISSUABLE from SubArray the req->type is "<<req->type<<std::endl;    
 
         }
 
@@ -1256,6 +1278,12 @@ bool SubArray::IsIssuable( NVMainRequest *req, FailReason *reason )
 bool SubArray::IssueCommand( NVMainRequest *req )
 {
     bool rv = false;
+
+    uint64_t accessRow;
+    //std::cout<<"SubArray::p->Erd is"<<p->Erd<<std::endl;
+    req->address.GetTranslatedAddress( &accessRow, NULL, NULL, NULL, NULL, NULL );
+    std::cout<<"[ "<<GetEventQueue()->GetCurrentCycle()<<" ] "<<"SubArray::IssueCommand accessRow is "<< accessRow;
+    std::cout<<" ---req->type is "<< req->type<<std::endl;
 
     if( !IsIssuable( req ) )
     {
@@ -1306,6 +1334,13 @@ bool SubArray::IssueCommand( NVMainRequest *req )
 
 bool SubArray::RequestComplete( NVMainRequest *req )
 {
+    uint64_t accessRow;
+    //std::cout<<"SubArray::p->Erd is"<<p->Erd<<std::endl;
+    req->address.GetTranslatedAddress( &accessRow, NULL, NULL, NULL, NULL, NULL );
+
+    std::cout<<"[ "<<GetEventQueue()->GetCurrentCycle()<<" ] "<<"SubArray::RequestComplete accessRow is "<< accessRow;
+    std::cout<<" ---req->type is "<< req->type<<std::endl;
+
     if( req->type == WRITE || req->type == WRITE_PRECHARGE )
     {
         //std::cout << GetEventQueue()->GetCurrentCycle() << " write done 0x" << std::hex

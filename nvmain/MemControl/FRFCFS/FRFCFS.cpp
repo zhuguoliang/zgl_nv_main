@@ -150,7 +150,8 @@ bool FRFCFS::IssueCommand( NVMainRequest *req )
     }
 
     req->arrivalCycle = GetEventQueue()->GetCurrentCycle();
-
+    std::cout<<"Request arrivalCycle is "<< req->arrivalCycle<<std::endl;
+    
     /* 
      *  Just push back the read/write. It's easier to inject dram commands than break it up
      *  here and attempt to remove them later.

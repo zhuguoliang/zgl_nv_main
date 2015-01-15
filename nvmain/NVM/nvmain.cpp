@@ -260,7 +260,25 @@ bool NVMain::IsIssuable( NVMainRequest *request, FailReason *reason )
 
     GetDecoder( )->Translate( request->address.GetPhysicalAddress( ), 
                            &row, &col, &rank, &bank, &channel, &subarray );
-
+////////////////////////////////////////////////////////////////////////////////////////////
+//std::cout<<"current row is in BottomHalf ?  "<<BottomHalf(request)<<std::endl;
+/*  
+*   top  DRAM
+*   bot  NVM
+*/
+/////////////////////////////////////////////////////////////////////////////////////////
+    /*
+    if(BottomHalf(request)){
+        TuneParm(true);
+        std::cout<<"turn nvm"<<std::endl;
+    }
+    else{
+        TuneParm(false);
+        std::cout<<"Stay put"<<std::endl;
+    }
+*/
+    
+//////////////////////////////////////////////////////////////////////////
     rv = memoryControllers[channel]->IsIssuable( request, reason );
 
     return rv;
@@ -372,6 +390,7 @@ bool NVMain::IssueCommand( NVMainRequest *request )
     ncounter_t channel, rank, bank, row, col, subarray;
     bool mc_rv;
 
+
     if( !config )
     {
         std::cout << "NVMain: Received request before configuration!\n";
@@ -411,7 +430,33 @@ bool NVMain::IssueCommand( NVMainRequest *request )
         PrintPreTrace( request );
     }
 
+    //std::cout<<"current row is in BottomHalf ?  "<<BottomHalf(request)<<std::endl;
+
     return mc_rv;
+}
+
+bool NVMain::BottomHalf( NVMainRequest *request)
+{
+        uint64_t refRow = 0;
+        //uint64_t channel, rank, bank, row, col, subarray;
+        uint64_t channel, rank, bank, col, subarray;
+        GetDecoder( )->Translate( request->address.GetPhysicalAddress( ), 
+                           &refRow, &col, &rank, &bank, &channel, &subarray );
+
+
+    ////////////////////////////////
+    //request->address.GetTranslatedAddress( &refRow, NULL, NULL, NULL, NULL, NULL );
+    std::cout<<"refRow is "<<refRow<<std::endl;
+    if(refRow < (p->ROWS/2))
+    {
+        return false;        
+    }
+    else{
+        return true;    
+    }
+
+    return true; 
+    //////////////////////////////////        
 }
 
 bool NVMain::IssueAtomic( NVMainRequest *request )

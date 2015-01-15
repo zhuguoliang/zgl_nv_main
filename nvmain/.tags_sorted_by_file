@@ -345,6 +345,33 @@ __MEMCONTROL_DRAMCACHE_H__	MemControl/DRAMCache/DRAMCache.h	35;"	d
 drcChannels	MemControl/DRAMCache/DRAMCache.h	/^    AbstractDRAMCache **drcChannels;$/;"	m	class:NVM::DRAMCache
 mainMemory	MemControl/DRAMCache/DRAMCache.h	/^    NVMain *mainMemory;$/;"	m	class:NVM::DRAMCache
 numChannels	MemControl/DRAMCache/DRAMCache.h	/^    ncounter_t numChannels;$/;"	m	class:NVM::DRAMCache
+CalculateStats	MemControl/EASY_CTRL/EASY_CTRL.cpp	/^void EASY_CTRL::CalculateStats( )$/;"	f	class:EASY_CTRL
+Cycle	MemControl/EASY_CTRL/EASY_CTRL.cpp	/^void EASY_CTRL::Cycle( ncycle_t steps )$/;"	f	class:EASY_CTRL
+EASY_CTRL	MemControl/EASY_CTRL/EASY_CTRL.cpp	/^EASY_CTRL::EASY_CTRL( )$/;"	f	class:EASY_CTRL
+IsIssuable	MemControl/EASY_CTRL/EASY_CTRL.cpp	/^bool EASY_CTRL::IsIssuable( NVMainRequest * \/*request*\/, FailReason * \/*fail*\/ )$/;"	f	class:EASY_CTRL
+IssueCommand	MemControl/EASY_CTRL/EASY_CTRL.cpp	/^bool EASY_CTRL::IssueCommand( NVMainRequest *req )$/;"	f	class:EASY_CTRL
+RegisterStats	MemControl/EASY_CTRL/EASY_CTRL.cpp	/^void EASY_CTRL::RegisterStats( )$/;"	f	class:EASY_CTRL
+RequestComplete	MemControl/EASY_CTRL/EASY_CTRL.cpp	/^bool EASY_CTRL::RequestComplete( NVMainRequest * request )$/;"	f	class:EASY_CTRL
+SetConfig	MemControl/EASY_CTRL/EASY_CTRL.cpp	/^void EASY_CTRL::SetConfig( Config *conf, bool createChildren )$/;"	f	class:EASY_CTRL
+~EASY_CTRL	MemControl/EASY_CTRL/EASY_CTRL.cpp	/^EASY_CTRL::~EASY_CTRL( )$/;"	f	class:EASY_CTRL
+EASY_CTRL	MemControl/EASY_CTRL/EASY_CTRL.h	/^class EASY_CTRL : public MemoryController$/;"	c	namespace:NVM
+NVM	MemControl/EASY_CTRL/EASY_CTRL.h	/^namespace NVM {$/;"	n
+__EASY_CTRL_H__	MemControl/EASY_CTRL/EASY_CTRL.h	35;"	d
+averageLatency	MemControl/EASY_CTRL/EASY_CTRL.h	/^    double averageLatency, averageQueueLatency, averageTotalLatency;$/;"	m	class:NVM::EASY_CTRL
+averageQueueLatency	MemControl/EASY_CTRL/EASY_CTRL.h	/^    double averageLatency, averageQueueLatency, averageTotalLatency;$/;"	m	class:NVM::EASY_CTRL
+averageTotalLatency	MemControl/EASY_CTRL/EASY_CTRL.h	/^    double averageLatency, averageQueueLatency, averageTotalLatency;$/;"	m	class:NVM::EASY_CTRL
+cpu_insts	MemControl/EASY_CTRL/EASY_CTRL.h	/^    uint64_t cpu_insts;$/;"	m	class:NVM::EASY_CTRL
+measuredLatencies	MemControl/EASY_CTRL/EASY_CTRL.h	/^    uint64_t measuredLatencies, measuredQueueLatencies, measuredTotalLatencies;$/;"	m	class:NVM::EASY_CTRL
+measuredQueueLatencies	MemControl/EASY_CTRL/EASY_CTRL.h	/^    uint64_t measuredLatencies, measuredQueueLatencies, measuredTotalLatencies;$/;"	m	class:NVM::EASY_CTRL
+measuredTotalLatencies	MemControl/EASY_CTRL/EASY_CTRL.h	/^    uint64_t measuredLatencies, measuredQueueLatencies, measuredTotalLatencies;$/;"	m	class:NVM::EASY_CTRL
+memQueue	MemControl/EASY_CTRL/EASY_CTRL.h	/^    NVMTransactionQueue *memQueue;$/;"	m	class:NVM::EASY_CTRL
+mem_reads	MemControl/EASY_CTRL/EASY_CTRL.h	/^    uint64_t mem_reads, mem_writes;$/;"	m	class:NVM::EASY_CTRL
+mem_writes	MemControl/EASY_CTRL/EASY_CTRL.h	/^    uint64_t mem_reads, mem_writes;$/;"	m	class:NVM::EASY_CTRL
+queueSize	MemControl/EASY_CTRL/EASY_CTRL.h	/^    uint64_t queueSize;$/;"	m	class:NVM::EASY_CTRL
+rb_hits	MemControl/EASY_CTRL/EASY_CTRL.h	/^    uint64_t rb_hits;$/;"	m	class:NVM::EASY_CTRL
+rb_miss	MemControl/EASY_CTRL/EASY_CTRL.h	/^    uint64_t rb_miss;$/;"	m	class:NVM::EASY_CTRL
+starvation_precharges	MemControl/EASY_CTRL/EASY_CTRL.h	/^    uint64_t starvation_precharges;$/;"	m	class:NVM::EASY_CTRL
+write_pauses	MemControl/EASY_CTRL/EASY_CTRL.h	/^    uint64_t write_pauses;$/;"	m	class:NVM::EASY_CTRL
 CalculateStats	MemControl/FCFS/FCFS.cpp	/^void FCFS::CalculateStats( )$/;"	f	class:FCFS
 Cycle	MemControl/FCFS/FCFS.cpp	/^void FCFS::Cycle( ncycle_t steps )$/;"	f	class:FCFS
 FCFS	MemControl/FCFS/FCFS.cpp	/^FCFS::FCFS( )$/;"	f	class:FCFS
@@ -652,6 +679,20 @@ minus_two_consecutive_line	My_Data_Analysis.py	/^def minus_two_consecutive_line(
 plot	My_Data_Analysis.py	/^def plot(stat_file_name):$/;"	f
 plot_bar	My_Data_Analysis.py	/^def plot_bar(stat_file_name):$/;"	f
 trace_name	My_Data_Analysis.py	/^trace_name = sys.argv[3]$/;"	v
+all_files	My_Footprint_Analysis.py	/^def all_files(root, patterns='*', single_level=False,yield_folders=False):$/;"	f
+count	My_Footprint_Analysis.py	/^    count =  len(open(path,'rU').readlines())$/;"	v
+tot_row_count	My_Footprint_Analysis.py	/^tot_row_count=0$/;"	v
+all_files	My_Row_Analysis.py	/^def all_files(root, patterns='*', single_level=False,yield_folders=False):$/;"	f
+minus_two_consecutive_line	My_Row_Analysis.py	/^def minus_two_consecutive_line(fname):$/;"	f
+mult_run	My_Row_Analysis.py	/^def mult_run(incre,tracename):$/;"	f
+plot	My_Row_Analysis.py	/^def plot(stat_file_name):$/;"	f
+plot_multi	My_Row_Analysis.py	/^def plot_multi(file_name_list):$/;"	f
+all_files	My_Row_Analysis_1.py	/^def all_files(root, patterns='*', single_level=False,yield_folders=False):$/;"	f
+minus_two_consecutive_line	My_Row_Analysis_1.py	/^def minus_two_consecutive_line(fname):$/;"	f
+mult_run	My_Row_Analysis_1.py	/^def mult_run(incre,tracename):$/;"	f
+plot	My_Row_Analysis_1.py	/^def plot(stat_file_name):$/;"	f
+plot_multi	My_Row_Analysis_1.py	/^def plot_multi(file_name_list):$/;"	f
+BottomHalf	NVM/nvmain.cpp	/^bool NVMain::BottomHalf( NVMainRequest *request)$/;"	f	class:NVMain
 CalculateStats	NVM/nvmain.cpp	/^void NVMain::CalculateStats( )$/;"	f	class:NVMain
 CheckPrefetch	NVM/nvmain.cpp	/^bool NVMain::CheckPrefetch( NVMainRequest *request )$/;"	f	class:NVMain
 Cycle	NVM/nvmain.cpp	/^void NVMain::Cycle( ncycle_t steps )$/;"	f	class:NVMain
@@ -1636,6 +1677,7 @@ RegisterStats	build/MemControl/PredictorDRC/PredictorDRC.cpp	/^void PredictorDRC
 RequestComplete	build/MemControl/PredictorDRC/PredictorDRC.cpp	/^bool PredictorDRC::RequestComplete( NVMainRequest *req )$/;"	f	class:PredictorDRC
 SetConfig	build/MemControl/PredictorDRC/PredictorDRC.cpp	/^void PredictorDRC::SetConfig( Config *conf, bool createChildren )$/;"	f	class:PredictorDRC
 ~PredictorDRC	build/MemControl/PredictorDRC/PredictorDRC.cpp	/^PredictorDRC::~PredictorDRC( )$/;"	f	class:PredictorDRC
+BottomHalf	build/NVM/nvmain.cpp	/^bool NVMain::BottomHalf( NVMainRequest *request)$/;"	f	class:NVMain
 CalculateStats	build/NVM/nvmain.cpp	/^void NVMain::CalculateStats( )$/;"	f	class:NVMain
 CheckPrefetch	build/NVM/nvmain.cpp	/^bool NVMain::CheckPrefetch( NVMainRequest *request )$/;"	f	class:NVMain
 Cycle	build/NVM/nvmain.cpp	/^void NVMain::Cycle( ncycle_t steps )$/;"	f	class:NVMain
@@ -1942,6 +1984,7 @@ InsertEvent	build/src/EventQueue.cpp	/^void EventQueue::InsertEvent( EventType t
 InsertEvent	build/src/EventQueue.cpp	/^void EventQueue::InsertEvent( EventType type, NVMObject_hook *recipient, ncycle_t when, void *data, int priority )$/;"	f	class:EventQueue
 Loop	build/src/EventQueue.cpp	/^void EventQueue::Loop( )$/;"	f	class:EventQueue
 Loop	build/src/EventQueue.cpp	/^void EventQueue::Loop( ncycle_t steps )$/;"	f	class:EventQueue
+PrintEventQueue	build/src/EventQueue.cpp	/^void EventQueue::PrintEventQueue()$/;"	f	class:EventQueue
 Process	build/src/EventQueue.cpp	/^void EventQueue::Process( )$/;"	f	class:EventQueue
 RemoveEvent	build/src/EventQueue.cpp	/^bool EventQueue::RemoveEvent( Event *event, ncycle_t when )$/;"	f	class:EventQueue
 SetCurrentCycle	build/src/EventQueue.cpp	/^void EventQueue::SetCurrentCycle( ncycle_t curCycle )$/;"	f	class:EventQueue
@@ -2043,6 +2086,10 @@ GetTrampoline	build/src/NVMObject.cpp	/^NVMObject *NVMObject_hook::GetTrampoline
 Idle	build/src/NVMObject.cpp	/^bool NVMObject::Idle( )$/;"	f	class:NVMObject
 Idle	build/src/NVMObject.cpp	/^bool NVMObject_hook::Idle( )$/;"	f	class:NVMObject_hook
 Init	build/src/NVMObject.cpp	/^void NVMObject::Init( Config * )$/;"	f	class:NVMObject
+Init_NV_P	build/src/NVMObject.cpp	/^void NVMObject::Init_NV_P(Config *conf)$/;"	f	class:NVMObject
+Init_NV_P	build/src/NVMObject.cpp	/^void NVMObject_hook::Init_NV_P(Config *conf)$/;"	f	class:NVMObject_hook
+Init_V_P	build/src/NVMObject.cpp	/^void NVMObject::Init_V_P(Config *conf)$/;"	f	class:NVMObject
+Init_V_P	build/src/NVMObject.cpp	/^void NVMObject_hook::Init_V_P(Config *conf)$/;"	f	class:NVMObject_hook
 IsIssuable	build/src/NVMObject.cpp	/^bool NVMObject::IsIssuable( NVMainRequest *, FailReason * )$/;"	f	class:NVMObject
 IsIssuable	build/src/NVMObject.cpp	/^bool NVMObject_hook::IsIssuable( NVMainRequest *req, FailReason *reason )$/;"	f	class:NVMObject_hook
 IssueAtomic	build/src/NVMObject.cpp	/^bool NVMObject::IssueAtomic( NVMainRequest * )$/;"	f	class:NVMObject
@@ -2074,15 +2121,21 @@ SetDecoder	build/src/NVMObject.cpp	/^void NVMObject::SetDecoder( AddressTranslat
 SetEventQueue	build/src/NVMObject.cpp	/^void NVMObject::SetEventQueue( EventQueue *eq )$/;"	f	class:NVMObject
 SetGlobalEventQueue	build/src/NVMObject.cpp	/^void NVMObject::SetGlobalEventQueue( GlobalEventQueue *geq )$/;"	f	class:NVMObject
 SetHookType	build/src/NVMObject.cpp	/^void NVMObject::SetHookType( HookType h )$/;"	f	class:NVMObject
+SetNVParams	build/src/NVMObject.cpp	/^void NVMObject::SetNVParams(Params *params )$/;"	f	class:NVMObject
+SetNVParams	build/src/NVMObject.cpp	/^void NVMObject_hook::SetNVParams(Params *params )$/;"	f	class:NVMObject_hook
 SetParams	build/src/NVMObject.cpp	/^void NVMObject::SetParams( Params *params )$/;"	f	class:NVMObject
 SetParent	build/src/NVMObject.cpp	/^void NVMObject::SetParent( NVMObject *p )$/;"	f	class:NVMObject
 SetStats	build/src/NVMObject.cpp	/^void NVMObject::SetStats( Stats *s )$/;"	f	class:NVMObject
 SetStats	build/src/NVMObject.cpp	/^void NVMObject_hook::SetStats( Stats *s )$/;"	f	class:NVMObject_hook
 SetTagGenerator	build/src/NVMObject.cpp	/^void NVMObject::SetTagGenerator( TagGenerator *tg )$/;"	f	class:NVMObject
+SetVParams	build/src/NVMObject.cpp	/^void NVMObject::SetVParams(Params *params )$/;"	f	class:NVMObject
+SetVParams	build/src/NVMObject.cpp	/^void NVMObject_hook::SetVParams(Params *params )$/;"	f	class:NVMObject_hook
 StatName	build/src/NVMObject.cpp	/^std::string NVMObject::StatName( )$/;"	f	class:NVMObject
 StatName	build/src/NVMObject.cpp	/^std::string NVMObject_hook::StatName( )$/;"	f	class:NVMObject_hook
 StatName	build/src/NVMObject.cpp	/^void NVMObject::StatName( std::string name )$/;"	f	class:NVMObject
 StatName	build/src/NVMObject.cpp	/^void NVMObject_hook::StatName( std::string name )$/;"	f	class:NVMObject_hook
+TuneParm	build/src/NVMObject.cpp	/^void NVMObject::TuneParm( bool NV)$/;"	f	class:NVMObject
+TuneParm	build/src/NVMObject.cpp	/^void NVMObject_hook::TuneParm( bool NV )$/;"	f	class:NVMObject_hook
 UnsetParent	build/src/NVMObject.cpp	/^void NVMObject::UnsetParent( )$/;"	f	class:NVMObject
 _FindChild	build/src/NVMObject.cpp	/^NVMObject *NVMObject::_FindChild( NVMainRequest *req, const char *childClass )$/;"	f	class:NVMObject
 ~NVMObject	build/src/NVMObject.cpp	/^NVMObject::~NVMObject( )$/;"	f	class:NVMObject
@@ -2135,8 +2188,9 @@ SetName	build/src/SubArray.cpp	/^void SubArray::SetName( std::string )$/;"	f	cla
 SubArray	build/src/SubArray.cpp	/^SubArray::SubArray( )$/;"	f	class:SubArray
 UpdateEndurance	build/src/SubArray.cpp	/^ncycle_t SubArray::UpdateEndurance( NVMainRequest *request )$/;"	f	class:SubArray
 Write	build/src/SubArray.cpp	/^bool SubArray::Write( NVMainRequest *request )$/;"	f	class:SubArray
-WriteCellData	build/src/SubArray.cpp	49;"	d	file:
+WriteCellData	build/src/SubArray.cpp	54;"	d	file:
 WriteCellData2	build/src/SubArray.cpp	/^ncycle_t SubArray::WriteCellData2( NVMainRequest *request )$/;"	f	class:SubArray
+WriteMyStats_ToFile	build/src/SubArray.cpp	/^void SubArray::WriteMyStats_ToFile( )$/;"	f	class:SubArray
 ~SubArray	build/src/SubArray.cpp	/^SubArray::~SubArray( )$/;"	f	class:SubArray
 CreateTag	build/src/TagGenerator.cpp	/^int TagGenerator::CreateTag( std::string name )$/;"	f	class:TagGenerator
 GetTagId	build/src/TagGenerator.cpp	/^int TagGenerator::GetTagId( std::string name )$/;"	f	class:TagGenerator
@@ -2390,17 +2444,6 @@ threadId	include/NVMainRequest.h	/^    ncounters_t threadId;                  \/
 type	include/NVMainRequest.h	/^    OpType type;                   \/\/< Operation type of request (read, write, etc)$/;"	m	class:NVM::NVMainRequest
 writeProgress	include/NVMainRequest.h	/^    ncycle_t writeProgress;        \/\/< Number of cycles remaining for write request$/;"	m	class:NVM::NVMainRequest
 ~NVMainRequest	include/NVMainRequest.h	/^    ~NVMainRequest( )$/;"	f	class:NVM::NVMainRequest
-L	my_histogram.py	/^L=[]$/;"	v
-all_files	my_histogram.py	/^def all_files(root, patterns="*", single_level=False, yield_folders=False):$/;"	f
-data	my_histogram.py	/^data=[]$/;"	v
-mu	my_histogram.py	/^mu = 100 # mean of distribution$/;"	v
-num_bins	my_histogram.py	/^num_bins = 100$/;"	v
-sigma	my_histogram.py	/^sigma = 15 # standard deviation of distribution$/;"	v
-thefiles	my_histogram.py	/^thefiles = list(all_files('\/home\/zhuguoliang\/projects\/GGP\/Benchmark_Rapl_Test','*.out'))$/;"	v
-theta	my_histogram.py	/^theta=[]$/;"	v
-time_line	my_histogram.py	/^time_line=[]$/;"	v
-x	my_histogram.py	/^x = mu + sigma * np.random.randn(10000)$/;"	v
-y	my_histogram.py	/^y = mlab.normpdf(bins, mu, sigma)$/;"	v
 AddressTranslator	src/AddressTranslator.cpp	/^AddressTranslator::AddressTranslator( )$/;"	f	class:AddressTranslator
 Divide	src/AddressTranslator.cpp	/^uint64_t AddressTranslator::Divide( uint64_t partSize, MemoryPartition partition )$/;"	f	class:AddressTranslator
 FindOrder	src/AddressTranslator.cpp	/^void AddressTranslator::FindOrder( int order, MemoryPartition *p )$/;"	f	class:AddressTranslator
@@ -2558,6 +2601,7 @@ InsertEvent	src/EventQueue.cpp	/^void EventQueue::InsertEvent( EventType type, N
 InsertEvent	src/EventQueue.cpp	/^void EventQueue::InsertEvent( EventType type, NVMObject_hook *recipient, ncycle_t when, void *data, int priority )$/;"	f	class:EventQueue
 Loop	src/EventQueue.cpp	/^void EventQueue::Loop( )$/;"	f	class:EventQueue
 Loop	src/EventQueue.cpp	/^void EventQueue::Loop( ncycle_t steps )$/;"	f	class:EventQueue
+PrintEventQueue	src/EventQueue.cpp	/^void EventQueue::PrintEventQueue()$/;"	f	class:EventQueue
 Process	src/EventQueue.cpp	/^void EventQueue::Process( )$/;"	f	class:EventQueue
 RemoveEvent	src/EventQueue.cpp	/^bool EventQueue::RemoveEvent( Event *event, ncycle_t when )$/;"	f	class:EventQueue
 SetCurrentCycle	src/EventQueue.cpp	/^void EventQueue::SetCurrentCycle( ncycle_t curCycle )$/;"	f	class:EventQueue
@@ -2601,7 +2645,7 @@ currentCycle	src/EventQueue.h	/^    ncycle_t currentCycle;$/;"	m	class:NVM::Glob
 cycle	src/EventQueue.h	/^    ncycle_t cycle;$/;"	m	class:NVM::Event
 data	src/EventQueue.h	/^    void *data;                  \/* Generic data to pass to callback. *\/$/;"	m	class:NVM::Event
 eventDriven	src/EventQueue.h	/^    bool eventDriven;$/;"	m	class:NVM::GlobalEventQueue
-eventMap	src/EventQueue.h	/^    std::map< ncycle_t, EventList> eventMap; $/;"	m	class:NVM::EventQueue
+eventMap	src/EventQueue.h	/^    std::map< ncycle_t, EventList> eventMap;$/;"	m	class:NVM::EventQueue
 eventQueues	src/EventQueue.h	/^    std::map<EventQueue *, double> eventQueues;$/;"	m	class:NVM::GlobalEventQueue
 frequency	src/EventQueue.h	/^    double frequency;$/;"	m	class:NVM::EventQueue
 frequency	src/EventQueue.h	/^    double frequency;$/;"	m	class:NVM::GlobalEventQueue
@@ -2779,6 +2823,10 @@ GetTrampoline	src/NVMObject.cpp	/^NVMObject *NVMObject_hook::GetTrampoline( )$/;
 Idle	src/NVMObject.cpp	/^bool NVMObject::Idle( )$/;"	f	class:NVMObject
 Idle	src/NVMObject.cpp	/^bool NVMObject_hook::Idle( )$/;"	f	class:NVMObject_hook
 Init	src/NVMObject.cpp	/^void NVMObject::Init( Config * )$/;"	f	class:NVMObject
+Init_NV_P	src/NVMObject.cpp	/^void NVMObject::Init_NV_P(Config *conf)$/;"	f	class:NVMObject
+Init_NV_P	src/NVMObject.cpp	/^void NVMObject_hook::Init_NV_P(Config *conf)$/;"	f	class:NVMObject_hook
+Init_V_P	src/NVMObject.cpp	/^void NVMObject::Init_V_P(Config *conf)$/;"	f	class:NVMObject
+Init_V_P	src/NVMObject.cpp	/^void NVMObject_hook::Init_V_P(Config *conf)$/;"	f	class:NVMObject_hook
 IsIssuable	src/NVMObject.cpp	/^bool NVMObject::IsIssuable( NVMainRequest *, FailReason * )$/;"	f	class:NVMObject
 IsIssuable	src/NVMObject.cpp	/^bool NVMObject_hook::IsIssuable( NVMainRequest *req, FailReason *reason )$/;"	f	class:NVMObject_hook
 IssueAtomic	src/NVMObject.cpp	/^bool NVMObject::IssueAtomic( NVMainRequest * )$/;"	f	class:NVMObject
@@ -2810,15 +2858,21 @@ SetDecoder	src/NVMObject.cpp	/^void NVMObject::SetDecoder( AddressTranslator *at
 SetEventQueue	src/NVMObject.cpp	/^void NVMObject::SetEventQueue( EventQueue *eq )$/;"	f	class:NVMObject
 SetGlobalEventQueue	src/NVMObject.cpp	/^void NVMObject::SetGlobalEventQueue( GlobalEventQueue *geq )$/;"	f	class:NVMObject
 SetHookType	src/NVMObject.cpp	/^void NVMObject::SetHookType( HookType h )$/;"	f	class:NVMObject
+SetNVParams	src/NVMObject.cpp	/^void NVMObject::SetNVParams(Params *params )$/;"	f	class:NVMObject
+SetNVParams	src/NVMObject.cpp	/^void NVMObject_hook::SetNVParams(Params *params )$/;"	f	class:NVMObject_hook
 SetParams	src/NVMObject.cpp	/^void NVMObject::SetParams( Params *params )$/;"	f	class:NVMObject
 SetParent	src/NVMObject.cpp	/^void NVMObject::SetParent( NVMObject *p )$/;"	f	class:NVMObject
 SetStats	src/NVMObject.cpp	/^void NVMObject::SetStats( Stats *s )$/;"	f	class:NVMObject
 SetStats	src/NVMObject.cpp	/^void NVMObject_hook::SetStats( Stats *s )$/;"	f	class:NVMObject_hook
 SetTagGenerator	src/NVMObject.cpp	/^void NVMObject::SetTagGenerator( TagGenerator *tg )$/;"	f	class:NVMObject
+SetVParams	src/NVMObject.cpp	/^void NVMObject::SetVParams(Params *params )$/;"	f	class:NVMObject
+SetVParams	src/NVMObject.cpp	/^void NVMObject_hook::SetVParams(Params *params )$/;"	f	class:NVMObject_hook
 StatName	src/NVMObject.cpp	/^std::string NVMObject::StatName( )$/;"	f	class:NVMObject
 StatName	src/NVMObject.cpp	/^std::string NVMObject_hook::StatName( )$/;"	f	class:NVMObject_hook
 StatName	src/NVMObject.cpp	/^void NVMObject::StatName( std::string name )$/;"	f	class:NVMObject
 StatName	src/NVMObject.cpp	/^void NVMObject_hook::StatName( std::string name )$/;"	f	class:NVMObject_hook
+TuneParm	src/NVMObject.cpp	/^void NVMObject::TuneParm( bool NV)$/;"	f	class:NVMObject
+TuneParm	src/NVMObject.cpp	/^void NVMObject_hook::TuneParm( bool NV )$/;"	f	class:NVMObject_hook
 UnsetParent	src/NVMObject.cpp	/^void NVMObject::UnsetParent( )$/;"	f	class:NVMObject
 _FindChild	src/NVMObject.cpp	/^NVMObject *NVMObject::_FindChild( NVMainRequest *req, const char *childClass )$/;"	f	class:NVMObject
 ~NVMObject	src/NVMObject.cpp	/^NVMObject::~NVMObject( )$/;"	f	class:NVMObject
@@ -2838,6 +2892,8 @@ NVMObject	src/NVMObject.h	/^class NVMObject$/;"	c	namespace:NVM
 NVMObjectType	src/NVMObject.h	49;"	d
 NVMObject_hook	src/NVMObject.h	/^class NVMObject_hook$/;"	c	namespace:NVM
 NVMTypeMatches	src/NVMObject.h	51;"	d
+NV_p	src/NVMObject.h	/^    Params *NV_p;\/\/non-volatile param$/;"	m	class:NVM::NVMObject
+V_p	src/NVMObject.h	/^    Params *V_p;\/\/volatile param$/;"	m	class:NVM::NVMObject
 __CYCLER_H__	src/NVMObject.h	37;"	d
 children	src/NVMObject.h	/^    std::vector<NVMObject_hook *> children;$/;"	m	class:NVM::NVMObject
 currentHookType	src/NVMObject.h	/^    HookType hookType, currentHookType;$/;"	m	class:NVM::NVMObject
@@ -2847,7 +2903,7 @@ eventQueue	src/NVMObject.h	/^    EventQueue *eventQueue;$/;"	m	class:NVM::NVMObj
 globalEventQueue	src/NVMObject.h	/^    GlobalEventQueue *globalEventQueue;$/;"	m	class:NVM::NVMObject
 hookType	src/NVMObject.h	/^    HookType hookType, currentHookType;$/;"	m	class:NVM::NVMObject
 hooks	src/NVMObject.h	/^    std::vector<NVMObject *> *hooks;$/;"	m	class:NVM::NVMObject
-p	src/NVMObject.h	/^    Params *p;$/;"	m	class:NVM::NVMObject
+p	src/NVMObject.h	/^    Params *p;\/\/current param used$/;"	m	class:NVM::NVMObject
 parent	src/NVMObject.h	/^    NVMObject_hook *parent;$/;"	m	class:NVM::NVMObject
 statName	src/NVMObject.h	/^    std::string statName;$/;"	m	class:NVM::NVMObject
 stats	src/NVMObject.h	/^    Stats *stats;$/;"	m	class:NVM::NVMObject
@@ -3092,8 +3148,9 @@ SetName	src/SubArray.cpp	/^void SubArray::SetName( std::string )$/;"	f	class:Sub
 SubArray	src/SubArray.cpp	/^SubArray::SubArray( )$/;"	f	class:SubArray
 UpdateEndurance	src/SubArray.cpp	/^ncycle_t SubArray::UpdateEndurance( NVMainRequest *request )$/;"	f	class:SubArray
 Write	src/SubArray.cpp	/^bool SubArray::Write( NVMainRequest *request )$/;"	f	class:SubArray
-WriteCellData	src/SubArray.cpp	49;"	d	file:
+WriteCellData	src/SubArray.cpp	54;"	d	file:
 WriteCellData2	src/SubArray.cpp	/^ncycle_t SubArray::WriteCellData2( NVMainRequest *request )$/;"	f	class:SubArray
+WriteMyStats_ToFile	src/SubArray.cpp	/^void SubArray::WriteMyStats_ToFile( )$/;"	f	class:SubArray
 ~SubArray	src/SubArray.cpp	/^SubArray::~SubArray( )$/;"	f	class:SubArray
 DELAYED_WRITE	src/SubArray.h	/^    DELAYED_WRITE \/* data is stored in a write buffer *\/$/;"	e	enum:NVM::WriteMode
 GetActiveWaits	src/SubArray.h	/^    ncycle_t GetActiveWaits( ) { return actWaits; }$/;"	f	class:NVM::SubArray
@@ -3222,6 +3279,9 @@ __TRANSLATIONMETHOD_H__	src/TranslationMethod.h	37;"	d
 bitWidths	src/TranslationMethod.h	/^    unsigned int bitWidths[6];$/;"	m	class:NVM::TranslationMethod
 count	src/TranslationMethod.h	/^    uint64_t count[6];$/;"	m	class:NVM::TranslationMethod
 order	src/TranslationMethod.h	/^    int order[6];$/;"	m	class:NVM::TranslationMethod
+all_files	test.py	/^def all_files(root, patterns='*', single_level=False,yield_folders=False):$/;"	f
+count	test.py	/^    count = len(open(path,'rU').readlines())$/;"	v
+tot_row_count	test.py	/^tot_row_count=0$/;"	v
 GenericTraceReader	traceReader/GenericTraceReader.h	/^    GenericTraceReader( ) { }$/;"	f	class:NVM::GenericTraceReader
 GenericTraceReader	traceReader/GenericTraceReader.h	/^class GenericTraceReader$/;"	c	namespace:NVM
 NVM	traceReader/GenericTraceReader.h	/^namespace NVM {$/;"	n

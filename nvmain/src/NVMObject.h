@@ -130,7 +130,13 @@ class NVMObject_hook
     void ResetStats( );
 
     void PrintHierarchy( int depth );
-
+    //////////////////////////////////////////////////////
+    void TuneParm(bool NV);//zhuguoliang
+    void Init_V_P(Config *conf);
+    void Init_NV_P(Config *conf);
+    void SetNVParams(Params *params );
+    void SetVParams(Params *params );
+    ////////////////////////////////////////////////////////
     void SetStats( Stats* );
     Stats* GetStats( );
     void RegisterStats( );
@@ -199,13 +205,20 @@ class NVMObject
     virtual void RestoreCheckpoint( std::string dir );
 
     void PrintHierarchy( int depth = 0 );
-
     void SetStats( Stats* );
     Stats* GetStats( );
     virtual void RegisterStats( );
 
     void SetParams( Params *params );
     Params *GetParams( );
+//////////////////////////////////////////////////////
+    void TuneParm(bool NV);//zhuguoliang to tune parm
+    void Init_V_P(Config *conf);
+    void Init_NV_P(Config *conf);
+    void SetNVParams(Params *params );
+    void SetVParams(Params *params );
+///////////////////////////////////////////////////////
+
 
     void StatName( std::string name );
     std::string StatName( );
@@ -228,7 +241,9 @@ class NVMObject
     NVMObject_hook *parent;
     AddressTranslator *decoder;
     Stats *stats;
-    Params *p;
+    Params *p;//current param used
+    Params *NV_p;//non-volatile param
+    Params *V_p;//volatile param
     std::string statName;
     std::vector<NVMObject_hook *> children;
     std::vector<NVMObject *> *hooks;
